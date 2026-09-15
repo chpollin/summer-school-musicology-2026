@@ -1,7 +1,7 @@
 :root { --paper: #f7f8f5; --surface: #ffffff; --ink: #233735; --muted: #52635f; --accent: #176456; --line: #cbd6d0; --error: #9b2424; --space: 24px; --radius: 10px; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 system-ui, sans-serif; }
-.intro, main, footer { width: min(1180px, 94%); margin: auto; }
+.intro, body > main, body > footer { width: min(1180px, 94%); margin: auto; }
 .intro { padding: 40px 0 20px; }
 .eyebrow { font-size: 13px; letter-spacing: .05em; color: var(--muted); }
 h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.15; margin: 18px 0; }
@@ -10,14 +10,14 @@ h2 { font-size: 24px; margin-bottom: 8px; }
 .intro p { max-width: 880px; }
 .controls { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space); }
 .inputs { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space); }
-label { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
-label span { font-weight: 700; }
-small { color: var(--muted); }
-input { max-width: 100%; padding: 10px 0; font: inherit; font-size: 15px; }
+.controls label { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.controls label span { font-weight: 700; }
+.controls small { color: var(--muted); }
+.controls input { max-width: 100%; padding: 10px 0; font: inherit; font-size: 15px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
-button { cursor: pointer; border: 1px solid var(--accent); border-radius: 6px; padding: 12px 20px; background: var(--accent); color: var(--surface); font: inherit; font-weight: 600; }
-button.secondary { background: var(--surface); color: var(--accent); }
-button:disabled { opacity: .6; cursor: wait; }
+.controls button { cursor: pointer; border: 1px solid var(--accent); border-radius: 6px; padding: 12px 20px; background: var(--accent); color: var(--surface); font: inherit; font-weight: 600; }
+.controls button.secondary { background: var(--surface); color: var(--accent); }
+.controls button:disabled { opacity: .6; cursor: wait; }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
 a { color: var(--accent); text-underline-offset: 3px; }
 #status { margin-bottom: 0; }

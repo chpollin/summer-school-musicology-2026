@@ -80,9 +80,8 @@ async function showObject(model, files) {
     const manifest = { '@context': 'http://iiif.io/api/presentation/3/context.json', id: `${base}manifest.json`, type: 'Manifest', label: { none: [escapeText(model.title)] }, metadata: model.metadata.map(m => ({ label: { none: [escapeText(m.label)] }, value: { none: [escapeText(m.value)] } })), items };
     await import('./vendor/mirador.min.js');
     document.querySelector('#result').hidden = false;
-    if (!viewer) viewer = window.Mirador.viewer({ id: 'mirador', language: 'en', windows: [], window: { defaultSideBarPanel: 'info', sideBarOpenByDefault: true }, workspaceControlPanel: { enabled: false } });
-    for (const id of Object.keys(viewer.store.getState().windows)) viewer.store.dispatch(window.Mirador.actions.removeWindow(id));
-    for (const id of Object.keys(viewer.store.getState().manifests)) viewer.store.dispatch(window.Mirador.actions.removeManifest(id));
+    if (viewer) viewer.unmount();
+    viewer = window.Mirador.viewer({ id: 'mirador', language: 'en', windows: [], window: { defaultSideBarPanel: 'info', sideBarOpenByDefault: true }, workspaceControlPanel: { enabled: false } });
     viewer.store.dispatch(window.Mirador.actions.receiveManifest(manifest.id, manifest));
     viewer.store.dispatch(window.Mirador.actions.addWindow({ manifestId: manifest.id, thumbnailNavigationPosition: 'far-bottom' }));
     for (const url of activeUrls) URL.revokeObjectURL(url);
