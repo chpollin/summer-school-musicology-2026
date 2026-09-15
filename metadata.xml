@@ -1,0 +1,18 @@
+<book xmlns="http://gams.uni-graz.at/viewer"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>My first IIIF object</title>
+  <author/>
+  <idno/>
+  <date/>
+  <owner><name>Synthetic demonstration pages created for this exercise.</name></owner>
+  <structure>
+    <div type="Demonstration pages">
+      <page xlink:href="images/page-001.jpg"/>
+      <page xlink:href="images/page-002.jpg"/>
+    </div>
+  </structure>
+  <language>English</language>
+  <category>Teaching example</category>
+  <languageCode>en</languageCode>
+  <source/>
+</book>
