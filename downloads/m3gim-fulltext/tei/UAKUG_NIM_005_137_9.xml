@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="UAKUG_NIM_005_137_9">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>SIEGFRIED — course transcription</title>
+      </titleStmt>
+      <extent>2 PDF scan pages</extent>
+      <publicationStmt>
+        <p>Edited teaching reference prepared for Summer School Musicology 2026 from recorded LLM transcriptions; TEI conversion and metadata review by Codex on 15 September 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="programme">
+          <title type="main" xml:lang="de">SIEGFRIED</title>
+          <idno type="source-id">UAKUG_NIM_005_137_9</idno>
+          <date type="announced-performance" when="1953-07-27">Montag, 27. Juli</date>
+          <name type="performance-place">Bayreuth</name>
+          <note type="holding-context">Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifier and holding context supplied with the course materials.</note>
+          <note type="metadata-evidence">Main title: scan 2. Date: scan 2. The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established. Place: Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context. Languages: German programme text on scans 1–2.</note>
+          <ref target="https://drive.google.com/file/d/1BJzlpMsiB2h6jv5wEc6n_BONjmfW6oBo/view">Supplied source PDF</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads; n is the scan sequence. Each facs path is relative to this XML file. Text blocks and lb follow the edited transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text. The cast table preserves rows and empty cells. Textual readings retain the review status documented in review-notes.md.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">German</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb type="scan" n="1" facs="../png/UAKUG_NIM_005_137_9/UAKUG_NIM_005_137_9_p001.png" xml:id="scan_001"/>
+      <p>{9-1}</p>
+      <p>BAYREUTHER<lb/>FESTSPIELE 1953</p>
+      <p>SIEGFRIED</p>
+      <pb type="scan" n="2" facs="../png/UAKUG_NIM_005_137_9/UAKUG_NIM_005_137_9_p002.png" xml:id="scan_002"/>
+      <p>{9-2[?]}</p>
+      <p>BAYREUTHER FESTSPIELE 1953</p>
+      <p>Montag, 27. Juli</p>
+      <p>SIEGFRIED</p>
+      <p>DIRIGENT: JOSEPH KEILBERTH</p>
+      <p>REGIE UND INSZENIERUNG: WIELAND WAGNER<lb/>REGIEASSISTENZ: GERTRUD WAGNER</p>
+      <p>SIEGFRIED . . . . . . WOLFGANG WINDGASSEN<lb/>MIME . . . . . . . . . PAUL KUËN<lb/>DER WANDERER . . . . . HANS HOTTER<lb/>ALBERICH . . . . . . . GUSTAV NEIDLINGER</p>
+      <p>FAFNER . . . . . . . . JOSEF GREINDL<lb/>ERDA . . . . . . . . . MARIA VON ILOSVAY<lb/>BRÜNNHILDE . . . . . . MARTHA MÖDL<lb/>WALDVOGEL . . . . . . . RITA STREICH</p>
+      <p>AUSSTATTUNGSLEITUNG: OTTO WISSNER</p>
+      <p>KOSTÜMENTWÜRFE: M. Z. KLOMP<lb/>MASKENBILDNER: WILLI KLOSE, JOSEF KROTT<lb/>BELEUCHTUNG: HUGO SCHNEIDER, WILLI SCHUBERT</p>
+      <p>TECHNISCHE EINRICHTUNG: ARTHUR EISENSCHMIDT</p>
+      <p>- Der Beginn jedes Aktes wird 15 Minuten vorher mit einer, 10 Minuten vorher mit zwei und 5 Minuten vorher mit drei Fanfaren angekündigt. -</p>
+      <p>I. Aufzug 16.00 Uhr   II. Aufzug 18.20 Uhr   III. Aufzug 20.30 Uhr   Ende gegen 21.50 Uhr</p>
+      <p>Für die Pausen wird auf das Festspielrestaurant (auf dem Festspielhügel rechts der Auffahrt) und auf die Schnellgaststätte (kleine Preise) links der Auffahrt empfehlend hingewiesen.</p>
+      <p>Operngläser sind im Mittelbau des Festspielhauses zu entleihen.</p>
+    </body>
+  </text>
+</TEI>

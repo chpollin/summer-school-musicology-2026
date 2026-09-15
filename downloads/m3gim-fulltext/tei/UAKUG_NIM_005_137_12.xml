@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="UAKUG_NIM_005_137_12">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Die Mitwirkenden der BAYREUTHER FESTSPIELE — course transcription</title>
+      </titleStmt>
+      <extent>24 PDF scan pages</extent>
+      <publicationStmt>
+        <p>Edited teaching reference prepared for Summer School Musicology 2026 from recorded LLM transcriptions; TEI conversion and metadata review by Codex on 15 September 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="festival-booklet">
+          <title type="main" xml:lang="de">Die Mitwirkenden der BAYREUTHER FESTSPIELE</title>
+          <title type="alternative" xml:lang="en">Personnel of the Bayreuth Festival</title>
+          <title type="alternative" xml:lang="fr">Les artistes du Festival de Bayreuth</title>
+          <idno type="source-id">UAKUG_NIM_005_137_12</idno>
+          <date type="publication" when="1953">1953</date>
+          <pubPlace>Bayreuth</pubPlace>
+          <publisher>VERLAG DER FESTSPIELLEITUNG</publisher>
+          <note type="holding-context">Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifier and holding context supplied with the course materials.</note>
+          <note type="metadata-evidence">Main title: scan 2. Date: scan 2. The title-page date and copyright statement (scans 2–3) support the publication year 1953. No publication month or day is supplied. Place: Title-page imprint, scan 2. Languages: Multilingual title page, headings and biographies (German, English, French).</note>
+          <ref target="https://drive.google.com/file/d/1pfKI84jzqnxh3ZIxJfP1-nAjhu2tYHva/view">Supplied source PDF</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads; n is the scan sequence. Each facs path is relative to this XML file. Text blocks and lb follow the edited transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text. The cast table preserves rows and empty cells. Textual readings retain the review status documented in review-notes.md.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb type="scan" n="1" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p001.png" xml:id="scan_001"/>
+      <p>BAYREUTHER<lb/>FESTSPIELE 1953</p>
+      <p>DIE<lb/>MITWIRKENDEN</p>
+      <pb type="scan" n="2" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p002.png" xml:id="scan_002"/>
+      <p>{12-2}</p>
+      <p>Die Mitwirkenden<lb/>der<lb/>BAYREUTHER FESTSPIELE</p>
+      <p>Personnel of the Bayreuth Festival<lb/>Les artistes du Festival de Bayreuth</p>
+      <p>1953</p>
+      <p>VERLAG DER FESTSPIELLEITUNG / BAYREUTH</p>
+      <pb type="scan" n="3" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p003.png" xml:id="scan_003"/>
+      <p>{12-3}</p>
+      <p>Für den Inhalt verantwortlich: Herbert Barth, Bayreuth<lb/>Copyright 1953 by Verlag der Festspielleitung Bayreuth - Druck: Buchdruckerei Emil Mühl Bayreuth</p>
+      <p>{12-4}</p>
+      <p>GESAMTLEITUNG UND INSZENIERUNG<lb/>MANAGEMENT AND MISE-EN-SCÈNE<lb/>DIRECTION GÉNÉRALE ET MISE EN SCÈNE</p>
+      <p>Wieland Wagner</p>
+      <p>Wolfgang Wagner</p>
+      <pb type="scan" n="4" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p004.png" xml:id="scan_004"/>
+      <p>{12-5}</p>
+      <p>MUSIKALISCHE LEITUNG<lb/>CONDUCTORS<lb/>DIRECTION MUSICALE</p>
+      <p>Paul Hindemith<lb/>IX. Symphonie</p>
+      <p>Eugen Jochum<lb/>Tristan und Isolde</p>
+      <p>{12-6}</p>
+      <p>MUSIKALISCHE LEITUNG<lb/>CONDUCTORS<lb/>DIRECTION MUSICALE</p>
+      <p>Joseph Keilberth<lb/>Lohengrin und 1. Ring-Zyklus</p>
+      <p>Clemens Krauss<lb/>Parsifal und 2. Ring-Zyklus</p>
+      <pb type="scan" n="5" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p005.png" xml:id="scan_005"/>
+      <p>{12-7}</p>
+      <p>Leiter der Festspielchöre<lb/>Chorus Master<lb/>Directeur des Choeurs<lb/>Wilhelm Pitz</p>
+      <p>Kostümentwürfe für „Der Ring des Nibelungen"<lb/>Costumes for "Der Ring des Nibelungen"<lb/>Projets de costumes du "Ring"<lb/>M. Z. Klomp</p>
+      <p>Assistent der Gesamtleitung<lb/>Assistant Administrative and Artistic Director<lb/>Adjoint à la régie générale<lb/>Carl-Heinz Klebe</p>
+      <p>SOLOREPETITOREN UND<lb/>MUSIKALISCHE ASSISTENZ<lb/>COACHES AND MUSICAL ASSISTANTS<lb/>RÉPÉTITEURS DE SCÈNE</p>
+      <p>Walter Aign<lb/>Studienleiter Württ. Staatsoper Stuttgart</p>
+      <p>Walter Born<lb/>I. Kapellmeister der Oper Badisches Staatstheater Karlsruhe</p>
+      <p>Helmut Fellmer<lb/>Chordirektor Hessisches Staatstheater Kassel</p>
+      <pb type="scan" n="6" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p006.png" xml:id="scan_006"/>
+      <p>{12-9}</p>
+      <p>SOLOREPETITOREN UND<lb/>MUSIKALISCHE ASSISTENZ<lb/>COACHES AND MUSICAL ASSISTANTS<lb/>RÉPÉTITEURS DE SCÈNE</p>
+      <p>Robert Filzwieser<lb/>Solorepetitor Vereinigte Bühnen Graz</p>
+      <p>Gilbert Graf Gravina<lb/>Bayreuth</p>
+      <p>Maximilian Kojetinsky<lb/>I. Kapellmeister der Oper Vereinigte Bühnen Graz</p>
+      <p>{12-10}</p>
+      <p>SOLOREPETITOREN UND<lb/>MUSIKALISCHE ASSISTENZ<lb/>COACHES AND MUSICAL ASSISTANTS<lb/>RÉPÉTITEURS DE SCÈNE</p>
+      <p>Gerhard Lenssen<lb/>Kapellmeister Staatsoper Dresden</p>
+      <p>Horst Stein<lb/>Kapellmeister Hamburgische Staatsoper</p>
+      <p>Dr. Herman Weigert<lb/>Kapellmeister New York</p>
+      <pb type="scan" n="7" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p007.png" xml:id="scan_007"/>
+      <p>{12-11}</p>
+      <p>SOLOREPETITOREN UND<lb/>MUSIKALISCHE ASSISTENZ<lb/>COACHES AND MUSICAL ASSISTANTS<lb/>RÉPÉTITEURS DE SCÈNE</p>
+      <p>Hermann Weiß<lb/>Kapellmeister Landestheater Coburg</p>
+      <p>Paul Zelter<lb/>Solorepetitor Hessisches Landestheater Darmstadt</p>
+      <p>Musikalischer Assistent<lb/>Musical Assistant<lb/>Répétiteur de Scène<lb/>Rudolf John<lb/>Staatsoper Dresden</p>
+      <p>{12-12[?]}</p>
+      <p>Konzertmeister<lb/>Leader of the orchestra<lb/>Premier violon solo de l'orchestre</p>
+      <p>Max Kalki<lb/>Städtische Oper Berlin</p>
+      <p>Prof. Gottfried Lucke<lb/>Staatsoper Dresden</p>
+      <p>Prof. Willibald Roth<lb/>Nordwestdeutsche Musikakademie Detmold</p>
+      <pb type="scan" n="8" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p008.png" xml:id="scan_008"/>
+      <p>{12-13}</p>
+      <p>Orchesterdirektor<lb/>Orchestra manager<lb/>Administration de l'orchestre<lb/>Bernhard Hübner<lb/>Berlin</p>
+      <p>Regieassistent „Lohengrin"<lb/>Assistant Stage Manager "Lohengrin"<lb/>Régisseur adjoint "Lohengrin"<lb/>Ulrich Brecht<lb/>Hessisches Staatstheater Wiesbaden</p>
+      <p>Werkstättenleitung<lb/>Director of the workshop<lb/>Directeur des ateliers<lb/>Otto Wißner<lb/>Bayreuth</p>
+      <p>Leiter der Beleuchtung<lb/>Chief Electrician<lb/>Inspecteur de l'éclairage<lb/>Willi Schubert<lb/>Berlin</p>
+      <p>Leiter der Beleuchtung<lb/>Chief Electrician<lb/>Inspecteur de l'éclairage<lb/>Henry Hensel<lb/>Staatstheater Braunschweig</p>
+      <p>Theatermeister<lb/>Stage Director<lb/>Chef de plateau<lb/>Arthur Eisenschmidt<lb/>Staatstheater Braunschweig</p>
+      <pb type="scan" n="9" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p009.png" xml:id="scan_009"/>
+      <p>{12-15}</p>
+      <p>Leiter der Kostümwerkstätten<lb/>Costume Designer<lb/>Directeur des ateliers de costumes<lb/>Fred Thiel<lb/>Bayreuth</p>
+      <p>Chef-Maskenbildner<lb/>Make up Artist<lb/>Chef-maquiller<lb/>Willi Klose<lb/>Städtische Bühnen Dortmund</p>
+      <p>Chef-Maskenbildner<lb/>Make up Artist<lb/>Chef-maquiller<lb/>Josef Krott<lb/>Städtische Bühnen Frankfurt a. M.</p>
+      <p>{12-16}</p>
+      <p>Inspizient<lb/>Stage manager<lb/>Inspection<lb/>Fritz Deiss</p>
+      <p>Inspizient<lb/>Stage manager<lb/>Inspection<lb/>Adam Hofmann</p>
+      <p>Souffleur<lb/>Prompter<lb/>Souffleur<lb/>Rudolf Kaiser</p>
+      <pb type="scan" n="10" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p010.png" xml:id="scan_010"/>
+      <p>{12-17}</p>
+      <p>Künstlerische Verwaltung und Organisation<lb/>Artistic administration and organization<lb/>Administration et organisation artistiques<lb/>Dr. Karl Andreas Wirz<lb/>Bayerisches Staatsschauspiel München</p>
+      <p>Verlag und Werbung<lb/>Publishers and Publicity<lb/>Edition et publicité<lb/>Herbert Barth<lb/>Bayreuth</p>
+      <p>Presseleiter<lb/>Director of Press Information<lb/>Chef du bureau de Presse<lb/>Dr. Walter Eichner<lb/>München</p>
+      <p>{12-18}</p>
+      <p>SÄNGERINNEN UND SÄNGER<lb/>DER BAYREUTHER FESTSPIELE 1953<lb/>in alphabetischer Reihenfolge<lb/>- kurze biographische Angaben -</p>
+      <p>CAST<lb/>OF THE BAYREUTH FESTIVAL 1953<lb/>in alphabetical order<lb/>- short biographical notes -</p>
+      <p>CHANTEURS ET CANTATRICES<lb/>DU FESTIVAL DE BAYREUTH 1953<lb/>dans l'ordre alphabétique<lb/>- notes biographiques -</p>
+      <pb type="scan" n="11" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p011.png" xml:id="scan_011"/>
+      <p>{12-19}</p>
+      <p>Theo Adam<lb/>- 2. Gralsritter, 4. Edler, Steuermann -</p>
+      <p>Ging aus dem Dresdener Kreuzchor hervor. Mit 23 Jahren an die<lb/>Dresdener Staatsoper verpflichtet. Ab 1953 an der Berliner Staats-<lb/>oper und in Frankfurt a. M. tätig.</p>
+      <p>Boy chorister with the Dresden Kreuzchor. Engaged at the age of<lb/>23 by the State Opera Dresden. Since 1953 member of the State<lb/>Opera in Berlin and Frankfurt.</p>
+      <p>Vient du Kreuzchor de Dresde. A 23 ans il est engagé à l'Opéra<lb/>National de Dresde. Depuis 1953 pensionnaire des Opéras d'Etat<lb/>de Berlin et de Francfort</p>
+      <p>Hans Braun<lb/>- Heerrufer -</p>
+      <p>Studium an der Hochschule für Musik in Wien bei den Kammer-<lb/>sängern Hans Duhan und Hermann Gallos. Ständig an der Staats-<lb/>oper Wien, Gastspiele an der Mailänder Scala, Covent Garden<lb/>Opera London, Staatsoper München.</p>
+      <p>Studied at the Academy of Music in Vienna with the Kammer-<lb/>sänger Hans Duhan and Hermann Gallos. Permanent member of<lb/>the Vienna State Opera, guest appearances at La Scala, Milan,<lb/>Covent Garden and Munich State Opera.</p>
+      <p>Etude à l'Ecole Nationale de Musique à Vienne et avec les Kam-<lb/>mersänger Hans Duhan et Hermann Gallos. Pensionaire de l'Opéra<lb/>d'Etat de Vienne, tournées à La Scala de Milan, Covent Garden<lb/>Londres, Opéra d'Etat de Munich.</p>
+      <p>Anton Dermota - Kammersänger<lb/>- Tenorpartie IX. Symphonie -</p>
+      <p>Geboren in Kropa, Jugoslawien. Musikstudien in Laibach und Wien.<lb/>Erstes Engagement Staatsoper Wien, seither dort ständig verpflichtet.<lb/>Auswärtige Gastspiele in ganz Europa, Amerika und Australien.</p>
+      <p>Born in Kropa, Jugoslavien. Studied music at Laibach and Vienna.<lb/>First engagement at the Vienna State Opera, since then permanent<lb/>engagement. Many guest appearances throughout Europe, America<lb/>and Australia.</p>
+      <p>Né à Kropa en Jugoslavie. Etudes de musique à Laibach et à Vienne.<lb/>Premier Contrat à l'Opéra de Vienne, depuis ce temps pensionnaire<lb/>de cet opéra. Nombreuses tournées dans toute l'Europe, l'Amérique<lb/>et Australie.</p>
+      <p>{12-20}</p>
+      <p>Hasso Eschert<lb/>- Melot -</p>
+      <p>1917 in Gräfenhainichen geboren. Gesangsstudium erst nach dem<lb/>Kriege an der Berliner Musikhochschule. Erstes Engagement Kleines<lb/>Fach Studio der Berliner Staatsoper, dann Magdeburg, Hagen, Köln.</p>
+      <p>Born 1917 in Gräfenhainichen, studied singing after the war at<lb/>the Academy of Music in Berlin. First engagement: Studio of the<lb/>State Opera in Berlin, then Magdeburg, Hagen, Cologne</p>
+      <p>Né en 1917 à Gräfenhainichen, étudie le chant après la guerre à<lb/>l'Ecole Supérieure de Musique à Berlin. Débute à l'Opéra d'Etat<lb/>de Berlin, ensuite Magdeburg, Hagen, Cologne.</p>
+      <p>Bruni Falcon<lb/>- Freia, Ortlinde -</p>
+      <p>In Boston geboren. Erstes Engagement an der „Opera Nacional"<lb/>in Mexiko. Konzerte in Nord- und Südamerika, 1950/51 jugendlich<lb/>dramatische Sängerin an der New York „City Opera", 1950 Urauf-<lb/>führung von Menottis „Konsul" am Broadway. 1951/52 Staatsoper<lb/>München, 1952/53 Opernhaus Frankfurt. Gastspiel an der Mai-<lb/>länder Scala.</p>
+      <p>Born in Boston. First engagement at the "Opera Nacional" in<lb/>Mexico, concerts in North- and South America. 1950/51 Dramatic<lb/>Soprano at the New York City Opera. 1950 sang in the first per-<lb/>formance of Menotti's "Konsul", Broadway, New York. 1951/52<lb/>Munich State Opera, 1952/53 Frankfurt Opera House. Guest<lb/>appearances at La Scala, Milan.</p>
+      <p>Née à Boston. Débute à l' "Opera Nacional" à Mexico, chante des<lb/>concerts en Amérique du Nord et du Sud 1950/51 engagée au "City<lb/>Opera" de New York comme soprano dramatique, en 1950 elle<lb/>chante dans la première représentation du "Konsul" de Menotti<lb/>au Broadway. En 1951/52 engagée à l'Opéra d'Etat de Munich et<lb/>à l'Opéra de Francfort. Tournées à La Scala de Milan.</p>
+      <p>Brünhild Friedland<lb/>- Gerhilde -</p>
+      <p>Geboren in Leipzig. Gesangsstudium bei Prof. Eduard Plate in<lb/>Dresden. Erstes Engagement Volksoper Dresden, dann Stadttheater<lb/>Görlitz, seit 1950 als erste Jugendlich-Dramatische und Zwischenfach-<lb/>sängerin an der Staatsoper Dresden.</p>
+      <p>Born in Leipzig. Studied singing with Prof. Eduard Plate in Dresden.<lb/>First engagement at the Dresden "Volksoper", then Theatre Muni-<lb/>cipal Görlitz. Since 1950 member of the Dresden State Opera.</p>
+      <p>Née à Leipzig, étudie le chant avec le Prof. Plate à Dresde.<lb/>Débute à l'Opéra Populair de Dresde, ensuite au Théâtre Munici-<lb/>pal de Görlitz. Depuis 1950 contrat avec l'Opéra d'Etat de Dresde.</p>
+      <pb type="scan" n="12" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p012.png" xml:id="scan_012"/>
+      <p>{12-21}</p>
+      <p>Josef Greindl<lb/>- Fafner (Rheingold), Fafner (Siegfried), Hunding, Hagen, König<lb/>Heinrich, Titurel -</p>
+      <p>Geboren in München, studierte bei Paul Bender und Anna Bahr-<lb/>Mildenburg, begann 1936 in Krefeld, ging 1938 nach Düsseldorf<lb/>und 1942 an die Staatsoper Berlin. Seit 1947 an der Städt. Oper<lb/>Berlin, Gastspiele und Konzerte Salzburg, Luzern, Zürich, Mailand,<lb/>Wien, Buenos Aires, Paris, London, Metropolitan Opera New York<lb/>Amsterdam und Lissabon.</p>
+      <p>Born in Munich, studied with Paul Bender and Anna Bahr-Milden-<lb/>burg. Debut 1936 in Crefeld, went to Dusseldorf in 1938 and in<lb/>1942 to the Berlin State Opera. Since 1947 at the Municipal Opera<lb/>Berlin, guest appearances and concerts in Salzburg, Lucerne, Zurich,<lb/>Milan, Vienna, Buenos Aires, Paris, London, Metropolitan Opera<lb/>New York, Amsterdam and Lisbon.</p>
+      <p>Né à Munich, étudie avec Paul Bender et Anna Bahr-Mildenburg,<lb/>débute en 1936 à Crefeld, chante ensuite à Dusseldorf (1938) et<lb/>à l'Opéra National de Berlin (1942). A l'Opéra Municipal de Berlin<lb/>depuis 1947. Tournées et concerts à Salzbourg, Lucerne, Zurich,<lb/>Milan, Vienne, Buenos Aires, Paris, Londres, Metropolitan Opera<lb/>de New York, Amsterdam, Lisbonne.</p>
+      <p>Alfons Herwig<lb/>- 3. Edler -</p>
+      <p>Studium bei Kammersänger Bitterauf und Prof. Scheidl. Kam zu-<lb/>nächst nach Pforzheim, dann nach Regensburg und wurde für 1953/54<lb/>als 1. Charakterbariton an die Städt. Bühnen Wuppertal verpflichtet.</p>
+      <p>Studied with Kammersänger Bitterauf and Prof. Theodor Scheidl.<lb/>Began his career in Pforzheim, then Regensburg engaged for the<lb/>season 1953/54 at the Municipal Theatres Wuppertal as Dramatic<lb/>Baritone.</p>
+      <p>Etudie avec Kammersänger Bitterauf et le Prof. Scheidl. Commence<lb/>sa carrière à Pforzheim, ensuite Regensbourg. Contrat pour la saison<lb/>1953/54 avec les Théâtres Municipales de Wuppertal comme bary-<lb/>tone dramatique.</p>
+      <p>Natalie Hinsch-Gröndahl<lb/>- Gutrune -</p>
+      <p>Geboren in Wilhelmshaven. Begann ihre künstlerische Laufbahn<lb/>am Staatstheater Bremen. Weitere Engagements Oslo, Dresden.<lb/>Gastspiele Leipzig, Staatsoper Hamburg. Seit 1951 im Verband des<lb/>Nationaltheaters Mannheim.</p>
+      <p>Born in Wilhelmshaven. Started her career at the State Theatre<lb/>Bremen. Then engagements in Oslo and Dresden. Guest appear-<lb/>ances: Leipzig and State Opera Hamburg. Since 1951 member of<lb/>the Mannheim National Theatre ensemble.</p>
+      <p>Née à Wilhelmshaven. Commence sa carrière au Théâtre d'Etat<lb/>de Brême. Ensuite engagée à Oslo et à Dresde. Tournées: Leipzig,<lb/>l'Opéra d'Etat de Hambourg. A partir de 1951 pensionnaire du<lb/>Théâtre National de Mannheim.</p>
+      <p>{12-22}</p>
+      <p>Hans Hotter<lb/>- Wotan („Rheingold", „Walküre"), Wanderer, Amfortas -</p>
+      <p>Geboren in Offenbach a. M., Studium an Universität und Musik-<lb/>akademie München sowie Tätigkeit als Chordirektor und Organist.<lb/>Engagements in Troppau, Breslau, Prag, Hamburg, Berlin, München,<lb/>Wien. Spielte Hauptrollen in drei Filmen, sang die Richard-Strauß-<lb/>Uraufführungen „Friedenstag" (1938) und „Capriccio" (1942) in<lb/>München. Gegenwärtig in München, New York und Wien fest<lb/>verpflichtet.</p>
+      <p>Born in Offenbach/M. Studied at the University and at the Academy<lb/>of Music in Munich. Afterwards was engaged as chorusmaster and<lb/>organist. Engagements in Troppau, Breslau, Prague, Hamburg, Ber-<lb/>lin, Munich and Vienna. Has also played leading "parts in three<lb/>films, sang in the first performance of Richard Strauss's "Friedens-<lb/>tag" in 1938 and in "Capriccio" in Munich 1942. At present "perma-<lb/>nent member of the Munich, New York and Vienna Operas.</p>
+      <p>Né à Offenbach, étudie à l'université et à l'académie de musique<lb/>à Munich, y est engagé comme directeur des chœurs et organiste.<lb/>Contrats à Troppau, Breslau, Prague, Hambourg, Berlin, Munich,<lb/>et Vienne. Il joue les rôles principaux dans trois films et chante<lb/>les premières de "Friedenstag" (1938) et de "Capriccio" (1942) de<lb/>Richard Strauss à Munich. Actuellement à Munich, New York et<lb/>Vienne où il est engagé ferme.</p>
+      <p>Maria von Ilosvay<lb/>- Erda, Schwertleite, 1. Norn, Altsolo (Parsifal) -</p>
+      <p>Geboren in Ungarn. Studium in Budapest und Wien. Gastspiele in<lb/>Wien und den USA. Ständig an der Staatsoper Hamburg.</p>
+      <p>Born in Hungary. Studied in Budapest and Vienna, guest appea-<lb/>rances in Vienna and the USA. Permanent artist of the Hamburg<lb/>State Opera.</p>
+      <p>Née en Hongrie. Etudie à Budapest et Vienne. Tournées à Vienne et<lb/>aux Etats-Unis. Actuellement à l'Opéra d'Etat de Hambourg.</p>
+      <p>Joseph Janko<lb/>- 2. Edler -</p>
+      <p>In München geboren. Ursprünglich Kürschner, dann Gesangsstudium<lb/>bei Prof. Felix von Krauß in München. Nach Engagement in München,<lb/>Bielefeld und Köln seit 1940 in Graz tätig.</p>
+      <p>Born in Munich. Formerly furrier, then studied singing with Prof.<lb/>Felix von Krauss in Munich. Engagements in Munich, Bielefeld and<lb/>Cologne, since 1940 in Graz (Austria).</p>
+      <p>Né à Munich. D'abord fourreur, il étudie le chant à Munich avec<lb/>le Prof. Felix von Krauss. Après contrats à Munich, Bielefeld et<lb/>Cologne, il joue depuis 1940 au théâtre de Graz.</p>
+      <pb type="scan" n="13" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p013.png" xml:id="scan_013"/>
+      <p>{12-23}</p>
+      <p>Hugo Kratz<lb/>- 4. Knappe -</p>
+      <p>Geboren in Bremen, studierte bei Prof. Paul Bender und Willi<lb/>Domgraf-Fassbaender. Erstes Engagement Staatstheater Bremen<lb/>dann Opernhaus Breslau. Seit 1945 Opernhaus Nürnberg.</p>
+      <p>Born in Bremen, studied with Prof. Paul Bender and Willi Domgraf-<lb/>Fassbaender. First engagement at the Bremen State Opera, then<lb/>Opera House Breslau. Since 1945 Opera House Nuremberg.</p>
+      <p>Né à Brême, étudie avec le Prof. Paul Bender et Willi Domgraf-<lb/>Fassbaender. Débute à l'Opéra d'Etat de Brême, ensuite à l'Opéra<lb/>de Breslau. Depuis 1945 à l'Opéra de Nuremberg.</p>
+      <p>Paul Kuën<lb/>- Mime -</p>
+      <p>Als Sohn eines Lehrers in Sulzberg (Allgäu) geboren. Klavierbauer,<lb/>von Heinrich Knote entdeckt, dessen Meisterschüler Adalbert Ebner<lb/>ihn kostenlos ausbildete. Über Königsberg, Nürnberg und Dresden<lb/>kam er nach dem Kriege an die Staatsoper München.</p>
+      <p>Born in Sulzberg (Allgäu), the son of a schoolmaster. Early pro-<lb/>fession: piano maker, was discovered by Heinrich Knote whose<lb/>master-pupil Adalbert Ebner taught him free of charge. Engagements<lb/>in Königsberg, Nuremberg and Dresden, after the war joined the<lb/>Munich State Opera.</p>
+      <p>Né à Sulzberg (Allgäu). Fils d'un instituteur de cette localité.<lb/>Facteur de piano. Découvert par Heinrich Knote, qui se charge de<lb/>son éducation. Königsberg, Nuremberg et Dresde. Est engagé<lb/>après la guerre à l'Opéra National de Munich.</p>
+      <p>Gisela Litz<lb/>- 2. Knappe, 3. Blume II. Gruppe, Floßhilde, Siegrune -</p>
+      <p>Studierte in Berlin und Frankfurt a. M. Erstes Engagement<lb/>Staatstheater Wiesbaden. Augenblickliches Engagement Staatsoper<lb/>Hamburg.</p>
+      <p>Studied in Berlin and Frankfurt. First Engagement: State Theatre<lb/>Wiesbaden. At present member of the State Opera Hamburg.</p>
+      <p>Etudie à Berlin et Francfort. Premier contrat avec l'Opéra National<lb/>de Wiesbaden. Actuellement elle chante à l'Opéra National de<lb/>Hambourg.</p>
+      <p>{12-24}</p>
+      <p>George London<lb/>- Amfortas -</p>
+      <p>Geboren in Montreal. Begann schon als Schüler des City College<lb/>in Los Angeles in Kirchen, Chören und in Hollywood-Studios zu<lb/>singen. Im November 1951 Debut an der Metropolitan Oper,<lb/>New York. Wiederholte Gastspiele an der Wiener Staatsoper,<lb/>Mailänder Scala, bei den Salzburger Festspielen. 1951 zum ersten<lb/>Mal in Bayreuth.</p>
+      <p>Born in Montreal. While attending Los Angeles City College sang<lb/>in churches, choirs and in Hollywood Studios. In November 1951<lb/>made his debut with the Metropolitan Opera New York. Several<lb/>guest appearances at the Vienna State Opera, La Scala Milan and<lb/>the Salzburg Festival. In 1951 for the first time in Bayreuth.</p>
+      <p>Né à Montréal. Chante déjà comme élève de l'Ecole Municipale<lb/>à Los Angeles dans des églises, des chœurs et des Hollywood-<lb/>Studios. En novembre 1951 débute au Metropolitan Opera New<lb/>York. Tournées à l'Opéra National de Vienne, La Scala de Milan,<lb/>aux Festivals de Salzbourg. En 1951 la première fois à Bayreuth.</p>
+      <p>Ira Malaniuk<lb/>- Fricka, Waltraute (Götterdämmerung), Brangäne, IX. Symphonie -</p>
+      <p>Studium bei Adam Didur und Anna Bahr-Mildenburg. Kam als<lb/>dramatische Altistin zuerst nach Graz, dann nach Zürich, jetzt<lb/>1. dramatische Altistin der Staatsoper München. Gastspiele in<lb/>Barcelona, Brüssel, Rom, Neapel, Venedig, Buenos Aires und<lb/>England.</p>
+      <p>Studied with Adam Didur and Anna Bahr-Mildenburg. As Dramatic<lb/>Contralto first in Graz, then in Zurich, at present Leading Dramatic<lb/>Contralto of the Munich State Opera. Guest appearances in Barce-<lb/>lona, Brussels, Rome, Naples, Venice, Buenos Aires and England.</p>
+      <p>Etudie avec Adam Didur et Anna Bahr-Mildenburg. Début comme<lb/>contralto dramatique à Graz, ensuite à Zurich. Actuellement<lb/>premier contralto dramatique à l'Opéra National de Munich.<lb/>Tournées à Barcelone, Bruxelles, Rome, Naples, Venice, Buenos<lb/>Aires et en Angleterre.</p>
+      <p>Martha Mödl<lb/>· Brünnhilde, Isolde, Kundry -</p>
+      <p>Ständige Engagements in Hamburg, Wien und Mailand. Seit 1951<lb/>in Bayreuth.</p>
+      <p>Permanent member of the operas in Hamburg, Vienne and Milan<lb/>Since 1951 at the Bayreuth Festival.</p>
+      <p>Contrats with Hambourg, Vienne et Milan. Depuis 1951 aux festi-<lb/>vals de Bayreuth.</p>
+      <pb type="scan" n="14" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p014.png" xml:id="scan_014"/>
+      <p>{12-25}</p>
+      <p>Gustav Neidlinger<lb/>- Alberich, Kurwenal -</p>
+      <p>In Mainz geboren, wo er auch seine Bühnentätigkeit begann. Über<lb/>Plauen kam er nach Hamburg. Jetzt Bariton der Staatsoper Stuttgart.</p>
+      <p>Born in Mainz, where he began his career. Then Plauen and<lb/>Hamburg. Now Baritone at the State Opera Stuttgart.</p>
+      <p>Né à Mayence où il débute, chante ensuite à Plauen et à Ham-<lb/>bourg. Actuellement baryton à l'Opéra d'Etat de Stuttgart.</p>
+      <p>Birgit Nilsson<lb/>- Sopranpartie IX. Symphonie -</p>
+      <p>1. Dramatische Sängerin der Kgl. Oper Stockholm. Gastspiele bei<lb/>internationalen Festspielen in England und Italien.</p>
+      <p>Leading Dramatic Soprano of the Royal Opera Stockholm. Guest<lb/>Appearances at international festivals in England and Italy.</p>
+      <p>Premier Soprano dramatique de l'Opéra Royal de Stockholm.<lb/>Tournées à des festivals internationaux en Angleterre et en Italie.</p>
+      <p>Sibylla Plate<lb/>- Grimgerde -</p>
+      <p>Geb. in Bremen, Studium in Bremen, Berlin und Mailand, Konzert-<lb/>und Oratoriensängerin. 1952/53 u. a. Konzerte unter Prof. Ramin<lb/>in Basel, Bern, Zürich, Genf, Paris, Frankfurt, Stuttgart, Leipzig<lb/>und unter Prof. Kurt Thomas in Saarbrücken, Paris, Valencia,<lb/>Barcelona und Saragossa.</p>
+      <p>Born in Bremen, studied in Bremen, Berlin and Milan. Concert<lb/>and oratorio singer, 1952/53 under the direction of Prof. Ramin<lb/>in Basle, Bern, Zurich, Geneva, Paris, Frankfurt, Stuttgart and<lb/>Leipzig. Under the direction of Kurt Thomas in Saarbrücken, Paris,<lb/>Valencia, Barcelona and Saragossa.</p>
+      <p>Née à Brême, étudie à Brême, Berlin et Milan. Chante concerts<lb/>et oratorios. En 1952/53 avec le Prof. Ramin à Bâle, Berne, Zurich,<lb/>Genève, Paris, Francfort, Stuttgart et Leipzig. Avec Kurt Thomas<lb/>à Sarrebruck, Paris, Valence, Barcelone et Saragosse.</p>
+      <p>{12-26}</p>
+      <p>Hetty Plümacher<lb/>- Wellgunde, 3. Blume I. Gruppe und 1. Knappe -</p>
+      <p>Rheinländerin. Studierte an der Kölner Musikhochschule und bei<lb/>Kammersängerin Adelheid Wollgarten. Zur Zeit als Mezzo am<lb/>Staatstheater Stuttgart tätig. Engagements und Gastspiele in Italien,<lb/>Frankreich, Norwegen und der Schweiz.</p>
+      <p>Born in Rhineland. Studied at the Academy of Music in Cologne<lb/>and with Kammersängerin Adelheid Wollgarten. At present as<lb/>Mezzo member of the State Theatre Stuttgart. Engagements and<lb/>guest appearances in Italy, France, Norway and Switzerland.</p>
+      <p>Etudie à l'Ecole Supérieure de Musique de Cologne et avec<lb/>Kammersängerin Adelheid Wollgarten. Actuellement pensionnaire<lb/>du Théâtre d'Etat de Stuttgart. Contrats et tournées en Italie,<lb/>France, Norvège et en Suisse.</p>
+      <p>Regina Resnik<lb/>- Sieglinde und 3. Norn -</p>
+      <p>Geboren und ausgebildet in New York City. 1942 Debut als Lady<lb/>Macbeth, seit 1944 als dramatischer Sopran an der Metropolitan Opera<lb/>New York. Während der letzten neun Jahre auch Gastspiele an<lb/>der San Francisco Opera, Opera Nacional Mexico sowie in Cuba,<lb/>Schweden und Dänemark.</p>
+      <p>Born in New York City, received professional training there,<lb/>1942 debut as Lady Macbeth, since 1944 Leading Dramatic Soprano,<lb/>Metropolitan Opera New York. During the last nine years also<lb/>guest appearances at the San Francisco Opera, Opera Nacional<lb/>Mexico, in Cuba, Sweden and Denmark.</p>
+      <p>Née à New York City, où elle étudie le chant. En 1942 elle débute<lb/>comme Lady Macbeth, depuis 1944 premier soprano dramatique<lb/>au Metropolitan Opera à New York. Pendant les dernières neuf<lb/>années tournées à l'Opéra de San Francisco, à l'Opera Nacional<lb/>Mexico, en Cube, Suède et en Danemark.</p>
+      <p>Erika Schubert<lb/>- Roßweiße -</p>
+      <p>In Graz geboren und am dortigen Konservatorium studiert. Von 1942<lb/>bis zur Schließung am Theater der Stadt Straßburg, seit 1945 Ver-<lb/>einigte Bühnen Graz.</p>
+      <p>Born in Graz (Austria), studied there at the Academy of Music.<lb/>From 1942 in Strassburg, until the Municipal Theatre was closed.<lb/>Since 1945 Vereinigte Bühnen Graz.</p>
+      <p>Née à Graz où elle étudie au Conservatoire. Depuis 1942 à Stras-<lb/>bourg, jusqu' à ce que le Théâtre Municipal est fermé. Depuis<lb/>1945: Vereinigte Bühnen Graz.</p>
+      <pb type="scan" n="15" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p015.png" xml:id="scan_015"/>
+      <p>{12-27}</p>
+      <p>Lise Sorrell<lb/>- Waltraute („Walküre“) -</p>
+      <p>Musikstudium in New York, erstes Auftreten bei den Boston<lb/>Symphonie Festspielen 1949. Für die kommende Spielzeit als dra-<lb/>matische Altistin an die Städtischen Bühnen Nürnberg verpflichtet.</p>
+      <p>Studied music in New York, made her debut with the Boston<lb/>Symphony Festival in 1949. Engaged for the next season as Dra-<lb/>matic Contralto by the Municipal Theatres Nuremberg.</p>
+      <p>Etudie à New York, débute au Symphonie Festival de Boston en<lb/>1949. Pour la prochaine saison contrat comme contralto dramatique<lb/>avec les Théâtres Municipales de Nuremberg.</p>
+      <p>Eleanor Steber<lb/>- Elsa -</p>
+      <p>Geboren in Wheeling. Studierte am New England Conservatory<lb/>und in New York. 1940 Debut als Sophie im Rosenkavalier an der<lb/>Metropolitan Opera New York, seitdem dort achtzehn Hauptpartien.<lb/>Konzertreisen durch USA und Kanada. Gastspiele bei verschiedenen<lb/>Rundfunk- und Television-Gesellschaften, 1947 Glyndebourne Opera<lb/>und Edinburgh Festival.</p>
+      <p>Born in Wheeling. Studied music at the New England Conservatory<lb/>and in New York. In 1940 made her debut as Sophie in Strauss's<lb/>„Der Rosenkavalier“ at the Metropolitan Opera New York. Since<lb/>then has sung 18 other important roles there. Gave concerts<lb/>throughout USA and Canada. Guest appearances with radio and<lb/>television-corporations. 1947 engaged by Glyndebourne Opera<lb/>and the Edinburgh Festival.</p>
+      <p>Née à Wheeling. Etudie au New England Conservatoire et à New<lb/>York. Débute en 1940 comme Sophie dans „Der Rosenkavalier“ de<lb/>Strauss au Metropolitan Opera de New York, y chante ensuite<lb/>dix-huit rôles principaux. Tournées aux Etats-Unis et au Canada.<lb/>Chante souvent à la Radio et Television. En 1947 engagée au<lb/>Glyndebourne Opera et au festival d'Edinburg.</p>
+      <p>Gerhard Stolze<lb/>- Froh, Hirte, 3. Knappe, 1. Edler -</p>
+      <p>In Dessau geb., Schauspieler. Studium bei Willy Bader und Rudolf<lb/>Dittrich Dresden. Seit 1949 Staatsoper Dresden. Festen Gastvertrag<lb/>Komische Oper Berlin. Ab Herbst 1953 jugendl. Heldentenor an<lb/>der Deutschen Staatsoper Berlin.</p>
+      <p>Born in Dessau. Was a professional actor, lather studied with Willy<lb/>Bader and Rudolf Dittrich in Dresden. Since 1949 member of the<lb/>Dresden State Opera. Guest artist of the Comic Opera in Berlin.<lb/>Since autumn 1953 Leading Tenor of the Berlin State Opera.</p>
+      <p>Né à Dessau, d'abord acteur dramatique. Etudes de chant avec<lb/>Willy Bader et Rudolf Dittrich à Dresde. Depuis 1949 à l'Opéra<lb/>National de Dresde. Engagé à l'Opéra Comique de Berlin. Depuis<lb/>automne 1953 pensionnaire de l'Opéra d'Etat de Berlin comme<lb/>ténor héroique.</p>
+      <p>{12-28}</p>
+      <p>Rita Streich<lb/>- Waldvogel, 1. Blume I. Gruppe -</p>
+      <p>Schülerin von Maria Ivogün und Erna Berger. 1946-1950 Koloratur-<lb/>sopran an der Staatsoper Berlin, seit 1951 Städtische Oper Berlin.</p>
+      <p>Pupil of Maria Ivogün and Erna Berger. 1946-1950 Coloratura-<lb/>Soprano at the Berlin State Opera, since 1951 Municipal Opera<lb/>Berlin.</p>
+      <p>Elève de Maria Ivogün et d'Erna Berger. De 1946 à 1950 soprano<lb/>coloratur à l'Opéra d'Etat de Berlin, depuis 1951 à l'Opéra Muni-<lb/>cipal de Berlin</p>
+      <p>Anna Tassopoulos<lb/>- 1. Blume II. Gruppe -</p>
+      <p>geboren in Athen. Engagements: Berlin und Düsseldorf. Gastspiele<lb/>in Wien, München, Rom und Athen.</p>
+      <p>Born in Athens. Engagements: Berlin and Düsseldorf. Guest appear-<lb/>ances in Vienna, Munich, Rome and Athens.</p>
+      <p>Née à Athènes. Engagée à Berlin et Dusseldorf. Tournées à Vienne,<lb/>Munich, Rome et Athènes.</p>
+      <p>Liselotte Thomamüller - Kammersängerin<lb/>- Helmwige -</p>
+      <p>Gesangstudium an der Hochschule für Musik und Theater in Mann-<lb/>heim. Berufliche Ausbildung: Gesangspädagoge Max Schöttl, Mann-<lb/>heim und Hochschule für Musik und Theater Mannheim. Erstes<lb/>Engagement am Stadttheater Koblenz, später Gastspiele in Italien,<lb/>Spanien, Holland. Gegenwärtig am Opernhaus Bremen tätig.</p>
+      <p>Studied singung with Prof. Max Schöttl of Mannheim and received<lb/>further professional training at the Academy of Music and Drama,<lb/>also in Mannheim. Debut at the Municipal Theatre Coblence, late<lb/>on guest appearances in Italy, Spain, Holland. At present at the<lb/>Opera House Bremen.</p>
+      <p>Etudie avec Max Schöttl et à l'Ecole Supérieure de Théâtre et de<lb/>Musique de Mannheim. Débute au Théâtre Municipal de Coblence.<lb/>Tournées en Italie, Hollande, Espagne. Actuellement pensionnaire<lb/>de l'Opéra de Brême.</p>
+      <pb type="scan" n="16" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p016.png" xml:id="scan_016"/>
+      <p>{12-29}</p>
+      <p>Gene Tobin<lb/>- Junger Seemann, 1. Gralsritter -</p>
+      <p>Geboren in Philadelphia, USA. Nach dem Kriege Gesangsstudien in<lb/>New York City, Debut am Broadway, von der National Concert &amp;<lb/>Artists Corporation für Konzerte und Television verpflichtet. Nach<lb/>einem Gastspiel in Düsseldorf im Dezember 1952 einen 2-Jahres-<lb/>vertrag für die dortige Oper.</p>
+      <p>Born in Philadelphia. After the war studied singing in New York<lb/>City, Debut on Broadway, engaged by National Concert &amp; Artists<lb/>Corporation for concerts, television and radio. After a guest<lb/>appearance in Dusseldorf in December 1952 a two year contract<lb/>with the Opera House.</p>
+      <p>Né à Philadelphia, études du chant à New York City après la<lb/>guerre, débute au Broadway, engagé par la "National Concert &amp;<lb/>Artists Corporation" (concerts et television). Il chante à l'Opéra<lb/>de Dusseldorf en décembre 1952 et est aussitôt engagé pour<lb/>deux années.</p>
+      <p>Hermann Uhde<lb/>- Donner, Gunther, Telramund, Klingsor -</p>
+      <p>Fand 1936 sein erstes Engagement am Staatstheater Bremen und<lb/>wechselte im nächsten Jahrzehnt über Freiburg, München, Den Haag,<lb/>Hannover, Hamburg und Staatsoper Wien an die Staatsoper München,<lb/>der er noch heute angehört. Gastspiele in Berlin, Mailänder Scala,<lb/>Neapel, Covent Garden London, Salzburg.</p>
+      <p>First engagement at the State Theatre Bremen. During the next ten<lb/>years appeared at Freiburg, Munich, The Hague, Hannover, Ham-<lb/>burg and Vienna State Opera. Permanent artist of the Munich State<lb/>Opera. Guest appearances in Berlin, La Scala Milan, Naples, Covent<lb/>Garden London and Salzburg.</p>
+      <p>Commence sa carrière au Théâtre d'Etat de Brême et la poursuit<lb/>par Fribourg, Munich, la Hage, Hannovre, Hambourg, l'Opéra<lb/>d'Etat de Vienne et de Munich, où il chante encore aujourd'hui.<lb/>Tournées à Berlin, La Scala de Milan, Naples, Covent Garden<lb/>Londres et Salzbourg.</p>
+      <p>Astrid Varnay<lb/>- Brünnhilde, Isolde, Ortrud -</p>
+      <p>Geboren in Stockholm. Lebt seit ihrer Kindheit in USA. Nach<lb/>eineinhalb Jahren Ausbildung von der Metropolitan Oper als<lb/>dramatischer Sopran verpflichtet. Sang seit 1941 14 große Wagner-<lb/>partien sowie italienische Rollen. Gastierte in Oper und Konzert<lb/>in USA, Kanada, Mexico, Rio, Buenos Aires, London, Italien,<lb/>Berlin und München.</p>
+      <p>Born in Stockholm. Has lived in USA since childhood. After<lb/>1½ years of study engaged by the Metropolitan Opera New<lb/>York as Dramatic Soprano. Since 1941 has sang 14 leading<lb/>Wagnerian roles as well as Italien roles. Guest artist in opera and<lb/>concerts in USA, Canada, Mexico, Rio, Buenos Aires, London,<lb/>Italy, Berlin and Munich.</p>
+      <p>Née à Stockholm. Depuis son enfance aux Etats-Unis. Après<lb/>1½ années d'études de chant engagée au Metropolitan Opera<lb/>de New York comme soprano dramatique. Chante à partir de 1941,<lb/>14 rôles Wagneriens et des rôles Italiens. Tournées d'opéra et<lb/>de concert: Etats-Unis, Canada, Mexico, Rio, Buenos Aires, Londres,<lb/>Italie, Berlin et Munich.</p>
+      <p>{12-30[?]}</p>
+      <p>Ramon Vinay<lb/>- Parsifal, Tristan, Siegmund -</p>
+      <p>Geboren in Chile. Erzogen in Frankreich. Engagements in Mailand,<lb/>Neapel, Palermo, Rom, Triest, Mexico, San Francisco, Metropolitan<lb/>New York, Santiago Chile, Lissabon, Salzburg, Covent Garden<lb/>London, Holland Festival etc.</p>
+      <p>Born in Chile, S. A. Educated in France. Engagements at Milan,<lb/>Naples, Palermo, Rome, Triest, Mexico, San Francisco, at the<lb/>Metropolitan Opera New York, Santiago Chile, Lisbon, Salzburg,<lb/>at Covent Garden London and the Holland Festival etc.</p>
+      <p>Né à Chile, élevé en France. Contrats à Milan, Naples, Palerme,<lb/>Rome, Trieste, Mexico, San Francisco, au Metropolitan Opera de<lb/>New York, à Santiago Chile, Lisbonne, Salzbourg, Covent Garden<lb/>Londres et aux Festivals de Hollande etc.</p>
+      <p>Ludwig Weber<lb/>- Fasolt, Marke, Gurnemanz, IX. Symphonie -</p>
+      <p>In Wien geboren. Begann 1920 an der dortigen Volksoper seine<lb/>Bühnenlaufbahn, die ihn über Elberfeld, Düsseldorf und München<lb/>1946 nach Wien zurückführte, diesmal an die Staatsoper. Zahlreiche<lb/>Gastspiele in ganz Europa und Südamerika.</p>
+      <p>Born in Vienna. Began his career there at the Volksoper. Then Elber-<lb/>feld, Dusseldorf and Munich, and in 1949 returned to Vienna to<lb/>the State Opera. Numerous guest appearances throughout Europe<lb/>and South-America.</p>
+      <p>Né à Vienne. Commence sa carrière en 1920, au Volksoper<lb/>de cette ville, et la poursuit par Elberfeld, Dusseldorf et Munich,<lb/>en 1946 de nouveau à Vienne, à l'Opéra National. Nombreuses<lb/>tournées en Europe et en Amérique du Sud.</p>
+      <p>Wolfgang Windgassen - Kammersänger<lb/>- Siegfried, Parsifal, Lohengrin -</p>
+      <p>Hatte das gütige Geschick, als Sohn des bedeutenden Helden-<lb/>tenors Fritz Windgassen, bei dem er auch dramatischen Unterricht<lb/>genoß, eine geebnete künstlerische Laufbahn zu finden. Seit 1945<lb/>gehört er als Heldentenor dem Staatstheater Stuttgart an.</p>
+      <p>Son of the well-known heroic tenor Fritz Windgassen, who gave<lb/>him instruction in dramatics. Since 1945 has been a permanent<lb/>member of the State Theatre in Stuttgart, where he sings the heroic<lb/>tenor roles.</p>
+      <p>Fils du ténor héroïque réputé Fritz Windgassen, qui le forma, doit<lb/>à ce dernier de voir sa carrière facilitée. Depuis 1945 tenor<lb/>héroïque à l'Opéra d'Etat de Stuttgart.</p>
+      <pb type="scan" n="17" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p017.png" xml:id="scan_017"/>
+      <p>{12-31}</p>
+      <p>Gerda Wismar<lb/>- 2. Blume II. Gruppe -</p>
+      <p>Studium bei Prof. Ivo H. Götte-Berlin, Anfängerjahre 1947-49 Staats-<lb/>oper Berlin, ein Jahr Jugendlich-Dramatische am Staatstheater<lb/>Schwerin, seit 1951 Staatstheater Braunschweig.</p>
+      <p>Studied with Prof. Ivo H. Götte, Berlin. 1947-1949 began at the<lb/>Berlin State Opera. One year Dramatic Soprano at the State Theatre<lb/>Schwerin, since 1951 at the State Theatre Braunschweig.</p>
+      <p>Etudie avec le Prof. Ivo H. Götte à Berlin, débute de 1947 à 1949<lb/>à l'Opéra d'Etat de Berlin. Une année soprano dramatique au<lb/>Théâtre d'Etat de Schwerin, depuis 1951 au Théâtre d'Etat de<lb/>Braunschweig.</p>
+      <p>Erich Witte - Kammersänger<lb/>- Loge -<lb/>Kam über Bremen, Wiesbaden, Breslau 1942 an die Staatsoper<lb/>Berlin. Seit 1945 auch Mitglied der Städtischen Oper Berlin. Gast-<lb/>spiele an der Metropolitan Opera New York, in Buenos Aires,<lb/>Monte Carlo und Wien. Sang bereits 1943 und 1944 in Bayreuth.</p>
+      <p>Sang in Bremen, Wiesbaden, Breslau, and in 1942 at the Berlin<lb/>State Opera. Since 1945 also member of the Municipal Opera<lb/>Berlin. Guest appearances at the Metropolitan Opera New York,<lb/>in Buenos Aires, Monte Carlo and Vienna. Sang previonsly in<lb/>1943 and 1944 at Bayreuth.</p>
+      <p>Brême, Wiesbaden, Breslau. En 1942 à l'Opéra d'Etat de Berlin.<lb/>Depuis 1945 pensionnaire de l'Opéra Municipal de Berlin. Tournées<lb/>au Metropolitan Opera New York, à Buenos Aires, Monte Carlo<lb/>et Vienne. A déjà chanté en 1943 et en 1944 à Bayreuth.</p>
+      <p>Erika Zimmermann<lb/>- Woglinde, 2. Blume, I. Gruppe -</p>
+      <p>Geboren in Königsberg i. Pr. Engagement: München. Als Gast in<lb/>Triest und Venedig.</p>
+      <p>Born in Königsberg. Engagement: Munich. Guest artist in Trieste<lb/>and Venice.</p>
+      <p>Née à Königsberg. Engagée à Munich. Tournées à Trieste et Venice.</p>
+      <p>{12-32}</p>
+      <p>Werner Faulhaber †</p>
+      <p>Wenige Wochen vor Beginn der Festspiele verunglückte Werner Faulhaber<lb/>tödlich im Alter von 27 Jahren. Wir verloren in ihm einen jungen Künstler,<lb/>der durch seine Stimme und darstellerische Begabung zu den größten Hoff-<lb/>nungen zählte. Faulhaber gehörte seit 1947 dem Ensemble der Staatsoper<lb/>Dresden an und wirkte 1951 und 1952 bei den Bayreuther Festspielen mit.<lb/>Bei den diesjährigen Festspielen sollte er wiederum den Steuermann,<lb/>Donner und 2. Gralsritter singen. Festspielleitung und Ensemble werden<lb/>ihm ein ehrendes Andenken bewahren.</p>
+      <p>Werner Faulhaber was killed in an accident at the age of 27, a few weeks<lb/>before the beginning of the Bayreuth Festival. We have lost in him a very<lb/>talented artist in whom we had great hopes for the future. Faulhaber had<lb/>been since 1947 a member of the Dresden State Opera and sang in the Bayreuth<lb/>Festivals of 1951 and 1952. In this year's festival he was again to sing the<lb/>roles of the helmsman, Donner and the second Knight of the Grail. The<lb/>management and company of the Festival Theatre will hold his name in<lb/>respectful memory.</p>
+      <p>Werner Faulhaber mourut à la suite d'un accident à l'âge de 27 ans quelques<lb/>semaines avant le commencement du Festival de Bayreuth. Nous perdons<lb/>du fait de sa mort un jeune chanteur très doué dont la carrière brillante<lb/>dans le domaine de l'art scénique fut ainsi brusquement interrompue.<lb/>Depuis 1947 pensionnaire de l'Opéra d'Etat de Dresde, il a chanté aux<lb/>Festivals de Bayreuth en 1951 et en 1952. Cette année, il devait chanter<lb/>le "Steuermann", le "Donner" et le 2 ème "Gralsritter". La direction ainsi<lb/>que tout l'ensemble du Festival de Bayreuth lui garderont une mémoire<lb/>honorable.</p>
+      <pb type="scan" n="18" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p018.png" xml:id="scan_018"/>
+      <p>{12-33}</p>
+      <p>VERWALTUNG - ADMINISTRATION</p>
+      <p>Heinrich Sesselmann<lb/>Personal- und Finanzverwaltung<lb/>Personnel and Finance<lb/>Service financier et du personnel</p>
+      <p>Emmy Rottler<lb/>Leitung des Kartenbüros<lb/>Box office<lb/>Vente des billets</p>
+      <p>Gerhard Scholz<lb/>Buchhaltung<lb/>Accountancy<lb/>Comptabilité</p>
+      <p>Christian Ebersberger<lb/>Hausverwaltung<lb/>House administration<lb/>Economat</p>
+      <p>{12-34}</p>
+      <p>RICHARD-WAGNER-FESTSPIELE 1953</p>
+      <p>LOHENGRIN</p>
+      <p>Donnerstag, 23. Juli          Samstag, 1. August          Dienstag, 4. August<lb/>Freitag, 7. August            Sonntag, 16. August         Freitag, 21. August</p>
+      <p>TRISTAN UND ISOLDE</p>
+      <p>Donnerstag, 30. Juli          Mittwoch, 5. August         Donnerstag, 13. August<lb/>              Dienstag, 18. August         Samstag, 22. August</p>
+      <p>PARSIFAL</p>
+      <p>Freitag, 24. Juli             Sonntag, 2. August          Samstag, 15. August<lb/>              Mittwoch, 19. August         Sonntag, 23. August</p>
+      <p>DER RING DES NIBELUNGEN</p>
+      <p>Das Rheingold                 Samstag, 25. Juli           Samstag, 8. August<lb/>Die Walküre                   Sonntag, 26. Juli           Sonntag, 9. August<lb/>Siegfried                     Montag, 27. Juli            Montag, 10. August<lb/>Götterdämmerung               Mittwoch, 29. Juli          Mittwoch, 12. August</p>
+      <p>IX. SYMPHONIE VON LUDWIG VAN BEETHOVEN</p>
+      <p>Dienstag, 11. August</p>
+      <pb type="scan" n="19" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p019.png" xml:id="scan_019"/>
+      <p>{12-35}</p>
+      <p>VERZEICHNIS DER MITWIRKENDEN</p>
+      <p>Gesamtleitung: Wieland Wagner und Wolfgang Wagner<lb/>Dirigenten: Paul Hindemith, Eugen Jochum, Joseph Keilberth,<lb/>Clemens Krauss<lb/>Inszenierung: „Parsifal", „Der Ring des Nibelungen", „Tristan und<lb/>Isolde": Wieland Wagner<lb/>„Lohengrin": Wolfgang Wagner<lb/>Chöre: Wilhelm Pitz, Aachen<lb/>Assistent der Gesamtleitung:<lb/>Carl-Heinz Klebe, Karlsruhe<lb/>Kostümentwürfe „Ring": M. Z. Klomp, Berlin<lb/>Solorepetitoren und musikalische Assistenz:<lb/>Walter Aign, Stuttgart, Walter Born, Karlsruhe,<lb/>Helmut Fellmer, Kassel, Robert Filzwieser, Wien,<lb/>Gilbert Graf Gravina, Bayreuth, Rudolf John, Dresden,<lb/>Max Kojetinsky, Graz, Gerhard Lenssen, Dresden,<lb/>Horst Stein, Hamburg, Dr. Herman Weigert, New York,<lb/>Hermann Weiß, Coburg, Paul Zelter, Darmstadt.<lb/>Werkstättenleitung: Otto Wissner, Bayreuth<lb/>Beleuchtung: Willy Schubert, Berlin<lb/>Henry Hensel, Braunschweig<lb/>Techn. Bühnenleitung: Arthur Eisenschmidt, Braunschweig<lb/>Kostümwerkstätten: Fred Thiel, Bayreuth<lb/>Maskenbildnerei: Willy Klose, Wuppertal<lb/>Josef Krott, Frankfurt a. M.<lb/>Regieassistenz „Lohengrin": Ulrich Brecht, Wiesbaden<lb/>Bühneninspektion: Friedrich Deiß, Bayreuth<lb/>Adam Hofmann, Nürnberg<lb/>Souffleur: Rudolf Kaiser, Köln</p>
+      <p>Künstlerische Verwaltung und Organisation:<lb/>Dr. Karl Andreas Wirz, München<lb/>Verlag und Werbung: Herbert Barth, Bayreuth<lb/>Presse: Dr. Walter Eichner, München<lb/>Photographie: Liselotte Strelow, Düsseldorf<lb/>Siegfried Lauterwasser, Überlingen</p>
+      <p>{12-36}</p>
+      <p>Solisten</p>
+      <p>LOHENGRIN<lb/>Musikalische Leitung: Joseph Keilberth</p>
+      <p>König Heinrich       Josef Greindl            2. Edler       Josef Janko<lb/>Lohengrin            Wolfgang Windgassen      3. Edler       Alfons Herwig<lb/>Elsa von Brabant     Eleanor Steber           4. Edler       Theo Adam<lb/>Telramund            Hermann Uhde             1. Edelpage    Lieselotte Kiefer<lb/>Ortrud               Astrid Varnay            2. Edelpage    Gerda Grasser<lb/>Heerrufer            Hans Braun               3. Edelpage    Erika Eskelsen<lb/>1. Edler             Gerhard Stolze           4. Edelpage    Roswitha Burow<lb/>                     Gottfried                Gerold Weber</p>
+      <p>TRISTAN UND ISOLDE<lb/>Musikalische Leitung: Eugen Jochum</p>
+      <p>Tristan              Ramon Vinay              Melot          Hasso Eschert<lb/>König Marke          Ludwig Weber             Brangäne       Ira Malaniuk<lb/>Isolde               Martha Mödl II, III      Junger Seemann Gene Tobin<lb/>                     Astrid Varnay I, IV      Ein Hirt       Gerhard Stolze<lb/>Kurwenal             Gustav Neidlinger        Ein Steuermann Theo Adam</p>
+      <p>PARSIFAL<lb/>Musikalische Leitung: Clemens Krauss</p>
+      <p>Amfortas             George London I - IV     1. Knappe           Hetty Plümacher<lb/>                     Hans Hotter V            2. Knappe           Gisela Litz<lb/>Titurel              Josef Greindl            3. Knappe           Gerhard Stolze<lb/>Gurnemanz            Ludwig Weber             4. Knappe           Hugo Kratz<lb/>Parsifal             Ramon Vinay I, II, III   1. Blume I. Gruppe  Rita Streich<lb/>                     Wolfgang Windgassen IV   2. Blume    „       Erika Zimmermann<lb/>Klingsor             Herman Uhde              3. Blume    „       Hetty Plümacher<lb/>Kundry               Martha Mödl              1. Blume II. Gruppe Anna Tassopoulos<lb/>1. Gralsritter       Gene Tobin               2. Blume    „       Gerda Wismar<lb/>2. Gralsritter       Theo Adam                3. Blume    „       Gisela Litz<lb/>                     Altsolo                  Maria von Ilosvay</p>
+      <pb type="scan" n="20" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p020.png" xml:id="scan_020"/>
+      <p>{12-37}</p>
+      <p>DER RING DES NIBELUNGEN<lb/>Musikalische Leitung: I Joseph Keilberth<lb/>                      II Clemens Krauss</p>
+      <p>DAS RHEINGOLD<lb/>Wotan          Hans Hotter            Fafner         Josef Greindl<lb/>Donner         Hermann Uhde           Fricka         Ira Malaniuk<lb/>Froh           Gerhard Stolze         Freia          Bruni Falcon<lb/>Loge           Erich Witte            Erda           Maria von Ilosvay<lb/>Alberich       Gustav Neidlinger      Woglinde       Erika Zimmermann<lb/>Mime           Paul Kuën              Wellgunde      Hetty Plümacher<lb/>Fasolt         Ludwig Weber           Floßhilde      Gisela Litz</p>
+      <p>DIE WALKÜRE<lb/>Siegmund       Ramon Vinay            Gerhilde       Brünnhild Friedland<lb/>Hunding        Josef Greindl          Ortlinde       Bruni Falcon<lb/>Wotan          Hans Hotter            Waltraute      Lise Sorrell<lb/>Sieglinde      Regina Resnik          Schwertleite   Maria von Ilosvay<lb/>Brünnhilde     Martha Mödl I          Helmwige       Liselotte Thomamüller<lb/>               Astrid Varnay II       Siegrune       Gisela Litz<lb/>Fricka         Ira Malaniuk           Grimgerde      Sibylla Plate<lb/>                                      Roßweiße       Erika Schubert</p>
+      <p>SIEGFRIED<lb/>Siegfried      Wolfgang Windgassen    Erda           Maria von Ilosvay<lb/>Mime           Paul Kuën              Brünnhilde     Martha Mödl I<lb/>Wanderer       Hans Hotter                           Astrid Varnay II<lb/>Alberich       Gustav Neidlinger      Waldvogel      Rita Streich<lb/>Fafner         Josef Greindl</p>
+      <p>GÖTTERDÄMMERUNG<lb/>Siegfried      Wolfgang Windgassen    Erste Norn     Maria von Ilosvay<lb/>Gunther        Hermann Uhde           Zweite Norn    Ira Malaniuk<lb/>Alberich       Gustav Neidlinger      Dritte Norn    Regina Resnik<lb/>Hagen          Josef Greindl          Waltraute      Ira Malaniuk<lb/>Brünnhilde     Martha Mödl I          Woglinde       Erika Zimmermann<lb/>               Astrid Varnay II       Wellgunde      Hetty Plümacher<lb/>Gutrune        Natalie Hinsch-Gröndahl Floßhilde     Gisela Litz</p>
+      <p>IX. SYMPHONIE VON LUDWIG VAN BEETHOVEN<lb/>Dirigent: Paul Hindemith</p>
+      <p>Solisten:      Birgit Nilsson (Sopran)               Ira Malaniuk (Alt)<lb/>               Anton Dermota (Tenor)                 Ludwig Weber (Baß)</p>
+      <p>               Chöre: Wilhelm Pitz</p>
+      <p>{12-38}</p>
+      <p>Festspiel-Orchester</p>
+      <p>VIOLINE</p>
+      <p>Kalki Max, Berlin<lb/>   Konzertmeister<lb/>Lucke Gottfried, Prof., Dresden<lb/>   Konzertmeister<lb/>Roth Willibald, Prof., Detmold<lb/>   Konzertmeister<lb/>Albers Walter, Köln<lb/>Anrath Herbert, Köln<lb/>Borchert Erich, Herford<lb/>Brand Gustav, Hamburg<lb/>Catoire Peter, Berlin<lb/>Epple Hermann, Stuttgart<lb/>Fehse Richard, Berlin<lb/>Fess Walter, Hannover<lb/>Fienbork Gösta, Göttingen<lb/>Fischer Max, Berlin<lb/>Goebel Lutz, Wuppertal<lb/>Häusler Erwin, Bochum<lb/>Höver Helmut, Osnabrück<lb/>Kindscher Erich, Berlin<lb/>Klöcker Peter, Dortmund<lb/>Knaak Karl, Berlin</p>
+      <p>Knauer Bruno, Dresden<lb/>Köppel Reinhold, Berlin<lb/>Kopatschka Cyrill, Osnabrück<lb/>Kunze Alfred, Düsseldorf<lb/>Langen Wilhelm, Coburg<lb/>Leidel Werner, Hamburg<lb/>Nösselt Hans-Joachim, München<lb/>Opitz Josef, Stuttgart<lb/>Oswald Eduard, Prof., Stuttgart<lb/>Röder Walter, Schwerin<lb/>Rosenthal Willi, Berlin<lb/>Rullmann Willy, Kassel<lb/>Rust Ludwig, Hannover<lb/>Schiffmann Hermann, Bremen<lb/>Schneider Gerhard, Dresden<lb/>Schorn Lorenz, Duisburg<lb/>Schröder Franz, Darmstadt<lb/>Schulze Hermann, Bremen<lb/>Smola Gustav-Adolf, Hannover<lb/>Stefansky Reinhold, Stuttgart<lb/>Wangemann Eberhard, Berlin<lb/>Weißenfels Bruno, Berlin<lb/>Wesemann Willy, Aachen<lb/>Wunderlich Alfred, Hamburg</p>
+      <pb type="scan" n="21" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p021.png" xml:id="scan_021"/>
+      <p>{12-19}</p>
+      <p>BRATSCHE<lb/>Bach Friedrich-Wilhelm, Berlin<lb/>Dawiedeit Theo, Wuppertal<lb/>Geese Otto, Kassel<lb/>Harnisch Erich, Hannover<lb/>Jehmlich Alfred, Wiesbaden<lb/>Jopen Heinz, Düsseldorf<lb/>Kessinger Emil, Stuttgart<lb/>Kuntze Victor, Hamburg<lb/>Kupke Werner, Hamburg<lb/>Meinecke Siegfried, München<lb/>Ronnefeld Herbert, Dresden<lb/>Roßmeißl Max, München<lb/>Schneider Horst, Berlin<lb/>Steinweg Johannes, Berlin<lb/>Triebsch Reinhold, Bayreuth<lb/>Weißkirchen Hans, Lübeck</p>
+      <p>CELLO<lb/>Bleyer Georg, Hannover<lb/>Buchner Emil, München<lb/>Esterl Willy, Osnabrück<lb/>Kiskalt Fritz, München<lb/>Klemm Richard, Prof., Berlin<lb/>Köhler Josef, Köln<lb/>Krüger Wolfgang, Hamburg<lb/>Kuntze Rudolf, Dresden<lb/>Rebhan Willy, Berlin<lb/>Rohde Hermann, Berlin<lb/>Schonecke Helmut, Berlin<lb/>Schreiber August, Aachen<lb/>Schürgers Theo, Düsseldorf<lb/>Seuss Willy, Wiesbaden<lb/>Sommer Fritz, Hamburg<lb/>Venus Walter, Berlin</p>
+      <p>KONTRABASS<lb/>Flath Richard München<lb/>Heinze Willi, Dresden<lb/>Karrasch Kurt, Duisburg<lb/>Malik Adolf, Lübeck</p>
+      <p>Rick Helmuth, Hamburg<lb/>Schumacher Hermann, Prof., Berlin<lb/>Starke Alwin, Prof., Dresden<lb/>Stöhr Horst, Hannover<lb/>Weidner Kurt, Berlin<lb/>Wilhelm Linus, Berlin<lb/>Zschenker Georg, Berlin</p>
+      <p>FLÖTE<lb/>Hoefs Heinz, Berlin<lb/>Hübner Bernhard, Berlin<lb/>Jung Nikolaus, Darmstadt<lb/>Kühne Helmut, Berlin<lb/>Luther Paul, Berlin<lb/>Rucker Fritz, Prof., Dresden<lb/>Schneider Hans, Nürnberg</p>
+      <p>OBOE<lb/>Lauschmann Franz, Hamburg<lb/>Rast Hans Georg, Berlin<lb/>Tadge Karl, Berlin<lb/>Tolksdorf Alfred, Dresden<lb/>Zell Georg, Berlin</p>
+      <p>ENGL. HORN<lb/>Brückner Hans, Bamberg<lb/>Vogt Walter, Köln</p>
+      <p>KLARINETTE<lb/>Ebeling Richard, Hannover<lb/>Geuser Heinrich, Prof., Berlin<lb/>Kroll Albert, Düsseldorf<lb/>Künzler Berthold, Berlin<lb/>Mönnig Heinz, Hamburg<lb/>Schreinicke Willy, Prof., Leipzig</p>
+      <p>BASSKLARINETTE<lb/>Kehr Wilhelm, Darmstadt<lb/>Weirauch Herbert, Leipzig</p>
+      <p>{12-20}</p>
+      <p>FAGOTT<lb/>Fugmann Willy, Prof., Berlin<lb/>Haaß Wilhelm, Aachen<lb/>Rothensteiner Rudolf, Bremen<lb/>Schamberger Emil, Köln<lb/>Steinbrecher Karl, Berlin<lb/>Wonneberger Herbert, Berlin</p>
+      <p>KONTRAFAGOTT<lb/>Babucke Arno, Berlin</p>
+      <p>HORN<lb/>Bellroth Heinz, Hannover<lb/>Dressler Herbert, Dresden<lb/>Hahn Gustav A., Dessau<lb/>Himmer Carl, Stuttgart<lb/>Huth Fritz, Prof., Hamburg<lb/>Jahn Rudolf, Darmstadt<lb/>Lind Rolf, Hamburg<lb/>Lohan Heinz, Dresden<lb/>Nemec Franz, Wiesbaden<lb/>Neuling Hermann, Berlin<lb/>Raspe Paul, Köln<lb/>Reuband Walter, Hamburg</p>
+      <p>TENOR- UND BASSTUBA<lb/>Handke Adolf, Hamburg<lb/>Kranz Helmut, Berlin<lb/>Nemec Engelbert, Berlin<lb/>Winkler Erich, Berlin</p>
+      <p>TROMPETE<lb/>Bode Johannes, Prof., Berlin<lb/>Dargel Paul, Berlin<lb/>Krause Alfons, Hamburg<lb/>Krause Georg, Berlin</p>
+      <p>Liebe Willi, Berlin<lb/>Neugebauer Willi, Prof., Köln<lb/>Nierenz Karl, Berlin<lb/>Simon Wilhelm, Dresden</p>
+      <p>BASSTROMPETE<lb/>Hartmann Otto, Hamburg</p>
+      <p>POSAUNE<lb/>Franetzki Emil, Berlin<lb/>Jacobs Alfred, Prof., Berlin<lb/>Klinge Horst, Hannover<lb/>Neumeister Kurt, Hannover<lb/>Orpky Alfons, Dresden<lb/>Walther Willy, Berlin</p>
+      <p>KONTRABASS-POSAUNE<lb/>Ungewitter Wilhelm, Berlin</p>
+      <p>KONTRABASS-TUBA<lb/>Engels Hieronymus, Berlin<lb/>Forker Heinz, Dresden</p>
+      <p>HARFE<lb/>Fischer Elisabeth, Braunschweig<lb/>Gerlach Hanna, Leipzig<lb/>Handke Siegfried, Mannheim<lb/>Ludewig Ingeborg, Dresden<lb/>Schmidt Rudolf, Düsseldorf<lb/>Thiem Heinrich, Karlsruhe<lb/>Dr. Zingel Hans, Köln</p>
+      <p>PAUKE UND SCHLAGZEUG<lb/>Lembens Hans, Berlin<lb/>Maurer Willi, Mannheim<lb/>Rebhan Erwin, Dortmund<lb/>Sondermann Peter, Dresden</p>
+      <pb type="scan" n="22" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p022.png" xml:id="scan_022"/>
+      <p>{12-21}</p>
+      <p>Festspiel-Chor</p>
+      <p>1. SOPRAN<lb/>Autenrieth Isolde, Koblenz<lb/>Barth Dorothea, Leipzig<lb/>Bergmann Christa, Krefeld<lb/>Bluth Barbara, Detmold<lb/>Bodewig Maria, Krefeld<lb/>Didion Anneliese, Bremen<lb/>Ebersberger Lissy, Bayreuth<lb/>Habermann Viola, Bayreuth<lb/>Hoppe Hildegard, Berlin<lb/>Ipsen Ingrid, Wien<lb/>Keim Hildemarie, Bayreuth<lb/>Kiefer Lieselotte, Stuttgart<lb/>Richter Leonie, München<lb/>Schünemann Hildegard, Köln<lb/>Schwier Elisabeth, Berlin<lb/>Suchy Dela, Münster/Westfalen<lb/>Thurn Erika, Mainz<lb/>Weiß Margot, Köln</p>
+      <p>2. SOPRAN<lb/>Bina Gertrud, München<lb/>Flammersfeld Marianne, Hof/Saale<lb/>Grasser Gerda, Kassel<lb/>Herold Hanne, Berlin<lb/>Künzig Luise, Mannheim<lb/>Rohacs Herta, Bremen<lb/>Smalian Lotte, Frankfurt/Main<lb/>Steupert Antonia, München<lb/>Weber Charlotte, Lübeck<lb/>Wesemann Lisel, Aachen</p>
+      <p>1. ALT<lb/>Derks Elisabeth, Krefeld<lb/>Eikötter Elisabeth, Berlin<lb/>Eskelsen Erika, Bremerhaven<lb/>Heigl Sofie, Ettal/Obb.<lb/>Jacobs Ilse, Berlin<lb/>Knirlberger Irene, Stuttgart<lb/>Kobeck Margit, Arnsberg/Westfalen<lb/>Lüddecke Gerta, Frankfurt/Main<lb/>Nagel Ingrid, Frankfurt/Main<lb/>Reinartz Hildegard, Köln<lb/>Schoer Magda, München<lb/>Stier Ilse, Bremen</p>
+      <p>{12-22}</p>
+      <p>2. ALT<lb/>Bannog-Lösel Ilse, Mosbach/Baden<lb/>Burow Roswitha, Nürnberg<lb/>Deubach Else, Berlin<lb/>Georges Erna, Bremerhaven<lb/>Gröschl Maria, Stuttgart<lb/>Heinen Fritzi, Remscheid<lb/>Krusenbaum Käthe, Mannheim<lb/>Lohberg Hanni, Krefeld<lb/>Satzky Ursula, Bielefeld<lb/>Umlauf Leonore, Aachen</p>
+      <p>1. TENOR<lb/>Arbinger Josef, Regensburg<lb/>Axt Walter, Berlin<lb/>Bergmann Heinz, Essen<lb/>Bernhard Fred, Mutterstadt/Rhpf.<lb/>Dannhäuser Heinz, Hannover<lb/>Eifert Adolf, Wiesbaden<lb/>Farsen Erwin, Solingen<lb/>Frankenberg Friedrich, Karlsruhe<lb/>Hagemann Karl, Dresden<lb/>Hoffmann Willi, Köln<lb/>Holbach Hans, Berlin<lb/>Hoting Heinz, Oldenburg<lb/>Knirlberger Heinrich, Stuttgart<lb/>Menze Heinz, Essen<lb/>Nölling Paul, Frankfurt/Main<lb/>Nüsser Peter, Mannheim<lb/>Orthgieß Heinz, Münster/Westfalen<lb/>Ott Ludwig, Karlsruhe<lb/>Rieser Karl, Stuttgart<lb/>Rootering Hendrikus, Krefeld<lb/>Roß Karl, Pforzheim<lb/>Schubert Michael, Hamburg<lb/>Sablotzke Karl, Rheinhausen<lb/>Strauß Bernhard, Lübeck<lb/>Rackwitz Helmut, Lübeck<lb/>Wehner Max, Braunschweig<lb/>Werkholtz Kurt, Lübeck</p>
+      <p>2. TENOR<lb/>Böhner Franz, Frankfurt/Main<lb/>Eckhardt Erich, Hagen/Westfalen<lb/>Grabow Hermann, Berlin<lb/>Grieskamp Konrad, Detmold<lb/>Henkel Herbert, Berlin</p>
+      <p>Krenn Roman, Luzern/Schweiz<lb/>Mausolf Alois, Hamburg<lb/>Naubereit Heinz, Dresden<lb/>Paterok Hans, Bielefeld<lb/>Peterson Kurt, Lübeck<lb/>Pister Willi, Nürnberg<lb/>Retzki Joachim, Detmold<lb/>Scalorbi Alfred, Frankfurt/Main<lb/>Sopart Willi, Hannover<lb/>Walbeck Alois, Freiburg/Breisgau<lb/>Weber Heinz, Lübeck<lb/>Welter Peter, Essen<lb/>Wölfle Rolf, Berlin</p>
+      <p>1. BASS<lb/>Becker Werner, Solingen<lb/>Böttcher Heinz, Koblenz<lb/>Bremser Karl, Wiesbaden<lb/>Broy Wolfgang, Coburg<lb/>Gatermann Richard, Hamburg<lb/>Haerdtner Otto, Stuttgart<lb/>Herrmann Klaus, Dortmund<lb/>Joussen Kurt, Aachen<lb/>Kane Walter, Karlsruhe<lb/>Lieske Hans-Joachim, Hof/Saale<lb/>Lüchem Klaus, Kassel<lb/>Neuhaus Hans, Rheydt<lb/>Nicoll Josef, Aachen<lb/>Niederschuh Kurt, Berlin<lb/>Pastor Heinz, Bonn<lb/>Welter Joseph, Dresden</p>
+      <p>2. BASS<lb/>Aretz Hubert, Aachen<lb/>Beck Karl, Frankfurt/Main<lb/>Budde Willi, Berlin<lb/>Conzen Hans, Kassel<lb/>Frank-Walter Alfred, Detmold<lb/>Hummel Erich, Stuttgart<lb/>Hunold Johannes, Bayreuth<lb/>Klemm Wilhelm, Neckargmünd<lb/>Lettau Wilhelm, Berlin<lb/>Mundhenk Otto, Lübeck<lb/>Naumann Theo, Wiesbaden<lb/>Pallen Felix, Aachen<lb/>Pierre Julius, Freiburg/Breisgau<lb/>Reinl Rolf, Krefeld<lb/>Schuhmacher Karl, Wuppertal<lb/>Simson Rudolf, Bremen<lb/>Suchy Alwin, Münster/Westfalen<lb/>Zimmermann Walter, Dresden</p>
+      <pb type="scan" n="23" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p023.png" xml:id="scan_023"/>
+      <p>{12-23}</p>
+      <p>Technische Abteilung<lb/>Technischer Assistent: Günter-Werner Thalheim</p>
+      <p>Meister, Obermaschinisten und Oberbeleuchter</p>
+      <p>BÜHNE<lb/>Krumm Rheinhard, Berlin</p>
+      <p>Herterich Adam, Bayreuth<lb/>Höhn Hermann, Bayreuth<lb/>Kreutzer Johann, Bayreuth<lb/>Schoberth Georg, Bayreuth<lb/>Schrack Gustav, Bayreuth<lb/>Wilhelm Karl, Bayreuth</p>
+      <p>BELEUCHTUNG<lb/>Heinrich Willi, Berlin<lb/>Ostertag Max, Bayreuth<lb/>Perrottet Jochen, Flensburg</p>
+      <p>Hilpert Wolfgang, Bayreuth<lb/>Hager Erich, Hof<lb/>Göhring Alexander, Bayreuth<lb/>Knochmus Friedrich, Berlin<lb/>Zwing Georg, Bayreuth<lb/>Hönig Max, Gesees</p>
+      <p>KRAFTZENTRALE<lb/>Ötter Eugen, Bayreuth<lb/>Fassold Stefan, Bayreuth</p>
+      <p>Guthmann Hans, Bayreuth<lb/>Nagel Hermann, Bayreuth</p>
+      <p>Maschinisten, Beleuchter und Handwerker</p>
+      <p>BÜHNE<lb/>Ammon Heinrich<lb/>Bauer Karl<lb/>Bauer Werner<lb/>Cibis Alois<lb/>Dörfler Hans<lb/>Dünkel Hans<lb/>Etzold Roland<lb/>Eyssel Heinz<lb/>Freiersleben Fritz<lb/>Friedrich Wilhelm<lb/>Georgius Heinz<lb/>Göbel Ludwig<lb/>Haas Hans<lb/>Hacker Werner<lb/>Heidenreich Adam<lb/>Hübner Karl Egon<lb/>Igl Wilhelm<lb/>Jakscht Hermann<lb/>Kolb Emil<lb/>Kosub Erhard<lb/>Krumpholz Hermann<lb/>Kurz Johann<lb/>Leipert Karl<lb/>Mader Elias</p>
+      <p>Meyer Hans<lb/>Meyer Heinrich<lb/>Müller Hans<lb/>Neuß Hans<lb/>Neuß Christian<lb/>Neuer Heinrich<lb/>Olraun Christian<lb/>Potzel Konrad<lb/>Richter Ferdinand<lb/>Rieß Hans<lb/>Röthel Heinrich<lb/>Ruf Werner<lb/>Selwitschka Otto<lb/>Schmidt Hermann<lb/>Schneider Paul<lb/>Schönwerner Robert<lb/>Schuhmann Georg<lb/>Stahlmann Hans<lb/>Steinlein Hans<lb/>Stroll Johann<lb/>Süwa Gustav<lb/>Teubner Josef<lb/>Vogel Georg<lb/>Vogel Heinrich</p>
+      <p>Winterstein Georg<lb/>Wittauer Max<lb/>Wittmer Heinz<lb/>Wilhelm Manfred<lb/>Ziegleder Josef<lb/>Zollfrank Hans</p>
+      <p>BELEUCHTUNG<lb/>Deiß Dietrich<lb/>Hahn Georg<lb/>Loechler Fritz<lb/>Rettig Wolfgang<lb/>Trempa Erich<lb/>Trispel Fritz<lb/>Wehner Hans<lb/>Wehner Heinz</p>
+      <p>Dünkel Marie<lb/>Freiersleben Kunigunde<lb/>Röder Betty<lb/>Ruf Sigrid</p>
+      <p>{12-24}</p>
+      <p>Werkstätten<lb/>SCHNEIDER- UND ANKLEIDERINNEN<lb/>Brandt Anni<lb/>Dressendörfer<lb/>Georgius Babette<lb/>Gräbner Helene<lb/>Greissinger<lb/>Hässler Annemarie</p>
+      <p>Herrmannsdörfer Gunda<lb/>Hoffmann Helene<lb/>Klaus<lb/>Koller Lina<lb/>Konrad Hildegard<lb/>Mann Margarete</p>
+      <p>Meier Frieda<lb/>Meixner Ruth<lb/>Müller Käthe<lb/>Licha Katharina<lb/>Rappolt, Anne<lb/>Schneider Grete</p>
+      <p>ANKLEIDER<lb/>Dollhopf Alfred<lb/>Erhard Emil<lb/>Hümmer Otto</p>
+      <p>Licha Josef<lb/>Mendel Josef<lb/>Menzel Otto</p>
+      <p>Mühlhäuser Karl<lb/>Müller Johann<lb/>Wunderlich Otto<lb/>Zeitler Karl</p>
+      <p>MASKENBILDNEREI<lb/>Brendel Karl<lb/>Fink Gustav<lb/>Neuhaus Kurt</p>
+      <p>Siecke Alfons<lb/>Schneider Erich</p>
+      <p>Fink Erna<lb/>Martin Eleonore<lb/>Müller Mary</p>
+      <p>RÜSTKAMMER<lb/>Schmidt Alfred</p>
+      <p>SCHUHMACHEREI<lb/>Nichtl Bernhard</p>
+      <p>ORCHESTERDIENER<lb/>Göttl Georg<lb/>Köhler Georg</p>
+      <p>Verwaltung<lb/>Sekretariat<lb/>Braun Hedda<lb/>König Eleonore<lb/>Kuzaj Helen<lb/>Schreck Annie</p>
+      <p>Finanzverwaltung<lb/>und Buchhaltung<lb/>Klein Ursula<lb/>Schütz Josefine<lb/>Wolfrum Karl</p>
+      <p>Hausverwaltung<lb/>Düreth Paul<lb/>Lodes Hans<lb/>Lodes Margarete</p>
+      <p>Lagerverwaltung<lb/>Schott Karl</p>
+      <p>Dolmetscherin<lb/>Hinrichsen Irene</p>
+      <p>Kartenbüro<lb/>Büttner Peter<lb/>Brunnquell Werner<lb/>Schöpf Bärbel<lb/>Suchanek Elisabeth</p>
+      <p>Photogr. Laboratorium<lb/>Schmidt Ursula<lb/>Körner Margarete<lb/>Necke Ulrich</p>
+      <p>Techn. Büro<lb/>Lodes Gunda</p>
+      <p>Verlag<lb/>Blazejewski Manfred</p>
+      <p>Hauspersonal<lb/>Baumann Rudolf<lb/>Dörsch Margarete<lb/>Fuchs Lotte<lb/>Greisinger Margarete<lb/>Häfner Berta<lb/>Heidenreich Kunigunde<lb/>Herath Margarete<lb/>Hermannsdörfer Anna</p>
+      <p>Höhn Anna<lb/>Hofmann Alfred<lb/>Hübner Marie<lb/>Kraus Eva-Maria<lb/>Kühnert Margarete<lb/>Lang Georg<lb/>Motschenbacher Johanna<lb/>Müller Theodora</p>
+      <p>Nietsch Johannes<lb/>Pauthner Franz<lb/>Pötzl Marianne<lb/>Reuter Hans<lb/>Sengenberger Max<lb/>Späth Babette<lb/>Zwing Elfriede</p>
+      <pb type="scan" n="24" facs="../png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p024.png" xml:id="scan_024"/>
+      <p>{12-25}</p>
+      <p>Im Verlag der Festspielleitung<lb/>ist ferner erschienen:</p>
+      <p>Richard Wagner - Leben und Schaffen<lb/>Eine Zeittafel. Bearbeitet` von Dr. Otto Strobel.<lb/>Mit einem Bildnis Richard Wagners. 142 S. kart. mit<lb/>Leinenrücken und Cellophanhülle DM 9.80</p>
+      <p>Actualité de Wagner<lb/>39 p. DM 3.80</p>
+      <p>Richard Wagner - Life, Work, Festspielhaus<lb/>89 p. DM 6.80</p>
+      <p>Künstlerkarten und Szenenaufnahmen der Bayreuther<lb/>Festspiele 1953 je Stück DM -.65</p>
+      <p>Die Reproduktionsrechte der in diesem Heft abgebildeten Photographien<lb/>liegen bei:<lb/>J. Abresch, New York; Berger, Dresden; K. Betschner, Karlsruhe; Rudolf Betz,<lb/>München; Bischof &amp; Broel, Nürnberg; M. Blechman, New York; Rosemarie<lb/>Clausen, Hamburg-Blankenese; Fayer, Wien; Gebauer, Bayreuth; Giessner,<lb/>München; Ludwig Harren, Nürnberg; Hostrup, Mannheim; Illenberger,<lb/>Stuttgart-Degerloch; Siegfried Lauterwasser, Überlingen; Peyer, Hamburg;<lb/>Ed. Renner, Frankfurt a. M.; Liselotte Strelow, Düsseldorf; Sabine Toepfer,<lb/>München; Zahn, Koblenz; Festspielleitung, Bayreuth.</p>
+    </body>
+  </text>
+</TEI>

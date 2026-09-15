@@ -1,0 +1,177 @@
+{
+  "description": "Source-grounded metadata for the seven M³GIM teaching facsimiles.",
+  "review_date": "2026-09-15",
+  "provided_context": "Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifiers are supplied filenames; the holding context is supplied course context.",
+  "documents": [
+    {
+      "id": "UAKUG_NIM_005_137_3",
+      "title": "NEUNTE SYMPHONIE",
+      "title_scan": 1,
+      "alternative_titles": [
+        {
+          "text": "SYMPHONIE IX",
+          "language": "de",
+          "scan": 2
+        }
+      ],
+      "languages": [
+        "de",
+        "en",
+        "fr"
+      ],
+      "language_evidence": "Scan 2: German programme text; D-MINOR and RÉ-MINEUR give short English and French key designations.",
+      "document_type": "programme",
+      "date": "1953-08-11",
+      "date_as_printed": "Dienstag, 11. August",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 2,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_7",
+      "title": "DAS RHEINGOLD",
+      "title_scan": 2,
+      "alternative_titles": [],
+      "languages": [
+        "de"
+      ],
+      "language_evidence": "German programme text on scans 1–2.",
+      "document_type": "programme",
+      "date": "1953-07-25",
+      "date_as_printed": "Samstag 25. Juli",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 2,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_8",
+      "title": "DIE WALKÜRE",
+      "title_scan": 2,
+      "alternative_titles": [],
+      "languages": [
+        "de"
+      ],
+      "language_evidence": "German programme text on scans 1–2.",
+      "document_type": "programme",
+      "date": "1953-07-26",
+      "date_as_printed": "Sonntag, 26. Juli",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 2,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_9",
+      "title": "SIEGFRIED",
+      "title_scan": 2,
+      "alternative_titles": [],
+      "languages": [
+        "de"
+      ],
+      "language_evidence": "German programme text on scans 1–2.",
+      "document_type": "programme",
+      "date": "1953-07-27",
+      "date_as_printed": "Montag, 27. Juli",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 2,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_10",
+      "title": "GÖTTERDÄMMERUNG",
+      "title_scan": 2,
+      "alternative_titles": [],
+      "languages": [
+        "de"
+      ],
+      "language_evidence": "German programme text on scans 1–2.",
+      "document_type": "programme",
+      "date": "1953-07-29",
+      "date_as_printed": "Mittwoch, 29. Juli",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 2,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_11",
+      "title": "TRISTAN UND ISOLDE",
+      "title_scan": 2,
+      "alternative_titles": [],
+      "languages": [
+        "de",
+        "en",
+        "fr"
+      ],
+      "language_evidence": "German programme and advertisements; English and French visitor forms on scans 5–6.",
+      "document_type": "programme",
+      "date": "1953-08-22",
+      "date_as_printed": "Samstag, 22. August",
+      "date_type": "announced-performance",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "performance",
+      "place_evidence": "Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context.",
+      "publisher": null,
+      "scan_pages": 6,
+      "metadata_note": "The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established."
+    },
+    {
+      "id": "UAKUG_NIM_005_137_12",
+      "title": "Die Mitwirkenden der BAYREUTHER FESTSPIELE",
+      "title_scan": 2,
+      "alternative_titles": [
+        {
+          "text": "Personnel of the Bayreuth Festival",
+          "language": "en",
+          "scan": 2
+        },
+        {
+          "text": "Les artistes du Festival de Bayreuth",
+          "language": "fr",
+          "scan": 2
+        }
+      ],
+      "languages": [
+        "de",
+        "en",
+        "fr"
+      ],
+      "language_evidence": "Multilingual title page, headings and biographies (German, English, French).",
+      "document_type": "festival-booklet",
+      "date": "1953",
+      "date_as_printed": "1953",
+      "date_type": "publication",
+      "date_scan": 2,
+      "place": "Bayreuth",
+      "place_type": "publication",
+      "place_evidence": "Title-page imprint, scan 2.",
+      "publisher": "VERLAG DER FESTSPIELLEITUNG",
+      "scan_pages": 24,
+      "metadata_note": "The title-page date and copyright statement (scans 2–3) support the publication year 1953. No publication month or day is supplied."
+    }
+  ]
+}

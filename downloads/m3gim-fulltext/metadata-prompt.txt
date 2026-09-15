@@ -1,0 +1,19 @@
+Extract document-level metadata from this facsimile and its checked transcription.
+
+Document ID: [copy the supplied filename without extension]
+Supplied holding context: archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM.
+
+Return a small table with: field | value | scan number and evidence | uncertainty.
+
+Fields:
+- Main title as printed; join title line breaks with spaces.
+- Alternative titles actually present in the document.
+- Every language represented by text, including short translated phrases and inserts. Use de, en and fr where applicable; personal names alone do not establish a language.
+- Document type, for example programme or festival booklet.
+- Date as printed and a normalized value, if supported.
+- Date type: announced-performance, publication or unknown.
+- Place and what it describes: performance or publication.
+- Source publisher, only if an imprint states it.
+- Supplied document ID, holding context and number of scan pages.
+
+Use the images as evidence. Do not look up or invent missing facts. Report unknown values explicitly. Keep supplied context distinguishable from text visible in a scan. A performance date is not automatically a publication date. A composer named in a programme is not automatically the author of the programme. Do not derive a precise date from the title of an advertisement or a reference to a future festival.

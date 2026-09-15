@@ -1,0 +1,25 @@
+Create one simple TEI P5 XML document from the checked transcription and reviewed metadata.
+
+Inputs:
+- Document ID: [ID]
+- Complete checked transcription: [attach the TXT]
+- Reviewed metadata with evidence: [attach or paste]
+- Image filenames in scan order: [list]
+- tei-template.xml and tei-guide.md: [attach]
+
+Follow the supplied structure and keep the TEI namespace http://www.tei-c.org/ns/1.0.
+Save as tei/[ID].xml in UTF-8.
+
+In teiHeader, put the digital title in titleStmt, a short statement about this course transcription in publicationStmt, and the historical source description in sourceDesc/bibl. Record the printed source title, document type, identifier and supplied holding context. Use date/@type to distinguish announced-performance from publication; give @when only at the precision supported by the source. Record languages in profileDesc/langUsage. Omit unsupported optional elements and document unknowns in a note. The source publisher belongs in sourceDesc/bibl.
+
+Record the number of PDF scan pages in fileDesc/extent.
+
+In text/body, include ALL text from ALL scans. At the start of each scan, add:
+<pb xml:id="scan_001" type="scan" n="1" facs="../png/[ID]/[ID]_p001.png"/>
+Increment the scan number and filename together. In this exercise one pb refers to one PDF scan, including a spread.
+
+Use p for text blocks and lb for line breaks. Keep source wording, punctuation, diacritics and the existing {handwriting}, word[?] and [illegible] notation unchanged. Keep these conventions documented in encodingDesc.
+
+Encode the “Wer singt was?” table as table/row/cell, with one row per performer, a label row for column headings and every empty cell retained. Preserve its footnotes after the table. Do not flatten columns into separate lists.
+
+Escape XML characters such as & as &amp;. Return a complete XML document with closed elements, without Markdown fences or commentary. Do not replace any text with summaries, ellipses or placeholders. If the full document exceeds the output limit, produce the header and complete scan blocks separately, then assemble one XML file and check that all scans are present.

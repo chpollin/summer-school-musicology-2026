@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="UAKUG_NIM_005_137_11">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TRISTAN UND ISOLDE — course transcription</title>
+      </titleStmt>
+      <extent>6 PDF scan pages</extent>
+      <publicationStmt>
+        <p>Edited teaching reference prepared for Summer School Musicology 2026 from recorded LLM transcriptions; TEI conversion and metadata review by Codex on 15 September 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="programme">
+          <title type="main" xml:lang="de">TRISTAN UND ISOLDE</title>
+          <idno type="source-id">UAKUG_NIM_005_137_11</idno>
+          <date type="announced-performance" when="1953-08-22">Samstag, 22. August</date>
+          <name type="performance-place">Bayreuth</name>
+          <note type="holding-context">Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifier and holding context supplied with the course materials.</note>
+          <note type="metadata-evidence">Main title: scan 2. Date: scan 2. The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established. Place: Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context. Languages: German programme and advertisements; English and French visitor forms on scans 5–6.</note>
+          <ref target="https://drive.google.com/file/d/1qMUPr6KZuU64CnfIc6w_WXbFgEpXavF-/view">Supplied source PDF</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads; n is the scan sequence. Each facs path is relative to this XML file. Text blocks and lb follow the edited transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text. The cast table preserves rows and empty cells. Textual readings retain the review status documented in review-notes.md.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">German</language>
+        <language ident="en">English</language>
+        <language ident="fr">French</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb type="scan" n="1" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p001.png" xml:id="scan_001"/>
+      <p>{11-1}</p>
+      <p>BAYREUTHER<lb/>FESTSPIELE 1953</p>
+      <p>TRISTAN und ISOLDE</p>
+      <pb type="scan" n="2" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p002.png" xml:id="scan_002"/>
+      <p>{11-2}</p>
+      <p>BAYREUTHER FESTSPIELE 1953</p>
+      <p>Samstag, 22. August</p>
+      <p>TRISTAN UND ISOLDE</p>
+      <p>DIRIGENT: EUGEN JOCHUM<lb/>EINSTUDIERUNG DER CHÖRE: WILHELM PITZ</p>
+      <p>INSZENIERUNG UND GESAMTAUSSTATTUNG: WIELAND WAGNER<lb/>BELEUCHTUNGSASSISTENZ: PAUL EBERHARDT<lb/>RUDOLF JOHN</p>
+      <p>TRISTAN . . . . . . . . . RAMON VINAY<lb/>KÖNIG MARKE . . . . . . LUDWIG WEBER<lb/>ISOLDE . . . . . . . . . . MARTHA MÖDL<lb/>KURWENAL . . . . . . . . GUSTAV NEIDLINGER<lb/>MELOT . . . . . . . . . . HERMANN UHDE</p>
+      <p>BRANGÄNE . . . . . . . . IRA MALANIUK<lb/>EIN HIRT . . . . . . . . . GERHARD STOLZE<lb/>EIN STEUERMANN . . . . . ALFONS HERWIG<lb/>STIMME EINES JUNGEN SEEMANNES . GENE TOBIN</p>
+      <p>AUSSTATTUNGSLEITUNG: OTTO WISSNER KOSTÜME: FRED THIEL MASKENBILDNER: WILLI KLOSE, JOSEF KROTT TECHNISCHE EINRICHTUNG: ARTHUR EISENSCHMIDT<lb/>BELEUCHTUNG: HENRY HENSEL, WILLI SCHUBERT</p>
+      <p>- Der Beginn jedes Aktes wird 15 Minuten vorher mit einer, 10 Minuten vorher mit zwei und 5 Minuten vorher mit drei Fanfaren angekündigt. -</p>
+      <p>I. Aufzug 16.00 Uhr II. Aufzug 18.30 Uhr III. Aufzug 20.40 Uhr Ende gegen 22.00 Uhr<lb/>Nach Beginn der Aufzüge kein Einlaß</p>
+      <p>Operngläser sind im Mittelbau des Festspielhauses zu entleihen.</p>
+      <pb type="scan" n="3" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p003.png" xml:id="scan_003"/>
+      <p>{11-62[?]}</p>
+      <p>WER SINGT WAS?</p>
+      <table>
+        <row role="label">
+          <cell>Kleines Alphabet der Festspielkünstler</cell>
+          <cell>Der Ring des Nibelungen</cell>
+          <cell>Lohengrin</cell>
+          <cell>Tristan und Isolde</cell>
+          <cell>Parsifal</cell>
+        </row>
+        <row>
+          <cell>Theo Adam, Dresden</cell>
+          <cell></cell>
+          <cell>4. Edler</cell>
+          <cell></cell>
+          <cell>4. Knappe</cell>
+        </row>
+        <row>
+          <cell>Hans Braun, Wien</cell>
+          <cell></cell>
+          <cell>Heerrufer</cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Hasso Eschert, Köln</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Melot</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Bruni Falcon, Frankfurt a. M.</cell>
+          <cell>Freia, Ortlinde</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Werner Faulhaber, Dresden</cell>
+          <cell>Donner</cell>
+          <cell></cell>
+          <cell>Steuermann</cell>
+          <cell>2. Gralsritter</cell>
+        </row>
+        <row>
+          <cell>Brünnhild Friedland, Dresden</cell>
+          <cell>Gerhilde</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Josef Greindl, Berlin</cell>
+          <cell>Hunding, Hagen, Fafner</cell>
+          <cell>König Heinrich</cell>
+          <cell></cell>
+          <cell>Titurel</cell>
+        </row>
+        <row>
+          <cell>Hans Hotter, München</cell>
+          <cell>Wotan, Wanderer</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Amfortas (V)</cell>
+        </row>
+        <row>
+          <cell>Maria von Ilosvay, Hamburg</cell>
+          <cell>Erda, Schwertleite, 1. Norn</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Altsolo</cell>
+        </row>
+        <row>
+          <cell>Joseph Janko, Graz</cell>
+          <cell></cell>
+          <cell>2. Edler</cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Paul Kuen, München</cell>
+          <cell>Mime</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Gisela Litz, Hamburg</cell>
+          <cell>Rheintochter, Siegrune</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Soloblume, 2. Knappe</cell>
+        </row>
+        <row>
+          <cell>George London, Wien</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Amfortas</cell>
+        </row>
+        <row>
+          <cell>Ira Malaniuk, München</cell>
+          <cell>Fricka, Waltraute</cell>
+          <cell></cell>
+          <cell>Brangäne</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Martha Mödl, Hamburg</cell>
+          <cell>Brünnhilde (I. Zyklus)</cell>
+          <cell></cell>
+          <cell>Isolde *</cell>
+          <cell>Kundry</cell>
+        </row>
+        <row>
+          <cell>Gustav Neidlinger, Stuttgart</cell>
+          <cell>Alberich</cell>
+          <cell></cell>
+          <cell>Kurwenal</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Sibylle Plate, Koblenz</cell>
+          <cell>Grimgerde</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Hetty Plümacher, Stuttgart</cell>
+          <cell>Rheintochter</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Soloblume</cell>
+        </row>
+        <row>
+          <cell>Regina Resnik, New York</cell>
+          <cell>Sieglinde, 3. Norn</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Eleanor Steber, New York</cell>
+          <cell></cell>
+          <cell>Elsa</cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Gerhard Stolze, Dresden</cell>
+          <cell>Froh</cell>
+          <cell>1. Edler</cell>
+          <cell>Hirt</cell>
+          <cell>3. Knappe</cell>
+        </row>
+        <row>
+          <cell>Rita Streich, Berlin</cell>
+          <cell>Waldvogel</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Soloblume</cell>
+        </row>
+        <row>
+          <cell>Liselotte Thomamüller, Bremen</cell>
+          <cell>Helmwige</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Gene Tobin, Düsseldorf</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Junger Seemann</cell>
+          <cell>1. Gralsritter</cell>
+        </row>
+        <row>
+          <cell>Hermann Uhde, München</cell>
+          <cell>Gunther</cell>
+          <cell>Telramund</cell>
+          <cell></cell>
+          <cell>Klingsor</cell>
+        </row>
+        <row>
+          <cell>Astrid Varnay, New York</cell>
+          <cell>Brünnhilde (II. Zyklus)</cell>
+          <cell>Ortrud</cell>
+          <cell>Isolde **</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Ramon Vinay, New York</cell>
+          <cell>Siegmund</cell>
+          <cell></cell>
+          <cell>Tristan</cell>
+          <cell>Parsifal</cell>
+        </row>
+        <row>
+          <cell>Ludwig Weber, Wien</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Marke</cell>
+          <cell>Gurnemanz</cell>
+        </row>
+        <row>
+          <cell>Wolfgang Windgassen, Stuttgart</cell>
+          <cell>Siegfried</cell>
+          <cell>Lohengrin</cell>
+          <cell></cell>
+          <cell>Parsifal</cell>
+        </row>
+        <row>
+          <cell>Erich Witte, Berlin</cell>
+          <cell>Loge</cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </table>
+      <p>* II, III, V<lb/>** I, IV</p>
+      <pb type="scan" n="4" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p004.png" xml:id="scan_004"/>
+      <p>Richard Wagner - ein dramatisches Leben<lb/>NEUE WAGNER-LITERATUR</p>
+      <p>„Synchronoptischer Richard Wagner“<lb/>Richard Wagner — Leben und Schaffen — Eine Zeittafel. Bearbeitet von Otto Strobel (†)<lb/>Mit einem Bildnis Richard Wagners, 142 S. kart. m. Leinenrücken und Cellophanhülle DM 9.80<lb/>Verlag der Festspielleitung Bayreuth</p>
+      <p>Durch 132 Seiten laufen drei Hauptspalten nebeneinander her: Wagners Leben - Wagners Schaffen -<lb/>übrige Weltereignisse. Manche Seite sieht aus wie ein fesselndes Schauspiel aus einer Schachpartie. Man<lb/>überblickt z. B. sofort die rasch aufeinanderfolgenden Ereignisse des Sommers 1857: Die Arbeit am<lb/>»Siegfried«, und damit am ganzen Riesenwerk des Nibelungenrings, wird plötzlich abgebrochen - das<lb/>Züricher Ehepaar Wesendonk bezieht auf dem Grünen Hügel seine Villa neben Wagners »Asyl« -<lb/>Planung und rasche Fortführung des Tristan-Dramas - und zwischenein noch Hans und Cosima Bülow<lb/>zu Besuch während ihrer Hochzeitsreise! Selbst dem relativ Unkundigen wird derart ein starker Ein-<lb/>druck von Wagners dramatischem Lebensweg und der Entstehungsgeschichte der Werke vermittelt.<lb/>(»Der Mittag«, Düsseldorf, 3./4. I. 53) »Für den Fachmann wie für den interessierten Laien schlecht-<lb/>hin unentbehrlich . . . Auf den neuesten Stand der Forschung gebracht, hat die Zeittafel dank ihres<lb/>Umfanges den unleugbaren Vorteil, daß sie sich wie eine Biographie lesen läßt.« (Zeitschrift für Reli-<lb/>gions- und Geistesgeschichte«, J. V., 2, 1953). Der Wagner-Forscher Dr. Otto Strobel starb am<lb/>23. Februar 1953 in seinem 57. Lebensjahr. Er hat Ergänzungen seiner Zeittafel hinterlassen, die als<lb/>Nachtrag, der jedem Exemplar beigelegt wird, demnächst erscheinen werden. Dieser Nachtrag wird<lb/>auch eine Würdigung von Otto Strobels Schaffen aus der Feder von Ernest Newman enthalten.</p>
+      <p>„Jeder sollte dazu greifen, der je die Verzauberung durch Wagners Werk erfahren hat.“ Thomas Mann<lb/>Richard Wagner — Briefe 1835—1865 (Sammlung Burrell) Herausgegeben und kommentiert von<lb/>John N. Burk. 828 Seiten mit neun Bildtafeln, Leinen DM 28.50, S. Fischer-Verlag, Frankfurt a. M.</p>
+      <p>Zum erstenmal werden hier achthundertvierzig unbekannte Originalbriefe Richard Wagners veröffent-<lb/>licht. Diese Lebenszeugnisse aus den Jahren 1835—1865 spiegeln die künstlerischen und politischen<lb/>Ansichten des jungen Wagner unmittelbar wider. Neues Licht fällt auf Wagners erste Ehe mit Minna<lb/>Planer und auf seine Beziehungen zu Jessie Laussot und Mathilde Wesendonk. Aber wir erfahren<lb/>auch, daß er im Pariser Schuldgefängnis gesessen, und daß er, im Gegensatz zur bisherigen Ansicht,<lb/>vom Sinn der Revolution eine sehr genaue Vorstellung hatte. Darüber hinaus lesen wir von seinem<lb/>ungeheuren organisatorischen Eifer, von neuartigen Methoden, die er sich ausdachte, um zu seinen<lb/>Zielen zu gelangen. Eine Fülle authentischen Materials über die Bühnengestaltung seiner Opern ist ausge-<lb/>breitet, Äußerungen, die auch im Hinblick auf die Bayreuther Neuinszenierung von aktueller Wichtigkeit sind.</p>
+      <p>Zu den Festspielen erscheint im Wilhelm Andermann-Verlag, München<lb/>Richard Wagner — ein dramatisches Leben. Von Zdenko von Kraft</p>
+      <p>Mit voller Absicht schickt der Autor seinem Buch das Motto voraus: »Der beste Kommentar zu eines<lb/>Mannes Werk ist des Mannes Leben«. Es ist nicht sein Ehrgeiz, die uferlose Wagner-Literatur auch<lb/>nur um eine einzige Zeile neuer Erkenntnisse oder Auslegungen zu bereichern. Von Wieland Wagner<lb/>persönlich angeregt, strebt er nur eines an: Wagners Leben in knapper, für jeden gebildeten Laien<lb/>verständlicher aber absolut gültiger Weise wiederzugeben, - ohne eigene Zutaten, ohne kritische Durch-<lb/>leuchtung, lediglich als Niederschlag einer großartigen künstlerischen Persönlichkeit.</p>
+      <p>In sieben Hauptstücke zusammengefaßt, wird Wagners Lebensablauf nacherzählt. Immer und überall<lb/>steht im Vordergrund das Bestreben, möglichst plastisch und eindringlich den Menschen, seine Schicksale,<lb/>seine Zeit und, soweit in dem gegebenen Rahmen möglich, so viel von seinem Werk zu geben, als mit<lb/>einer rein biographischen Darstellung verträglich ist. In seiner ereignisreichen Zusammenballung gleicht<lb/>Wagners Leben einem Drama. Dies hat sich der Verfasser mit betonter Absicht zum Leitfaden gemacht.<lb/>Sein Ziel ist, die tausendfach von Bewunderung, Liebe, Ablehnung, ja Haß umwitterte Persönlichkeit<lb/>für jene zu gewinnen, die weder Zeit noch Neigung haben, sich durch ganze Buchreihen mehr oder<lb/>weniger fachwissenschaftlicher oder tendenziöser Art durchzuschlagen. Darum beschränkt es sich überall<lb/>auf die rein berichtende Aussage; daß sie in allem Sachlichen hieb- und stichfest bleibt, ist selbstverständlich.</p>
+      <p>Eine reiche Bebilderung, für die die großenteils von Wagner selbst angelegten Sammelmappen des Wahn-<lb/>fried-Archivs zur Verfügung standen, ergänzt das Wort auf die gleiche, rein betrachtende Weise.</p>
+      <pb type="scan" n="5" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p005.png" xml:id="scan_005"/>
+      <p>{11-63}</p>
+      <p>BAYREUTHER FESTSPIELE</p>
+      <p>P. T.</p>
+      <p>Um mit unseren Festspielgästen in engeren Kontakt kommen zu können,<lb/>wären wir Ihnen zu Dank verpflichtet, wenn Sie uns durch entsprechende<lb/>Unterstreichungen auf anhängender Karte davon in Kenntnis setzen würden,<lb/>von welcher Seite Sie die Anregung zum Besuch der diesjährigen Festspiele<lb/>erhalten haben.</p>
+      <p>Wir würden uns freuen, wenn Sie uns Ihre Adresse bekanntgeben würden<lb/>und bitten Sie höflich, die anhängende Karte bei den Logenschließerinnen<lb/>abzugeben oder an die Festspielverwaltung einzusenden, um Ihnen den Prospekt<lb/>der Bayreuther Festspiele 1954 zusenden zu können.</p>
+      <p>DIE FESTSPIELLEITUNG</p>
+      <p>(Zutreffendes bitte unterstreichen)        (Underline what is applicable)        (Souligner la mention juste)</p>
+      <p>Ich wurde zum Besuch der diesjährigen Festspiele veranlaßt durch:<lb/>I was caused to attend the festival of this year :<lb/>Je prend part au festival de l'année courante à cause de :</p>
+      <p>meinen Besuch der Festspiele 1952 / attendance of 1952 / visite au festival de 1952<lb/>Zusendung des Prospektes durch die Festspielleitung / leaflet mailed to me by the<lb/>Festival Direction /. prospectus reçu par les soins de la Direction du Festival<lb/>Beilage des Prospektes in der Zeitschrift / leaflet found in the magazine / prospectus<lb/>inclus à la revue<lb/>Plakataushang / poster / affiche<lb/>Werbung eines Reisebüros / publicity made by a touring agency / publicité faite par<lb/>une agence de voyages<lb/>Werbung einer Buch- und Musikalienhandlung / publicity made by a book and music<lb/>shop / publicité faite par un magasin de livres et de musique<lb/>Zeitungsnachrichten / information in the newspapers / renseignements sur les journaux<lb/>Empfehlung von Bayreuth-Freunden / recommendation by friends of Bayreuth / recom-<lb/>mandation par des amis de Bayreuth</p>
+      <p>Name und Adresse / Name and address / Nom et adresse</p>
+      <pb type="scan" n="6" facs="../png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p006.png" xml:id="scan_006"/>
+      <p>BAYREUTH FESTIVAL</p>
+      <p>In order to establish close contacts with our festival guests we shall appreciate<lb/>that you underline the pertinent information in the post-card, showing how<lb/>you decided to attend the Festival of this year.</p>
+      <p>We shall be glad to have your name and address, so please pass the post-card<lb/>to the box-keeper or mail it to the Festspielverwaltung, so that we can send<lb/>you the leaflet of the Bayreuth Festival 1954 in due time.</p>
+      <p>FESTIVAL DE BAYREUTH</p>
+      <p>Pour entrer dans un rapport plus étroit avec les visiteurs du Festival, nous<lb/>vous saurions gré de souligner la mention juste dans la carte postale ci-dessous,<lb/>de manière à nous montrer pourquoi vous avez décidé d'aller à Bayreuth.</p>
+      <p>Nous serions heureux d'avoir votre adresse, donc nous vous prions de donner<lb/>aux ouvreuses la carte postale ou de la remettre à la Festspielverwaltung,<lb/>et nous vous enverrons le prospectus du Festival de Bayreuth 1954.</p>
+      <p>Die Festspielleitung</p>
+      <p>Den Prospekt der Bayreuther<lb/>Festspiele empfehle ich an fol-<lb/>gende Adressen zu senden:<lb/>Please mail the leaflet of the<lb/>Bayreuth Festival 1954 to follo-<lb/>wing addresses:<lb/>Prière d'envoyer le prospectus<lb/>du Festival de Bayreuth 1954 aux<lb/>adresses suivantes:</p>
+      <p>An die</p>
+      <p>Festspielverwaltung</p>
+      <p>Bayreuth</p>
+    </body>
+  </text>
+</TEI>

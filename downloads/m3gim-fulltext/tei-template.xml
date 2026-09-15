@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="DOCUMENT_ID">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>REPLACE_WITH_DIGITAL_TRANSCRIPTION_TITLE</title>
+      </titleStmt>
+      <extent>REPLACE_WITH_SCAN_COUNT</extent>
+      <publicationStmt>
+        <p>Course transcription prepared for Summer School Musicology 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="programme">
+          <title>REPLACE_WITH_PRINTED_SOURCE_TITLE</title>
+          <idno type="source-id">DOCUMENT_ID</idno>
+          <date type="announced-performance">REPLACE_WITH_SUPPORTED_DATE</date>
+          <name type="performance-place">REPLACE_WITH_SUPPORTED_PLACE</name>
+          <note type="holding-context">UAKUG, collection NIM; supplied course context.</note>
+          <note type="metadata-evidence">REPLACE_WITH_SCAN_EVIDENCE_AND_UNKNOWN_FIELDS</note>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads. Text blocks and line breaks follow the transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="und">REPLACE_WITH_VERIFIED_LANGUAGES</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb xml:id="scan_001" type="scan" n="1" facs="../png/DOCUMENT_ID/DOCUMENT_ID_p001.png"/>
+      <p>REPLACE_WITH_COMPLETE_SCAN_TEXT</p>
+    </body>
+  </text>
+</TEI>

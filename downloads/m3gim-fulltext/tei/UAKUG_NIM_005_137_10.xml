@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="UAKUG_NIM_005_137_10">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>GÖTTERDÄMMERUNG — course transcription</title>
+      </titleStmt>
+      <extent>2 PDF scan pages</extent>
+      <publicationStmt>
+        <p>Edited teaching reference prepared for Summer School Musicology 2026 from recorded LLM transcriptions; TEI conversion and metadata review by Codex on 15 September 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="programme">
+          <title type="main" xml:lang="de">GÖTTERDÄMMERUNG</title>
+          <idno type="source-id">UAKUG_NIM_005_137_10</idno>
+          <date type="announced-performance" when="1953-07-29">Mittwoch, 29. Juli</date>
+          <name type="performance-place">Bayreuth</name>
+          <note type="holding-context">Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifier and holding context supplied with the course materials.</note>
+          <note type="metadata-evidence">Main title: scan 2. Date: scan 2. The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established. Place: Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context. Languages: German programme text on scans 1–2.</note>
+          <ref target="https://drive.google.com/file/d/1mbOG3YiUx9kDdyZ_WqBxUX-aEWVsJ1HY/view">Supplied source PDF</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads; n is the scan sequence. Each facs path is relative to this XML file. Text blocks and lb follow the edited transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text. The cast table preserves rows and empty cells. Textual readings retain the review status documented in review-notes.md.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">German</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb type="scan" n="1" facs="../png/UAKUG_NIM_005_137_10/UAKUG_NIM_005_137_10_p001.png" xml:id="scan_001"/>
+      <p>{10-1}</p>
+      <p>BAYREUTHER<lb/>FESTSPIELE 1953</p>
+      <p>GÖTTER—<lb/>DÄMMERUNG</p>
+      <pb type="scan" n="2" facs="../png/UAKUG_NIM_005_137_10/UAKUG_NIM_005_137_10_p002.png" xml:id="scan_002"/>
+      <p>{10-2[?]}</p>
+      <p>BAYREUTHER FESTSPIELE 1953</p>
+      <p>Mittwoch, 29. Juli</p>
+      <p>GÖTTERDÄMMERUNG</p>
+      <p>DIRIGENT: JOSEPH KEILBERTH<lb/>EINSTUDIERUNG DER CHÖRE: WILHELM PITZ</p>
+      <p>REGIE UND INSZENIERUNG: WIELAND WAGNER<lb/>REGIEASSISTENZ: GERTRUD WAGNER<lb/>BELEUCHTUNGSASSISTENZ: PAUL EBERHARDT</p>
+      <p>SIEGFRIED . . . WOLFGANG WINDGASSEN<lb/>GUNTHER . . . . HERMANN UHDE<lb/>HAGEN . . . . . JOSEF GREINDL<lb/>ALBERICH . . . GUSTAV NEIDLINGER<lb/>BRÜNNHILDE . . MARTHA MÖDL<lb/>GUTRUNE . . . . NATALIE HINSCH-GRÖNDAHL<lb/>WALTRAUTE . . . IRA MALANIUK</p>
+      <p>1. NORN . . . . . MARIA VON ILOSVAY<lb/>2. NORN . . . . . IRA MALANIUK<lb/>3. NORN . . . . . REGINA RESNIK<lb/>WOGLINDE . . . . ERIKA ZIMMERMANN<lb/>WELLGUNDE . . . . HETTY PLUMACHER<lb/>FLOSSHILDE . . . GISELA LITZ</p>
+      <p>AUSSTATTUNGSLEITUNG: OTTO WISSNER</p>
+      <p>MASKENBILDNER: WILLI KLOSE, JOSEF KROTT<lb/>BELEUCHTUNG: HUGO SCHNEIDER, WILLI SCHUBERT</p>
+      <p>TECHNISCHE EINRICHTUNG: ARTHUR EISENSCHMIDT</p>
+      <p>- Der Beginn jedes Aktes wird 15 Minuten vorher mit einer, 10 Minuten vorher mit zwei und 5 Minuten vorher mit drei Fanfaren angekündigt. -</p>
+      <p>I. Aufzug 16.00 Uhr II. Aufzug 18.50 Uhr III. Aufzug 21.00 Uhr Ende gegen 22.50 Uhr</p>
+    </body>
+  </text>
+</TEI>

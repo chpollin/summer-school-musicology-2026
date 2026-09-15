@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="UAKUG_NIM_005_137_7">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>DAS RHEINGOLD — course transcription</title>
+      </titleStmt>
+      <extent>2 PDF scan pages</extent>
+      <publicationStmt>
+        <p>Edited teaching reference prepared for Summer School Musicology 2026 from recorded LLM transcriptions; TEI conversion and metadata review by Codex on 15 September 2026.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="programme">
+          <title type="main" xml:lang="de">DAS RHEINGOLD</title>
+          <idno type="source-id">UAKUG_NIM_005_137_7</idno>
+          <date type="announced-performance" when="1953-07-25">Samstag 25. Juli</date>
+          <name type="performance-place">Bayreuth</name>
+          <note type="holding-context">Archive of the University of Music and Performing Arts Graz (UAKUG), collection NIM; Ira Malaniuk materials used in M³GIM. Identifier and holding context supplied with the course materials.</note>
+          <note type="metadata-evidence">Main title: scan 2. Date: scan 2. The printed day and month are combined with the festival year 1953. The date denotes the announced performance; the source publication date is not established. Place: Place normalized from BAYREUTHER FESTSPIELE and the supplied festival context. Languages: German programme text on scans 1–2.</note>
+          <ref target="https://drive.google.com/file/d/1n1nwgFqF28Cxdqhi2FwFXJqbbmILSkM8/view">Supplied source PDF</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>One pb per PDF scan, including spreads; n is the scan sequence. Each facs path is relative to this XML file. Text blocks and lb follow the edited transcription. Curly braces mark handwriting; [?] marks uncertainty; [illegible] marks unreadable text. The cast table preserves rows and empty cells. Textual readings retain the review status documented in review-notes.md.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="de">German</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb type="scan" n="1" facs="../png/UAKUG_NIM_005_137_7/UAKUG_NIM_005_137_7_p001.png" xml:id="scan_001"/>
+      <p>{Fr.[?] Malanjuk[?] 7-1}</p>
+      <p>BAYREUTHER<lb/>FESTSPIELE 1953</p>
+      <p>das<lb/>RHEINGOLD</p>
+      <pb type="scan" n="2" facs="../png/UAKUG_NIM_005_137_7/UAKUG_NIM_005_137_7_p002.png" xml:id="scan_002"/>
+      <p>{7-13[?]}</p>
+      <p>BAYREUTHER FESTSPIELE 1953</p>
+      <p>Samstag 25. Juli</p>
+      <p>DAS RHEINGOLD</p>
+      <p>DIRIGENT: JOSEPH KEILBERTH</p>
+      <p>REGIE UND INSZENIERUNG: WIELAND WAGNER<lb/>REGIEASSISTENZ: GERTRUD WAGNER</p>
+      <p>WOTAN . . . . . . . . HANS HOTTER<lb/>DONNER . . . . . . . . HERMANN UHDE<lb/>FROH . . . . . . . . . GERHARD STOLZE<lb/>LOGE . . . . . . . . . ERICH WITTE<lb/>FASOLT . . . . . . . . LUDWIG WEBER<lb/>FAFNER . . . . . . . . JOSEF GREINDL<lb/>ALBERICH . . . . . . . GUSTAV NEIDLINGER</p>
+      <p>MIME . . . . . . . . . PAUL KUËN<lb/>FRICKA . . . . . . . . IRA MALANIUK<lb/>FREIA . . . . . . . . . BRUNI FALCON<lb/>ERDA . . . . . . . . . MARIA VON ILOSVAY<lb/>WOGLINDE . . . . . . . ERIKA ZIMMERMANN<lb/>WELLGUNDE . . . . . . . HETTY PLÜMACHER<lb/>FLOSSHILDE . . . . . . GISELA LITZ</p>
+      <p>Ausstattungsleitung: Otto Wißner Kostümentwürfe: M. Z. Klomp Maskenbildner: Willi Klose, Josef Krott Technische Einrichtung: Arthur Eisenschmidt<lb/>Beleuchtung: Hugo Schneider, Willi Schubert</p>
+      <p>- Der Beginn wird 15 Minuten vorher mit einer, 10 Minuten vorher mit zwei und 5 Minuten vorher mit drei Fanfaren angekündigt. -</p>
+      <p>Beginn 17 Uhr Ende gegen 19.40</p>
+      <p>Operngläser sind im Mittelbau des Festspielhauses zu entleihen.</p>
+    </body>
+  </text>
+</TEI>

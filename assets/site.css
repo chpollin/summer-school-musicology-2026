@@ -49,6 +49,11 @@ details iframe { margin-top:18px; }
 footer { border-top:1px solid var(--line); margin-top:42px; padding:24px 0 36px; font-size:14px; color:var(--muted); }
 pre { white-space:pre-wrap; overflow-wrap:anywhere; background:var(--surface); padding:18px; border:1px solid var(--line); }
 .workflow { max-width:900px; padding-left:1.4em; }
+.workflow-line { color:var(--accent); font-weight:650; }
+.table-scroll { overflow-x:auto; margin:20px 0; }
+.metadata-table { width:100%; border-collapse:collapse; text-align:left; font-size:15px; }
+.metadata-table th, .metadata-table td { padding:12px; border-bottom:1px solid var(--line); vertical-align:top; }
+.metadata-table thead { background:var(--tint); }
 .workflow li { margin-bottom:16px; padding-left:6px; }
 #content code, #content .resources { overflow-wrap:anywhere; }
 pre { font-size:14px; line-height:1.6; }

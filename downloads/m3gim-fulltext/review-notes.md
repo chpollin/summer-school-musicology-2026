@@ -17,6 +17,14 @@ The reference archive contains the original model transcriptions under `raw/`, t
 - **_12, scan 23:** 'Sroll Johann' → 'Stroll Johann'. The printed surname includes t after S.
 - **_11, scan 3:** 'Separate name and role-column lists' → '30 performer rows with five aligned columns, empty cells and two source footnotes'. The original output lost table relationships. Reconstructed against the scan; typographic wraps within table cells joined.
 
+## TEI and metadata extension
+
+The reference now includes seven complete TEI P5 files, metadata in JSON and CSV, and a combined TEI-plus-images bundle for Session 3. The metadata was reviewed against the programme/title-page scans and the supplied archive context on 15 September 2026.
+
+Programme dates are explicitly labelled as announced performances. For _12, the title-page imprint and copyright statement support publication in 1953. Language metadata includes German, English and French for _3 (short key designations), _11 (visitor forms) and _12 (multilingual booklet).
+
+TEI conversion preserves the edited transcription, including uncertainty markers and the reconstructed table. Page markers link to all 40 PNG scans through relative paths. The files are checked against the supplied TEI Lite schema; this structural check does not change their textual review status.
+
 ## Reading conventions and remaining questions
 
 - `--- Scanseite N ---` identifies the PDF scan, including scans that contain a two-page spread.
