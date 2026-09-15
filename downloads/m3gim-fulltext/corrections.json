@@ -1,0 +1,44 @@
+[
+  {
+    "doc": 7,
+    "page": 2,
+    "old": "PAUL KUEN",
+    "new": "PAUL KUËN",
+    "reason": "Trema visible above E in the printed name."
+  },
+  {
+    "doc": 12,
+    "page": 1,
+    "old": "{12-1[?]}\n\n",
+    "new": "",
+    "reason": "No legible handwritten number is visible on the supplied cover scan."
+  },
+  {
+    "doc": 12,
+    "page": 3,
+    "old": "GESAMTLEITÜNG",
+    "new": "GESAMTLEITUNG",
+    "reason": "The printed heading has U without an umlaut."
+  },
+  {
+    "doc": 12,
+    "page": 11,
+    "old": "Populai[?]",
+    "new": "Populair",
+    "reason": "The final r is visible; the source spelling Populair is retained."
+  },
+  {
+    "doc": 12,
+    "page": 23,
+    "old": "Sroll Johann",
+    "new": "Stroll Johann",
+    "reason": "The printed surname includes t after S."
+  },
+  {
+    "doc": 11,
+    "page": 3,
+    "old": "Separate name and role-column lists",
+    "new": "30 performer rows with five aligned columns, empty cells and two source footnotes",
+    "reason": "The original output lost table relationships. Reconstructed against the scan; typographic wraps within table cells joined."
+  }
+]

@@ -48,4 +48,8 @@ details iframe { margin-top:18px; }
 .session-nav { display:flex; justify-content:space-between; flex-wrap:wrap; gap:18px; border-top:1px solid var(--line); padding-top:24px; margin:40px 0; }
 footer { border-top:1px solid var(--line); margin-top:42px; padding:24px 0 36px; font-size:14px; color:var(--muted); }
 pre { white-space:pre-wrap; overflow-wrap:anywhere; background:var(--surface); padding:18px; border:1px solid var(--line); }
+.workflow { max-width:900px; padding-left:1.4em; }
+.workflow li { margin-bottom:16px; padding-left:6px; }
+#content code, #content .resources { overflow-wrap:anywhere; }
+pre { font-size:14px; line-height:1.6; }
 @media(max-width:650px) { .grid { grid-template-columns:1fr; } .header-inner { align-items:flex-start; flex-direction:column; gap:10px; } nav { gap:18px; } .hero { padding-top:36px; } .card { padding:22px; } .notes { height:580px; } }

@@ -23,6 +23,16 @@ Kursordner: https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0
 
 Das PDF-Übungspaket stammt aus dem im Vault gepflegten Lehrpaket „PDF pages as images“. Sein README dokumentiert die Bildquelle, CC-BY-Angabe und Ableitung des PDFs. Das IIIF-Paket enthält synthetische Beispielbilder.
 
+## M³GIM-Volltextübung
+
+Die Übung unter `materials/m3gim-fulltext.html` schließt in Session 2 an „Prompting Strategies“ an. Sie umfasst sieben PDFs mit 40 Scanseiten, vorbereitete PNGs, einen getesteten PDF-Konverter, einen Startprompt und vier englische Folientexte mit Sprechhinweisen. Einstiegspunkte liegen auf der Session-Seite und in der Materialübersicht.
+
+`downloads/m3gim-fulltext/` enthält die Downloads. Die PDFs stammen aus den bereitgestellten UAKUG/NIM-Materialien; die PNGs wurden mit dem mitgelieferten Konverter neu erzeugt. Die Rohtranskriptionen stammen aus dem bestehenden M³GIM-Demonstrationslauf vom 8. September 2026. Der Lauf zeichnet `gemini-3.8-flash` als Modellkennung auf. Im Lehrpaket werden keine API-Protokolle veröffentlicht.
+
+Die redigierte Referenz enthält alle 40 Scanseiten. Codex hat alle Bilder auf Vollständigkeit und Layout gesichtet, einzelne Lesungen korrigiert und die Besetzungstabelle aus Dokument _11 zeilenweise rekonstruiert. Das Korrekturprotokoll unterscheidet diese Prüfung von einer ausstehenden fachlichen Abnahme als kritische Edition. Quellenvarianten und unsichere Lesungen bleiben erhalten. Das Paket ist eine eigenständige Lehrableitung; es ändert das Editionsprojekt nicht.
+
+Die Seitentexte liegen in `scripts/m3gim-exercise.mjs`, die ausführliche Anleitung, der Prompt und der Folientext im Downloadordner. Nach Änderungen am Konverter oder an diesen Textdateien muss zusätzlich das Anleitungs-ZIP aktualisiert werden. Die Manifestdatei dokumentiert die PDF- und PNG-Prüfsummen.
+
 ## IIIF-Viewer
 
 Der Viewer akzeptiert das vereinfachte Projekt-XML im Namespace `http://gams.uni-graz.at/viewer` oder das mitgelieferte Python-erzeugte IIIF-Presentation-3-Manifest sowie JPEG-/PNG-Bilder. Er verarbeitet die ausgewählten Dateien ausschließlich im Browser. Bildadressen werden durch temporäre Blob-Adressen ersetzt; fremde Ressourcen aus Manifesten werden nicht geladen. Die Dateiauswahl veröffentlicht kein dauerhaft erreichbares Objekt.

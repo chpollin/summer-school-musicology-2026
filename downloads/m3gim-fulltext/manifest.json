@@ -1,0 +1,429 @@
+{
+  "source_credit": "UAKUG, collection NIM; Ira Malaniuk materials used in M³GIM (Mapping Mobile Musicians)",
+  "render_dpi": 220,
+  "documents": [
+    {
+      "id": "UAKUG_NIM_005_137_3",
+      "scan_pages": 2,
+      "source_url": "https://drive.google.com/file/d/1mzQfgVzCv5Wu-HnLo_T-ZBPZmgz4eMXO/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_3.pdf",
+      "pdf_sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "be2dab5d658efca7de692f5f20b26f9404a66d0ca32a10a752de7973a80014b7"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "743f2675f2b95619646b551371b5298bb236e296bdac12272aa4261bcc90aef1"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_7",
+      "scan_pages": 2,
+      "source_url": "https://drive.google.com/file/d/1n1nwgFqF28Cxdqhi2FwFXJqbbmILSkM8/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_7.pdf",
+      "pdf_sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_7/UAKUG_NIM_005_137_7_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "bdf836127be3b14b18635d8f86a7f9a4017421e9c64138ed1620fdb752163b53"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_7/UAKUG_NIM_005_137_7_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "09d5770abb3cdb9979b285e8d96a6df69caee0789054177b19c8a2d69451ea19"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_8",
+      "scan_pages": 2,
+      "source_url": "https://drive.google.com/file/d/1HmNtHITfSTy73MeceHOody4JQgreuxvc/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_8.pdf",
+      "pdf_sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_8/UAKUG_NIM_005_137_8_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "eb325512556c84ede13e0b65a3f59979703b990de61923eb3d81cc7ee98ff34b"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_8/UAKUG_NIM_005_137_8_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "a74de98af19fa697e2f274755336230ff678f8afa34d29211dd448bde54bd52d"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_9",
+      "scan_pages": 2,
+      "source_url": "https://drive.google.com/file/d/1BJzlpMsiB2h6jv5wEc6n_BONjmfW6oBo/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_9.pdf",
+      "pdf_sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_9/UAKUG_NIM_005_137_9_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "da8e75c869b131e70843a958e26ab56c396ba200402c171fe677cbc8b33652dc"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_9/UAKUG_NIM_005_137_9_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "ce64519ec8daf9ab59346a5f11f53470a97228a4050c26e599ac613a7a2fc6b6"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_10",
+      "scan_pages": 2,
+      "source_url": "https://drive.google.com/file/d/1mbOG3YiUx9kDdyZ_WqBxUX-aEWVsJ1HY/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_10.pdf",
+      "pdf_sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_10/UAKUG_NIM_005_137_10_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "73b85f2d0201289e9960770ab58f0b7d7cbed36c80df1df5686496d98f1b675d"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_10/UAKUG_NIM_005_137_10_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "8771e61b92a9243abbf415aa4781346b94761416828eaac1af102467dc6c01a4"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_11",
+      "scan_pages": 6,
+      "source_url": "https://drive.google.com/file/d/1qMUPr6KZuU64CnfIc6w_WXbFgEpXavF-/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_11.pdf",
+      "pdf_sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "740eaf01379077d16c37319bea7111845ad2eb68d110b5854ccf054261bc9dd6"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p002.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "8641ef9fbea1e13516d8fe53b3809d10d455ed5e3fe2aeaac131023047559799"
+        },
+        {
+          "scan": 3,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p003.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "9ff0da0c18bc1cf5b24a0b5b2b950c34dffa3c88ceec2ba7e1e6377c06c6270d"
+        },
+        {
+          "scan": 4,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p004.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "2992afe6c8056bedc9468ef564d6d5a680f886252963ddf2bb3683d25c6ba4e8"
+        },
+        {
+          "scan": 5,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p005.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "366e3f81fac5ec53bfb5c7ac941391db4912ea30cf105c28a6ed96ab38c1a3c2"
+        },
+        {
+          "scan": 6,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_11/UAKUG_NIM_005_137_11_p006.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "15c778dd0cc4a58dca2578e65881fd47df052575a80d47f268d03c0194eaecfc"
+        }
+      ]
+    },
+    {
+      "id": "UAKUG_NIM_005_137_12",
+      "scan_pages": 24,
+      "source_url": "https://drive.google.com/file/d/1pfKI84jzqnxh3ZIxJfP1-nAjhu2tYHva/view",
+      "pdf": "pdf/UAKUG_NIM_005_137_12.pdf",
+      "pdf_sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff",
+      "images": [
+        {
+          "scan": 1,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p001.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "0e6dbc4244d5640c40d577a61d8fe2f32541947ac4eddc544114d205ea0d42e4"
+        },
+        {
+          "scan": 2,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p002.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "b0c627c9d2b0fef79f108f5a8dcea394912041345b9c57f6f130b88bce94fd65"
+        },
+        {
+          "scan": 3,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p003.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "0690e8c1da149f0acffc1856183eb104ee7b3d32555ad2bcc0a4102e2db1be23"
+        },
+        {
+          "scan": 4,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p004.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "e798000a13588bea51a87c5f1079087f91334d7e7ef1bef12eb3f2141d8d9136"
+        },
+        {
+          "scan": 5,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p005.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "4058982b8453f96fc967188c5082f31bbc016ba3afbb066f1c4441367cd619d0"
+        },
+        {
+          "scan": 6,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p006.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "f1dfa78dba3697678256d66ab9acc1094e417e98f58e64fa981f6ea54372ff89"
+        },
+        {
+          "scan": 7,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p007.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "d3e1d033b88eeaf1e4a1a1db7901ff2e9c4b333258a3d531e141b3d572d28bff"
+        },
+        {
+          "scan": 8,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p008.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "73dc35f8f72c1e355afe317f36b7f8da9093633871442bb30b0f136080138d3c"
+        },
+        {
+          "scan": 9,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p009.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "786f66a1e4dbf4976a7780f5fd683a10db855672b5f5433cc51a25f16e43379b"
+        },
+        {
+          "scan": 10,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p010.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "bc5960c9e80100d2c85189693180c09b44f22d0cad1e2c90bd39050d7ca13a6c"
+        },
+        {
+          "scan": 11,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p011.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "023ef12ac0ab880f7beff75b234416fe708979bde09e419d686a793935c77892"
+        },
+        {
+          "scan": 12,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p012.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "d51a9c1ea532c0ce20f81d67638e250b5092f57805e50d5daabec6788d3dc497"
+        },
+        {
+          "scan": 13,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p013.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "329ac4ac081e3abdac7bf034432b9d44ee5156185dccd793433527af1c5480d1"
+        },
+        {
+          "scan": 14,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p014.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "50932a4a7773258219343f1a4fee7d841967d4d7085cc1208863cf2c239e4821"
+        },
+        {
+          "scan": 15,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p015.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "df3903c3d432e62ca4acd9a90ee5766eb0a97a715496a4105b730d118c440e2d"
+        },
+        {
+          "scan": 16,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p016.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "a30c25267e96f73a6b9af19baef1f762516280b380f300be710c8b4017dff706"
+        },
+        {
+          "scan": 17,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p017.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "b55becf17f06d7a165c1109b221e05dca855a41ac4cf058daf416ea0baf94a08"
+        },
+        {
+          "scan": 18,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p018.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "4d21edcab44564363f5a7526a4d236b01950ba5e35f0d40c7496260d3ec573bd"
+        },
+        {
+          "scan": 19,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p019.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "c2e50bd5c8180d6ee37e22af5bf5244ce513ad2790fa78605144b9afdb7faf9e"
+        },
+        {
+          "scan": 20,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p020.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "0f3a45da914255d97d7aa0c292d798c4a7a69b9f2d64d8a8498a8e158b03ada6"
+        },
+        {
+          "scan": 21,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p021.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "ee6b86f4e9016df99e4a39a2b4aa7e46ad31d4b4527bbc0128b1e360f61c0d74"
+        },
+        {
+          "scan": 22,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p022.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "085ba69d12b34452a242b240f3800ad122d0191557f99693436ba018a658487e"
+        },
+        {
+          "scan": 23,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p023.png",
+          "pixels": [
+            3638,
+            2572
+          ],
+          "sha256": "66abd06c0cc353130452929a04311c47f9ce011c0e6a0e2301f2407933eabe12"
+        },
+        {
+          "scan": 24,
+          "path_in_png_zip": "png/UAKUG_NIM_005_137_12/UAKUG_NIM_005_137_12_p024.png",
+          "pixels": [
+            1819,
+            2572
+          ],
+          "sha256": "11816f836487c7c6e73294c1ac4b8faa25d95ed090a78c17658c4672a6e8f707"
+        }
+      ]
+    }
+  ]
+}
