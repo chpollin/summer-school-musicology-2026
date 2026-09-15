@@ -17,6 +17,10 @@ related: [handoff, project, specification]
 
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
+## 2026-09-15 · vereinfacht · Seitenkopf und Downloads pro Session
+
+Auf Nutzerwunsch entfielen der Untertitel und die Sprungbuttons im Seitenkopf. Die Downloads wurden den jeweiligen Sessions zugeordnet: zwei beziehungsweise drei zentrale Pakete bleiben rechts beim Inhalt sichtbar, zusätzliche Materialien lassen sich über native Aufklappelemente öffnen. Die bisherige zentrale Downloadliste und doppelte Paketlinks im Übungstext entfielen. Der alte Downloadanker bleibt erreichbar. Seitengenerierung und lokale Links wurden geprüft; alle drei Aufklappelemente ließen sich mit Enter bedienen. Bei 320 Pixel Breite trat auch mit geöffneten Listen kein horizontaler Überlauf auf.
+
 ## 2026-09-15 · bereinigt · Reste des Website-Refactorings
 
 Die Navigation der M³GIM-Übung führt direkt zu den Sessionankern. Ungenutzte CSS-Regeln für frühere Kartenbilder und Folieneinbettungen sowie die drei überholten Titelillustrationen für Sessions 3 und 4 wurden entfernt. Die aktuellen Bilder und Generierungsprompts bleiben erhalten; frühere Bilddateien sind über Git rekonstruierbar. Bereits veröffentlichte Seitenadressen bleiben als Weiterleitungen erreichbar. Der erledigte Linkpunkt wurde aus dem Handoff entfernt und die Spezifikation nachgezogen.

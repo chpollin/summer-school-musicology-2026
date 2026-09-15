@@ -100,11 +100,12 @@
   .resources { list-style-type: ""; padding: 0; margin-block: var(--space-4); }
   .resources li { margin-block: var(--space-3); overflow-wrap: anywhere; }
   .resources a { font-weight: 600; }
-  .downloads { background: var(--tint); border-radius: var(--radius); padding: clamp(1rem, 3vw, 2rem); }
-  .downloads h3 { display: flex; align-items: center; gap: var(--space-3); margin-block-start: var(--space-6); }
+  .downloads { background: var(--tint); border-radius: var(--radius); padding: var(--space-4) var(--space-5); margin-block-start: var(--space-5); }
+  .downloads-label { display: flex; align-items: center; gap: var(--space-2); font-weight: 650; margin-block-end: var(--space-3); }
   .download-icon { inline-size: 1.5rem; block-size: 1.5rem; flex: 0 0 auto; color: var(--accent); }
-  .downloads > .resources { margin-inline-start: 2.25rem; }
-  .downloads details { border: 0; background: transparent; padding: 0; margin-block: var(--space-5); }
+  .downloads .resources { margin-block: 0; }
+  .downloads details { border: 0; background: transparent; padding: 0; margin-block: var(--space-4) 0; }
+  .downloads details[open] summary { margin-block-end: var(--space-3); }
   .workflow { max-inline-size: 56rem; padding-inline-start: 1.4em; }
   .workflow li { margin-block-end: var(--space-4); padding-inline-start: var(--space-1); }
   .workflow-line { color: var(--accent); font-weight: 650; }
