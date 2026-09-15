@@ -1,8 +1,8 @@
 {
   "checkedAt": "2026-09-15",
-  "revision": "v2",
+  "revision": "Session 2 v2; Sessions 3 and 4 v4",
   "scope": "Two existing title slides only",
-  "visualCheck": "Fresh exported title PNGs inspected. One opera singer in each image, conceptual workflow below, proportional fit, native title and metadata unobstructed. Former lower diagram in Sessions 3 and 4 replaced. Session 1 unchanged.",
+  "visualCheck": "Fresh Sessions 3 and 4 title export inspected. Opera singer uses a laptop above the Promptotyping sphere, with source data, opaque model and research interface. Native title text and metadata are unchanged. Session 1 and Session 2 were not edited in this revision.",
   "slideOrderPreserved": true,
   "illustrations": [
     {
@@ -30,10 +30,10 @@
     },
     {
       "presentationId": "1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo",
-      "slideCount": 10,
+      "slideCount": 15,
       "protectedTitleObjectsUnchanged": true,
       "imageObjectId": "kug_s34_title_illustration_v2_20260915",
-      "file": "sessions-3-4-title-v2.png",
+      "file": "sessions-3-4-title-v4.png",
       "size": {
         "width": {
           "magnitude": 28050,
@@ -52,5 +52,5 @@
       }
     }
   ],
-  "limitations": "Illustrative metaphors; other slide content was not reviewed."
+  "limitations": "Illustrative metaphors. Concurrent changes elsewhere in the deck were preserved; other slide content was not reviewed."
 }

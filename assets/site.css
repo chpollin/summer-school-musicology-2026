@@ -61,17 +61,20 @@
 
 @layer layout {
   .wrap { max-inline-size: var(--wrap); inline-size: 92%; margin-inline: auto; }
-  .site-header { position: sticky; inset-block-start: 0; z-index: 5; border-block-end: 1px solid var(--line); background: var(--surface); }
+  .site-header { position: sticky; inset-block-start: 0; z-index: 5; background: var(--surface); }
   /* On narrow screens the wrapped navigation grows taller than --header-offset and would cover anchor targets. */
   @media (max-width: 45rem) { .site-header { position: static; } }
   .header-inner { display: flex; justify-content: space-between; align-items: center; gap: var(--space-4) var(--space-5); flex-wrap: wrap; padding-block: var(--space-3); }
   nav { display: flex; gap: var(--space-2) var(--space-5); flex-wrap: wrap; font-size: 0.9375rem; }
   .hero { padding-block: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem); max-inline-size: 60rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr)); gap: var(--space-5); }
-  .session-cards { --card-min: 19rem; }
-  .session { border-block-start: 1px solid var(--line); padding-block-start: var(--space-6); }
-  .session-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); border-block-start: 1px solid var(--line); padding-block-start: var(--space-5); margin-block: var(--space-6); }
-  footer { border-block-start: 1px solid var(--line); margin-block-start: var(--space-6); padding-block: var(--space-5) var(--space-6); font-size: var(--text-s); color: var(--muted); }
+  .session { padding-block-start: var(--space-6); }
+  .session-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--space-7); align-items: start; }
+  @media (max-width: 50rem) { .session-row { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); } }
+  .session-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); padding-block-start: var(--space-5); margin-block: var(--space-6); }
+  footer { margin-block-start: var(--space-6); padding-block: var(--space-5) var(--space-6); font-size: var(--text-s); color: var(--muted); }
+  .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3) var(--space-6); }
+  .footer-inner p { margin: 0; }
   .table-scroll { overflow-x: auto; margin-block: var(--space-5); }
 }
 
@@ -92,8 +95,7 @@
   .card .number { color: var(--accent); font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.06em; }
   .card h3 { margin-block: 0; }
   .card p { margin-block: 0; color: var(--muted); }
-  .session-cards .card { padding: var(--space-4); gap: var(--space-2); }
-  .session-cards .card span { font-weight: 650; }
+  .session-image { display: block; inline-size: 100%; aspect-ratio: 16 / 9; object-fit: contain; border-radius: var(--radius-s); }
   .material-links a { display: inline-block; padding-block: var(--space-1); font-weight: 600; }
   .panel { background: var(--tint); padding: var(--space-5); border-radius: var(--radius); margin-block: var(--space-4); }
   .actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-block: var(--space-4); }
@@ -103,13 +105,19 @@
   .resources { list-style-type: ""; padding: 0; margin-block: var(--space-4); }
   .resources li { margin-block: var(--space-3); overflow-wrap: anywhere; }
   .resources a { font-weight: 600; }
+  .downloads { background: var(--tint); border-radius: var(--radius); padding: clamp(1rem, 3vw, 2rem); }
+  .downloads h3 { display: flex; align-items: center; gap: var(--space-3); margin-block-start: var(--space-6); }
+  .download-icon { inline-size: 1.5rem; block-size: 1.5rem; flex: 0 0 auto; color: var(--accent); }
+  .downloads > .resources { margin-inline-start: 2.25rem; }
+  .downloads details { border: 0; background: transparent; padding: 0; margin-block: var(--space-5); }
   .embed { inline-size: 100%; display: block; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--surface); }
   .slides { aspect-ratio: 16 / 10; }
   .workflow { max-inline-size: 56rem; padding-inline-start: 1.4em; }
   .workflow li { margin-block-end: var(--space-4); padding-inline-start: var(--space-1); }
   .workflow-line { color: var(--accent); font-weight: 650; }
   .metadata-table { inline-size: 100%; border-collapse: collapse; text-align: start; font-size: 0.9375rem; }
-  .metadata-table th, .metadata-table td { padding: var(--space-3); border-block-end: 1px solid var(--line); vertical-align: top; }
+  .metadata-table th, .metadata-table td { padding: var(--space-3); vertical-align: top; }
+  .metadata-table tbody tr:nth-child(even) { background: var(--surface); }
   .metadata-table thead { background: var(--tint); }
 }
 

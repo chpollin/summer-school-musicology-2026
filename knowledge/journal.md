@@ -17,6 +17,12 @@ related: [handoff, project, specification]
 
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
+## 2026-09-15 · integriert · Promptotyping-Symbol und programmierende Opernsängerin
+
+Der Nutzer stellte sein kugelförmiges Promptotyping-Symbol als Referenz für die Abbildung von Daten auf Forschungsoberflächen bereit. Die bestehende Illustration für Sessions 3 und 4 wurde daran angepasst. Zwei gekrümmte Flächen bilden Quellen und Forschungsoberfläche ab; dazwischen steht das opake Tentakelmodell. Nach positiver Nutzerbewertung wurde das Notenblatt der Sängerin durch einen Laptop ersetzt, an dem sie selbst programmiert. Die überarbeitete Bildspalte wurde im bestehenden Titelbildobjekt ersetzt. Native Titeltexte, Metadaten und der bei der Mutation vorgefundene Folienbestand blieben unverändert. Die frische Titelfolienexportdatei wurde visuell geprüft. Referenzbeschreibung und Bearbeitungsprompts sind unter `assets/illustrations/` dokumentiert.
+
+Weitere Nutzerkorrekturen führten zur gemeinsamen Darstellung von Titelbild und Sessioninformationen in einer Zeile. Die separate Übersicht entfiel. Horizontale Trennlinien wurden durch Abstände ersetzt, der Footer auf Autor, Lizenz- und Quellcodelinks reduziert. Ein violetter Downloadbereich mit dekorativen Dateisymbolen hebt die Pakete und Referenzen hervor. Die Darstellung wurde auf Desktop und bei 320 Pixel Breite geprüft; Bilder stehen mobil über den Texten, die Seite hat keinen horizontalen Überlauf. Build, lokale Links und bestehende Session-Anker wurden kontrolliert.
+
 ## 2026-09-15 · korrigiert · Bildsprache und flache Sessionstruktur
 
 Der Nutzer verwarf die generischen Forschendenbilder und präzisierte die Bildsprache. Die Opernsängerin aus Session 1 ist in den beiden Ersatzbildern die einzige menschliche Figur. Der vorhandene schwarze Kubuskopf mit Tentakeln dient als Motiv für die opake Modellfunktion. Im unteren Bildbereich erscheinen Textgenerierung beziehungsweise Werkzeugbau mit Prüfung und Rückkopplung. Die vollständigen linken Bildspalten der bestehenden Titel wurden ersetzt; die frühere untere Grafik von Sessions 3 und 4 entfiel. Native Titeltexte und Metadaten sowie Folienbestand und Reihenfolge blieben erhalten. Referenzen, Generierung und Korrekturprompts liegen bei den v2-Bildern.

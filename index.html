@@ -25,20 +25,27 @@
 <p class="byline">Christopher Pollin · Digital Humanities Craft · University of Music and Performing Arts Graz · 16 and 17 September 2026</p>
 <div class="actions"><a class="button" href="#sessions">Go to the sessions</a><a class="button secondary" href="#downloads">Downloads</a></div>
 </div>
-<section id="sessions"><h2 class="visually-hidden">Sessions</h2><div class="grid session-cards"><a class="card" href="#session-1"><img src="assets/slides/session-1.png" width="960" height="540" alt="" decoding="async"><span>Session 1 · Archival sources</span></a><a class="card" href="#session-2"><img src="assets/slides/session-2.png" width="960" height="540" alt="" decoding="async"><span>Session 2 · Large language models</span></a><a class="card" href="#session-3"><img src="assets/slides/session-3.png" width="960" height="540" alt="" decoding="async"><span>Sessions 3 and 4 · Promptotyping</span></a></div></section>
-<section id="session-1" class="session">
+<div id="sessions"><section id="session-1" class="session session-row">
+<img class="session-image" src="assets/slides/session-1.png" width="960" height="540" alt="" decoding="async">
+<div class="session-content">
 <h2>Session 1 · Archival sources</h2>
 <p class="material-links"><a href="https://docs.google.com/presentation/d/1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc/preview">Slides</a> · <a href="https://docs.google.com/presentation/d/1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc/export/pdf">Slides PDF</a> · <a href="https://docs.google.com/document/d/1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg/preview">Lecture notes</a> · <a href="https://docs.google.com/document/d/1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg/export?format=pdf">Notes PDF</a></p>
 <p>Combine XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The <a href="tools/iiif-viewer/">IIIF viewer</a> also accepts the XML directly. The <a href="downloads/xml-iiif-workshop.zip">Python + IIIF package</a> contains the script, XML template, two synthetic example images and a guide.</p>
 <ul class="resources"><li><a href="downloads/pdf-to-images.zip">PDF to images · Python exercise package</a><br>Script, two-page source PDF and instructions.</li><li><a href="downloads/shared/schulnachricht.jpg">Schulnachricht · source image</a></li></ul>
+</div>
 </section>
-<section id="session-2" class="session">
+<section id="session-2" class="session session-row">
+<img class="session-image" src="assets/slides/session-2.png" width="960" height="540" alt="" decoding="async">
+<div class="session-content">
 <h2>Session 2 · Large language models</h2>
 <p class="material-links"><a href="https://docs.google.com/presentation/d/1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc/preview">Slides</a> · <a href="https://docs.google.com/presentation/d/1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc/export/pdf">Slides PDF</a> · <a href="https://docs.google.com/document/d/18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM/preview">Lecture notes</a> · <a href="https://docs.google.com/document/d/18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM/export?format=pdf">Notes PDF</a></p>
 <p>Transcribe seven documents with 40 scan pages, extract metadata and combine the checked results in TEI-XML. The <a href="materials/m3gim-fulltext.html">M³GIM exercise and downloads</a> provides the source images, prompts, TEI template, checker and reference files. Keep your TEI files and images together for the tool-building exercise in Session 3.</p>
 <ul class="resources"><li><a href="https://docs.google.com/presentation/d/19zybf1mABP3qM65GXv0xEGVososbhM03P9_INInYPj8/preview">Technical preparation slides</a></li></ul>
+</div>
 </section>
-<section id="session-3" class="session">
+<section id="session-3" class="session session-row">
+<img class="session-image" src="assets/slides/session-3.png" width="960" height="540" alt="" decoding="async">
+<div class="session-content">
 <h2>Sessions 3 and 4 · Promptotyping</h2>
 <p class="material-links"><a href="https://docs.google.com/presentation/d/1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo/preview">Slides</a> · <a href="https://docs.google.com/presentation/d/1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo/export/pdf">Slides PDF</a> · <a href="https://docs.google.com/document/d/138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA/preview">Lecture notes</a> · <a href="https://docs.google.com/document/d/138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA/export?format=pdf">Notes PDF</a></p>
 <p>Use LLMs for coding and build small research tools through Promptotyping.</p>
@@ -51,11 +58,12 @@
 </ol>
 <p>Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 <code>tei/</code> and <code>png/</code> folders together so the image links remain usable.</p>
 
-</section>
-<section id="downloads">
+</div>
+</section></div>
+<section id="downloads" class="downloads">
 <h2>Downloads</h2>
 <p>Choose the package for the current exercise. Reference solutions and additional examples are listed separately below.</p>
-<h3>Exercise starter packages</h3>
+<h3><svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 9 5v9l-9 5-9-5V8Z M3 8l9 5 9-5 M12 13v9 M7.5 5.5l9 5"/></svg>Exercise starter packages</h3>
 <ul class="resources">
 <li><a href="downloads/xml-iiif-workshop.zip" download>XML to IIIF · Python package</a><br><span class="small">Session 1 · script, XML template, two example images and guide.</span></li>
 <li><a href="downloads/pdf-to-images.zip" download>PDF pages as images · Python package</a><br><span class="small">Session 1 · script, two-page source PDF and instructions.</span></li>
@@ -63,12 +71,12 @@
 <li><a href="downloads/python-vscode.zip">Hands-on 1 · Python in Visual Studio Code · ZIP</a><br><span class="small">Session 3 · run the supplied PDF-to-PNG script yourself; guide and all seven PDFs included.</span></li>
 <li><a href="downloads/ai-harness.zip">Hands-on 2 · AI Harness · ZIP</a><br><span class="small">Session 3 · repeat the same workflow with an agent; guide, script and PDFs included.</span></li>
 </ul>
-<h3>Reference solutions</h3>
+<h3><svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H5v20h14V7Z M14 2v5h5 M8 14l3 3 5-6"/></svg>Reference solutions</h3>
 <ul class="resources">
 <li><a href="materials/m3gim-fulltext.html#reference">M³GIM · TEI, metadata and full texts</a><br><span class="small">Compare your work with the reference and resolve differences against the facsimiles.</span></li>
 <li><a href="downloads/m3gim-fulltext/m3gim-next-session.zip">Reference TEI + all images · ZIP</a><br><span class="small">Sessions 3 and 4 · complete corpus for tool building, with working relative image links.</span></li>
 </ul>
-<h3>Additional examples and source material</h3>
+<h3><svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6V4h6l2 3h10v14H3Z M3 10h18"/></svg>Additional examples and source material</h3>
 <ul class="resources">
 <li><a href="downloads/shared-materials.zip">Additional source material and examples · ZIP</a><br><span class="small">Source image, prompts, place lookup, poster text, person-index exercise and map demo.</span></li>
 <li><a href="tools/iiif-viewer/">IIIF viewer</a><br><span class="small">Open your XML or manifest with its images in Mirador.</span></li>
@@ -84,9 +92,9 @@
 <p class="small"><a href="https://docs.google.com/presentation/d/19zybf1mABP3qM65GXv0xEGVososbhM03P9_INInYPj8/preview">Technical preparation slides</a> · <a href="https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW">Original course folders on Google Drive</a></p>
 </section>
 </main>
-<footer><div class="wrap">
+<footer><div class="wrap footer-inner">
 <p>Christopher Pollin · <a href="https://dhcraft.org/">Digital Humanities Craft</a></p>
-<p>Texts and teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a> · Developed with GPT-6 Astra in Codex and Claude Code, images shown with <a href="https://projectmirador.org/">Mirador</a></p>
+<p>Teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a></p>
 </div></footer>
 </body>
 </html>

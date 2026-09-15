@@ -17,6 +17,14 @@ const link = (url, label, kind = '') => `<a${kind ? ` class="${kind}"` : ''} hre
 const slidesUrl = s => `https://docs.google.com/presentation/d/${s.slides}`;
 const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
+const downloadIcon = name => {
+  const paths = {
+    package: '<path d="m12 3 9 5v9l-9 5-9-5V8Z M3 8l9 5 9-5 M12 13v9 M7.5 5.5l9 5"/>',
+    reference: '<path d="M14 2H5v20h14V7Z M14 2v5h5 M8 14l3 3 5-6"/>',
+    folder: '<path d="M3 6V4h6l2 3h10v14H3Z M3 10h18"/>',
+  };
+  return `<svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[name]}</svg>`;
+};
 const outputs = new Map();
 
 const exercises = {
@@ -58,9 +66,9 @@ ${stylesheet ? `<link rel="stylesheet" href="${base}${stylesheet}">\n` : ''}</he
 <main class="wrap" id="content">
 ${content}
 </main>
-<footer><div class="wrap">
+<footer><div class="wrap footer-inner">
 <p>Christopher Pollin · <a href="https://dhcraft.org/">Digital Humanities Craft</a></p>
-<p>Texts and teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a> · Developed with GPT-6 Astra in Codex and Claude Code, images shown with <a href="https://projectmirador.org/">Mirador</a></p>
+<p>Teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a></p>
 </div></footer>
 ${scripts}</body>
 </html>
@@ -69,12 +77,13 @@ ${scripts}</body>
 
 const resourceList = (resources, base) => `<ul class="resources">${resources.map(r => `<li>${link(r.local ? base + r.url : r.url, r.label)}${r.note ? `<br>${escape(r.note)}` : ''}</li>`).join('')}</ul>`;
 
-const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span>${sessionLabel(s)} · ${escape(s.title)}</span></a>`;
-
-const section = s => `<section id="${s.id}" class="session">
+const section = s => `<section id="${s.id}" class="session session-row">
+<img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async">
+<div class="session-content">
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
 <p class="material-links">${link(`${slidesUrl(s)}/preview`, 'Slides')} · ${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF')} · ${link(`${notesUrl(s)}/preview`, 'Lecture notes')} · ${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF')}</p>
 ${s.description ? `<p>${escape(s.description)}</p>\n` : ''}${s.exercise ? `${exercises[s.exercise]()}\n` : ''}${s.resources.length ? resourceList(s.resources, '') : ''}
+</div>
 </section>`;
 
 const home = `<div class="hero">
@@ -84,12 +93,11 @@ const home = `<div class="hero">
 <p class="byline">Christopher Pollin · Digital Humanities Craft · ${escape(venue)} · 16 and 17 September 2026</p>
 <div class="actions">${link('#sessions', 'Go to the sessions', 'button')}${link('#downloads', 'Downloads', 'button secondary')}</div>
 </div>
-<section id="sessions"><h2 class="visually-hidden">Sessions</h2><div class="grid session-cards">${sessions.map(card).join('')}</div></section>
-${sessions.map(section).join('\n')}
-<section id="downloads">
+<div id="sessions">${sessions.map(section).join('\n')}</div>
+<section id="downloads" class="downloads">
 <h2>Downloads</h2>
 <p>Choose the package for the current exercise. Reference solutions and additional examples are listed separately below.</p>
-<h3>Exercise starter packages</h3>
+<h3>${downloadIcon('package')}Exercise starter packages</h3>
 <ul class="resources">
 <li><a href="downloads/xml-iiif-workshop.zip" download>XML to IIIF · Python package</a><br><span class="small">Session 1 · script, XML template, two example images and guide.</span></li>
 <li><a href="downloads/pdf-to-images.zip" download>PDF pages as images · Python package</a><br><span class="small">Session 1 · script, two-page source PDF and instructions.</span></li>
@@ -97,12 +105,12 @@ ${sessions.map(section).join('\n')}
 <li>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}<br><span class="small">Session 3 · run the supplied PDF-to-PNG script yourself; guide and all seven PDFs included.</span></li>
 <li>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}<br><span class="small">Session 3 · repeat the same workflow with an agent; guide, script and PDFs included.</span></li>
 </ul>
-<h3>Reference solutions</h3>
+<h3>${downloadIcon('reference')}Reference solutions</h3>
 <ul class="resources">
 <li>${link('materials/m3gim-fulltext.html#reference', 'M³GIM · TEI, metadata and full texts')}<br><span class="small">Compare your work with the reference and resolve differences against the facsimiles.</span></li>
 <li>${link('downloads/m3gim-fulltext/m3gim-next-session.zip', 'Reference TEI + all images · ZIP')}<br><span class="small">Sessions 3 and 4 · complete corpus for tool building, with working relative image links.</span></li>
 </ul>
-<h3>Additional examples and source material</h3>
+<h3>${downloadIcon('folder')}Additional examples and source material</h3>
 <ul class="resources">
 <li>${link('downloads/shared-materials.zip', 'Additional source material and examples · ZIP')}<br><span class="small">Source image, prompts, place lookup, poster text, person-index exercise and map demo.</span></li>
 <li>${link('tools/iiif-viewer/', 'IIIF viewer')}<br><span class="small">Open your XML or manifest with its images in Mirador.</span></li>
