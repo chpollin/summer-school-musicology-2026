@@ -6,7 +6,6 @@ let activeUrls = [];
 let revision = 0;
 
 const languageText = value => typeof value === 'string' ? value : Object.values(value || {}).flat().join('; ');
-const escapeText = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 
 function filename(reference) {
   if (!reference) throw new Error('An image reference is empty. Fill in every page reference.');
@@ -75,9 +74,10 @@ async function showObject(model, files) {
       const size = await imageSize(url, name);
       const body = { id: url, type: 'Image', format: /\.png$/i.test(name) ? 'image/png' : 'image/jpeg', ...size };
       const id = `${base}canvas/${index + 1}`;
-      items.push({ id, type: 'Canvas', label: { none: [escapeText(page.label)] }, ...size, thumbnail: [{ ...body }], items: [{ id: `${base}page/${index + 1}`, type: 'AnnotationPage', items: [{ id: `${base}annotation/${index + 1}`, type: 'Annotation', motivation: 'painting', body, target: id }] }] });
+      items.push({ id, type: 'Canvas', label: { none: [page.label] }, ...size, thumbnail: [{ ...body }], items: [{ id: `${base}page/${index + 1}`, type: 'AnnotationPage', items: [{ id: `${base}annotation/${index + 1}`, type: 'Annotation', motivation: 'painting', body, target: id }] }] });
     }
-    const manifest = { '@context': 'http://iiif.io/api/presentation/3/context.json', id: `${base}manifest.json`, type: 'Manifest', label: { none: [escapeText(model.title)] }, metadata: model.metadata.map(m => ({ label: { none: [escapeText(m.label)] }, value: { none: [escapeText(m.value)] } })), items };
+    // Mirador shows the window title as plain text and sanitises metadata itself, so the values stay unescaped here.
+    const manifest = { '@context': 'http://iiif.io/api/presentation/3/context.json', id: `${base}manifest.json`, type: 'Manifest', label: { none: [model.title] }, metadata: model.metadata.map(m => ({ label: { none: [m.label] }, value: { none: [m.value] } })), items };
     await import('./vendor/mirador.min.js');
     document.querySelector('#result').hidden = false;
     if (viewer) viewer.unmount();

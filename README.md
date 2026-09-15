@@ -6,12 +6,13 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 
 ## Struktur
 
-- `index.html`: Einstieg und vier Sessions.
-- `sessions/session-1.html` bis `session-4.html`: eigene Seiten mit eingebetteten Slides, Skripten, Exportlinks und Materialien.
-- `materials/`: zentrale Übersicht der Dokumente und Downloads.
+- `index.html`: die Kursseite mit Sessionübersicht (Titelfolien als Bilder), einem Abschnitt je Session mit Slides, Skript, Exportlinks und Materialien sowie dem Downloadbereich.
+- `materials/m3gim-fulltext.html`: die M³GIM-Übung; `sessions/` und `materials/index.html` sind Weiterleitungen auf die Anker der Kursseite.
 - `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
-- `downloads/`: Python-/IIIF-Paket und PDF-zu-Bildern-Übung.
-- `scripts/build-site.mjs`: erzeugt die statischen Kursseiten aus dem dort gepflegten Materialverzeichnis.
+- `downloads/`: Python-/IIIF-Paket, PDF-zu-Bildern-Übung und M³GIM-Paket.
+- `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`.
+- `scripts/sessions.mjs`: das Materialverzeichnis der Sessions; `scripts/build-site.mjs` erzeugt daraus alle Seiten, `--check` prüft Drift und lokale Links; `scripts/fetch-title-slides.mjs` holt die Titelfolien; `scripts/build-iiif-package.py` packt das IIIF-Paket.
+- `knowledge/`: Projektwissen nach der Promptotyping-Konvention, Einstieg über `knowledge/INDEX.md`.
 
 ## Materialquellen
 
@@ -45,7 +46,7 @@ Die Lehrtransformation flacht `div`-Gruppen in eine Seitenfolge ab. Sie erzeugt 
 
 ## Weiterentwicklung und Veröffentlichung
 
-Die Kursseiten werden bei Änderungen am Materialverzeichnis mit `node scripts/build-site.mjs` neu erzeugt. Die generierten HTML-Dateien werden mit versioniert. GitHub Pages veröffentlicht den Repository-Root von `main`; ein Build auf GitHub ist nicht nötig.
+Die Kursseiten werden bei Änderungen am Materialverzeichnis mit `node scripts/build-site.mjs` neu erzeugt; `node scripts/build-site.mjs --check` prüft vor einem Commit, dass die versionierten Seiten dem Skript entsprechen und alle lokalen Links auflösen. Nach einer Änderung an einem Deck holt `node scripts/fetch-title-slides.mjs` die Titelfolien neu. Die generierten HTML-Dateien und Titelbilder werden mit versioniert. Lizenzen: Code MIT (`LICENSE`), Texte und Lehrmaterial CC BY 4.0 (`LICENSE-CONTENT.md`). GitHub Pages veröffentlicht den Repository-Root von `main`; ein Build auf GitHub ist nicht nötig.
 
 Das frühere Repository `chpollin/xml-iiif-workshop` bleibt als Weiterleitung zum neuen Viewer erhalten. Bereits ausgegebene Downloadlinks bleiben erreichbar.
 
