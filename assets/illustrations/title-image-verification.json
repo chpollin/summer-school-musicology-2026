@@ -1,23 +1,56 @@
 {
   "checkedAt": "2026-09-15",
+  "revision": "v2",
   "scope": "Two existing title slides only",
-  "visualCheck": "Fresh exported title PNGs inspected after insertion. Image aspect ratios preserved. Existing native titles, metadata, and the Sessions 3–4 lower workflow graphic are visible and unobstructed.",
-  "existingTitleObjectsPreserved": true,
+  "visualCheck": "Fresh exported title PNGs inspected. One opera singer in each image, conceptual workflow below, proportional fit, native title and metadata unobstructed. Former lower diagram in Sessions 3 and 4 replaced. Session 1 unchanged.",
+  "slideOrderPreserved": true,
   "illustrations": [
     {
       "presentationId": "1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc",
-      "slideObjectId": "g3fb4bd8a6f7_0_216",
-      "imageObjectId": "kug_s2_title_illustration_20260915",
-      "file": "session-2-title.png",
-      "slideCount": 37
+      "slideCount": 37,
+      "protectedTitleObjectsUnchanged": true,
+      "imageObjectId": "kug_s2_title_illustration_v2_20260915",
+      "file": "session-2-title-v2.png",
+      "size": {
+        "width": {
+          "magnitude": 28050,
+          "unit": "EMU"
+        },
+        "height": {
+          "magnitude": 35050,
+          "unit": "EMU"
+        }
+      },
+      "transform": {
+        "scaleX": 146.6952,
+        "scaleY": 146.6952,
+        "translateY": 916.845,
+        "unit": "EMU"
+      }
     },
     {
       "presentationId": "1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo",
-      "slideObjectId": "g3fb4bd8a6f7_0_216",
-      "imageObjectId": "kug_s34_title_illustration_20260915",
-      "file": "sessions-3-4-title.png",
-      "slideCount": 10
+      "slideCount": 10,
+      "protectedTitleObjectsUnchanged": true,
+      "imageObjectId": "kug_s34_title_illustration_v2_20260915",
+      "file": "sessions-3-4-title-v2.png",
+      "size": {
+        "width": {
+          "magnitude": 28050,
+          "unit": "EMU"
+        },
+        "height": {
+          "magnitude": 35050,
+          "unit": "EMU"
+        }
+      },
+      "transform": {
+        "scaleX": 146.6952,
+        "scaleY": 146.6952,
+        "translateY": 916.845,
+        "unit": "EMU"
+      }
     }
   ],
-  "limitations": "Other slide content was not reviewed. Session 2 changed concurrently outside these title-image writes; those changes were preserved."
+  "limitations": "Illustrative metaphors; other slide content was not reviewed."
 }

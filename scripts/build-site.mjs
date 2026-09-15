@@ -6,7 +6,7 @@ import { existsSync, readdirSync, readFileSync, realpathSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { m3gimCard, m3gimPage } from './m3gim-exercise.mjs';
+import { m3gimPage } from './m3gim-exercise.mjs';
 import { viewerPage } from './viewer-page.mjs';
 import { course, drive, event, prep, sessions, site, venue } from './sessions.mjs';
 
@@ -17,29 +17,19 @@ const link = (url, label, kind = '') => `<a${kind ? ` class="${kind}"` : ''} hre
 const slidesUrl = s => `https://docs.google.com/presentation/d/${s.slides}`;
 const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
-const shortDay = day => {
-  const match = day.match(/^(\w{3})\w* (\d+) (\w{3})\w*$/);
-  if (!match) throw new Error(`Day must read like "Wednesday 16 September", got "${day}"`);
-  return `${match[1]} ${match[2]} ${match[3]}`;
-};
 const outputs = new Map();
 
-const panels = {
-  iiif: () => `<div class="panel"><h3>From XML to IIIF</h3><p>Combine your XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The viewer also accepts the XML directly.</p><div class="actions">${link('tools/iiif-viewer/', 'Open the IIIF viewer', 'button')}${link('downloads/xml-iiif-workshop.zip', 'Download Python + IIIF package', 'button secondary')}</div><p class="small">Script, XML template, two synthetic example images and an English guide.</p></div>`,
-  m3gim: base => m3gimCard(base, link),
-  'm3gim-next': () => `<div class="panel">
-<h3>From running a workflow to building a research tool</h3>
-<p>We return to PDF-to-PNG conversion to compare how you and an agent execute the same task. The TEI corpus from Session 2 becomes input for the tool-building exercise in step 3.</p>
+const exercises = {
+  iiif: () => `<p>Combine XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The ${link('tools/iiif-viewer/', 'IIIF viewer')} also accepts the XML directly. The ${link('downloads/xml-iiif-workshop.zip', 'Python + IIIF package')} contains the script, XML template, two synthetic example images and a guide.</p>`,
+  m3gim: () => `<p>Transcribe seven documents with 40 scan pages, extract metadata and combine the checked results in TEI-XML. The ${link('materials/m3gim-fulltext.html', 'M³GIM exercise and downloads')} provides the source images, prompts, TEI template, checker and reference files. Keep your TEI files and images together for the tool-building exercise in Session 3.</p>`,
+  'm3gim-next': () => `<p>Session 3 guides you through the first three steps. We return to PDF-to-PNG conversion to compare how you and an agent execute the same task, then reuse the TEI corpus from Session 2 for tool building.</p>
 <ol class="workflow">
 <li><strong>Run the workflow yourself.</strong> Open the first package in Visual Studio Code, follow its guide and run the supplied script. Inspect the generated images against the PDFs.<br>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}</li>
-<li><strong>Repeat the workflow with an agent.</strong> Give the agent the same task, script and PDFs. Observe its tool use, inspect the outputs and compare them with your first run.<br>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}</li>
-<li><strong>Use LLMs for coding through Promptotyping.</strong> State a research requirement and record the relevant data, constraints and checks. Reuse your TEI files and images from Session 2 to implement and inspect a first tool together. A source viewer is the worked example.<br>${link('materials/m3gim-fulltext.html#next-session', 'TEI corpus layout & reference bundle')}</li>
-<li><strong>Continue independently in Session 4.</strong> Choose a requirement for your own research tool or extend the guided example. Supply the relevant context, inspect the agent’s changes and verify the result against the data. Record what works and what remains uncertain.</li>
+<li><strong>Repeat the workflow with an agent.</strong> Give the agent the same task, script and PDFs. Compare the outputs with your first run. Practise Agentic Engineering by inspecting its tool use and results and providing feedback.<br>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}</li>
+<li><strong>Build a small research tool.</strong> Reuse your TEI files and images from Session 2 to implement and inspect a first tool together. A source viewer is the worked example. Maintain the requirements, data description and checks as project knowledge (Knowledge Engineering), and select the relevant context for each task (Context Engineering).<br>${link('materials/m3gim-fulltext.html#next-session', 'TEI corpus layout & reference bundle')}</li>
+<li id="session-4"><strong>Continue independently in Session 4.</strong> Choose a requirement for your own research tool or extend the guided example. Supply the relevant context, inspect the agent’s changes and verify the result against the data. Record what works and what remains uncertain.</li>
 </ol>
-<p class="small">Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 <code>tei/</code> and <code>png/</code> folders together so the image links remain usable.</p>
-<h3>Practices used throughout</h3>
-<dl class="practices"><dt>Knowledge Engineering</dt><dd>Maintain project knowledge about the research purpose, data, requirements, decisions and checks.</dd><dt>Context Engineering</dt><dd>Select the instructions, source material and project knowledge needed for the current task.</dd><dt>Agentic Engineering</dt><dd>Guide the agent’s tool use, inspect its actions and results, and provide feedback for the next change.</dd></dl>
-</div>`,
+<p>Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 <code>tei/</code> and <code>png/</code> folders together so the image links remain usable.</p>`,
 };
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
@@ -77,18 +67,14 @@ ${scripts}</body>
 `;
 }
 
-const resourceList = (resources, base) => `<ul class="resources">${resources.map(r => `<li>${link(r.local ? base + r.url : r.url, r.label)}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
+const resourceList = (resources, base) => `<ul class="resources">${resources.map(r => `<li>${link(r.local ? base + r.url : r.url, r.label)}${r.note ? `<br>${escape(r.note)}` : ''}</li>`).join('')}</ul>`;
 
-const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span class="number">${sessionLabel(s)}</span><span class="small">${shortDay(s.day)} · ${s.time}</span><h3>${escape(s.title)}</h3><p>${escape(s.short)}</p></a>`;
+const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span>${sessionLabel(s)} · ${escape(s.title)}</span></a>`;
 
 const section = s => `<section id="${s.id}" class="session">
-<p class="eyebrow">${sessionLabel(s)} · ${s.day} · ${s.time}</p>
-<h2>${escape(s.title)}</h2>
-<p class="lead">${escape(s.description)}</p>
-${s.stages ? `<div class="grid">${s.stages.map((stage, i) => `<article class="panel"${i === 1 ? ' id="session-4"' : ''}><h3>${escape(stage.title)}</h3><p>${escape(stage.text)}</p></article>`).join('')}</div><p class="small">Both sessions use the same slide deck and lecture notes.</p>` : ''}
-<div class="actions">${link(`${slidesUrl(s)}/preview`, 'Open slides', 'button')}${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF', 'button secondary')}${link(`${notesUrl(s)}/preview`, 'Lecture notes', 'button')}${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF', 'button secondary')}</div>
-<details class="slides-embed"><summary>Show the slides on this page</summary><iframe class="embed slides" src="${slidesUrl(s)}/embed?start=false&amp;loop=false&amp;delayms=3000" title="${sessionLabel(s)} slides" allowfullscreen loading="lazy"></iframe></details>
-${s.panel ? `${panels[s.panel]('')}\n` : ''}${s.resources.length ? resourceList(s.resources, '') : ''}
+<h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
+<p class="material-links">${link(`${slidesUrl(s)}/preview`, 'Slides')} · ${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF')} · ${link(`${notesUrl(s)}/preview`, 'Lecture notes')} · ${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF')}</p>
+${s.description ? `<p>${escape(s.description)}</p>\n` : ''}${s.exercise ? `${exercises[s.exercise]()}\n` : ''}${s.resources.length ? resourceList(s.resources, '') : ''}
 </section>`;
 
 const home = `<div class="hero">

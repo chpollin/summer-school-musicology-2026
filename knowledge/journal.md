@@ -17,6 +17,12 @@ related: [handoff, project, specification]
 
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
+## 2026-09-15 · korrigiert · Bildsprache und flache Sessionstruktur
+
+Der Nutzer verwarf die generischen Forschendenbilder und präzisierte die Bildsprache. Die Opernsängerin aus Session 1 ist in den beiden Ersatzbildern die einzige menschliche Figur. Der vorhandene schwarze Kubuskopf mit Tentakeln dient als Motiv für die opake Modellfunktion. Im unteren Bildbereich erscheinen Textgenerierung beziehungsweise Werkzeugbau mit Prüfung und Rückkopplung. Die vollständigen linken Bildspalten der bestehenden Titel wurden ersetzt; die frühere untere Grafik von Sessions 3 und 4 entfiel. Native Titeltexte und Metadaten sowie Folienbestand und Reihenfolge blieben erhalten. Referenzen, Generierung und Korrekturprompts liegen bei den v2-Bildern.
+
+Auf weitere Nutzerkorrektur wurde die Kursseite auf eine Überschrift pro Session reduziert. Uhrzeiten, separate Sessiondatumszeilen, Unterkarten, zusätzliche Vorspanntexte und Folieneinbettungen entfielen. Eine direkte Materialzeile führt zu Slides, Notes und PDF-Exporten. Das Hauptlernziel steht einmal im gewöhnlichen Übungstext. Die aufbauende Übung und der Anker für Session 4 bleiben erhalten. Build und lokale Links wurden geprüft, die neuen Titel und die flache Darstellung im Browser visuell kontrolliert.
+
 ## 2026-09-15 · integriert · Übungsfolge, Titelbilder und Materialzugang
 
 Auf Nutzerauftrag wurden Website, gemeinsame Lecture Notes und Hands-on-Anleitungen auf dieselbe Übungsfolge abgestimmt. Eigene Skriptausführung und Agentenausführung bereiten den Bau eines kleinen Forschungswerkzeugs durch Promptotyping vor. Session 4 führt die Arbeit mit einer selbstgewählten Forschungsanforderung fort. Der vorhandene Abschnitt 1.2 mit Quellenanmerkungen [8]–[12] sowie native Fußnoten und Dokumentchips blieben erhalten. Alle elf exportierten Notes-Seiten wurden visuell geprüft. Der Folienchip führt zum gemeinsamen Deck, zeigt jedoch weiterhin seinen von Google zwischengespeicherten früheren Titel.
