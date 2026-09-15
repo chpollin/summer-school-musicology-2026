@@ -1,8 +1,8 @@
 {
   "checkedAt": "2026-09-15",
-  "revision": "Session 2 v2; Sessions 3 and 4 v4",
+  "revision": "Session 2 v2; Sessions 3 and 4 v5",
   "scope": "Two existing title slides only",
-  "visualCheck": "Fresh Sessions 3 and 4 title export inspected. Opera singer uses a laptop above the Promptotyping sphere, with source data, opaque model and research interface. Native title text and metadata are unchanged. Session 1 and Session 2 were not edited in this revision.",
+  "visualCheck": "Fresh Sessions 3 and 4 title export inspected. The laptop has a solid rear lid with a readable M³GIM sticker. The opera singer types above the Promptotyping sphere. Native title text and metadata are unchanged. The user approved the illustration. Session 1 and Session 2 were not edited in this revision.",
   "slideOrderPreserved": true,
   "illustrations": [
     {
@@ -33,7 +33,7 @@
       "slideCount": 15,
       "protectedTitleObjectsUnchanged": true,
       "imageObjectId": "kug_s34_title_illustration_v2_20260915",
-      "file": "sessions-3-4-title-v4.png",
+      "file": "sessions-3-4-title-v5.png",
       "size": {
         "width": {
           "magnitude": 28050,

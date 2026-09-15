@@ -17,6 +17,10 @@ related: [handoff, project, specification]
 
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
+## 2026-09-15 · korrigiert · Laptopdeckel mit M³GIM-Sticker
+
+Die sichtbare Rückseite des Laptops erhielt auf Nutzerwunsch einen M³GIM-Sticker. Die zuvor dort abgebildeten Codezeilen entfielen. Der Nutzer bestätigte die korrigierte Illustration; sie wurde in das vorhandene Titelbildobjekt für Sessions 3 und 4 übernommen. Der frische Folienexport wurde visuell geprüft, die Reihenfolge der 15 vorgefundenen Folien und die übrigen Titelobjekte blieben identisch.
+
 ## 2026-09-15 · integriert · Promptotyping-Symbol und programmierende Opernsängerin
 
 Der Nutzer stellte sein kugelförmiges Promptotyping-Symbol als Referenz für die Abbildung von Daten auf Forschungsoberflächen bereit. Die bestehende Illustration für Sessions 3 und 4 wurde daran angepasst. Zwei gekrümmte Flächen bilden Quellen und Forschungsoberfläche ab; dazwischen steht das opake Tentakelmodell. Nach positiver Nutzerbewertung wurde das Notenblatt der Sängerin durch einen Laptop ersetzt, an dem sie selbst programmiert. Die überarbeitete Bildspalte wurde im bestehenden Titelbildobjekt ersetzt. Native Titeltexte, Metadaten und der bei der Mutation vorgefundene Folienbestand blieben unverändert. Die frische Titelfolienexportdatei wurde visuell geprüft. Referenzbeschreibung und Bearbeitungsprompts sind unter `assets/illustrations/` dokumentiert.

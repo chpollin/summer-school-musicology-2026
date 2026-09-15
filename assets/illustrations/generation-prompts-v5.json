@@ -1,0 +1,8 @@
+{
+  "generated": "2026-09-15",
+  "tool": "Built-in image_gen",
+  "file": "sessions-3-4-title-v5.png",
+  "editTarget": "sessions-3-4-title-v4.png",
+  "prompt": "Edit this existing portrait illustration with one tightly localized correction. The laptop in the upper panel is seen from BEHIND its display: the panel facing the viewer must be an opaque solid laptop lid, not a code editor screen. Remove all code lines, screen UI, sidebar, and screen-like marks from this visible back panel. Replace them with a plain light gray laptop casing and a single small tasteful sticker centered on the lid reading exactly 'M³GIM' in bold clear black lettering, with a subtle purple sticker outline. Retain the tilted perspective of the laptop, its keyboard, and the opera singer's typing hands. Preserve the opera singer's face, tiara, pearls, stage costume and pose. Preserve the entire lower Promptotyping globe illustration: archival source data flowing through the jagged tentacled black cube into a research user interface, violet feedback arrow, same shapes and composition. Preserve the black and white Ben-Day halftone comic / woodcut style, restrained violet accents, purple border, dimensions and layout. No extra people, no extra symbols or labels. This is a physical laptop back, with a readable M³GIM sticker, and absolutely no visible source code on its back.",
+  "purpose": "Solid laptop rear lid with M³GIM sticker, as approved by the user."
+}
