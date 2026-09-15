@@ -140,7 +140,7 @@ def main() -> None:
     except (OSError, ValueError, etree.XMLSyntaxError) as error:
         parser.exit(1, f"ERROR: {error}\n")
     print(f"OK: {output.name} created with {len(manifest['items'])} pages.")
-    print("Open https://chpollin.github.io/xml-iiif-workshop/")
+    print("Open https://chpollin.github.io/summer-school-musicology-2026/tools/iiif-viewer/")
     print("Select manifest.json and the referenced images, then click Open in Mirador.")
 
 

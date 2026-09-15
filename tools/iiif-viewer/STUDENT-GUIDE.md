@@ -2,7 +2,7 @@
 
 ## Open the viewer
 
-Visit **https://chpollin.github.io/xml-iiif-workshop/**. Click **Try the example** to see the supplied two-page object.
+Visit **https://chpollin.github.io/summer-school-musicology-2026/tools/iiif-viewer/**. Click **Try the example** to see the supplied two-page object.
 
 ## Use your XML and images
 

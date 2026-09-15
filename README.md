@@ -1,54 +1,43 @@
-# From XML to IIIF
+# Summer School Musicology 2026 · Research Data Workflows and LLMs
 
-Lehranwendung für die Summer School Musicology 2026 an der Kunstuniversität Graz. Sie öffnet ein projektspezifisches XML oder ein mitgeliefertes Python-erzeugtes IIIF-Presentation-3-Manifest zusammen mit ausgewählten JPEG-/PNG-Bildern in Mirador.
+Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 2026. Sie verbindet aktuelle Google Slides und Lecture Notes mit Übungsdateien und dem IIIF-Viewer.
 
-**Website:** https://chpollin.github.io/xml-iiif-workshop/
+**Website:** https://chpollin.github.io/summer-school-musicology-2026/
 
-## Nutzung
+## Struktur
 
-1. Website öffnen und entweder **Try the example** wählen oder eine eigene XML-/JSON-Datei auswählen.
-2. Sämtliche referenzierten Bilddateien gemeinsam auswählen.
-3. **Open in Mirador** anklicken und Metadaten sowie Seitenfolge prüfen.
-4. XML ändern, speichern, erneut auswählen und wieder öffnen.
+- `index.html`: Einstieg und vier Sessions.
+- `sessions/session-1.html` bis `session-4.html`: eigene Seiten mit eingebetteten Slides, Skripten, Exportlinks und Materialien.
+- `materials/`: zentrale Übersicht der Dokumente und Downloads.
+- `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
+- `downloads/`: Python-/IIIF-Paket und PDF-zu-Bildern-Übung.
+- `scripts/build-site.mjs`: erzeugt die statischen Kursseiten aus dem dort gepflegten Materialverzeichnis.
 
-Die Dateiauswahl verarbeitet die Dateien ausschließlich im Browser. Ein lokaler Server, Benutzerkonto oder Upload zum Repository ist nicht erforderlich. Die Seite selbst wird von GitHub Pages geladen. Die Anwendung sendet ausgewählte Inhalte nicht an GitHub oder andere Dienste.
+## Materialquellen
 
-## Python-Übung
+Die Titel und IDs der vier aktuellen Decks und Skripten wurden am 15. September 2026 im Google-Drive-Kursordner abgeglichen. Insbesondere Session 3 und 4 verwenden die am 14. September neu angelegten Decks. Das frühere gemeinsame Skriptum ist inzwischen das Skript von Session 1; Sessions 2–4 haben eigene Dokumente.
 
-Das [Lehrpaket](xml-iiif-workshop.zip) enthält `build_manifest.py`, `metadata.xml`, zwei synthetische Beispielbilder und eine englische Anleitung. Mit Python ab 3.11:
+Google Drive bleibt der Bearbeitungsort. Einbettungen und PDF-/Office-Exportlinks zeigen auf die jeweiligen aktuellen Google-Dokumente. Die Website verändert deren Freigaben nicht. Weitere Quelldateien bleiben in ihren vorhandenen Drive-Übungsordnern verlinkt.
 
-```sh
-python -m pip install "lxml>=5,<7" "Pillow>=10,<13"
-python build_manifest.py metadata.xml
-```
+Kursordner: https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW
 
-Danach auf der Website `manifest.json` und die Bilder auswählen. Python bleibt damit als sichtbarer Transformationsschritt erhalten. Alternativ verarbeitet die Website das XML direkt im Browser.
+Das PDF-Übungspaket stammt aus dem im Vault gepflegten Lehrpaket „PDF pages as images“. Sein README dokumentiert die Bildquelle, CC-BY-Angabe und Ableitung des PDFs. Das IIIF-Paket enthält synthetische Beispielbilder.
 
-## Modellierung und Grenzen
+## IIIF-Viewer
 
-- Eingabevokabular: `book` im Namespace `http://gams.uni-graz.at/viewer`; Bildreferenzen als `xlink:href`.
-- XML-Titel wird Manifesttitel, beschreibende Felder werden Anzeigemetadaten, die Folge der `page`-Elemente wird zur Canvas-Reihenfolge.
-- Gruppierungen innerhalb von `div` werden in diesem Lehrbeispiel zu einer Seitenfolge zusammengefasst. IIIF Ranges werden nicht erzeugt.
-- Ein Canvas enthält genau eine Bildannotation. Die Abmessungen werden aus dem ausgewählten Bild gelesen. JPEG/PNG werden vollständig geladen, ohne IIIF Image Service.
-- Bilddateien müssen eindeutige Namen besitzen. Der Browser ordnet Referenzen nach ihrem Dateinamen zu und ersetzt Bild-URLs durch temporäre Blob-Adressen. Externe Ressourcen aus importierten Manifesten werden nicht abgerufen.
-- Das zusammengesetzte Owner-Feld bleibt eine beschriftete Angabe. Es wird keine formale Lizenz daraus abgeleitet.
-- Syntax- und Eingabeprüfungen sind keine vollständige Schema-Validierung oder historische Prüfung.
-- Keine METS-/TEI-Konvertierung, kein produktiver GAMS-Ingest, keine dauerhafte Publikation der ausgewählten Objekte. Nach Neuladen werden Dateien erneut ausgewählt.
+Der Viewer akzeptiert das vereinfachte Projekt-XML im Namespace `http://gams.uni-graz.at/viewer` oder das mitgelieferte Python-erzeugte IIIF-Presentation-3-Manifest sowie JPEG-/PNG-Bilder. Er verarbeitet die ausgewählten Dateien ausschließlich im Browser. Bildadressen werden durch temporäre Blob-Adressen ersetzt; fremde Ressourcen aus Manifesten werden nicht geladen. Die Dateiauswahl veröffentlicht kein dauerhaft erreichbares Objekt.
+
+Die Lehrtransformation flacht `div`-Gruppen in eine Seitenfolge ab. Sie erzeugt weder METS noch einen produktiven GAMS-Ingest. Historische Richtigkeit wird nicht automatisch geprüft. Mirador 3.3.0 und seine Lizenzhinweise liegen unter `tools/iiif-viewer/vendor/`.
+
+## Weiterentwicklung und Veröffentlichung
+
+Die Kursseiten werden bei Änderungen am Materialverzeichnis mit `node scripts/build-site.mjs` neu erzeugt. Die generierten HTML-Dateien werden mit versioniert. GitHub Pages veröffentlicht den Repository-Root von `main`; ein Build auf GitHub ist nicht nötig.
+
+Das frühere Repository `chpollin/xml-iiif-workshop` bleibt als Weiterleitung zum neuen Viewer erhalten. Bereits ausgegebene Downloadlinks bleiben erreichbar.
 
 ## Herkunft
 
-Christopher Pollin hat die Anwendung für die Lehrveranstaltung mit GPT-6 Astra in Codex entwickeln lassen. Die XML-Verarbeitung, Dateiauswahl und Lehranleitung gehören zu dieser Anpassung. Die Bildanzeige übernimmt der bestehende Mirador-Viewer.
-
-Mirador 3.3.0 ist lokal im Repository enthalten; es gibt keine CDN-Abhängigkeit zur Laufzeit. Originaldistribution: https://unpkg.com/mirador@3.3.0/dist/mirador.min.js. Mirador und enthaltene Bibliotheken tragen ihre jeweiligen Lizenzhinweise unter `vendor/`.
-
-Die zwei Beispielbilder wurden mit Pillow als synthetisches Lehrmaterial erzeugt. Sie enthalten keine historischen Quellen oder Angaben Dritter.
-
-## Quellen
+Christopher Pollin hat die Lehrwebsite und die Dateiverarbeitung mit GPT-6 Astra in Codex entwickeln lassen. Die Bildanzeige übernimmt der bestehende Open-Source-Viewer Mirador. Die Kurstexte und Dokumente stammen aus den zugehörigen Lehrmaterialien.
 
 - https://github.com/ProjectMirador/mirador/tree/v3.3.0
-- https://iiif.io/api/cookbook/recipe/0001-mvm-image/
 - https://iiif.io/api/cookbook/recipe/0009-book-1/
-
-## Betrieb
-
-Statische Website ohne Build. GitHub Pages veröffentlicht den Root von `main`. Für die lokale Entwicklung genügt `python -m http.server` im Repository. Browserprüfungen decken XML- und JSON-Dateiauswahl, Seitenwechsel, wiederholtes Laden, fehlende Bilder und fehlerhaftes XML ab.
