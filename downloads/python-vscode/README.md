@@ -1,9 +1,7 @@
 # Hands-on 1: Python in Visual Studio Code
 
 Render every page of every input PDF as a PNG image using the provided script.
-This is the first step of the guided exercise in Session 3. Afterwards, repeat
-the workflow with an AI agent in Hands-on 2, then use an LLM to program a small
-research tool with the source materials from Session 2.
+This introductory exercise is useful if you are new to running scripts. You can compare it with the AI Harness workflow in Hands-on 2. The main Session 3 exercise builds a small static web publication from your Session 2 TEI and images. Session 4 extends it with a research requirement.
 
 ## Folder structure
 

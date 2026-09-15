@@ -68,3 +68,19 @@ A review of the first state found two design systems, a four-fold repetition of 
 ## 2026-09-15 · corrected · Viewer no longer HTML-escapes manifest labels
 
 `tools/iiif-viewer/app.js` escaped title, labels and metadata values before placing them in the generated IIIF manifest. Mirador renders the window title as plain text and sanitises metadata values itself, so an escaped ampersand appeared literally in the title. The values are now passed unescaped.
+
+## 2026-09-15 · integriert · Materialzugang und Webpublikation auf der Hauptseite
+
+Der bestätigte Website-Auftrag bündelt sämtliche Übungszugänge direkt bei den Sessions. Der Header führt den offiziellen Veranstaltungsnamen und den IIIF-Viewer; Sessionlinks in der Topnavigation und die doppelte Veranstaltungszeile entfallen. Slides und Lecture Notes haben jeweils ein SVG-Symbol und einen zugeordneten PDF-Link. Downloads benennen Übung und Funktion, weitere Referenzen bleiben aufklappbar.
+
+Session 2 erlaubt eine Dokumentauswahl und originalsprachige Transkription mit AI Harness oder LLM-Chat. Session 3 verwendet TEI und Bilder für eine angeleitete statische Webpublikation, ergänzt um eine kurze Exploration des M³GIM-Prototyps. Der frühere Inhaltsseitengenerator wurde entfernt; seine URL leitet anhand der vorhandenen Anker auf die Hauptseite weiter. Die Lehrdateien bleiben erhalten. Desktop und mobile Ansicht, Materialausklapper und alle drei Weiterleitungsziele wurden im Browser geprüft. Der gemeinsame Build samt lokalen Links besteht nach Integration aller Downloads. Nachweislich ungenutzte CSS-Regeln der entfernten Strukturen wurden gelöscht; die Viewer-Regeln bleiben erhalten.
+
+## 2026-09-15 · vereinheitlicht · Native Lehrmaterialien und Übungspakete
+
+Die vier vorhandenen Decks wurden direkt in Google Slides korrigiert. Session 1 hat weiterhin 41 Folien, Session 2 hat 38, Sessions 3 und 4 haben 16 und die Vorbereitung hat 17. Der abschließende native Abgleich bestätigt identische Folien- und Element-IDs sowie unveränderten Bildbestand. Fachbegriffe, Plattformbefehle, Bildformate und konkrete Arbeitsanweisungen wurden berichtigt; vorhandene deutsche Lehrpassagen wurden ins Englische übertragen. Die gemeinsame Übungsfolge und die Originalsprache der Transkription sind in Slides, allen drei Lecture Notes und den Anleitungen abgestimmt. Die überarbeiteten Folien wurden gerendert und visuell kontrolliert; zwei dabei erkannte Textüberlappungen wurden behoben.
+
+Der TEI-Prüfer akzeptiert eine nichtleere Auswahl oder mit `--full-corpus` den vollständigen Bestand. Tests mit einem, zwei und sieben Dokumenten bestanden; leere Bestände, kaputtes XML, fehlende Bilder und eine unvollständige Auswahl im Vollkorpusmodus scheiterten erwartungsgemäß. Das Folgepaket enthält sieben TEI-Dateien, sieben redigierte TXT-Dateien und 40 PNGs mit geprüften relativen Bildpfaden. Die beiden Einstiegsguides wurden unter ihren bestehenden Drive-IDs aktualisiert und nach dem Rücklesen bytegenau mit lokalen Quellen und ZIPs verglichen.
+
+Bei der XLSX-Datei wurde das beschädigte Theme ersetzt; die übrigen Archiveinträge blieben bytegleich. Der Nutzer entschied, das separate Kartenbeispiel aus den Kursdownloads zu entfernen. Es entfällt auch aus dem Sammelpaket und dessen Erzeugungsskript. Die eigenständigen Orts- und Plakatdaten bleiben als optionale Quellen erhalten. Die Mobilitätsaufgabe in Session 2 und die Exploration des M³GIM-Prototyps bleiben Teil des Kurses. Die lokalen Archive und Herkunftshashes wurden neu erzeugt. Der IIIF-Viewer lädt das zweitseitige XML-Beispiel erfolgreich.
+
+Das JSON-LD-Beispiel der vorhandenen Workflowfolie ist mit vollständig auflösbarem Kontext und einem Herkunftsnachweis herunterladbar. Die JSON-LD-Expansion wurde geprüft. Der Nachweis beschreibt die gekürzte Ortsliste und verhindert die Gleichsetzung einer Datenbankbeziehung mit einem belegten Auftritt. Die fachliche Abnahme der Quellenauswertung bleibt beim Lehrenden.

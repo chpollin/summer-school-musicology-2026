@@ -1,7 +1,7 @@
 {
   "source_folder": "https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW",
   "retrieved": "2026-09-15",
-  "note": "Stored exercise files mirrored from the shared course folder. Native slides and lecture notes remain linked through scripts/sessions.mjs. Duplicate source PDFs from both hands-on folders resolve to one verified local file. The file named schulnachricht.png in Drive contains JPEG bytes and is served as schulnachricht.jpg. The two hands-on guides were updated for the shared Sessions 3 and 4 sequence, uploaded to the same Drive file IDs and verified by download before packaging.",
+  "note": "Stored exercise files mirrored from the shared course folder. Native slides and lecture notes remain linked through scripts/sessions.mjs. Duplicate source PDFs from both hands-on folders resolve to one verified local file. The file named schulnachricht.png in Drive contains JPEG bytes and is served as schulnachricht.jpg. The two hands-on guides were updated for the shared Sessions 3 and 4 sequence, uploaded to the same Drive file IDs and verified by download before packaging. The two hands-on guides now also reflect the selected-document workflow and static web publication. Their existing Drive files were updated in place on 15 September 2026; raw-file readback verified byte equality with the local guides and packaged README files. The XLSX theme was corrupt in the Drive original and was reconstructed as recorded per file. Zweig facsimiles retain original JPEG bytes.",
   "files": [
     {
       "drive_id": "1cH99vlIbUsL5BFODsBZcZEiLkkvoMSh4",
@@ -10,7 +10,8 @@
       "path": "downloads/shared/schulnachricht.jpg",
       "mime_type": "image/jpeg",
       "source_size": 1269528,
-      "sha256": "271064f3d439c64f919e57747d914a8e6e90bee7eefbd9b5764875b4cd203170"
+      "sha256": "271064f3d439c64f919e57747d914a8e6e90bee7eefbd9b5764875b4cd203170",
+      "local_size": 1269528
     },
     {
       "drive_id": "1HGzaJ4XtU2APn40_2YQH6Kj8IaGTJ8_Y",
@@ -19,7 +20,8 @@
       "path": "downloads/shared/prompts.md",
       "mime_type": "text/markdown",
       "source_size": 7859,
-      "sha256": "d000b977a49aeefd14f666099214be1642a65fdd436f86cfcc3059b88c95d198"
+      "sha256": "d000b977a49aeefd14f666099214be1642a65fdd436f86cfcc3059b88c95d198",
+      "local_size": 7859
     },
     {
       "drive_id": "1gU1kYf9OPaVCiIvWhtWrPMT_jhKUSUEW",
@@ -28,7 +30,8 @@
       "path": "downloads/shared/orte-lookup.csv",
       "mime_type": "text/csv",
       "source_size": 211,
-      "sha256": "3c03f1aa7cfb37bdbaade3158a47777d41e5702ee309367789fcc5b254589bd4"
+      "sha256": "3c03f1aa7cfb37bdbaade3158a47777d41e5702ee309367789fcc5b254589bd4",
+      "local_size": 211
     },
     {
       "drive_id": "16QWae0iMPdXE03zmZIH6e0HCVIEAEwgp",
@@ -37,16 +40,8 @@
       "path": "downloads/shared/plakattext-pl04.txt",
       "mime_type": "text/plain",
       "source_size": 465,
-      "sha256": "0173ef702d78ece03a696f81afb1ed29cdeafd3e184804cdbe5b9049e7974d91"
-    },
-    {
-      "drive_id": "1GZx9GL26OrBo9atcZwqXAOCE95O9TPAh",
-      "source_url": "https://drive.google.com/file/d/1GZx9GL26OrBo9atcZwqXAOCE95O9TPAh/view?usp=drivesdk",
-      "name": "m3gim-map-demo.zip",
-      "path": "downloads/shared/m3gim-map-demo.zip",
-      "mime_type": "application/zip",
-      "source_size": 3367,
-      "sha256": "24da54098970a02656e58cb68a22c1e9c329b5afff27f61c132df9b3fe245dab"
+      "sha256": "0173ef702d78ece03a696f81afb1ed29cdeafd3e184804cdbe5b9049e7974d91",
+      "local_size": 465
     },
     {
       "drive_id": "1xigbEkJrgvyf8DA3xSW9w3nB2HA5Refe",
@@ -55,7 +50,10 @@
       "path": "downloads/shared/personenindex-uebung.xlsx",
       "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
       "source_size": 6133,
-      "sha256": "28ebb80d8a9761639bf3a8d15a6983d605c36f85ed19fdd5c1d8a02170076efe"
+      "sha256": "6881beac8e4ac4dff83c0fc58466f046bd0f6f0ec65f3b14a4eff96c2478cf2e",
+      "source_sha256": "28ebb80d8a9761639bf3a8d15a6983d605c36f85ed19fdd5c1d8a02170076efe",
+      "local_note": "Reconstructed the corrupt xl/theme/theme1.xml using the standard Office theme from openpyxl. All other ZIP members, including all cell data and styles, are byte-identical to the Drive original.",
+      "local_size": 6133
     },
     {
       "drive_id": "1o9Nr9khbHn84ipIDB6C8g8QxadpprOiv",
@@ -63,8 +61,12 @@
       "name": "README.md",
       "path": "downloads/ai-harness/README.md",
       "mime_type": "text/markdown",
-      "source_size": 5047,
-      "sha256": "40dafd5afc85e80bebd2c439af592777105e43e89871d3edc33e569c95a73fb4"
+      "source_size": 5260,
+      "sha256": "92d9de94eb16155b505d0dce70474082d67360d34845bacc820c1b0132ef7a48",
+      "local_size": 5260,
+      "source_sha256": "92d9de94eb16155b505d0dce70474082d67360d34845bacc820c1b0132ef7a48",
+      "verified": "2026-09-15",
+      "local_note": "Updated the existing Markdown file in the current course Drive folder in place with LF line endings; fresh raw-file download SHA-256 matches this local guide and its ZIP member."
     },
     {
       "drive_id": "13JAJDnC-dKyQsIId19Lozf7uh5v8EbZ7",
@@ -73,7 +75,8 @@
       "path": "downloads/ai-harness/pdf_to_images.py",
       "mime_type": "text/x-python",
       "source_size": 4546,
-      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3"
+      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3",
+      "local_size": 4546
     },
     {
       "drive_id": "12yHad5T4aKddhMm_sc1FMfyCTxURtAg_",
@@ -81,8 +84,12 @@
       "name": "README.md",
       "path": "downloads/python-vscode/README.md",
       "mime_type": "text/markdown",
-      "source_size": 3879,
-      "sha256": "a6b77581fe7948bac4a3865d65bc863bc0495405d030acbde12bfaef28e1c259"
+      "source_size": 3951,
+      "sha256": "84a54ea6b868c867073b3e82f86fc3de64588a7b42cf401f55c299c9bbb213f1",
+      "local_size": 3951,
+      "source_sha256": "84a54ea6b868c867073b3e82f86fc3de64588a7b42cf401f55c299c9bbb213f1",
+      "verified": "2026-09-15",
+      "local_note": "Updated the existing Markdown file in the current course Drive folder in place with LF line endings; fresh raw-file download SHA-256 matches this local guide and its ZIP member."
     },
     {
       "drive_id": "1nyF4xjlvC6eORLwlNkSy1G1MgJIU0iet",
@@ -91,7 +98,8 @@
       "path": "downloads/python-vscode/pdf_to_images.py",
       "mime_type": "text/x-python",
       "source_size": 4546,
-      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3"
+      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3",
+      "local_size": 4546
     },
     {
       "drive_id": "1pHOnOPfdT94phWkn8vM2q2WwN30vlF0G",
@@ -100,7 +108,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_12.pdf",
       "mime_type": "application/pdf",
       "source_size": 4003875,
-      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff"
+      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff",
+      "local_size": 4003875
     },
     {
       "drive_id": "1rXnRwz7pbLQ3e7ZNpKG5ELlhEOasSmBs",
@@ -109,7 +118,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_11.pdf",
       "mime_type": "application/pdf",
       "source_size": 736505,
-      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d"
+      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d",
+      "local_size": 736505
     },
     {
       "drive_id": "1Az19tuC2-2VYCQVS51GEb5WEriBfroPi",
@@ -118,7 +128,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_10.pdf",
       "mime_type": "application/pdf",
       "source_size": 207644,
-      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a"
+      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a",
+      "local_size": 207644
     },
     {
       "drive_id": "1Nra_9PEuc1WkKamaBODKKEaVymXZqsKn",
@@ -127,7 +138,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_9.pdf",
       "mime_type": "application/pdf",
       "source_size": 206058,
-      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971"
+      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971",
+      "local_size": 206058
     },
     {
       "drive_id": "1g91RMuuSJ_osEHRSlsMryOg460J719Bd",
@@ -136,7 +148,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_8.pdf",
       "mime_type": "application/pdf",
       "source_size": 201832,
-      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844"
+      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844",
+      "local_size": 201832
     },
     {
       "drive_id": "1R8VpyG8_uCrrWIuTBNSpk2ohYI6s_LG6",
@@ -145,7 +158,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_7.pdf",
       "mime_type": "application/pdf",
       "source_size": 210116,
-      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074"
+      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074",
+      "local_size": 210116
     },
     {
       "drive_id": "1fUc0iVJrHqvlhqHb5qZjEFpOEDRlnKst",
@@ -154,7 +168,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_3.pdf",
       "mime_type": "application/pdf",
       "source_size": 204589,
-      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca"
+      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca",
+      "local_size": 204589
     },
     {
       "drive_id": "1pfKI84jzqnxh3ZIxJfP1-nAjhu2tYHva",
@@ -163,7 +178,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_12.pdf",
       "mime_type": "application/pdf",
       "source_size": 4003875,
-      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff"
+      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff",
+      "local_size": 4003875
     },
     {
       "drive_id": "1qMUPr6KZuU64CnfIc6w_WXbFgEpXavF-",
@@ -172,7 +188,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_11.pdf",
       "mime_type": "application/pdf",
       "source_size": 736505,
-      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d"
+      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d",
+      "local_size": 736505
     },
     {
       "drive_id": "1mbOG3YiUx9kDdyZ_WqBxUX-aEWVsJ1HY",
@@ -181,7 +198,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_10.pdf",
       "mime_type": "application/pdf",
       "source_size": 207644,
-      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a"
+      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a",
+      "local_size": 207644
     },
     {
       "drive_id": "1BJzlpMsiB2h6jv5wEc6n_BONjmfW6oBo",
@@ -190,7 +208,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_9.pdf",
       "mime_type": "application/pdf",
       "source_size": 206058,
-      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971"
+      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971",
+      "local_size": 206058
     },
     {
       "drive_id": "1HmNtHITfSTy73MeceHOody4JQgreuxvc",
@@ -199,7 +218,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_8.pdf",
       "mime_type": "application/pdf",
       "source_size": 201832,
-      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844"
+      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844",
+      "local_size": 201832
     },
     {
       "drive_id": "1n1nwgFqF28Cxdqhi2FwFXJqbbmILSkM8",
@@ -208,7 +228,8 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_7.pdf",
       "mime_type": "application/pdf",
       "source_size": 210116,
-      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074"
+      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074",
+      "local_size": 210116
     },
     {
       "drive_id": "1mzQfgVzCv5Wu-HnLo_T-ZBPZmgz4eMXO",
@@ -217,7 +238,30 @@
       "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_3.pdf",
       "mime_type": "application/pdf",
       "source_size": 204589,
-      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca"
+      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca",
+      "local_size": 204589
+    },
+    {
+      "drive_id": "1iUnnsTyY0_kzy5Ffv_OobsfeGZcJIUjO",
+      "source_url": "https://drive.google.com/file/d/1iUnnsTyY0_kzy5Ffv_OobsfeGZcJIUjO/view",
+      "name": "szd-facsimile-0.png",
+      "path": "downloads/shared/szd-facsimile-0.jpg",
+      "mime_type": "image/jpeg",
+      "source_size": 1383019,
+      "sha256": "d1b0d484b600dd31c4ef1a7ca29c0f3bb2d06caefaafc16fe12049704db89293",
+      "local_note": "Original JPEG bytes; corrected filename extension only.",
+      "local_size": 1383019
+    },
+    {
+      "drive_id": "1DcJkQhFkLIJ5NgRtHzKNtdK-GXrjPCVQ",
+      "source_url": "https://drive.google.com/file/d/1DcJkQhFkLIJ5NgRtHzKNtdK-GXrjPCVQ/view",
+      "name": "szd-facsimile-1.png",
+      "path": "downloads/shared/szd-facsimile-1.jpg",
+      "mime_type": "image/jpeg",
+      "source_size": 1466633,
+      "sha256": "58a1153743ea5e4410673a8cd37f27037c361771008da5bd52d431c7f7bd5053",
+      "local_note": "Original JPEG bytes; corrected filename extension only.",
+      "local_size": 1466633
     }
   ]
 }

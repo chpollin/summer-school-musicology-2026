@@ -10,20 +10,20 @@ Insert these slides immediately after **Prompting Strategies: There Is No Prompt
 - Create full text from its two scan images.
 - Extract the document metadata.
 - Combine text and metadata in simple TEI-XML.
-- Apply the workflow to all seven documents.
+- Choose one or two documents, or all seven.
 
-**Materials:** https://chpollin.github.io/summer-school-musicology-2026/materials/m3gim-fulltext.html
+**Materials:** https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-instructions.zip
 
 ### Speaker notes
 
-This exercise combines the TEI structure participants already know with LLM transcription. Work through the complete process on _3 first, then extend it to the other documents. The result is seven TEI files linked to 40 PNGs. These files become our input for Session 3.
+This exercise combines the TEI structure participants already know with LLM transcription. Work through the complete process on _3 first, then optionally extend it to another document or all seven. Use an AI Harness or LLM chat. Keep each source in its original language. The result is one complete TEI file per selected document, linked to all its scans. These files become our input for Session 3.
 
 ## Slide 2 · Create and Check the Full Text
 
 - Convert each PDF to PNG, or use the prepared images.
 - Keep document IDs and scan order.
 - Test and revise your prompt on _3.
-- Complete all 40 scans in small batches.
+- Complete all scans of your selected documents in small batches.
 - Check names, dates, reading order and table rows.
 
 ### Speaker notes
@@ -58,11 +58,11 @@ Use the metadata prompt after checking the transcription. Review the whole docum
 
 ### Speaker notes
 
-The digital transcription has its own publication statement. The historical source is described in sourceDesc. In this exercise one pb corresponds to one PDF scan, including a spread. Keep XML files in tei/ and images in png/ so the relative links remain valid. Use table/row/cell for “Wer singt was?” and preserve empty cells.
+The digital transcription has its own publication statement. The historical source is described in sourceDesc. In this exercise one pb corresponds to one PDF scan, including a spread. Keep XML files in tei/ and images in png/ so the relative links remain valid. If _11 is selected, use table/row/cell for “Wer singt was?” in scan 3 and preserve empty cells.
 
 ## Slide 5 · Validate and Continue in Session 3
 
-- Produce seven complete TEI files and retain all 40 PNGs.
+- Produce one complete TEI per selected document and retain its PNGs.
 - Run the XML and image-link check.
 - Compare metadata and text with the facsimiles.
 - Investigate differences from the reference solution.
@@ -72,4 +72,4 @@ The digital transcription has its own publication statement. The historical sour
 
 ### Speaker notes
 
-XML validation checks structure and links. Historical readings still need source comparison. Participants should explain one correction and one unresolved reading. In Session 3, reuse their TEI to read metadata, extract statements from the full text and return to the page images. The reference bundle provides a complete shared starting corpus if needed.
+XML validation checks structure and links. Historical readings still need source comparison. Participants should explain one correction and one unresolved reading. In Session 3, build a small static web publication from their TEI and images. Session 4 extends this publication or another research requirement. The seven-document reference is an optional fallback. The checker accepts a non-empty selection; --full-corpus explicitly requires all seven.

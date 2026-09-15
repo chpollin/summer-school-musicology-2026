@@ -20,6 +20,6 @@ Increment the scan number and filename together. In this exercise one pb refers 
 
 Use p for text blocks and lb for line breaks. Keep source wording, punctuation, diacritics and the existing {handwriting}, word[?] and [illegible] notation unchanged. Keep these conventions documented in encodingDesc.
 
-Encode the “Wer singt was?” table as table/row/cell, with one row per performer, a label row for column headings and every empty cell retained. Preserve its footnotes after the table. Do not flatten columns into separate lists.
+If present in the selected document (_11, scan 3), encode the “Wer singt was?” table as table/row/cell, with one row per performer, a label row for column headings and every empty cell retained. Preserve its footnotes after the table. Do not flatten columns into separate lists.
 
 Escape XML characters such as & as &amp;. Return a complete XML document with closed elements, without Markdown fences or commentary. Do not replace any text with summaries, ellipses or placeholders. If the full document exceeds the output limit, produce the header and complete scan blocks separately, then assemble one XML file and check that all scans are present.

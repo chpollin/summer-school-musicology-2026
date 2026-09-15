@@ -1,0 +1,3 @@
+# Keep synchronized Drive guides identical on Windows, in Git and in archives.
+/downloads/ai-harness/README.md text eol=lf
+/downloads/python-vscode/README.md text eol=lf

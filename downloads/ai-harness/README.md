@@ -3,8 +3,7 @@
 Ask an AI agent in a harness with access to local files and a terminal to execute
 the same PDF-to-image workflow. Both hands-ons contain the same Python script
 and the same source PDFs.
-Complete Hands-on 1 first so that you can compare the agent's actions and
-results with your own execution.
+If you are new to running scripts, complete Hands-on 1 first to compare the agent's actions and results with your own execution. With prior experience, begin here. You can already use an AI Harness for the Session 2 transcription exercise.
 
 ## Folder structure
 
@@ -106,10 +105,10 @@ python pdf_to_images.py --input input --output output-300dpi --dpi 300
 ## Continue to Programming with an LLM
 
 You have now used an agent to execute an existing script. The next guided step
-uses an LLM to write code for a small research tool through Promptotyping.
+uses an LLM to build a small static web publication through Promptotyping.
 Return to [Sessions 3 and 4 on the course website](https://chpollin.github.io/summer-school-musicology-2026/#session-3)
 and follow the shared Lecture Notes. Use the TEI XML and matching PNG images
-from Session 2 for the source-viewer example. The PDF-to-image outputs alone
+from your selected one or two documents, or all seven, from Session 2. The complete reference corpus is an optional fallback. The PDF-to-image outputs alone
 do not include transcriptions or TEI.
 
 Record the purpose, input relationships and display decisions in `project.md`.

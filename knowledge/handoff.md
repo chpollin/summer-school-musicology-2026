@@ -21,9 +21,9 @@ Handover points for the Codex instance, for the merged session and for the time 
 
 The README is German and maintained by the Codex instance during the workshop preparation. After the workshop it switches to English, following the convention for public repositories, and its structure section is checked against the generated pages.
 
-## Duplicate image archives
+## Reference bundle
 
-`downloads/m3gim-fulltext/m3gim-next-session.zip` contains the same forty PNG scans as `m3gim-png.zip`. Both archives are in the git history. Whether the next-session bundle should reference the PNG archive instead is a decision for the M³GIM lane.
+`downloads/m3gim-fulltext/m3gim-next-session.zip` intentionally includes all forty PNG scans beside the TEI files, so the optional fallback works after extraction with intact relative image paths. Participants primarily use their own selection from Session 2. The separate PNG archive supports the earlier transcription exercise.
 
 ## Offline copy of the decks
 

@@ -21,11 +21,11 @@ Course website for the sessions Christopher Pollin teaches at the Summer School 
 
 ## Audience and use
 
-Participants of the summer school without assumed AI or coding background use the site during the sessions and afterwards. In the seminar room it serves as the launch point for slides, exercise downloads and the IIIF viewer, and afterwards it remains the reference for the material. The course language and the language of every page and document on the site is English.
+Participants of the summer school without assumed AI or coding background use the site during the sessions and afterwards. In the seminar room it serves as the launch point for slides, exercise downloads and the IIIF viewer, and afterwards it remains the reference for the material. The course pages and teaching instructions are in English. Historical sources retain their original languages; repository documentation follows the convention recorded in `handoff.md`.
 
 ## Material
 
-The slides and lecture notes live as Google Slides and Google Docs in the course folder on Google Drive, which remains the editing location. The site links their preview, embed and export addresses and keeps a copy of each deck's title slide as an image. Exercise files in the repository are the IIIF package derived from `tools/iiif-viewer/`, the PDF-to-images package taken from the teaching package maintained in the vault, and the M³GIM full-text and TEI package under `downloads/m3gim-fulltext/`, which derives from the Ira Malaniuk materials of the archive of the University of Music and Performing Arts Graz (UAKUG, collection NIM) used in the M³GIM project. The IIIF viewer displays images with Mirador, vendored under `tools/iiif-viewer/vendor/`.
+The slides and lecture notes live as Google Slides and Google Docs in the course folder on Google Drive, which remains the editing location. The site links their preview and export addresses and keeps a copy of each deck's title slide as an image. Exercise files in the repository are the IIIF package derived from `tools/iiif-viewer/`, the PDF-to-images package taken from the teaching package maintained in the vault, and the M³GIM full-text and TEI package under `downloads/m3gim-fulltext/`, which derives from the Ira Malaniuk materials of the archive of the University of Music and Performing Arts Graz (UAKUG, collection NIM) used in the M³GIM project. The IIIF viewer displays images with Mirador, vendored under `tools/iiif-viewer/vendor/`.
 
 The course dates appear once in the page introduction. Session times are omitted at the user's request. The room is announced by the organiser and does not appear on the site.
 

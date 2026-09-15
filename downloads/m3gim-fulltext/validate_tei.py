@@ -2,7 +2,7 @@
 # requires-python = ">=3.10"
 # dependencies = ["lxml==6.1.1"]
 # ///
-"""Check the seven M³GIM TEI files against TEI Lite and the course image layout.
+"""Check a non-empty selection of M³GIM TEI files against TEI Lite and the course image layout.
 
 Run from the corpus folder: uv run validate_tei.py tei
 The bundled schema is used offline. Validation never repairs or rewrites XML.
@@ -88,6 +88,7 @@ def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("tei_folder", type=Path)
+    parser.add_argument("--full-corpus", action="store_true", help="Require all seven source documents (40 scans).")
     args = parser.parse_args()
     schema_path = Path(__file__).parent / "schema" / "tei_lite.rng"
     if not args.tei_folder.is_dir() or not schema_path.is_file():
@@ -95,8 +96,10 @@ def main() -> None:
     schema = etree.RelaxNG(etree.parse(str(schema_path)))
     paths = sorted(args.tei_folder.glob("*.xml"))
     errors = []
-    if {p.stem for p in paths} != set(EXPECTED):
-        errors.append("The folder must contain exactly the seven source XML filenames.")
+    if not paths:
+        errors.append("The folder must contain at least one source XML file.")
+    elif args.full_corpus and {p.stem for p in paths} != set(EXPECTED):
+        errors.append("Full-corpus mode requires exactly the seven source XML filenames.")
     total = 0
     for path in paths:
         try:

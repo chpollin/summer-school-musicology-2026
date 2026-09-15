@@ -1,12 +1,11 @@
 /**
- * Generate the course page, the exercise pages and the redirect stubs from scripts/sessions.mjs.
+ * Generate the course page, viewer and redirect stubs from scripts/sessions.mjs.
  * `--check` renders without writing, compares with the committed files and verifies every local link.
  */
 import { existsSync, readdirSync, readFileSync, realpathSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { m3gimPage } from './m3gim-exercise.mjs';
 import { viewerPage } from './viewer-page.mjs';
 import { course, event, sessions, site, venue } from './sessions.mjs';
 
@@ -20,22 +19,31 @@ const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
 const downloadIcon = '<svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>';
 const outputs = new Map();
 
+function materialGroup(s, kind) {
+  const slides = kind === 'slides';
+  const label = slides ? 'Slides' : 'Lecture notes';
+  const icon = slides ? '<path d="M3 4h18v12H3zM12 16v5m-4 0h8"/>' : '<path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/>';
+  const svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${icon}</svg>`;
+  const url = slides ? slidesUrl(s) : notesUrl(s);
+  return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}">${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF">PDF</a></span>`;
+}
+
 const exercises = {
   iiif: () => `<p>Combine XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The ${link('tools/iiif-viewer/', 'IIIF viewer')} also accepts the XML directly. The package below contains the script, XML template, two synthetic example images and a guide.</p>`,
-  m3gim: () => `<p>Transcribe seven documents with 40 scan pages, extract metadata and combine the checked results in TEI-XML. The ${link('materials/m3gim-fulltext.html', 'M³GIM exercise')} provides the source images, prompts, TEI template, checker and reference files. Keep your TEI files and images together for the tool-building exercise in Session 3.</p>`,
-  'm3gim-next': () => `<p>Session 3 guides you through the first three steps. We return to PDF-to-PNG conversion to compare how you and an agent execute the same task, then reuse the TEI corpus from Session 2 for tool building.</p>
-<ol class="workflow">
-<li><strong>Run the workflow yourself.</strong> Open the first package in Visual Studio Code, follow its guide and run the supplied script. Inspect the generated images against the PDFs.</li>
-<li><strong>Repeat the workflow with an agent.</strong> Give the agent the same task, script and PDFs. Compare the outputs with your first run. Practise Agentic Engineering by inspecting its tool use and results and providing feedback.</li>
-<li><strong>Build a small research tool.</strong> Reuse your TEI files and images from Session 2 to implement and inspect a first tool together. A source viewer is the worked example. Maintain the requirements, data description and checks as project knowledge (Knowledge Engineering), and select the relevant context for each task (Context Engineering).</li>
+  m3gim: () => `<p><strong>Hands-on 1, Zweig transcription.</strong> Transcribe the facsimiles and check the output against the images. <strong>Hands-on 2, Mobility timeline.</strong> Use the CSV and its source description to build a timeline, preserving the distinction between an announcement and evidence of an appearance.</p><p><strong>From Facsimiles to TEI.</strong> Choose one or two M³GIM documents, or work with all seven. Use an AI Harness or an LLM chat to transcribe them in their original languages, check uncertain readings and produce metadata and TEI-XML. Translation is optional. Keep the TEI files and images together for a small static web publication in Session 3. The instructions and prompts below support this workflow; the complete seven-document, 40-page reference remains an optional fallback.</p>`,
+  'm3gim-next': () => `<p>Session 3 provides guided practice in building a small static web publication from your Session 2 TEI files and images. The two PDF-to-PNG exercises provide an optional introduction, depending on your experience, and compare manual and agent-assisted execution.</p>
+<ul class="workflow">
+<li><strong>Explore a research prototype.</strong> Explore the ${link('https://dhcraft.org/m3gim/', 'M³GIM work-in-progress prototype')} through its interface. Where and when is Malaniuk documented, in which role, and within which artistic network? Note concrete source evidence and missing data or functions, then derive a requirement. The prototype is incomplete; a programme announcement alone does not establish an appearance.</li>
+<li><strong>Hands-on 1, Python in Visual Studio Code.</strong> Follow the guide and run the supplied script. Inspect the generated images against the PDFs.</li>
+<li><strong>Hands-on 2, AI Harness.</strong> Give the agent the same task, script and PDFs. Compare the outputs with the source PDFs and, if completed, your own run. Practise Agentic Engineering by inspecting its tool use and results and providing feedback.</li>
+<li><strong>Build a small static web publication.</strong> Reuse your TEI files and images from Session 2 to build and inspect a source viewer together. Maintain requirements, the data description and checks as project knowledge (Knowledge Engineering), and select the relevant context for each task (Context Engineering).</li>
 <li id="session-4"><strong>Continue independently in Session 4.</strong> Choose a requirement for your own research tool or extend the guided example. Supply the relevant context, inspect the agent’s changes and verify the result against the data. Record what works and what remains uncertain.</li>
-</ol>
-<p>Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 <code>tei/</code> and <code>png/</code> folders together so the image links remain usable.</p>`,
+</ul>
+<p>Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 TEI files and images together with their relative image paths intact. A complete reference bundle is available under More materials.</p>`,
 };
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
-  const home = base ? `${base}index.html` : '';
-  const items = [...sessions.map(s => [`${home}#${s.id}`, sessionLabel(s)]), [`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
+  const items = [[`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
   const nav = items.map(([href, label, key]) => `<a href="${href}"${key && key === current ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   return `<!doctype html>
 <html lang="en">
@@ -55,7 +63,7 @@ function frame({ title, content, base, description = siteDescription, current = 
 ${stylesheet ? `<link rel="stylesheet" href="${base}${stylesheet}">\n` : ''}</head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="${base}index.html">Summer School Musicology 2026</a><nav aria-label="Main navigation">${nav}</nav></div></header>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="${base}index.html">${escape(event)}</a><nav aria-label="Main navigation">${nav}</nav></div></header>
 <main class="wrap" id="content">
 ${content}
 </main>
@@ -68,25 +76,24 @@ ${scripts}</body>
 `;
 }
 
-const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a>${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
+const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a>${r.companion ? `<br><a class="small" href="${escape(r.companion.url)}" download>${escape(r.companion.label)}</a>` : ''}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
 
 const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} downloads">
 <p class="downloads-label">${downloadIcon}Downloads</p>
 ${resourceList(s.downloads)}
-<details><summary>More materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
+<details${s.id === 'session-2' ? ' id="session-2-reference"' : ''}><summary>More materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
 </div>`;
 
 const section = s => `<section id="${s.id}" class="session session-row">
 <img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async">
 <div class="session-content">
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
-<p class="material-links">${link(`${slidesUrl(s)}/preview`, 'Slides')} · ${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF')} · ${link(`${notesUrl(s)}/preview`, 'Lecture notes')} · ${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF')}</p>
+<div class="material-links">${materialGroup(s, 'slides')}${materialGroup(s, 'notes')}</div>
 ${s.description ? `<p>${escape(s.description)}</p>\n` : ''}${s.exercise ? `${exercises[s.exercise]()}\n` : ''}${sessionDownloads(s)}
 </div>
 </section>`;
 
 const home = `<div class="hero">
-<p class="eyebrow">${escape(event)}</p>
 <h1>Research Data Workflows<br>and LLMs</h1>
 <p class="byline">Christopher Pollin · Digital Humanities Craft · ${escape(venue)} · 16 and 17 September 2026</p>
 </div>
@@ -107,7 +114,9 @@ const stub = (target, label) => `<!doctype html>
 for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(`../index.html#${s.id}`, sessionLabel(s)));
 outputs.set('sessions/session-4.html', stub('../index.html#session-4', 'Sessions 3 and 4'));
 outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads'));
-outputs.set('materials/m3gim-fulltext.html', frame({ title: 'M³GIM · From Facsimiles to TEI', content: m3gimPage(link), base: '../', description: 'Hands-on exercise: turn seven M³GIM facsimiles into full texts, document metadata and simple TEI with an LLM, with downloads and reference files.' }));
+outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
+<body><p>The exercise materials are now on the course page. Continue to <a href="../index.html#session-2">Session 2</a>, <a href="../index.html#session-2-reference">the optional references</a> or <a href="../index.html#session-3">Sessions 3 and 4</a>.</p></body></html>\n`);
 outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', current: 'viewer', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
 
 function brokenLinks(rel, html) {
@@ -154,4 +163,4 @@ for (const dir of ['sessions', 'materials']) {
   }
 }
 if (problems.length) { console.error(problems.join('\n')); process.exit(1); }
-console.log(`${check ? 'Checked' : 'Generated'} ${outputs.size} pages: course page, exercise page, viewer and redirect stubs.`);
+console.log(`${check ? 'Checked' : 'Generated'} ${outputs.size} pages: course page, viewer and redirect stubs.`);

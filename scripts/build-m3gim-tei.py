@@ -130,7 +130,7 @@ def main() -> None:
         for name, data in raw.items():
             archive.writestr(name, data)
     with zipfile.ZipFile(OUT / "m3gim-next-session.zip", "w", zipfile.ZIP_DEFLATED) as archive:
-        for name in tei + ["metadata.json", "metadata.csv", "review-notes.md", "tei-guide.md", "validate_tei.py", "schema/tei_lite.rng", "schema/README.md", "NEXT-SESSION.md"]:
+        for name in tei + texts + ["metadata.json", "metadata.csv", "review-notes.md", "tei-guide.md", "validate_tei.py", "schema/tei_lite.rng", "schema/README.md", "NEXT-SESSION.md"]:
             archive.write(OUT / name, f"m3gim-work/{name}")
         with zipfile.ZipFile(OUT / "m3gim-png.zip") as images:
             for name in images.namelist():

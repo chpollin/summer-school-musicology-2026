@@ -8,12 +8,12 @@ Each TEI file combines the document metadata, the complete transcription and lin
 m3gim-work/
   tei/
     UAKUG_NIM_005_137_3.xml
-    ... six further TEI files
+    ... optional further selected TEI files
   png/
     UAKUG_NIM_005_137_3/
       UAKUG_NIM_005_137_3_p001.png
       UAKUG_NIM_005_137_3_p002.png
-    ... six further image folders
+    ... matching folders for further selected documents
   schema/
     tei_lite.rng
   validate_tei.py
@@ -59,7 +59,7 @@ The `pb` marks the start of the associated text. Its `facs` value is a path from
 
 Use `p` for text blocks and `lb` for line breaks. In this introductory profile, handwriting braces and uncertainty markers remain as literal text. Later encoding can represent them more precisely.
 
-For the table in _11 scan 3, use `table`, `row` and `cell`. Keep five cells in every row, including empty cells. The first row uses `role="label"`. Keep the two source footnotes after the table.
+If your selection includes _11, for the table in scan 3, use `table`, `row` and `cell`. Keep five cells in every row, including empty cells. The first row uses `role="label"`. Keep the two source footnotes after the table.
 
 ## Check the files
 
@@ -76,15 +76,15 @@ python -m pip install lxml
 python validate_tei.py tei
 ```
 
-The checker parses XML without recovery, validates against the supplied TEI Lite schema and checks document IDs, scan counts, metadata fields, table cells and local image paths. It reports every failed file and exits with a non-zero status if any check fails.
+The checker parses XML without recovery, validates against the supplied TEI Lite schema and checks document IDs, scan counts, metadata fields, table cells and local image paths. It accepts a non-empty selection of one or more course documents, reports every failed file and exits with a non-zero status if any check fails. The optional `--full-corpus` flag requires all seven documents and 40 scans.
 
 Schema validity checks the XML structure. Compare text, metadata and image associations with the facsimiles separately.
 
 ## Continue in Session 3
 
-Bring your complete `m3gim-work/` folder. The next session can read the TEI headers, extract statements from the full texts and return to the corresponding page images through `pb/@facs`. Preserve the folder structure when copying or sharing the corpus.
+Bring your `m3gim-work/` folder with one or two selected documents, or all seven. In Session 3, use it to build a small static web publication displaying metadata, full text and corresponding page images through `pb/@facs`. Session 4 extends the publication or another research requirement. Preserve the folder structure when copying or sharing the corpus.
 
-The downloadable reference bundle contains seven complete TEI files and all 40 PNGs in this structure. It is available as a comparison and as a common starting corpus.
+The downloadable reference bundle contains seven complete TEI files, seven edited original-language TXT files and all 40 PNGs in this structure. It is available as an optional comparison or fallback.
 
 ## TEI documentation
 

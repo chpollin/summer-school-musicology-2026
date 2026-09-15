@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "rico": "https://www.ica.org/standards/RiC/ontology#",
+    "m3gim-ontology": "https://dhcraft.org/m3gim/ontology#",
+    "m3gim-data": "https://dhcraft.org/m3gim/data#",
+    "m3gim-vocab": "https://dhcraft.org/m3gim/vocabulary#",
+    "name": "rico:name",
+    "role": "m3gim-ontology:role"
+  },
+  "@id": "m3gim-data:NIM_003_1_1",
+  "@type": "rico:Record",
+  "rico:hasOrHadLocation": {
+    "@type": "rico:Place",
+    "name": "Potsdam",
+    "role": {
+      "@id": "m3gim-vocab:performancePlace"
+    }
+  }
+}
