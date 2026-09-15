@@ -25,7 +25,7 @@ The course page opens with the event, dates and venue, followed by one row per s
 
 The M³GIM exercise page is a long-form worksheet whose content comes from `scripts/m3gim-exercise.mjs` and the files under `downloads/m3gim-fulltext/`. The viewer page holds the file inputs, the Mirador container and three collapsed guides, and its element IDs are the contract with `tools/iiif-viewer/app.js`.
 
-`sessions/session-N.html` and `materials/index.html` are redirect stubs to the anchors of the course page, kept for links already written into the M³GIM module.
+`sessions/session-N.html` and `materials/index.html` remain redirect stubs for previously shared URLs. Internal navigation in the M³GIM module links directly to the course-page anchors.
 
 ## Generation
 
@@ -40,6 +40,8 @@ Stored files from the Drive exercise folders are mirrored as direct downloads, w
 The guided sequence first executes the supplied PDF-to-PNG script manually, repeats this operation with an agent, then introduces LLM coding through Promptotyping. The third step reuses the TEI files and images from Session 2 for a source-viewer example. Session 4 allows participants to extend that example or implement another research requirement. The website and common lecture notes express the same sequence. Downloads are grouped into exercise starters, reference solutions and additional materials.
 
 The existing Session 2 and Sessions 3 and 4 title slides contain generated illustrations whose source assets and prompts are preserved under `assets/illustrations/`. Native title text and metadata remain unchanged. The opera singer from Session 1 is the only human figure in each replacement, with the conceptual workflow below. An opaque cube-headed tentacle figure represents the model. Session 2 depicts text generation; Sessions 3 and 4 show the opera singer coding on a laptop. Below her, the user's Promptotyping sphere contains curved source-data and research-interface planes connected through the opaque tentacle model, with a feedback arc. The former lower workflow graphic in Sessions 3 and 4 was replaced. The previous Session 4 deck and reader remain in the sibling Drive folder `1HqmFO4TNbQmGIH8JBFc_Ua780GcYqaxV`; course-folder files have consistent session and material labels.
+
+Only the current title illustrations are kept as PNGs under `assets/illustrations/`; superseded variants remain recoverable through Git history. Generation prompts retain the sequence of edits and their historical source filenames.
 
 ## Design
 

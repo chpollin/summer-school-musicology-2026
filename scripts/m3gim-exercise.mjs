@@ -40,5 +40,5 @@ python pdf_to_png.py pdf png</code></pre><p>Place the PDFs in a folder called <c
   schema/
   validate_tei.py</code></pre><p>The reference bundle contains this folder structure with working relative image links.</p><div class="actions">${download('m3gim-next-session.zip', 'Reference TEI + all images · ZIP, ' + nextSize + ' MB', 'button')}${download('NEXT-SESSION.md', 'Read the corpus guide')}</div></section>
 <section><h2>Slide text and documentation</h2><p>Five English slides with speaker notes, prepared for insertion after <em>Prompting Strategies: There Is No Prompt to Rule Them All</em>.</p><div class="actions">${download('slide-text.md', 'Download slide text · Markdown')}${download('manifest.json', 'Source and image manifest · JSON')}</div><p class="small">The XML structure follows ${link('https://tei-c.org/release/doc/tei-p5-exemplars/html/tei_lite.doc.html', 'TEI Lite')} and the TEI ${link('https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html', 'page-beginning and image-link convention')}.</p></section>
-<div class="session-nav">${link('../sessions/session-2.html#exercises', '← Session 2')}${link('../sessions/session-3.html#exercises', 'Continue to Session 3 →')}</div>`;
+<div class="session-nav">${link('../index.html#session-2', '← Session 2')}${link('../index.html#session-3', 'Continue to Session 3 →')}</div>`;
 }

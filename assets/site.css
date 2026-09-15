@@ -3,8 +3,7 @@
 @layer reset {
   :where(*, *::before, *::after) { box-sizing: border-box; }
   :where(body) { margin: 0; }
-  :where(img, iframe) { max-inline-size: 100%; }
-  :where(img) { block-size: auto; }
+  :where(img) { max-inline-size: 100%; block-size: auto; }
   :where(button, input) { font: inherit; }
 }
 
@@ -55,7 +54,6 @@
   code { overflow-wrap: anywhere; }
   details { border: 1px solid var(--line); border-radius: var(--radius-s); padding: var(--space-4); background: var(--surface); margin-block: var(--space-4); }
   summary { cursor: pointer; font-weight: 650; }
-  details iframe { margin-block-start: var(--space-4); }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 }
 
@@ -90,9 +88,6 @@
   .byline { color: var(--muted); font-size: 0.9375rem; }
   .small { font-size: var(--text-s); color: var(--muted); }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space-5); display: flex; flex-direction: column; gap: var(--space-2); color: inherit; text-decoration: none; }
-  a.card:hover { border-color: var(--accent); }
-  .card img { inline-size: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--line); border-radius: var(--radius-s); margin-block-end: var(--space-2); }
-  .card .number { color: var(--accent); font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.06em; }
   .card h3 { margin-block: 0; }
   .card p { margin-block: 0; color: var(--muted); }
   .session-image { display: block; inline-size: 100%; aspect-ratio: 16 / 9; object-fit: contain; border-radius: var(--radius-s); }
@@ -110,8 +105,6 @@
   .download-icon { inline-size: 1.5rem; block-size: 1.5rem; flex: 0 0 auto; color: var(--accent); }
   .downloads > .resources { margin-inline-start: 2.25rem; }
   .downloads details { border: 0; background: transparent; padding: 0; margin-block: var(--space-5); }
-  .embed { inline-size: 100%; display: block; border: 1px solid var(--line); border-radius: var(--radius-s); background: var(--surface); }
-  .slides { aspect-ratio: 16 / 10; }
   .workflow { max-inline-size: 56rem; padding-inline-start: 1.4em; }
   .workflow li { margin-block-end: var(--space-4); padding-inline-start: var(--space-1); }
   .workflow-line { color: var(--accent); font-weight: 650; }
@@ -126,7 +119,7 @@
 }
 
 @media print {
-  .site-header nav, .skip, .slides-embed, .hero .actions { display: none; }
+  .site-header nav, .skip, .hero .actions { display: none; }
   body { background: #fff; color: #000; }
   a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.9em; }
   h2, h3 { break-after: avoid; }

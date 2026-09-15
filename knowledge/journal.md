@@ -17,6 +17,12 @@ related: [handoff, project, specification]
 
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
+## 2026-09-15 · bereinigt · Reste des Website-Refactorings
+
+Die Navigation der M³GIM-Übung führt direkt zu den Sessionankern. Ungenutzte CSS-Regeln für frühere Kartenbilder und Folieneinbettungen sowie die drei überholten Titelillustrationen für Sessions 3 und 4 wurden entfernt. Die aktuellen Bilder und Generierungsprompts bleiben erhalten; frühere Bilddateien sind über Git rekonstruierbar. Bereits veröffentlichte Seitenadressen bleiben als Weiterleitungen erreichbar. Der erledigte Linkpunkt wurde aus dem Handoff entfernt und die Spezifikation nachgezogen.
+
+Seitengenerierung, lokale Links und Anker, JavaScript-Syntax und Diff-Prüfung bestanden nach der Bereinigung.
+
 ## 2026-09-15 · korrigiert · Laptopdeckel mit M³GIM-Sticker
 
 Die sichtbare Rückseite des Laptops erhielt auf Nutzerwunsch einen M³GIM-Sticker. Die zuvor dort abgebildeten Codezeilen entfielen. Der Nutzer bestätigte die korrigierte Illustration; sie wurde in das vorhandene Titelbildobjekt für Sessions 3 und 4 übernommen. Der frische Folienexport wurde visuell geprüft, die Reihenfolge der 15 vorgefundenen Folien und die übrigen Titelobjekte blieben identisch.
