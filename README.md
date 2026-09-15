@@ -1,6 +1,6 @@
 # Summer School Musicology 2026 · Research Data Workflows and LLMs
 
-Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 2026. Sie verbindet aktuelle Google Slides und Lecture Notes mit Übungsdateien und dem IIIF-Viewer.
+Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 2026. Session 3 und 4 verwenden einen gemeinsamen Foliensatz und gemeinsame Lecture Notes. Die Website verbindet die Lehrmaterialien mit direkten Übungsdownloads und dem IIIF-Viewer.
 
 **Website:** https://chpollin.github.io/summer-school-musicology-2026/
 
@@ -16,9 +16,11 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 
 ## Materialquellen
 
-Die Titel und IDs der vier aktuellen Decks und Skripten wurden am 15. September 2026 im Google-Drive-Kursordner abgeglichen. Insbesondere Session 3 und 4 verwenden die am 14. September neu angelegten Decks. Das frühere gemeinsame Skriptum ist inzwischen das Skript von Session 1; Sessions 2–4 haben eigene Dokumente.
+Die Titel und IDs wurden am 15. September 2026 im Google-Drive-Kursordner abgeglichen. Session 1 und 2 haben eigene Decks und Skripten. Session 3 und 4 verwenden das bestehende gemeinsame Deck und das zusammengeführte Skript unter der bisherigen Session-3-Dokument-ID. Die bestehenden Zeitblöcke bleiben sichtbar. Session 3 führt eine aufbauende Übung an; Session 4 geht in selbständiges Arbeiten über. Das gemeinsame Hauptziel lautet „Use LLMs for coding and build small research tools through Promptotyping“. Knowledge Engineering, Context Engineering und Agentic Engineering bilden den begrifflichen Rahmen. Der Quellenviewer dient als Übungsbeispiel.
 
-Google Drive bleibt der Bearbeitungsort. Einbettungen und PDF-/Office-Exportlinks zeigen auf die jeweiligen aktuellen Google-Dokumente. Die Website verändert deren Freigaben nicht. Weitere Quelldateien bleiben in ihren vorhandenen Drive-Übungsordnern verlinkt.
+Google Drive bleibt der Bearbeitungsort der nativen Dokumente. Einbettungen und PDF-Exportlinks zeigen auf die aktuellen Google-Dokumente. Die Website verändert deren Freigaben nicht. Die gespeicherten Übungsdateien aus den Unterordnern liegen zusätzlich als direkte Downloads vor. `downloads/drive-materials.json` dokumentiert ihre Herkunft. Die Programm-PDFs aus beiden Hands-on-Ordnern wurden per SHA-256 mit den bestehenden lokalen PDFs verglichen und stimmen bytegenau überein.
+
+`downloads/python-vscode.zip` und `downloads/ai-harness.zip` enthalten jeweils Anleitung, unverändertes Python-Skript und die sieben PDFs im Unterordner `input/`. `downloads/shared-materials.zip` enthält die sechs Dateien des Drive-Datenordners; sie sind außerdem einzeln unter `downloads/shared/` erreichbar. Die dortige Schulnachricht trägt die Endung `.jpg`, weil die in Drive als `.png` benannte Datei JPEG-Daten enthält. Die ergänzenden Extraktionsprompts und das Kartenbeispiel legen kein Pflichtziel für die selbständige Arbeit fest. Die bereitgestellten Skripte wurden in dieser Übertragung nicht erneut ausgeführt.
 
 Kursordner: https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW
 

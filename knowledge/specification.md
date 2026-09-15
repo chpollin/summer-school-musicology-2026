@@ -33,6 +33,10 @@ The M³GIM exercise page is a long-form worksheet whose content comes from `scri
 
 Adding, merging or removing a session is an edit of the array in `scripts/sessions.mjs`, followed by the title-slide fetch and the build. No page text states the number of sessions.
 
+Sessions 3 and 4 share the existing deck `1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo` and lecture notes `138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA`. One course section shows the two original time blocks. Session 3 provides cumulative guided practice and Session 4 continues with independent work. Their main objective is to use LLMs for coding and build small research tools through Promptotyping, supported by Knowledge Engineering, Context Engineering and Agentic Engineering. The source viewer is an exercise example. The old Session 4 URL and page anchor remain usable.
+
+Stored files from the Drive exercise folders are mirrored as direct downloads, with provenance in `downloads/drive-materials.json`. The two hands-on ZIPs each include their original guide and script and all seven input PDFs. Additional source material remains individually downloadable and bundled. Native Slides and Docs continue to use live links and export links.
+
 ## Design
 
 One token set in `assets/site.css` on `:root`, colours in OKLCH, spacing and type on a small scale, cascade layers in the order reset, tokens, base, layout, components, utilities. Layout is intrinsic, a grid with `auto-fit` for the cards and wrapping flex rows for header and button groups, so media queries are used only for reduced motion, for print, and to release the sticky header on narrow screens where the wrapped navigation would cover anchor targets. The viewer adds `assets/viewer.css` for its form and the Mirador container. The palette is light only, because the title slides are white and the site is used in a lit seminar room. Class names used by the M³GIM module (`panel`, `card`, `grid`, `actions`, `button`, `resources`, `workflow`, `metadata-table` and the others) stay stable.

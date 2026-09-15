@@ -21,7 +21,7 @@ export const sessions = [
     resources: [
       { url: 'downloads/pdf-to-images.zip', local: true, label: 'PDF to images · Python exercise package', note: 'Script, two-page source PDF and instructions.' },
       { url: data, label: 'Source images and shared exercise files on Google Drive' },
-      { url: 'https://drive.google.com/file/d/1cH99vlIbUsL5BFODsBZcZEiLkkvoMSh4/view', label: 'Schulnachricht · source image' },
+      { url: 'downloads/shared/schulnachricht.jpg', local: true, label: 'Schulnachricht · source image' },
     ],
   },
   {
@@ -37,29 +37,24 @@ export const sessions = [
     ],
   },
   {
-    id: 'session-3', n: 3, day: 'Thursday 17 September', time: '15:00–16:30',
+    id: 'session-3', n: '3 and 4', day: 'Thursday 17 September', time: '15:00–16:30 and 17:00–18:30',
+    label: 'Sessions 3 and 4',
     title: 'Large Language Models for Research Data Workflows: Hands-On Practice',
-    short: 'Transcription and information extraction',
-    description: 'Extract structured statements from the TEI documents prepared in Session 2, retaining source evidence and checking the scope of each claim.',
+    short: 'Promptotyping · guided practice and independent work',
+    description: 'Use LLMs for coding and build small research tools through Promptotyping. Maintain project knowledge, select useful context and guide tool-supported agent work with checks and feedback.',
+    stages: [
+      { title: 'Session 3 · Guided hands-on · 15:00–16:30', text: 'Work through a cumulative exercise with the supplied research materials. Inspect the inputs, document the requirements, use an agent to implement a first working tool and check the result together.' },
+      { title: 'Session 4 · Independent work · 17:00–18:30', text: 'Continue from the guided exercise. Choose a research requirement, provide the relevant project context, implement it with the agent and inspect the result against the sources.' },
+    ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     panel: 'm3gim-next',
     resources: [
-      { url: practice, label: 'Session 3 · exercise folders' },
+      { url: 'downloads/python-vscode.zip', local: true, label: 'Hands-on 1 · Python in Visual Studio Code · ZIP', note: 'Instructions, Python script and all seven input PDFs.' },
+      { url: 'downloads/ai-harness.zip', local: true, label: 'Hands-on 2 · AI Harness · ZIP', note: 'Repeat the same workflow with an agent using the supplied script and PDFs.' },
+      { url: practice, label: 'Original exercise folders on Google Drive' },
       { url: 'https://drive.google.com/drive/folders/1bS_F8yDOWWK89cLeFzj6nFxz9GBH18Qa', label: 'Hands-on 1 · Python in Visual Studio Code' },
       { url: 'https://drive.google.com/drive/folders/1tbZvvloLe4gZ5IBe9gsqqQfiiScgbP3F', label: 'Hands-on 2 · AI Harness' },
       { url: data, label: 'Shared source material and exercise files' },
-    ],
-  },
-  {
-    id: 'session-4', n: 4, day: 'Thursday 17 September', time: '17:00–18:30',
-    title: 'Promptotyping with Research Data',
-    short: 'From research requirements to an application',
-    description: 'Develop a working prototype from documented research requirements and reviewed data with an AI coding agent, then inspect its evidence links against concrete records.',
-    slides: '1-fAKvaGBndVmzWcptltYqW1CXNYhQgji5W6JvIdChQ0', notes: '1U37su5SllKVdlEKKgwcqadwf7-4yNyOxpgbgSxsLYkc',
-    resources: [
-      { url: drive, label: 'Course material folder' },
-      { url: data, label: 'Shared data and prototype materials' },
-      { url: 'tools/iiif-viewer/', local: true, label: 'Explore the course viewer as an example application' },
     ],
   },
 ];

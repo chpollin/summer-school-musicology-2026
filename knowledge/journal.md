@@ -15,6 +15,12 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-15 · integriert · Gemeinsame Materialien für Session 3 und 4
+
+Auf Nutzerauftrag wurden Session 3 und 4 einem vorhandenen gemeinsamen Deck und gemeinsamen Lecture Notes zugeordnet. Die angeleitete, aufbauende Übung geht in selbständiges Arbeiten über. Das bestätigte Hauptziel ist die Nutzung von LLMs zum Programmieren und zum Bau kleiner Forschungswerkzeuge durch Promptotyping. Die vorhandene Lernzielfolie wurde entsprechend korrigiert; Folienbestand und Reihenfolge blieben identisch. Der gelieferte Abschnitt zu Context Engineering, Agentic Engineering und AI Harnesses einschließlich seiner Quellenanmerkungen wurde in die Notes integriert und um die Einordnung von Knowledge Engineering ergänzt. Allgemeine Inhalte des älteren Session-4-Skripts gingen in den Abschnitt zum selbständigen Arbeiten ein; dessen festgelegter Cast Explorer wurde als Pflichtziel aufgehoben.
+
+Die Website führt beide ursprünglichen Zeitblöcke und gemeinsame Dokumentlinks. Gespeicherte Dateien aus den Drive-Unterordnern wurden als direkte Downloads ergänzt. Die PDF-Kopien beider Hands-on-Pakete stimmen per SHA-256 mit den bereits veröffentlichten Quellen überein; jede Herkunft ist in `downloads/drive-materials.json` nachgewiesen. Die ZIPs wurden auf Vollständigkeit geprüft, die Website mit dem Build- und Linkcheck sowie im Browser und die geänderte Lernzielfolie visuell kontrolliert. Die übertragenen Python-Skripte wurden dabei nicht erneut ausgeführt. Der ursprüngliche Session-4-Reader bleibt als Quelldokument in Drive erhalten.
+
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
 ## 2026-09-15 · integrated · Repository created with Codex

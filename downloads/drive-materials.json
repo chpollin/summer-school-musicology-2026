@@ -1,0 +1,223 @@
+{
+  "source_folder": "https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW",
+  "retrieved": "2026-09-15",
+  "note": "Stored exercise files mirrored from the shared course folder. Native slides and lecture notes remain linked through scripts/sessions.mjs. Duplicate source PDFs from both hands-on folders resolve to one verified local file. The file named schulnachricht.png in Drive contains JPEG bytes and is served as schulnachricht.jpg.",
+  "files": [
+    {
+      "drive_id": "1cH99vlIbUsL5BFODsBZcZEiLkkvoMSh4",
+      "source_url": "https://drive.google.com/file/d/1cH99vlIbUsL5BFODsBZcZEiLkkvoMSh4/view?usp=drivesdk",
+      "name": "schulnachricht.png",
+      "path": "downloads/shared/schulnachricht.jpg",
+      "mime_type": "image/jpeg",
+      "source_size": 1269528,
+      "sha256": "271064f3d439c64f919e57747d914a8e6e90bee7eefbd9b5764875b4cd203170"
+    },
+    {
+      "drive_id": "1HGzaJ4XtU2APn40_2YQH6Kj8IaGTJ8_Y",
+      "source_url": "https://drive.google.com/file/d/1HGzaJ4XtU2APn40_2YQH6Kj8IaGTJ8_Y/view?usp=drivesdk",
+      "name": "prompts.md",
+      "path": "downloads/shared/prompts.md",
+      "mime_type": "text/markdown",
+      "source_size": 7859,
+      "sha256": "d000b977a49aeefd14f666099214be1642a65fdd436f86cfcc3059b88c95d198"
+    },
+    {
+      "drive_id": "1gU1kYf9OPaVCiIvWhtWrPMT_jhKUSUEW",
+      "source_url": "https://drive.google.com/file/d/1gU1kYf9OPaVCiIvWhtWrPMT_jhKUSUEW/view?usp=drivesdk",
+      "name": "orte-lookup.csv",
+      "path": "downloads/shared/orte-lookup.csv",
+      "mime_type": "text/csv",
+      "source_size": 211,
+      "sha256": "3c03f1aa7cfb37bdbaade3158a47777d41e5702ee309367789fcc5b254589bd4"
+    },
+    {
+      "drive_id": "16QWae0iMPdXE03zmZIH6e0HCVIEAEwgp",
+      "source_url": "https://drive.google.com/file/d/16QWae0iMPdXE03zmZIH6e0HCVIEAEwgp/view?usp=drivesdk",
+      "name": "plakattext-pl04.txt",
+      "path": "downloads/shared/plakattext-pl04.txt",
+      "mime_type": "text/plain",
+      "source_size": 465,
+      "sha256": "0173ef702d78ece03a696f81afb1ed29cdeafd3e184804cdbe5b9049e7974d91"
+    },
+    {
+      "drive_id": "1GZx9GL26OrBo9atcZwqXAOCE95O9TPAh",
+      "source_url": "https://drive.google.com/file/d/1GZx9GL26OrBo9atcZwqXAOCE95O9TPAh/view?usp=drivesdk",
+      "name": "m3gim-map-demo.zip",
+      "path": "downloads/shared/m3gim-map-demo.zip",
+      "mime_type": "application/zip",
+      "source_size": 3367,
+      "sha256": "24da54098970a02656e58cb68a22c1e9c329b5afff27f61c132df9b3fe245dab"
+    },
+    {
+      "drive_id": "1xigbEkJrgvyf8DA3xSW9w3nB2HA5Refe",
+      "source_url": "https://docs.google.com/spreadsheets/d/1xigbEkJrgvyf8DA3xSW9w3nB2HA5Refe/edit?usp=drivesdk&ouid=117307509866048445177&rtpof=true&sd=true",
+      "name": "personenindex-uebung.xlsx",
+      "path": "downloads/shared/personenindex-uebung.xlsx",
+      "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "source_size": 6133,
+      "sha256": "28ebb80d8a9761639bf3a8d15a6983d605c36f85ed19fdd5c1d8a02170076efe"
+    },
+    {
+      "drive_id": "1o9Nr9khbHn84ipIDB6C8g8QxadpprOiv",
+      "source_url": "https://drive.google.com/file/d/1o9Nr9khbHn84ipIDB6C8g8QxadpprOiv/view?usp=drivesdk",
+      "name": "README.md",
+      "path": "downloads/ai-harness/README.md",
+      "mime_type": "text/markdown",
+      "source_size": 3758,
+      "sha256": "1e9c1bfacdc0c2427a4f8af4598cd8c24f276efc965b4797edc6dafacccb11ef"
+    },
+    {
+      "drive_id": "13JAJDnC-dKyQsIId19Lozf7uh5v8EbZ7",
+      "source_url": "https://drive.google.com/file/d/13JAJDnC-dKyQsIId19Lozf7uh5v8EbZ7/view?usp=drivesdk",
+      "name": "pdf_to_images.py",
+      "path": "downloads/ai-harness/pdf_to_images.py",
+      "mime_type": "text/x-python",
+      "source_size": 4546,
+      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3"
+    },
+    {
+      "drive_id": "12yHad5T4aKddhMm_sc1FMfyCTxURtAg_",
+      "source_url": "https://drive.google.com/file/d/12yHad5T4aKddhMm_sc1FMfyCTxURtAg_/view?usp=drivesdk",
+      "name": "README.md",
+      "path": "downloads/python-vscode/README.md",
+      "mime_type": "text/markdown",
+      "source_size": 3059,
+      "sha256": "9b83b34dbaa5d02640a5d52b434e681021ab7ec8798ac673cd36f240352bb4c3"
+    },
+    {
+      "drive_id": "1nyF4xjlvC6eORLwlNkSy1G1MgJIU0iet",
+      "source_url": "https://drive.google.com/file/d/1nyF4xjlvC6eORLwlNkSy1G1MgJIU0iet/view?usp=drivesdk",
+      "name": "pdf_to_images.py",
+      "path": "downloads/python-vscode/pdf_to_images.py",
+      "mime_type": "text/x-python",
+      "source_size": 4546,
+      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3"
+    },
+    {
+      "drive_id": "1pHOnOPfdT94phWkn8vM2q2WwN30vlF0G",
+      "source_url": "https://drive.google.com/file/d/1pHOnOPfdT94phWkn8vM2q2WwN30vlF0G/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_12.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_12.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 4003875,
+      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff"
+    },
+    {
+      "drive_id": "1rXnRwz7pbLQ3e7ZNpKG5ELlhEOasSmBs",
+      "source_url": "https://drive.google.com/file/d/1rXnRwz7pbLQ3e7ZNpKG5ELlhEOasSmBs/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_11.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_11.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 736505,
+      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d"
+    },
+    {
+      "drive_id": "1Az19tuC2-2VYCQVS51GEb5WEriBfroPi",
+      "source_url": "https://drive.google.com/file/d/1Az19tuC2-2VYCQVS51GEb5WEriBfroPi/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_10.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_10.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 207644,
+      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a"
+    },
+    {
+      "drive_id": "1Nra_9PEuc1WkKamaBODKKEaVymXZqsKn",
+      "source_url": "https://drive.google.com/file/d/1Nra_9PEuc1WkKamaBODKKEaVymXZqsKn/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_9.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_9.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 206058,
+      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971"
+    },
+    {
+      "drive_id": "1g91RMuuSJ_osEHRSlsMryOg460J719Bd",
+      "source_url": "https://drive.google.com/file/d/1g91RMuuSJ_osEHRSlsMryOg460J719Bd/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_8.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_8.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 201832,
+      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844"
+    },
+    {
+      "drive_id": "1R8VpyG8_uCrrWIuTBNSpk2ohYI6s_LG6",
+      "source_url": "https://drive.google.com/file/d/1R8VpyG8_uCrrWIuTBNSpk2ohYI6s_LG6/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_7.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_7.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 210116,
+      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074"
+    },
+    {
+      "drive_id": "1fUc0iVJrHqvlhqHb5qZjEFpOEDRlnKst",
+      "source_url": "https://drive.google.com/file/d/1fUc0iVJrHqvlhqHb5qZjEFpOEDRlnKst/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_3.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_3.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 204589,
+      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca"
+    },
+    {
+      "drive_id": "1pfKI84jzqnxh3ZIxJfP1-nAjhu2tYHva",
+      "source_url": "https://drive.google.com/file/d/1pfKI84jzqnxh3ZIxJfP1-nAjhu2tYHva/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_12.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_12.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 4003875,
+      "sha256": "8b583e77ce9ae36992661ddd9b47fff7938d6afd0b7e7758c5f299c28c37bcff"
+    },
+    {
+      "drive_id": "1qMUPr6KZuU64CnfIc6w_WXbFgEpXavF-",
+      "source_url": "https://drive.google.com/file/d/1qMUPr6KZuU64CnfIc6w_WXbFgEpXavF-/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_11.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_11.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 736505,
+      "sha256": "5da395ceabcbe639e7677e781897a06e1d32c8abed94118643bea69eb1f8418d"
+    },
+    {
+      "drive_id": "1mbOG3YiUx9kDdyZ_WqBxUX-aEWVsJ1HY",
+      "source_url": "https://drive.google.com/file/d/1mbOG3YiUx9kDdyZ_WqBxUX-aEWVsJ1HY/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_10.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_10.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 207644,
+      "sha256": "0592c591e653aaa4f95b29eda89bb0db3239616262712e0bfac663cb97c7439a"
+    },
+    {
+      "drive_id": "1BJzlpMsiB2h6jv5wEc6n_BONjmfW6oBo",
+      "source_url": "https://drive.google.com/file/d/1BJzlpMsiB2h6jv5wEc6n_BONjmfW6oBo/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_9.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_9.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 206058,
+      "sha256": "afb7e228018db9459cd39e92f488691c8441700aaf7c1336435a81169e364971"
+    },
+    {
+      "drive_id": "1HmNtHITfSTy73MeceHOody4JQgreuxvc",
+      "source_url": "https://drive.google.com/file/d/1HmNtHITfSTy73MeceHOody4JQgreuxvc/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_8.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_8.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 201832,
+      "sha256": "8e931e8aa7a06bf232a05632a4c9cead266a11c91d2b45485fef42c41426d844"
+    },
+    {
+      "drive_id": "1n1nwgFqF28Cxdqhi2FwFXJqbbmILSkM8",
+      "source_url": "https://drive.google.com/file/d/1n1nwgFqF28Cxdqhi2FwFXJqbbmILSkM8/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_7.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_7.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 210116,
+      "sha256": "43f010fee3a505e46d0e7ea67dbae70f8179bde26b2364efd9a513c7f5a76074"
+    },
+    {
+      "drive_id": "1mzQfgVzCv5Wu-HnLo_T-ZBPZmgz4eMXO",
+      "source_url": "https://drive.google.com/file/d/1mzQfgVzCv5Wu-HnLo_T-ZBPZmgz4eMXO/view?usp=drivesdk",
+      "name": "UAKUG_NIM_005_137_3.pdf",
+      "path": "downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_3.pdf",
+      "mime_type": "application/pdf",
+      "source_size": 204589,
+      "sha256": "e12a150bd37aafbf90ec8dc7d62a200a69db2c34f9b73272e4fd67a7b96b8fca"
+    }
+  ]
+}

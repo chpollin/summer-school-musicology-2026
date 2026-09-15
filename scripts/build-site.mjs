@@ -15,6 +15,7 @@ const siteDescription = "Slides, lecture notes, hands-on tools and downloads for
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const link = (url, label, kind = '') => `<a${kind ? ` class="${kind}"` : ''} href="${escape(url)}">${escape(label)}</a>`;
 const slidesUrl = s => `https://docs.google.com/presentation/d/${s.slides}`;
+const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
 const shortDay = day => {
   const match = day.match(/^(\w{3})\w* (\d+) (\w{3})\w*$/);
@@ -31,7 +32,7 @@ const panels = {
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
   const home = base ? `${base}index.html` : '';
-  const items = [...sessions.map(s => [`${home}#${s.id}`, `Session ${s.n}`]), [`${home}#downloads`, 'Downloads'], [`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
+  const items = [...sessions.map(s => [`${home}#${s.id}`, sessionLabel(s)]), [`${home}#downloads`, 'Downloads'], [`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
   const nav = items.map(([href, label, key]) => `<a href="${href}"${key && key === current ? ' aria-current="page"' : ''}>${label}</a>`).join('');
   return `<!doctype html>
 <html lang="en">
@@ -66,14 +67,15 @@ ${scripts}</body>
 
 const resourceList = (resources, base) => `<ul class="resources">${resources.map(r => `<li>${link(r.local ? base + r.url : r.url, r.label)}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
 
-const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span class="number">Session ${s.n} · ${shortDay(s.day)} · ${s.time}</span><h3>${escape(s.title)}</h3><p>${escape(s.short)}</p></a>`;
+const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span class="number">${sessionLabel(s)} · ${shortDay(s.day)} · ${s.time}</span><h3>${escape(s.title)}</h3><p>${escape(s.short)}</p></a>`;
 
 const section = s => `<section id="${s.id}" class="session">
-<p class="eyebrow">Session ${s.n} · ${s.day} · ${s.time}</p>
+<p class="eyebrow">${sessionLabel(s)} · ${s.day} · ${s.time}</p>
 <h2>${escape(s.title)}</h2>
 <p class="lead">${escape(s.description)}</p>
+${s.stages ? `<div class="grid">${s.stages.map((stage, i) => `<article class="panel"${i === 1 ? ' id="session-4"' : ''}><h3>${escape(stage.title)}</h3><p>${escape(stage.text)}</p></article>`).join('')}</div><p class="small">Both sessions use the same slide deck and lecture notes.</p>` : ''}
 <div class="actions">${link(`${slidesUrl(s)}/preview`, 'Open slides', 'button')}${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF', 'button secondary')}${link(`${notesUrl(s)}/preview`, 'Lecture notes', 'button')}${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF', 'button secondary')}</div>
-<details class="slides-embed"><summary>Show the slides on this page</summary><iframe class="embed slides" src="${slidesUrl(s)}/embed?start=false&amp;loop=false&amp;delayms=3000" title="Session ${s.n} slides" allowfullscreen loading="lazy"></iframe></details>
+<details class="slides-embed"><summary>Show the slides on this page</summary><iframe class="embed slides" src="${slidesUrl(s)}/embed?start=false&amp;loop=false&amp;delayms=3000" title="${sessionLabel(s)} slides" allowfullscreen loading="lazy"></iframe></details>
 ${s.panel ? `${panels[s.panel]('')}\n` : ''}${resourceList(s.resources, '')}
 </section>`;
 
@@ -91,11 +93,20 @@ ${sessions.map(section).join('\n')}
 <ul class="resources">
 <li><a href="downloads/xml-iiif-workshop.zip" download>XML to IIIF · Python package</a><br><span class="small">Session 1 · script, XML template, two example images and guide.</span></li>
 <li><a href="downloads/pdf-to-images.zip" download>PDF pages as images · Python package</a><br><span class="small">Session 1 · script, two-page source PDF and instructions.</span></li>
-<li>${link('materials/m3gim-fulltext.html', 'M³GIM · From Facsimiles to TEI')}<br><span class="small">Sessions 2 and 3 · PDFs, PNGs, prompts, TEI template, checker and reference files.</span></li>
+<li>${link('materials/m3gim-fulltext.html', 'M³GIM · From Facsimiles to TEI')}<br><span class="small">Sessions 2–4 · PDFs, PNGs, prompts, TEI template, checker and reference files.</span></li>
 <li>${link('tools/iiif-viewer/', 'IIIF viewer')}<br><span class="small">Open your XML or manifest with its images in Mirador.</span></li>
 <li>${link(`${prep}/preview`, 'Technical preparation slides')}</li>
 <li>${link(drive, 'Course material folder on Google Drive')}</li>
-<li>${link(data, 'Shared source material and exercise files')}</li>
+<li>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}</li>
+<li>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}</li>
+<li>${link('downloads/shared-materials.zip', 'Additional source material and examples · ZIP')}<br><span class="small">Source image, prompts, place lookup, poster text, person-index exercise and map demo.</span></li>
+<li>${link('downloads/shared/schulnachricht.jpg', 'Schulnachricht · source image')}</li>
+<li>${link('downloads/shared/prompts.md', 'Bayreuth 1953 · additional extraction and prototype prompts')}</li>
+<li>${link('downloads/shared/orte-lookup.csv', 'Place lookup · CSV')}</li>
+<li>${link('downloads/shared/plakattext-pl04.txt', 'Poster text · TXT')}</li>
+<li>${link('downloads/shared/personenindex-uebung.xlsx', 'Person-index exercise · XLSX')}</li>
+<li>${link('downloads/shared/m3gim-map-demo.zip', 'Additional map example · ZIP')}</li>
+<li>${link(data, 'Original shared files on Google Drive')}</li>
 </ul>
 </section>`;
 outputs.set('index.html', frame({ title: course, content: home, base: '' }));
@@ -110,7 +121,8 @@ const stub = (target, label) => `<!doctype html>
 <body><p>This page has moved to <a href="${target}">${escape(label)}</a>.</p></body>
 </html>
 `;
-for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(`../index.html#${s.id}`, `Session ${s.n}`));
+for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(`../index.html#${s.id}`, sessionLabel(s)));
+outputs.set('sessions/session-4.html', stub('../index.html#session-4', 'Sessions 3 and 4'));
 outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads'));
 outputs.set('materials/m3gim-fulltext.html', frame({ title: 'M³GIM · From Facsimiles to TEI', content: m3gimPage(link), base: '../', description: 'Hands-on exercise: turn seven M³GIM facsimiles into full texts, document metadata and simple TEI with an LLM, with downloads and reference files.' }));
 outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', current: 'viewer', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
