@@ -6,9 +6,9 @@ import { existsSync, readdirSync, readFileSync, realpathSync } from 'node:fs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
-import { m3gimCard, m3gimNextSession, m3gimPage } from './m3gim-exercise.mjs';
+import { m3gimCard, m3gimPage } from './m3gim-exercise.mjs';
 import { viewerPage } from './viewer-page.mjs';
-import { course, data, drive, event, prep, sessions, site, venue } from './sessions.mjs';
+import { course, drive, event, prep, sessions, site, venue } from './sessions.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const siteDescription = "Slides, lecture notes, hands-on tools and downloads for Christopher Pollin's sessions at Summer School Musicology 2026.";
@@ -27,7 +27,19 @@ const outputs = new Map();
 const panels = {
   iiif: () => `<div class="panel"><h3>From XML to IIIF</h3><p>Combine your XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The viewer also accepts the XML directly.</p><div class="actions">${link('tools/iiif-viewer/', 'Open the IIIF viewer', 'button')}${link('downloads/xml-iiif-workshop.zip', 'Download Python + IIIF package', 'button secondary')}</div><p class="small">Script, XML template, two synthetic example images and an English guide.</p></div>`,
   m3gim: base => m3gimCard(base, link),
-  'm3gim-next': base => m3gimNextSession(base, link),
+  'm3gim-next': () => `<div class="panel">
+<h3>From running a workflow to building a research tool</h3>
+<p>We return to PDF-to-PNG conversion to compare how you and an agent execute the same task. The TEI corpus from Session 2 becomes input for the tool-building exercise in step 3.</p>
+<ol class="workflow">
+<li><strong>Run the workflow yourself.</strong> Open the first package in Visual Studio Code, follow its guide and run the supplied script. Inspect the generated images against the PDFs.<br>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}</li>
+<li><strong>Repeat the workflow with an agent.</strong> Give the agent the same task, script and PDFs. Observe its tool use, inspect the outputs and compare them with your first run.<br>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}</li>
+<li><strong>Use LLMs for coding through Promptotyping.</strong> State a research requirement and record the relevant data, constraints and checks. Reuse your TEI files and images from Session 2 to implement and inspect a first tool together. A source viewer is the worked example.<br>${link('materials/m3gim-fulltext.html#next-session', 'TEI corpus layout & reference bundle')}</li>
+<li><strong>Continue independently in Session 4.</strong> Choose a requirement for your own research tool or extend the guided example. Supply the relevant context, inspect the agent’s changes and verify the result against the data. Record what works and what remains uncertain.</li>
+</ol>
+<p class="small">Both hands-on ZIPs contain their guide, the supplied Python script and all seven input PDFs. Keep your Session 2 <code>tei/</code> and <code>png/</code> folders together so the image links remain usable.</p>
+<h3>Practices used throughout</h3>
+<dl class="practices"><dt>Knowledge Engineering</dt><dd>Maintain project knowledge about the research purpose, data, requirements, decisions and checks.</dd><dt>Context Engineering</dt><dd>Select the instructions, source material and project knowledge needed for the current task.</dd><dt>Agentic Engineering</dt><dd>Guide the agent’s tool use, inspect its actions and results, and provide feedback for the next change.</dd></dl>
+</div>`,
 };
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
@@ -67,7 +79,7 @@ ${scripts}</body>
 
 const resourceList = (resources, base) => `<ul class="resources">${resources.map(r => `<li>${link(r.local ? base + r.url : r.url, r.label)}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
 
-const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span class="number">${sessionLabel(s)} · ${shortDay(s.day)} · ${s.time}</span><h3>${escape(s.title)}</h3><p>${escape(s.short)}</p></a>`;
+const card = s => `<a class="card" href="#${s.id}"><img src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async"><span class="number">${sessionLabel(s)}</span><span class="small">${shortDay(s.day)} · ${s.time}</span><h3>${escape(s.title)}</h3><p>${escape(s.short)}</p></a>`;
 
 const section = s => `<section id="${s.id}" class="session">
 <p class="eyebrow">${sessionLabel(s)} · ${s.day} · ${s.time}</p>
@@ -76,7 +88,7 @@ const section = s => `<section id="${s.id}" class="session">
 ${s.stages ? `<div class="grid">${s.stages.map((stage, i) => `<article class="panel"${i === 1 ? ' id="session-4"' : ''}><h3>${escape(stage.title)}</h3><p>${escape(stage.text)}</p></article>`).join('')}</div><p class="small">Both sessions use the same slide deck and lecture notes.</p>` : ''}
 <div class="actions">${link(`${slidesUrl(s)}/preview`, 'Open slides', 'button')}${link(`${slidesUrl(s)}/export/pdf`, 'Slides PDF', 'button secondary')}${link(`${notesUrl(s)}/preview`, 'Lecture notes', 'button')}${link(`${notesUrl(s)}/export?format=pdf`, 'Notes PDF', 'button secondary')}</div>
 <details class="slides-embed"><summary>Show the slides on this page</summary><iframe class="embed slides" src="${slidesUrl(s)}/embed?start=false&amp;loop=false&amp;delayms=3000" title="${sessionLabel(s)} slides" allowfullscreen loading="lazy"></iframe></details>
-${s.panel ? `${panels[s.panel]('')}\n` : ''}${resourceList(s.resources, '')}
+${s.panel ? `${panels[s.panel]('')}\n` : ''}${s.resources.length ? resourceList(s.resources, '') : ''}
 </section>`;
 
 const home = `<div class="hero">
@@ -86,28 +98,38 @@ const home = `<div class="hero">
 <p class="byline">Christopher Pollin · Digital Humanities Craft · ${escape(venue)} · 16 and 17 September 2026</p>
 <div class="actions">${link('#sessions', 'Go to the sessions', 'button')}${link('#downloads', 'Downloads', 'button secondary')}</div>
 </div>
-<section id="sessions"><h2 class="visually-hidden">Sessions</h2><div class="grid">${sessions.map(card).join('')}</div></section>
+<section id="sessions"><h2 class="visually-hidden">Sessions</h2><div class="grid session-cards">${sessions.map(card).join('')}</div></section>
 ${sessions.map(section).join('\n')}
 <section id="downloads">
 <h2>Downloads</h2>
+<p>Choose the package for the current exercise. Reference solutions and additional examples are listed separately below.</p>
+<h3>Exercise starter packages</h3>
 <ul class="resources">
 <li><a href="downloads/xml-iiif-workshop.zip" download>XML to IIIF · Python package</a><br><span class="small">Session 1 · script, XML template, two example images and guide.</span></li>
 <li><a href="downloads/pdf-to-images.zip" download>PDF pages as images · Python package</a><br><span class="small">Session 1 · script, two-page source PDF and instructions.</span></li>
-<li>${link('materials/m3gim-fulltext.html', 'M³GIM · From Facsimiles to TEI')}<br><span class="small">Sessions 2–4 · PDFs, PNGs, prompts, TEI template, checker and reference files.</span></li>
-<li>${link('tools/iiif-viewer/', 'IIIF viewer')}<br><span class="small">Open your XML or manifest with its images in Mirador.</span></li>
-<li>${link(`${prep}/preview`, 'Technical preparation slides')}</li>
-<li>${link(drive, 'Course material folder on Google Drive')}</li>
-<li>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}</li>
-<li>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}</li>
+<li>${link('materials/m3gim-fulltext.html#materials', 'M³GIM · From Facsimiles to TEI · exercise & starter files')}<br><span class="small">Session 2 · source PDFs, PNGs, prompts, TEI template and checker.</span></li>
+<li>${link('downloads/python-vscode.zip', 'Hands-on 1 · Python in Visual Studio Code · ZIP')}<br><span class="small">Session 3 · run the supplied PDF-to-PNG script yourself; guide and all seven PDFs included.</span></li>
+<li>${link('downloads/ai-harness.zip', 'Hands-on 2 · AI Harness · ZIP')}<br><span class="small">Session 3 · repeat the same workflow with an agent; guide, script and PDFs included.</span></li>
+</ul>
+<h3>Reference solutions</h3>
+<ul class="resources">
+<li>${link('materials/m3gim-fulltext.html#reference', 'M³GIM · TEI, metadata and full texts')}<br><span class="small">Compare your work with the reference and resolve differences against the facsimiles.</span></li>
+<li>${link('downloads/m3gim-fulltext/m3gim-next-session.zip', 'Reference TEI + all images · ZIP')}<br><span class="small">Sessions 3 and 4 · complete corpus for tool building, with working relative image links.</span></li>
+</ul>
+<h3>Additional examples and source material</h3>
+<ul class="resources">
 <li>${link('downloads/shared-materials.zip', 'Additional source material and examples · ZIP')}<br><span class="small">Source image, prompts, place lookup, poster text, person-index exercise and map demo.</span></li>
+<li>${link('tools/iiif-viewer/', 'IIIF viewer')}<br><span class="small">Open your XML or manifest with its images in Mirador.</span></li>
+</ul>
+<details><summary>Download individual additional files</summary><ul class="resources">
 <li>${link('downloads/shared/schulnachricht.jpg', 'Schulnachricht · source image')}</li>
 <li>${link('downloads/shared/prompts.md', 'Bayreuth 1953 · additional extraction and prototype prompts')}</li>
 <li>${link('downloads/shared/orte-lookup.csv', 'Place lookup · CSV')}</li>
 <li>${link('downloads/shared/plakattext-pl04.txt', 'Poster text · TXT')}</li>
 <li>${link('downloads/shared/personenindex-uebung.xlsx', 'Person-index exercise · XLSX')}</li>
 <li>${link('downloads/shared/m3gim-map-demo.zip', 'Additional map example · ZIP')}</li>
-<li>${link(data, 'Original shared files on Google Drive')}</li>
-</ul>
+</ul></details>
+<p class="small">${link(`${prep}/preview`, 'Technical preparation slides')} · ${link(drive, 'Original course folders on Google Drive')}</p>
 </section>`;
 outputs.set('index.html', frame({ title: course, content: home, base: '' }));
 

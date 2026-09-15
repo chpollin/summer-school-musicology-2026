@@ -68,6 +68,7 @@
   nav { display: flex; gap: var(--space-2) var(--space-5); flex-wrap: wrap; font-size: 0.9375rem; }
   .hero { padding-block: clamp(2rem, 5vw, 4rem) clamp(1.5rem, 3vw, 2.5rem); max-inline-size: 60rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--card-min)), 1fr)); gap: var(--space-5); }
+  .session-cards { --card-min: 19rem; }
   .session { border-block-start: 1px solid var(--line); padding-block-start: var(--space-6); }
   .session-nav { display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); border-block-start: 1px solid var(--line); padding-block-start: var(--space-5); margin-block: var(--space-6); }
   footer { border-block-start: 1px solid var(--line); margin-block-start: var(--space-6); padding-block: var(--space-5) var(--space-6); font-size: var(--text-s); color: var(--muted); }
@@ -91,6 +92,9 @@
   .card .number { color: var(--accent); font-size: 0.8125rem; font-weight: 750; letter-spacing: 0.06em; }
   .card h3 { margin-block: 0; }
   .card p { margin-block: 0; color: var(--muted); }
+  .session-cards .card { padding: var(--space-4); gap: var(--space-2); }
+  .session-cards h3 { font-size: 1.125rem; text-wrap: pretty; }
+  .session-cards .card p { font-size: var(--text-s); }
   .panel { background: var(--tint); padding: var(--space-5); border-radius: var(--radius); margin-block: var(--space-4); }
   .actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-block: var(--space-4); }
   .button { display: inline-block; padding: 0.625rem 1.125rem; border-radius: 7px; background: var(--accent); color: var(--surface); text-decoration: none; font-size: 0.9375rem; font-weight: 650; border: 1px solid var(--accent); cursor: pointer; }
@@ -104,6 +108,9 @@
   .workflow { max-inline-size: 56rem; padding-inline-start: 1.4em; }
   .workflow li { margin-block-end: var(--space-4); padding-inline-start: var(--space-1); }
   .workflow-line { color: var(--accent); font-weight: 650; }
+  .practices { margin-block: var(--space-4) 0; max-inline-size: 56rem; }
+  .practices dt { font-weight: 650; }
+  .practices dd { margin-inline-start: 0; margin-block: 0 var(--space-3); }
   .metadata-table { inline-size: 100%; border-collapse: collapse; text-align: start; font-size: 0.9375rem; }
   .metadata-table th, .metadata-table td { padding: var(--space-3); border-block-end: 1px solid var(--line); vertical-align: top; }
   .metadata-table thead { background: var(--tint); }

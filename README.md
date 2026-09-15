@@ -10,7 +10,7 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 - `materials/m3gim-fulltext.html`: die M³GIM-Übung; `sessions/` und `materials/index.html` sind Weiterleitungen auf die Anker der Kursseite.
 - `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
 - `downloads/`: Python-/IIIF-Paket, PDF-zu-Bildern-Übung und M³GIM-Paket.
-- `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`.
+- `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`; die neuen Illustrationen und ihre Generierungsprompts liegen unter `assets/illustrations/`.
 - `scripts/sessions.mjs`: das Materialverzeichnis der Sessions; `scripts/build-site.mjs` erzeugt daraus alle Seiten, `--check` prüft Drift und lokale Links; `scripts/fetch-title-slides.mjs` holt die Titelfolien; `scripts/build-iiif-package.py` packt das IIIF-Paket.
 - `knowledge/`: Projektwissen nach der Promptotyping-Konvention, Einstieg über `knowledge/INDEX.md`.
 
@@ -20,7 +20,11 @@ Die Titel und IDs wurden am 15. September 2026 im Google-Drive-Kursordner abgegl
 
 Google Drive bleibt der Bearbeitungsort der nativen Dokumente. Einbettungen und PDF-Exportlinks zeigen auf die aktuellen Google-Dokumente. Die Website verändert deren Freigaben nicht. Die gespeicherten Übungsdateien aus den Unterordnern liegen zusätzlich als direkte Downloads vor. `downloads/drive-materials.json` dokumentiert ihre Herkunft. Die Programm-PDFs aus beiden Hands-on-Ordnern wurden per SHA-256 mit den bestehenden lokalen PDFs verglichen und stimmen bytegenau überein.
 
-`downloads/python-vscode.zip` und `downloads/ai-harness.zip` enthalten jeweils Anleitung, unverändertes Python-Skript und die sieben PDFs im Unterordner `input/`. `downloads/shared-materials.zip` enthält die sechs Dateien des Drive-Datenordners; sie sind außerdem einzeln unter `downloads/shared/` erreichbar. Die dortige Schulnachricht trägt die Endung `.jpg`, weil die in Drive als `.png` benannte Datei JPEG-Daten enthält. Die ergänzenden Extraktionsprompts und das Kartenbeispiel legen kein Pflichtziel für die selbständige Arbeit fest. Die bereitgestellten Skripte wurden in dieser Übertragung nicht erneut ausgeführt.
+`downloads/python-vscode.zip` und `downloads/ai-harness.zip` enthalten jeweils Anleitung, unverändertes Python-Skript und die sieben PDFs im Unterordner `input/`. Die Anleitungen erläutern den Übergang von eigener Skriptausführung über die Ausführung durch einen Agenten zum Programmieren mit einem LLM. Sie sind in Drive und den ZIPs bytegleich. Der Konverter wurde mit allen sieben PDFs ausgeführt und erzeugte 40 PNG-Seiten ohne Fehler.
+
+`downloads/shared-materials.zip` enthält die sechs Dateien des Drive-Datenordners; sie sind außerdem einzeln unter `downloads/shared/` erreichbar. Die dortige Schulnachricht trägt die Endung `.jpg`, weil die in Drive als `.png` benannte Datei JPEG-Daten enthält. Die ergänzenden Extraktionsprompts und das Kartenbeispiel legen kein Pflichtziel für die selbständige Arbeit fest.
+
+Die aktuellen Drive-Dateien tragen einheitliche Session- und Materialbezeichnungen. Das frühere Session-4-Deck und dessen Reader liegen unverändert im benachbarten Ordner [Superseded Materials](https://drive.google.com/drive/folders/1HqmFO4TNbQmGIH8JBFc_Ua780GcYqaxV). Die Kursübersicht zeigt ausschließlich die aktuellen Materialien. Die neuen Titelillustrationen wurden in die vorhandenen Titelfolien von Session 2 und Sessions 3 und 4 eingefügt. Es wurden keine Folien erzeugt.
 
 Kursordner: https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW
 

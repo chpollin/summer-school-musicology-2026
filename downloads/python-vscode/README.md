@@ -1,10 +1,16 @@
 # Hands-on 1: Python in Visual Studio Code
 
 Render every page of every input PDF as a PNG image using the provided script.
+This is the first step of the guided exercise in Session 3. Afterwards, repeat
+the workflow with an AI agent in Hands-on 2, then use an LLM to program a small
+research tool with the source materials from Session 2.
 
 ## Folder structure
 
-Download the **whole exercise folder** from Google Drive and extract the ZIP file.
+Download [Hands-on 1 from the course website](https://chpollin.github.io/summer-school-musicology-2026/downloads/python-vscode.zip)
+and extract the ZIP file. If you are already reading this README in the extracted
+folder, continue below. The [original Google Drive folder](https://drive.google.com/drive/folders/1bS_F8yDOWWK89cLeFzj6nFxz9GBH18Qa)
+is an alternative download source.
 Open the extracted folder that contains `pdf_to_images.py`. Keep the script and
 `input` together:
 
@@ -94,3 +100,8 @@ To change the resolution or input folder:
 python pdf_to_images.py --input input --output output-300dpi --dpi 300
 ```
 
+## Continue to Hands-on 2
+
+Download the separate [AI Harness package](https://chpollin.github.io/summer-school-musicology-2026/downloads/ai-harness.zip).
+It contains the same script and PDFs, so you can compare your own execution
+with the agent's actions and checks. Keep this first result for comparison.

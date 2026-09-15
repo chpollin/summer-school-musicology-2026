@@ -1,7 +1,7 @@
 {
   "source_folder": "https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW",
   "retrieved": "2026-09-15",
-  "note": "Stored exercise files mirrored from the shared course folder. Native slides and lecture notes remain linked through scripts/sessions.mjs. Duplicate source PDFs from both hands-on folders resolve to one verified local file. The file named schulnachricht.png in Drive contains JPEG bytes and is served as schulnachricht.jpg.",
+  "note": "Stored exercise files mirrored from the shared course folder. Native slides and lecture notes remain linked through scripts/sessions.mjs. Duplicate source PDFs from both hands-on folders resolve to one verified local file. The file named schulnachricht.png in Drive contains JPEG bytes and is served as schulnachricht.jpg. The two hands-on guides were updated for the shared Sessions 3 and 4 sequence, uploaded to the same Drive file IDs and verified by download before packaging.",
   "files": [
     {
       "drive_id": "1cH99vlIbUsL5BFODsBZcZEiLkkvoMSh4",
@@ -63,8 +63,8 @@
       "name": "README.md",
       "path": "downloads/ai-harness/README.md",
       "mime_type": "text/markdown",
-      "source_size": 3758,
-      "sha256": "1e9c1bfacdc0c2427a4f8af4598cd8c24f276efc965b4797edc6dafacccb11ef"
+      "source_size": 5047,
+      "sha256": "40dafd5afc85e80bebd2c439af592777105e43e89871d3edc33e569c95a73fb4"
     },
     {
       "drive_id": "13JAJDnC-dKyQsIId19Lozf7uh5v8EbZ7",
@@ -81,8 +81,8 @@
       "name": "README.md",
       "path": "downloads/python-vscode/README.md",
       "mime_type": "text/markdown",
-      "source_size": 3059,
-      "sha256": "9b83b34dbaa5d02640a5d52b434e681021ab7ec8798ac673cd36f240352bb4c3"
+      "source_size": 3879,
+      "sha256": "a6b77581fe7948bac4a3865d65bc863bc0495405d030acbde12bfaef28e1c259"
     },
     {
       "drive_id": "1nyF4xjlvC6eORLwlNkSy1G1MgJIU0iet",

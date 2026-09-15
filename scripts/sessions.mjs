@@ -20,7 +20,6 @@ export const sessions = [
     panel: 'iiif',
     resources: [
       { url: 'downloads/pdf-to-images.zip', local: true, label: 'PDF to images · Python exercise package', note: 'Script, two-page source PDF and instructions.' },
-      { url: data, label: 'Source images and shared exercise files on Google Drive' },
       { url: 'downloads/shared/schulnachricht.jpg', local: true, label: 'Schulnachricht · source image' },
     ],
   },
@@ -33,7 +32,6 @@ export const sessions = [
     panel: 'm3gim',
     resources: [
       { url: `${prep}/preview`, label: 'Technical preparation slides' },
-      { url: data, label: 'Shared source material and exercise files' },
     ],
   },
   {
@@ -41,20 +39,13 @@ export const sessions = [
     label: 'Sessions 3 and 4',
     title: 'Large Language Models for Research Data Workflows: Hands-On Practice',
     short: 'Promptotyping · guided practice and independent work',
-    description: 'Use LLMs for coding and build small research tools through Promptotyping. Maintain project knowledge, select useful context and guide tool-supported agent work with checks and feedback.',
+    description: 'Use LLMs for coding and build small research tools through Promptotyping.',
     stages: [
-      { title: 'Session 3 · Guided hands-on · 15:00–16:30', text: 'Work through a cumulative exercise with the supplied research materials. Inspect the inputs, document the requirements, use an agent to implement a first working tool and check the result together.' },
-      { title: 'Session 4 · Independent work · 17:00–18:30', text: 'Continue from the guided exercise. Choose a research requirement, provide the relevant project context, implement it with the agent and inspect the result against the sources.' },
+      { title: 'Session 3 · Guided hands-on · 15:00–16:30', text: 'Run the supplied PDF-to-PNG workflow yourself, repeat it with an agent, then use LLMs for coding a small research tool. Document requirements and check each result together.' },
+      { title: 'Session 4 · Independent work · 17:00–18:30', text: 'Continue from the guided exercise with a research requirement of your choice. Maintain the project knowledge, select the context for each task and use the agent to implement and check your changes.' },
     ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     panel: 'm3gim-next',
-    resources: [
-      { url: 'downloads/python-vscode.zip', local: true, label: 'Hands-on 1 · Python in Visual Studio Code · ZIP', note: 'Instructions, Python script and all seven input PDFs.' },
-      { url: 'downloads/ai-harness.zip', local: true, label: 'Hands-on 2 · AI Harness · ZIP', note: 'Repeat the same workflow with an agent using the supplied script and PDFs.' },
-      { url: practice, label: 'Original exercise folders on Google Drive' },
-      { url: 'https://drive.google.com/drive/folders/1bS_F8yDOWWK89cLeFzj6nFxz9GBH18Qa', label: 'Hands-on 1 · Python in Visual Studio Code' },
-      { url: 'https://drive.google.com/drive/folders/1tbZvvloLe4gZ5IBe9gsqqQfiiScgbP3F', label: 'Hands-on 2 · AI Harness' },
-      { url: data, label: 'Shared source material and exercise files' },
-    ],
+    resources: [],
   },
 ];

@@ -15,13 +15,21 @@ related: [handoff, project, specification]
 
 # Journal
 
+Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
+
+## 2026-09-15 · integriert · Übungsfolge, Titelbilder und Materialzugang
+
+Auf Nutzerauftrag wurden Website, gemeinsame Lecture Notes und Hands-on-Anleitungen auf dieselbe Übungsfolge abgestimmt. Eigene Skriptausführung und Agentenausführung bereiten den Bau eines kleinen Forschungswerkzeugs durch Promptotyping vor. Session 4 führt die Arbeit mit einer selbstgewählten Forschungsanforderung fort. Der vorhandene Abschnitt 1.2 mit Quellenanmerkungen [8]–[12] sowie native Fußnoten und Dokumentchips blieben erhalten. Alle elf exportierten Notes-Seiten wurden visuell geprüft. Der Folienchip führt zum gemeinsamen Deck, zeigt jedoch weiterhin seinen von Google zwischengespeicherten früheren Titel.
+
+Die Kursseite erhielt drei kompakte Übersichtskarten und gegliederte Downloads. Zwei mit dem integrierten Imagegen-Werkzeug erzeugte Pop-Art-Illustrationen ergänzen die vorhandenen Titelfolien. Bestehende Titelobjekte blieben unverändert; gleichzeitig erfolgte externe Änderungen innerhalb von Session 2 wurden erhalten. Prompts und Strukturprüfung liegen bei den Bilddateien. Der alte Session-4-Foliensatz und dessen Reader wurden in den benachbarten Drive-Ordner `1HqmFO4TNbQmGIH8JBFc_Ua780GcYqaxV` verschoben, die Kursmaterialien einheitlich benannt.
+
+Beide Anleitungen wurden unter ihren bestehenden Drive-IDs aktualisiert und durch erneuten Download bytegenau geprüft. Die neu gepackten ZIPs enthalten jeweils dieselben neun Dateien wie die lokalen Quellen. Der bereitgestellte Konverter verarbeitete alle sieben PDFs zu 40 PNG-Seiten ohne Fehler. Build- und lokale Linkprüfung bestanden; die aktualisierten Titel wurden visuell geprüft. Die fachliche Abnahme der Lehrkonzeption bleibt beim Lehrenden.
+
 ## 2026-09-15 · integriert · Gemeinsame Materialien für Session 3 und 4
 
 Auf Nutzerauftrag wurden Session 3 und 4 einem vorhandenen gemeinsamen Deck und gemeinsamen Lecture Notes zugeordnet. Die angeleitete, aufbauende Übung geht in selbständiges Arbeiten über. Das bestätigte Hauptziel ist die Nutzung von LLMs zum Programmieren und zum Bau kleiner Forschungswerkzeuge durch Promptotyping. Die vorhandene Lernzielfolie wurde entsprechend korrigiert; Folienbestand und Reihenfolge blieben identisch. Der gelieferte Abschnitt zu Context Engineering, Agentic Engineering und AI Harnesses einschließlich seiner Quellenanmerkungen wurde in die Notes integriert und um die Einordnung von Knowledge Engineering ergänzt. Allgemeine Inhalte des älteren Session-4-Skripts gingen in den Abschnitt zum selbständigen Arbeiten ein; dessen festgelegter Cast Explorer wurde als Pflichtziel aufgehoben.
 
 Die Website führt beide ursprünglichen Zeitblöcke und gemeinsame Dokumentlinks. Gespeicherte Dateien aus den Drive-Unterordnern wurden als direkte Downloads ergänzt. Die PDF-Kopien beider Hands-on-Pakete stimmen per SHA-256 mit den bereits veröffentlichten Quellen überein; jede Herkunft ist in `downloads/drive-materials.json` nachgewiesen. Die ZIPs wurden auf Vollständigkeit geprüft, die Website mit dem Build- und Linkcheck sowie im Browser und die geänderte Lernzielfolie visuell kontrolliert. Die übertragenen Python-Skripte wurden dabei nicht erneut ausgeführt. Der ursprüngliche Session-4-Reader bleibt als Quelldokument in Drive erhalten.
-
-Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
 ## 2026-09-15 · integrated · Repository created with Codex
 

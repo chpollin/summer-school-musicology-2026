@@ -3,10 +3,16 @@
 Ask an AI agent in a harness with access to local files and a terminal to execute
 the same PDF-to-image workflow. Both hands-ons contain the same Python script
 and the same source PDFs.
+Complete Hands-on 1 first so that you can compare the agent's actions and
+results with your own execution.
 
 ## Folder structure
 
-Download the **whole exercise folder** from Google Drive and extract the ZIP file.
+Download [Hands-on 2 from the course website](https://chpollin.github.io/summer-school-musicology-2026/downloads/ai-harness.zip)
+and extract the ZIP file separately from Hands-on 1. If you are already reading
+this README in the extracted folder, continue below. The
+[original Google Drive folder](https://drive.google.com/drive/folders/1tbZvvloLe4gZ5IBe9gsqqQfiiScgbP3F)
+is an alternative download source.
 Open the extracted folder that contains `pdf_to_images.py`. Keep the script and
 `input` together:
 
@@ -31,7 +37,7 @@ search nested input folders.
 
 ## Run the workflow with an AI harness
 
-1. Download and extract this exercise folder separately from Hands-on 1.
+1. Use the extracted folder for Hands-on 2, keeping the Hands-on 1 result separate.
 2. Open it as the working folder in your AI harness. The agent needs access to
    the folder containing `pdf_to_images.py` and `input/`, and to a terminal.
 3. Give the agent this task:
@@ -44,7 +50,8 @@ search nested input folders.
 > one image per page. Preserve all source PDFs. Check the terminal summary,
 > verify the image count for each PDF against its page count, and inspect sample
 > images for orientation and readability. Report the output location and any
-> errors. If output/ already exists, use a new output folder.
+> errors. Distinguish checks you executed from checks that require my inspection.
+> If output/ already exists, use a new output folder.
 
 4. Follow the agent's actions: reading the script, preparing dependencies,
    running the command, inspecting files and reporting results.
@@ -96,3 +103,16 @@ To change the resolution or input folder:
 python pdf_to_images.py --input input --output output-300dpi --dpi 300
 ```
 
+## Continue to Programming with an LLM
+
+You have now used an agent to execute an existing script. The next guided step
+uses an LLM to write code for a small research tool through Promptotyping.
+Return to [Sessions 3 and 4 on the course website](https://chpollin.github.io/summer-school-musicology-2026/#session-3)
+and follow the shared Lecture Notes. Use the TEI XML and matching PNG images
+from Session 2 for the source-viewer example. The PDF-to-image outputs alone
+do not include transcriptions or TEI.
+
+Record the purpose, input relationships and display decisions in `project.md`.
+Give the agent the relevant context, inspect the resulting tool against a source
+example and return concrete feedback. Session 4 continues with a research
+requirement you choose yourself.

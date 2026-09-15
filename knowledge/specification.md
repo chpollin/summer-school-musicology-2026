@@ -35,7 +35,11 @@ Adding, merging or removing a session is an edit of the array in `scripts/sessio
 
 Sessions 3 and 4 share the existing deck `1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo` and lecture notes `138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA`. One course section shows the two original time blocks. Session 3 provides cumulative guided practice and Session 4 continues with independent work. Their main objective is to use LLMs for coding and build small research tools through Promptotyping, supported by Knowledge Engineering, Context Engineering and Agentic Engineering. The source viewer is an exercise example. The old Session 4 URL and page anchor remain usable.
 
-Stored files from the Drive exercise folders are mirrored as direct downloads, with provenance in `downloads/drive-materials.json`. The two hands-on ZIPs each include their original guide and script and all seven input PDFs. Additional source material remains individually downloadable and bundled. Native Slides and Docs continue to use live links and export links.
+Stored files from the Drive exercise folders are mirrored as direct downloads, with provenance in `downloads/drive-materials.json`. The two hands-on ZIPs each include their updated guide, unchanged script and all seven input PDFs. The guides are synchronised with their original Drive file IDs. Additional source material remains individually downloadable and bundled. Native Slides and Docs continue to use live links and export links.
+
+The guided sequence first executes the supplied PDF-to-PNG script manually, repeats this operation with an agent, then introduces LLM coding through Promptotyping. The third step reuses the TEI files and images from Session 2 for a source-viewer example. Session 4 allows participants to extend that example or implement another research requirement. The website and common lecture notes express the same sequence. Downloads are grouped into exercise starters, reference solutions and additional materials.
+
+The overview uses a dedicated compact card grid, with three equal columns when space permits. The existing Session 2 and Sessions 3 and 4 title slides contain generated illustrations whose source assets and prompts are preserved under `assets/illustrations/`. Existing slide objects are retained. The previous Session 4 deck and reader remain in the sibling Drive folder `1HqmFO4TNbQmGIH8JBFc_Ua780GcYqaxV`; course-folder files have consistent session and material labels.
 
 ## Design
 

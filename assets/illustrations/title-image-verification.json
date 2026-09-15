@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-15",
+  "scope": "Two existing title slides only",
+  "visualCheck": "Fresh exported title PNGs inspected after insertion. Image aspect ratios preserved. Existing native titles, metadata, and the Sessions 3–4 lower workflow graphic are visible and unobstructed.",
+  "existingTitleObjectsPreserved": true,
+  "illustrations": [
+    {
+      "presentationId": "1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc",
+      "slideObjectId": "g3fb4bd8a6f7_0_216",
+      "imageObjectId": "kug_s2_title_illustration_20260915",
+      "file": "session-2-title.png",
+      "slideCount": 37
+    },
+    {
+      "presentationId": "1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo",
+      "slideObjectId": "g3fb4bd8a6f7_0_216",
+      "imageObjectId": "kug_s34_title_illustration_20260915",
+      "file": "sessions-3-4-title.png",
+      "slideCount": 10
+    }
+  ],
+  "limitations": "Other slide content was not reviewed. Session 2 changed concurrently outside these title-image writes; those changes were preserved."
+}
