@@ -2,7 +2,9 @@
 
 This package converts PDF pages to PNG images with a provided Python script. It is optional technical preparation for working with source images.
 
-The introductory AI Harness exercise uses the mobility starter CSV. The final project offers two paths, a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. Follow the working instructions on the slides. Both final paths use `knowledge/data.md` and `knowledge/research.md` to document the data and research requirements.
+The introductory AI Harness exercise uses the mobility starter CSV. **Promptotyping Project: A Small Digital Edition or Research Dashboard** offers two paths, a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. Follow the slides and maintain `knowledge/data.md` for sources and limitations, `knowledge/research.md` for the question and method, and `knowledge/specification.md` for requirements and acceptance criteria.
+
+The final website starts with one view and one core interaction. Use local, plain HTML, CSS and JavaScript without libraries, frameworks, external dependencies, backend, database or build tools. The Python dependencies below serve only the optional PDF preparation.
 
 ## Package contents
 

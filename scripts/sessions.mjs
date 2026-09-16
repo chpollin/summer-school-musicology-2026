@@ -24,8 +24,18 @@ export const sessions = [
     slides: '1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc', notes: '1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg',
     activities: [
       {
-        id: 'session-1-schulnachricht', title: 'Describe and encode the Schulnachricht',
-        note: 'Use the same source image for the XML, TEI and RDF exercises. Templates and prompts are in the slides.',
+        id: 'session-1-research-data', title: 'What Counts as Research Data, and Who Decides?',
+        note: 'Discuss the source and the questions in the slides. No download is required.',
+        resources: [{ url: 'https://gams.uni-graz.at/o:szd.947', label: 'Open the Clarissa source' }],
+      },
+      {
+        id: 'session-1-xml-reading', title: 'Reading an XML Metadata Record',
+        note: 'Read the XML example in the slides. No additional file is required.',
+        resources: [],
+      },
+      {
+        id: 'session-1-schulnachricht', title: 'Describe the “Schulnachricht” in XML',
+        note: 'Use the source image and the template in the slides. Save your description as metadata.xml for the next exercise.',
         resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
       },
       {
@@ -35,6 +45,33 @@ export const sessions = [
           { url: 'downloads/xml-iiif-workshop.zip', label: 'XML to IIIF · complete exercise package · ZIP' },
           { url: 'tools/iiif-viewer/', label: 'Open the IIIF viewer' },
         ],
+      },
+      {
+        id: 'session-1-tei', title: 'Encode the Schulnachricht in TEI XML with LLM Assistance',
+        note: 'Use the slide prompt, check the transcription against the image and save schulnachricht.xml.',
+        resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
+      },
+      {
+        id: 'session-1-rdf', title: 'Represent a Source Image in RDF with LLM Assistance',
+        note: 'Use the same image and the slide prompt. Save the generated Turtle as source-draft.ttl.',
+        resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
+      },
+      {
+        id: 'session-1-rdf-review', title: 'Improve the RDF Model with LLM Assistance',
+        note: 'Continue with your source-draft.ttl and the Schulnachricht image. Review the proposed changes using the slides.',
+        resources: [],
+      },
+    ],
+    appendix: [
+      {
+        id: 'session-1-appendix-iiif', title: 'Explore IIIF Manifests in Mirador',
+        note: 'Appendix exercise. The manifest links and comparison questions are in the slides.',
+        resources: [],
+      },
+      {
+        id: 'session-1-appendix-dc', title: 'Analyse a Dublin Core Record',
+        note: 'Appendix exercise. Use the Dublin Core record and questions in the slides.',
+        resources: [],
       },
     ],
     additional: [
@@ -56,7 +93,7 @@ export const sessions = [
     notesInProgress: true,
     activities: [
       {
-        id: 'session-2-transcription', title: 'Transcribe a Facsimile',
+        id: 'session-2-transcription', title: 'Transcribe a Facsimile with Gemini 3.8 Flash',
         note: 'Two Zweig facsimiles for the demonstration and your transcription exercise.',
         resources: [{ url: 'downloads/szd-facsimiles.zip', label: 'Input images · ZIP' }],
       },
@@ -66,10 +103,11 @@ export const sessions = [
         resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Mobility starter data · CSV', companion: { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Sources and field definitions · TXT' } }],
       },
       {
-        id: 'session-2-tei', title: 'From Facsimiles to TEI',
-        note: 'Choose one or two documents, or use all seven. Keep your transcriptions and TEI for the final project.',
+        id: 'session-2-tei', title: 'From Facsimiles to TEI XML',
+        note: 'Start with UAKUG_NIM_005_137_3.pdf (2 scans). Use an LLM chat with PDF/image support; an AI harness is optional. Create simple TEI XML, check a passage and a metadata value against the scans, and check XML syntax. Keep your TEI and matching images for the final project. Additional documents are optional.',
         resources: [
           { url: 'downloads/m3gim-fulltext/m3gim-pdf.zip', label: 'Source PDFs · ZIP' },
+          { url: 'downloads/m3gim-fulltext/m3gim-png.zip', label: 'Prepared scan images · PNG ZIP', note: 'Use these if your chat needs images; PDF conversion is optional.' },
           { url: 'downloads/m3gim-fulltext/m3gim-instructions.zip', label: 'Instructions, prompts and TEI template · ZIP' },
         ],
       },
@@ -77,10 +115,9 @@ export const sessions = [
     additional: [
       { url: 'downloads/shared/szd-facsimile-0.jpg', label: 'Transcription demonstration · individual image · JPG' },
       { url: 'downloads/shared/szd-facsimile-1.jpg', label: 'Transcription exercise · individual image · JPG' },
-      { url: 'downloads/m3gim-fulltext/m3gim-png.zip', label: 'From Facsimiles to TEI · prepared page images · PNG ZIP' },
-      { url: 'downloads/m3gim-fulltext/m3gim-reference.zip', label: 'From Facsimiles to TEI · reference solutions · ZIP' },
-      { url: 'downloads/m3gim-fulltext/reference.json', label: 'From Facsimiles to TEI · reference transcriptions · JSON' },
-      { url: 'downloads/m3gim-fulltext/metadata.csv', label: 'From Facsimiles to TEI · reference metadata · CSV' },
+      { url: 'downloads/m3gim-fulltext/m3gim-reference.zip', label: 'From Facsimiles to TEI XML · reference solutions · ZIP' },
+      { url: 'downloads/m3gim-fulltext/reference.json', label: 'From Facsimiles to TEI XML · reference transcriptions · JSON' },
+      { url: 'downloads/m3gim-fulltext/metadata.csv', label: 'From Facsimiles to TEI XML · reference metadata · CSV' },
       { url: `${prep}/preview`, label: 'Technical preparation guide' },
     ],
   },
@@ -106,12 +143,13 @@ export const sessions = [
       },
       {
         id: 'session-3-harness', title: 'AI Harness and M³GIM Data',
-        note: 'Use the 12-statement CSV to inspect data and build a local website. Both prompts and the preview instructions are in the slides.',
+        note: 'Use the 12-statement CSV to inspect data and build one interactive view with plain HTML, CSS and JavaScript. Run it locally; use no libraries, frameworks or build tools. Prompts and preview instructions are in the slides.',
         resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Mobility starter data · CSV', companion: { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Sources and field definitions · TXT' } }],
       },
       {
-        id: 'final-project', title: 'Final Project · Digital Edition or Research Dashboard',
-        note: 'Choose one project. Use Promptotyping with knowledge/data.md and knowledge/research.md. The five project slides guide the work; user stories are optional.',
+        id: 'final-project', title: 'Promptotyping Project: A Small Digital Edition or Research Dashboard',
+        note: 'Choose a research question and create knowledge/data.md, knowledge/research.md and knowledge/specification.md. Follow the slides to plan, implement, verify and refine both code and project knowledge. Work in an AI harness, or upload files to a chat and save its outputs into your project folder.',
+        scope: 'Build a local static web application using only plain HTML, CSS and JavaScript. No libraries, frameworks, package installations, build tools, backend, database or external services. Run it via a local static server. Start with one main view and one core interaction.',
         resources: [
           { url: 'downloads/m3gim-fulltext/m3gim-pdf.zip', label: 'Edition · source PDFs · ZIP', note: 'Start from PDFs, reuse any existing transcriptions and develop TEI XML for a small digital edition.' },
           { url: 'downloads/m3gim-dataset.jsonld', label: 'Dashboard · full published M³GIM dataset · JSON-LD', companion: { url: 'downloads/m3gim-dataset-source.txt', label: 'Dataset scope, source revision and licence · TXT' }, note: 'The complete published archive graph for your dashboard; facsimile files are separate.' },

@@ -1,121 +1,41 @@
-# Hands-on: From Facsimiles to TEI
+# Hands-on: From Facsimiles to TEI XML
 
-Combine the TEI you have already encountered with an LLM transcription workflow. Generate full texts from images, extract document metadata and encode both in simple TEI-XML.
+Create a simple TEI XML file from **one document**, `UAKUG_NIM_005_137_3.pdf` (two scans). Save it with its source images for the final project. Further documents and the complete reference corpus are optional.
 
-## Materials and result
+## 1. Open the source
 
-The seven PDFs contain **40 scan pages**: _3, _7, _8, _9 and _10 have two each; _11 has six; _12 has 24. Some scans contain two printed pages. Sources: Ira Malaniuk materials used in M³GIM (Mapping Mobile Musicians), UAKUG archive, collection NIM.
+- Download the [source PDF](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/pdf/UAKUG_NIM_005_137_3.pdf).
+- Open a new conversation in an LLM chat that supports PDFs or images. Upload the PDF or its two [prepared PNG scans](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-png.zip). The PNG ZIP contains all seven documents; use the `_3` folder for this exercise.
+- Download the [instructions and TEI template](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-instructions.zip). Use `tei-prompt.txt` with the supplied template and the actual PNG filenames. An AI harness is an optional alternative.
 
-Choose **one or two documents, or all seven**. Your result is one complete TEI file per selected document and all its PNG scans, with stable filenames and working image links. Keep your checked plain texts, raw model outputs, prompts and correction notes alongside them. Keep your working folder for the edition path of the final project. The alternative final project uses the full M³GIM dataset to build a dashboard. Both paths follow the instructions in the Sessions 3 and 4 slides.
+The source belongs to the Ira Malaniuk materials used in M³GIM, UAKUG archive, collection NIM. Keep this supplied context distinguishable from information printed in the scans.
 
-## 1. Prepare the images
+## 2. Create simple TEI
 
-Download the [instructions package](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-instructions.zip) and the [source PDFs](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-pdf.zip). Use the [prepared PNGs](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-png.zip) directly or convert the PDFs:
+- Preserve the original language, spelling, scan order and table relationships.
+- Use `unclear` for doubtful readings and `gap reason="illegible"` for unreadable text. Never invent a reading.
+- Put source-supported metadata in `teiHeader`. Distinguish the document's publication date from dates of announced or mentioned events. Record missing or uncertain information in a note.
+- Put the transcription in `text/body`. Use `p` and `lb` for text, and `table/row/cell` where needed.
+- Add one `pb` per scan, including a double-page scan. Its `facs` must point to the actual supplied PNG file.
 
-```powershell
-uv run pdf_to_png.py pdf png
-```
-
-With an existing Python installation:
-
-```powershell
-python -m pip install pypdfium2 Pillow
-python pdf_to_png.py pdf png
-```
-
-The converter creates one PNG per PDF scan at 220 dpi. Keep names such as `UAKUG_NIM_005_137_3_p001.png`; keep spreads intact. Use a fresh output folder.
-
-## 2. Test the complete workflow on _3
-
-Use an AI Harness with access to your working folder and images, or open a new conversation in an LLM chat that accepts images. Provide the two PNGs for _3 and use `prompt.txt` to request a complete original-language transcription. Translation is an optional later task and must remain separate from the transcription. Compare both pages with the output. Save the raw result, revise the prompt to address an observed error and edit the text.
-
-Next use `metadata-prompt.txt` to extract the fields below, with a scan number and evidence for each value. Check the metadata before asking for TEI. Use `tei-prompt.txt`, the template and guide to combine the checked text and metadata in `tei/UAKUG_NIM_005_137_3.xml`.
-
-## 3. Extract document metadata
-
-| Field | What to record |
-| --- | --- |
-| Title | Main title as printed; alternative titles only if present |
-| Languages | Every language represented by text, including translated phrases and inserts |
-| Document type | For example programme or festival booklet |
-| Date | Printed form, supported normalized value and meaning of the date |
-| Place | Place and its relation to performance or publication |
-| Source publisher | Only when supported by an imprint |
-| Identifier and holding context | Supplied filename, archive and collection |
-| Extent | Number of PDF scan pages |
-
-Keep unknown values explicit in your notes. A printed programme date identifies an announced performance. A source publication date requires evidence of its own. The named composer does not automatically become the author of the programme.
-
-Check every scan before assigning languages. An insert may contain languages absent from the cover. Keep supplied archive information distinguishable from text visible in the facsimile.
-
-## 4. Complete your selected documents
-
-You may stop after _3, add a second document, or continue with all six remaining documents (_7, _8, _9, _10, _11 and _12). Start a separate conversation or agent context for each document. Begin with one or two images per request; adjust batch size to page density and the interface’s output limit.
-
-Record scan numbers in every request. Check each response for missing or truncated text. Request remaining pages explicitly and merge batches in scan order. Include covers, headings, cast lists, biographies, captions, advertisements, footnotes and handwriting.
-
-Keep a checked TXT per document, with `--- Scanseite N ---` before each scan. Retain source language, spelling and uncertainty. Log corrections as: document ID | scan | original output | correction | image evidence.
-
-## 5. Create simple TEI
-
-Use the structure in `tei-template.xml` and the field mapping in `tei-guide.md`.
-
-- Put the digital transcription description and source metadata in `teiHeader`.
-- Put languages in `profileDesc/langUsage`.
-- Put the complete source text in `text/body`, using `p` and `lb`.
-- Start each scan with `pb`, carrying its scan number and a relative image path.
-- If your selection includes _11, use `table/row/cell` for “Wer singt was?” in scan 3. Preserve all five columns and empty cells.
-- Preserve the handwriting and uncertainty notation as literal text in this introductory profile.
-
-For example, from `tei/UAKUG_NIM_005_137_3.xml`:
+Save the result as `tei/UAKUG_NIM_005_137_3.xml`. Unzip the PNG archive beside `tei/`, keeping its `png/` directory. The first image reference is then:
 
 ```xml
-<pb xml:id="scan_001" type="scan" n="1"
-    facs="../png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p001.png"/>
+<pb n="1" facs="../png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p001.png"/>
 ```
 
-One `pb` represents one PDF scan in this exercise, including a spread. It replaces the TXT scan heading and introduces the full text of that scan. Keep the TEI namespace, close every element and escape XML characters. Final files must contain all source text and no template placeholders.
+## 3. Check and save
 
-For the long booklet, generate complete scan blocks in batches if needed, then assemble one document with one header and one text body.
+- Compare a passage and the metadata with the scans. Record corrections and unresolved readings.
+- Check XML syntax and open both image paths. Ask the assistant to explain any corrections briefly.
+- Save the TEI, its two matching PNGs and your review notes together for the final project.
 
-## 6. Check and compare
+An XML syntax check establishes that the file can be parsed. It does not verify the transcription or the historical claims. The optional `validate_tei.py` additionally checks the stricter supplied course profile and TEI Lite schema; see `tei-guide.md`.
 
-From the working folder, run:
+## Optional extension and references
 
-```powershell
-uv run validate_tei.py tei
-```
+The [full PDF archive](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-pdf.zip) contains seven documents and 40 scans. Extend the exercise only after checking the first document. `prompt.txt` and `metadata-prompt.txt` support separate transcription and metadata passes when useful.
 
-The default checker accepts a non-empty selection. Use `uv run validate_tei.py tei --full-corpus` only to require all seven documents. It validates against the local TEI Lite schema and checks IDs, required fields, scan order and PNG paths. See the TEI guide for an existing-Python alternative.
+The [reference solutions](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-reference.zip) contain richer TEI, edited LLM transcriptions and metadata evidence. The [complete reference with images](https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-next-session.zip) is an optional fallback. References retain uncertain readings and require source comparison; they are not an expert-approved critical edition. Their literal uncertainty notation differs from the `unclear`/`gap` encoding requested in this exercise.
 
-Compare text and metadata with the images separately. Check names, dates, diacritics and table relationships. If _11 is present, inspect each performer’s row in scan 3. If both _10 and _11 are present, compare Ira Malaniuk’s roles and preserve each source’s statement.
-
-After your own pass, download the reference. It contains edited full texts, extracted metadata and seven complete TEI files. Resolve differences against the facsimile. Bring one corrected error and one unresolved reading to the discussion.
-
-## 7. Keep the corpus for the final project
-
-Keep the folders together:
-
-```text
-m3gim-work/
-  tei/                 one XML file per selected document
-  png/                 all scans of your selected documents
-  schema/              supplied TEI Lite schema
-  validate_tei.py
-```
-
-The final project offers two paths, a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. For the edition, you can reuse your checked TEI and images. The complete reference bundle (seven documents, 40 PNGs and seven edited TXT files) is an optional comparison or fallback. For either path, record the data and its limitations in `knowledge/data.md` and your research question and requirements in `knowledge/research.md`. Follow the working instructions in the Sessions 3 and 4 slides.
-
-## Completion checklist
-
-- One or two complete TEI documents, or all seven, covering every scan of each selected source.
-- Checked metadata with source evidence and explicit treatment of unknowns.
-- Every relative image link for your selection works in the shared folder structure.
-- XML check passed; textual and metadata checks recorded separately.
-- Checked TXT files, raw output, prompts and a correction log retained.
-
-## Reference status
-
-The full texts are edited LLM reference transcriptions with remaining uncertain readings. All scan images were inspected for coverage and layout; selected readings were corrected. Metadata was checked against the relevant scans and supplied context. TEI validation establishes structural validity; expert acceptance as a critical edition remains pending.
-
-[TEI Lite](https://tei-c.org/release/doc/tei-p5-exemplars/html/tei_lite.doc.html) and the [TEI page-beginning element](https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-pb.html) document the XML structure used here.
+For the final project, reuse your TEI and images for an edition or choose the full M³GIM dataset for a dashboard. Record the data in `knowledge/data.md`, the research question in `knowledge/research.md`, and the implementation requirements in `knowledge/specification.md`. Follow the working instructions in the Sessions 3 and 4 slides.

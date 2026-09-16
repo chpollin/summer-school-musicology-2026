@@ -1,6 +1,6 @@
 # Simple TEI for the M³GIM corpus
 
-Each TEI file combines the document metadata, the complete transcription and links to the PNG scans. We use a small set of TEI P5 elements supported by TEI Lite.
+Start with UAKUG_NIM_005_137_3.pdf and its two scans. Each TEI file combines source-supported metadata, the transcription and links to the actual supplied PNG files. A chat with PDF or image support is sufficient; an AI harness is optional. This guide includes optional details for the richer reference profile.
 
 ## Folder structure
 
@@ -57,11 +57,15 @@ If information is missing, omit the unsupported optional element and record the 
 
 The `pb` marks the start of the associated text. Its `facs` value is a path from the XML file to the image. This exercise uses scan numbers; a scan can include two printed pages. Document that convention in `encodingDesc`.
 
-Use `p` for text blocks and `lb` for line breaks. In this introductory profile, handwriting braces and uncertainty markers remain as literal text. Later encoding can represent them more precisely.
+Use `p` for text blocks and `lb` for line breaks. In the exercise, encode a doubtful reading as `<unclear>reading</unclear>` and unreadable text as `<gap reason="illegible"/>`. Preserve handwriting and explain your convention in `encodingDesc`. The optional reference corpus retains literal `word[?]` and `[illegible]` markers from its edited transcriptions; it illustrates a different documented encoding choice.
 
 If your selection includes _11, for the table in scan 3, use `table`, `row` and `cell`. Keep five cells in every row, including empty cells. The first row uses `role="label"`. Keep the two source footnotes after the table.
 
 ## Check the files
+
+For the introductory exercise, compare a passage and the metadata with the scans, check XML syntax, and confirm that both image links open. Record unresolved readings separately. Syntax checks do not verify the historical content.
+
+The following course-profile checker is optional. It expects the richer supplied template conventions, including `pb/@type="scan"`, the exact folder layout, and verified language codes. A simpler TEI file can be well-formed without meeting all these additional course-profile checks.
 
 The instructions package contains the official TEI Lite Relax NG schema and a small local checker. From your working folder, run:
 
@@ -80,9 +84,11 @@ The checker parses XML without recovery, validates against the supplied TEI Lite
 
 Schema validity checks the XML structure. Compare text, metadata and image associations with the facsimiles separately.
 
-## Continue in Session 3
+## Keep the result for the final project
 
-Bring your `m3gim-work/` folder with one or two selected documents, or all seven. In Session 3, use it to build a small static web publication displaying metadata, full text and corresponding page images through `pb/@facs`. Session 4 extends the publication or another research requirement. Preserve the folder structure when copying or sharing the corpus.
+Keep the TEI for your first document, its two matching images and unresolved readings in `m3gim-work/`. Further documents are optional. For the final project, reuse this folder for a static edition displaying source text and corresponding images. Alternatively, explore the full M³GIM dataset in a dashboard. Preserve the folder structure when copying the edition materials.
+
+Record data and limitations in `knowledge/data.md`, the research question in `knowledge/research.md`, and the implementation requirements in `knowledge/specification.md`. Build one view with one core interaction using local HTML, CSS and JavaScript, without libraries, frameworks, external dependencies, a backend, database or build step.
 
 The downloadable reference bundle contains seven complete TEI files, seven edited original-language TXT files and all 40 PNGs in this structure. It is available as an optional comparison or fallback.
 

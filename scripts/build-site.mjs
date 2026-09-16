@@ -64,11 +64,12 @@ ${scripts}</body>
 
 const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a>${r.companion ? `<br><a class="small" href="${escape(r.companion.url)}" download>${escape(r.companion.label)}</a>` : ''}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
 
-const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.note ? `<p class="small">${escape(a.note)}</p>` : ''}${resourceList(a.resources)}</div>`).join('\n');
+const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.note ? `<p class="small">${escape(a.note)}</p>` : ''}${a.scope ? `<p class="small"><strong>Technical scope:</strong> ${escape(a.scope)}</p>` : ''}${a.resources.length ? resourceList(a.resources) : ''}</div>`).join('\n');
 
 const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} hands-on materials">
 <h3 class="downloads-label">${downloadIcon}Hands-on materials</h3>
 ${activityList(s.activities)}
+${s.appendix?.length ? `<details><summary>Appendix exercises<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${activityList(s.appendix)}</details>` : ''}
 <details${s.id === 'session-2' ? ' id="session-2-reference"' : ''}><summary>Optional preparation and reference materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
 </div>`;
 
@@ -108,7 +109,7 @@ for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(`../index.ht
 outputs.set('sessions/session-4.html', stub('../index.html#session-4', 'Sessions 3 and 4'));
 outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads'));
 outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI XML · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
 <body><p>The exercise materials are now on the course page. Continue to <a href="../index.html#session-2">Session 2</a>, <a href="../index.html#session-2-reference">the optional references</a> or <a href="../index.html#session-3">Sessions 3 and 4</a>.</p></body></html>\n`);
 outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', current: 'viewer', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
 

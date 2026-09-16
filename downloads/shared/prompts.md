@@ -1,6 +1,6 @@
 # KUG Summer School 2026 — Bayreuth 1953 prompts
 
-These optional prompts support an independent Cast Explorer project. Follow the final-project workflow in the Sessions 3 and 4 slides and record sources and requirements in knowledge/data.md and knowledge/research.md. They use the Bayreuth Festival 1953 programme booklets from the M³GIM source packet. Work on one page at a time and keep the supplied `source_id` and `page_id` unchanged.
+These optional prompts provide a Cast Explorer example for **Promptotyping Project: A Small Digital Edition or Research Dashboard** in Sessions 3 and 4. Maintain `knowledge/data.md`, `knowledge/research.md` and `knowledge/specification.md` using the workflow in the slides. The prompts use the Bayreuth Festival 1953 programme booklets from the M³GIM source packet. Work on one page at a time and keep the supplied `source_id` and `page_id` unchanged.
 
 The source types support different claims. A daily programme documents an announced cast for one date. A season list documents a season-level assignment. A biography documents a statement made in that biography. None of these sources independently proves that a performance took place exactly as announced.
 
@@ -153,26 +153,44 @@ Build a small static browser application called Bayreuth 1953 Cast Explorer.
 Research question:
 How do daily programmes, season lists, and biographies represent who was announced to do what at the Bayreuth Festival in 1953?
 
-Use the supplied validated JSON and the four project knowledge files:
-- project.md defines the question, scope, and users.
-- data-model.md defines occurrences, participations, functions, stage roles, evidence types, and uncertainty.
-- design.md defines the views and interaction rules.
-- validation.md defines acceptance checks.
+Use the supplied validated JSON and the three project knowledge documents:
+- knowledge/data.md describes sources, structure, provenance and limitations.
+- knowledge/research.md defines the question, method and research decisions.
+- knowledge/specification.md defines scope, requirements and acceptance criteria.
 
-Required views:
-1. Performance list with date, work, and evidence type.
-2. Cast matrix or filterable person list showing functions and stage roles. A participation with two roles must display both roles.
-3. Evidence detail showing source_id, page_id, evidence type, exact quotation, certainty, and validation note.
-
-Required behaviour:
-- Filters update visible records without changing the underlying data.
-- Every displayed assignment links to its evidence detail.
+First version:
+- Create one view listing documented cast assignments with person, work and date.
+- Implement one core interaction: selecting an assignment reveals its source_id, page_id, evidence type, quotation, certainty and validation note within the same view.
+- Show functions and stage roles separately. Display both roles when a participation has two roles.
 - Conflicting source statements remain side by side and are labelled by evidence type.
 - Missing and uncertain values remain visible.
-- The interface uses no map as its primary view because the selected performance occurrences share the same festival location.
-- The application runs locally as a static HTML, CSS, and JavaScript project.
+- Use short labels and a compact interface.
+- Preserve original sources and identifiers.
+- Build a local static website using only plain HTML, CSS and JavaScript.
+- Use no libraries, frameworks, external dependencies, backend, database or build tools.
+- Keep application assets and data local. Source links may point to their original location.
 
-Before implementation, summarize the proposed data flow and list any schema mismatch. After implementation, test the double-role case, source filtering, evidence links, missing values, and narrow-screen layout. Record the test results in validation.md.
+Before implementation, read knowledge/ and report any mismatch between the data and requirements. Implement the agreed first version, start it locally and give me the browser URL with brief start and stop instructions.
+```
+
+## Iterate with the project knowledge
+
+Run these prompts separately and review each result before continuing.
+
+```text
+Verify: Check the result against knowledge/specification.md and the source data. Check the double-role case, evidence selection, missing values and narrow-screen layout. Report what passed, failed or remains unverified. Give me a short checklist for scholarly review.
+```
+
+```text
+Fix and refactor the code: Fix confirmed errors first and verify the fixes. Then simplify the code and remove duplication without changing behaviour. Repeat the affected checks.
+```
+
+```text
+Update and refactor the knowledge: Update knowledge/ with what we learned. Remove duplication and flag contradictions or outdated assumptions. Keep data findings in data.md, research decisions in research.md, and requirements in specification.md. Distinguish verified findings from open questions.
+```
+
+```text
+Plan the next iteration: Compare the current result with our research question and requirements. Propose the next small milestone and explain what it would improve. Keep later features outside the first version until we choose to add them.
 ```
 
 ## Workshop acceptance checks

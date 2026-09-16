@@ -1,75 +1,27 @@
-# Session 2 · From Facsimiles to TEI
+# Hands-on: From Facsimiles to TEI XML
 
-Insert these slides immediately after **Prompting Strategies: There Is No Prompt to Rule Them All**.
+1. **Start with one document.** Download `UAKUG_NIM_005_137_3.pdf` (two scans). Further documents are optional.
+2. **Upload the source.** Use a chat with PDF or image support; an AI harness is optional. Prepared PNGs are available.
+3. **Generate and inspect the TEI.** Use the prompt below, inspect the result and ask for corrections.
+4. **Check and save.** Compare a passage and the metadata with the scans. Check XML syntax and image links. Save the TEI, matching images and unresolved readings for the final project.
 
-## Slide 1 · Hands-on: From Facsimiles to TEI
+## Example prompt
 
-**Build a corpus we can reuse in the next session.**
+```markdown
+Create simple TEI XML from the attached document.
 
-- Start with `UAKUG_NIM_005_137_3.pdf`.
-- Create full text from its two scan images.
-- Extract the document metadata.
-- Combine text and metadata in simple TEI-XML.
-- Choose one or two documents, or all seven.
+- Preserve the original language, scan order and tables.
+- Use unclear for uncertain readings and gap for unreadable text.
+- Put source-supported metadata in teiHeader. Distinguish document dates from mentioned event dates.
+- Put the transcription in text/body.
+- Add one pb per scan; use the supplied PNG filenames in facs.
+- Return the complete XML in a code block and list unresolved readings separately.
 
-**Materials:** https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-fulltext/m3gim-instructions.zip
+Use simple, concise language.
+```
 
-### Speaker notes
+Materials: https://chpollin.github.io/summer-school-musicology-2026/#session-2-tei
 
-This exercise combines the TEI structure participants already know with LLM transcription. Work through the complete process on _3 first, then optionally extend it to another document or all seven. Use an AI Harness or LLM chat. Keep each source in its original language. The result is one complete TEI file per selected document, linked to all its scans. These files become our input for Session 3.
+## Speaker notes
 
-## Slide 2 · Create and Check the Full Text
-
-- Convert each PDF to PNG, or use the prepared images.
-- Keep document IDs and scan order.
-- Test and revise your prompt on _3.
-- Complete all scans of your selected documents in small batches.
-- Check names, dates, reading order and table rows.
-
-### Speaker notes
-
-Include covers, multilingual text, advertisements and handwritten notes. Keep raw output separately and save one checked TXT per document. Record changes and retain uncertainty. Use a new conversation for each document and request missing pages after a truncated answer.
-
-## Slide 3 · Extract the Metadata
-
-**Record each value with its source evidence.**
-
-- Title and languages
-- Document type
-- Date and its meaning
-- Place and source publisher, where stated
-- Identifier, archive and scan count
-
-**Check:** Does the date describe a performance or the publication?
-
-### Speaker notes
-
-Use the metadata prompt after checking the transcription. Review the whole document: _3 includes short English and French phrases; _11 includes multilingual visitor forms; _12 contains multilingual biographies. Separate information printed in the facsimile from the supplied archive context. Omit unsupported optional values and record what remains unknown.
-
-## Slide 4 · Put the Results in Simple TEI
-
-- `teiHeader`: source description and metadata
-- `langUsage`: languages in the document
-- `text/body`: complete transcription
-- `pb/@facs`: link each scan to its PNG
-- `p`, `lb`, `table`: preserve text structure
-
-**Use the supplied TEI template and guide.**
-
-### Speaker notes
-
-The digital transcription has its own publication statement. The historical source is described in sourceDesc. In this exercise one pb corresponds to one PDF scan, including a spread. Keep XML files in tei/ and images in png/ so the relative links remain valid. If _11 is selected, use table/row/cell for “Wer singt was?” in scan 3 and preserve empty cells.
-
-## Slide 5 · Validate and Prepare for the Final Project
-
-- Produce one complete TEI per selected document and retain its PNGs.
-- Run the XML and image-link check.
-- Compare metadata and text with the facsimiles.
-- Investigate differences from the reference solution.
-- Bring the complete folder to the next session.
-
-**Deliver:** TEI + images, prompts and correction notes.
-
-### Speaker notes
-
-XML validation checks structure and links. Historical readings still need source comparison. Participants should explain one correction and one unresolved reading. The final project offers a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. Checked TEI and images can be reused for the edition; the seven-document reference is an optional fallback. Both paths use knowledge/data.md and knowledge/research.md to document data and research requirements. Follow the working instructions in the Sessions 3 and 4 slides. The checker accepts a non-empty selection; --full-corpus explicitly requires all seven.
+Start with one document. Prepared PNGs remove the need for PDF conversion. A chat interface is sufficient for this exercise; introduce the harness in the next session. Supply both actual PNG filenames even when uploading the PDF. The downloadable reference is a richer optional comparison, not the minimum output. XML syntax checks do not establish transcription accuracy. For the final project, participants can reuse their TEI and images for an edition or explore the full M³GIM dataset in a dashboard. Both paths use knowledge/data.md, knowledge/research.md and knowledge/specification.md to guide a local static application with one view and one core interaction.

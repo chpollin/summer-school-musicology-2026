@@ -15,6 +15,14 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · Aktuelle Hands-on-Folge und vereinfachte TEI-Übung
+
+Drei Subagenten prüften die Sessionmaterialien gegen die zuletzt gelieferten TXT-Exporte und die anschließenden Nutzerkorrekturen. Session 1 führt alle sieben Hauptübungen unter ihren Folientiteln; die zwei Anhangsübungen stehen in einem eigenen Ausklapper. Die TEI-Übung beginnt mit einem Dokument und zwei Scans im Chat, ein Harness bleibt optional. Vorbereitete PNGs stehen direkt bei den Quellen. Der konsolidierte Folientext im Download enthält vier Schritte und einen Beispielprompt. Referenzen und der strengere TEI-Profilprüfer bleiben optional.
+
+Das Promptotyping-Projekt nennt drei Wissensdokumente und den lokalen HTML/CSS/JS-Rahmen ohne zusätzliche Abhängigkeiten. Erste Fassung, eine Hauptansicht und eine Kerninteraktion. Code-Refactoring und Wissens-Refactoring sind getrennte Schritte. Die optionalen Cast-Explorer- und PDF-Vorbereitungsanleitungen wurden entsprechend nachgezogen, einschließlich Archivkopien und Herkunftshashes. Originalquellen, CSV und Graphsnapshot bleiben unverändert.
+
+Prüfung vor Veröffentlichung: Generator und lokale Links bestanden; TEI- und Projektabschnitt im Browser lesbar, Anhangsausklapper funktional. Die Subagenten bestätigten synchrone ZIP-Kopien, zwölf CSV-Aussagen aus sechs Dokumenten und drei Orten sowie sieben technisch valide Referenz-TEIs mit 40 Bildverweisen. Der letzte Folienexport selbst enthält noch die überholte Zwei-Dokumente-Formulierung und keinen ersten Planungsprompt. Google Slides wurden in diesem Website-Auftrag nicht verändert.
+
 ## 2026-09-16 · Bearbeitungsstand der Lecture Notes sichtbar
 
 Bei allen Lecture Notes steht auf der Kursseite ein Hinweis auf KI-Unterstützung. Session 2 und Sessions 3–4 sind zusätzlich als Work in progress gekennzeichnet; der Hinweis benennt mögliche unvollständige Abschnitte und laufende Überarbeitung. Session 1 erhält keine zusätzliche Fertigstellungsaussage. Die Hinweise gelten für Vorschau und PDF-Link.
