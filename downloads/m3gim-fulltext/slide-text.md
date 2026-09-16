@@ -60,7 +60,7 @@ Use the metadata prompt after checking the transcription. Review the whole docum
 
 The digital transcription has its own publication statement. The historical source is described in sourceDesc. In this exercise one pb corresponds to one PDF scan, including a spread. Keep XML files in tei/ and images in png/ so the relative links remain valid. If _11 is selected, use table/row/cell for “Wer singt was?” in scan 3 and preserve empty cells.
 
-## Slide 5 · Validate and Continue in Session 3
+## Slide 5 · Validate and Prepare for the Final Project
 
 - Produce one complete TEI per selected document and retain its PNGs.
 - Run the XML and image-link check.
@@ -72,4 +72,4 @@ The digital transcription has its own publication statement. The historical sour
 
 ### Speaker notes
 
-XML validation checks structure and links. Historical readings still need source comparison. Participants should explain one correction and one unresolved reading. In Session 3, build a small static web publication from their TEI and images. Session 4 extends this publication or another research requirement. The seven-document reference is an optional fallback. The checker accepts a non-empty selection; --full-corpus explicitly requires all seven.
+XML validation checks structure and links. Historical readings still need source comparison. Participants should explain one correction and one unresolved reading. The final project offers a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. Checked TEI and images can be reused for the edition; the seven-document reference is an optional fallback. Both paths use knowledge/data.md and knowledge/research.md to document data and research requirements. Follow the working instructions in the Sessions 3 and 4 slides. The checker accepts a non-empty selection; --full-corpus explicitly requires all seven.

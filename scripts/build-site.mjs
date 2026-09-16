@@ -63,10 +63,12 @@ ${scripts}</body>
 
 const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a>${r.companion ? `<br><a class="small" href="${escape(r.companion.url)}" download>${escape(r.companion.label)}</a>` : ''}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
 
-const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} downloads">
-<p class="downloads-label">${downloadIcon}Downloads</p>
-${resourceList(s.downloads)}
-<details${s.id === 'session-2' ? ' id="session-2-reference"' : ''}><summary>More materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
+const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.note ? `<p class="small">${escape(a.note)}</p>` : ''}${resourceList(a.resources)}</div>`).join('\n');
+
+const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} hands-on materials">
+<h3 class="downloads-label">${downloadIcon}Hands-on materials</h3>
+${activityList(s.activities)}
+<details${s.id === 'session-2' ? ' id="session-2-reference"' : ''}><summary>Optional preparation and reference materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
 </div>`;
 
 const section = s => `<section id="${s.id}" class="session session-row">

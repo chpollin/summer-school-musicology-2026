@@ -23,7 +23,7 @@ The README is German and maintained by the Codex instance during the workshop pr
 
 ## Reference bundle
 
-`downloads/m3gim-fulltext/m3gim-next-session.zip` intentionally includes all forty PNG scans beside the TEI files, so the optional fallback works after extraction with intact relative image paths. Participants primarily use their own selection from Session 2. The separate PNG archive supports the earlier transcription exercise.
+`downloads/m3gim-fulltext/m3gim-next-session.zip` intentionally includes all forty PNG scans beside the TEI files, so the optional fallback works after extraction with intact relative image paths. The edition project starts from selected PDFs and can reuse participants’ transcriptions and TEI from Session 2. The dashboard alternative uses the separately published full JSON-LD graph. The separate PNG archive supports the earlier transcription exercise.
 
 ## Offline copy of the decks
 

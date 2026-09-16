@@ -1,90 +1,29 @@
-# Hands-on 1: Python in Visual Studio Code
+# Optional preparation: Python in Visual Studio Code
 
-Render every page of every input PDF as a PNG image using the provided script.
-This introductory exercise is useful if you are new to running scripts. You can compare it with the AI Harness workflow in Hands-on 2. The main Session 3 exercise builds a small static web publication from your Session 2 TEI and images. Session 4 extends it with a research requirement.
+This package converts PDF pages to PNG images with a provided Python script. It is optional technical preparation for working with source images.
 
-## Folder structure
+The introductory AI Harness exercise uses the mobility starter CSV. The final project offers two paths, a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. Follow the working instructions on the slides. Both final paths use `knowledge/data.md` and `knowledge/research.md` to document the data and research requirements.
 
-Download [Hands-on 1 from the course website](https://chpollin.github.io/summer-school-musicology-2026/downloads/python-vscode.zip)
-and extract the ZIP file. If you are already reading this README in the extracted
-folder, continue below. The [original Google Drive folder](https://drive.google.com/drive/folders/1bS_F8yDOWWK89cLeFzj6nFxz9GBH18Qa)
-is an alternative download source.
-Open the extracted folder that contains `pdf_to_images.py`. Keep the script and
-`input` together:
+## Package contents
 
-```text
-Hands-on folder/
-├── pdf_to_images.py
-├── README.md
-└── input/
-    ├── UAKUG_NIM_005_137_3.pdf
-    ├── UAKUG_NIM_005_137_7.pdf
-    ├── UAKUG_NIM_005_137_8.pdf
-    ├── UAKUG_NIM_005_137_9.pdf
-    ├── UAKUG_NIM_005_137_10.pdf
-    ├── UAKUG_NIM_005_137_11.pdf
-    └── UAKUG_NIM_005_137_12.pdf
-```
+- `pdf_to_images.py`, the conversion script.
+- `input/`, seven M³GIM source PDFs.
+- This README with local execution instructions.
 
-You can add your own PDFs directly to `input/`. File names are unrestricted by
-the script: no source file name is hardcoded. It processes every PDF directly in
-this folder, including files with an uppercase `.PDF` extension. It does not
-search nested input folders.
+Download the [Python preparation package](https://chpollin.github.io/summer-school-musicology-2026/downloads/python-vscode.zip), extract it and open the folder containing `pdf_to_images.py` in VS Code. Keep the script and `input/` together.
 
-## Run the script yourself
+## Run the conversion
 
-1. Use Python 3.11 or newer and Visual Studio Code.
-2. In VS Code, choose **File → Open Folder** and select the extracted hands-on
-   folder containing `pdf_to_images.py` and `input/`.
-3. Choose **Terminal → New Terminal**. The terminal should start in this same
-   hands-on folder.
-4. Install the two required Python packages:
+Use Python 3.11 or newer. Open a terminal in the extracted folder and run:
 
 ```bash
 python -m pip install "pypdfium2>=4.30,<6" "Pillow>=11,<13"
-```
-
-5. Run the provided script:
-
-```bash
 python pdf_to_images.py
 ```
 
-No PDF file names need to be entered. You do not need to create `output/`.
+Use `python3` on macOS/Linux if required, or `py` on Windows. Use the same command for installation and execution.
 
-If your computer uses `python3` instead of `python`, use `python3` in both
-commands. On Windows, `py` may be available instead. Use the same Python command
-for installation and execution.
-
-## Result
-
-The script automatically creates `output/` next to itself, with one subfolder
-per PDF. Each subfolder uses the PDF file name without `.pdf`. Each page becomes
-one PNG at 150 DPI, in its original page order:
-
-```text
-Hands-on folder/
-├── pdf_to_images.py
-├── README.md
-├── input/
-│   └── ... all source PDFs remain here
-└── output/                         ← created by the script
-    ├── UAKUG_NIM_005_137_3/
-    │   ├── page-001.png
-    │   └── page-002.png
-    ├── UAKUG_NIM_005_137_7/
-    │   └── ... one PNG per page
-    └── ... one folder per PDF
-```
-
-Check the terminal summary and compare the number of images in each subfolder
-with the page count of its source PDF. Open several images and check page order,
-orientation and readability.
-
-The script leaves source PDFs unchanged. It reports unreadable or
-password-protected PDFs and continues with the remaining files. A failed PDF
-does not leave a completed-looking image folder; the terminal summary lists the
-number of errors.
+The script reads every PDF directly in `input/` and creates `output/`, with one subfolder per PDF and one PNG per page at 150 DPI. Source PDFs remain unchanged. Compare image counts with the PDFs and inspect page order, orientation and readability. Check the terminal summary for errors.
 
 An existing output folder is preserved. For another run, choose a new folder:
 
@@ -92,14 +31,4 @@ An existing output folder is preserved. For another run, choose a new folder:
 python pdf_to_images.py --output output-new
 ```
 
-To change the resolution or input folder:
-
-```bash
-python pdf_to_images.py --input input --output output-300dpi --dpi 300
-```
-
-## Continue to Hands-on 2
-
-Download the separate [AI Harness package](https://chpollin.github.io/summer-school-musicology-2026/downloads/ai-harness.zip).
-It contains the same script and PDFs, so you can compare your own execution
-with the agent's actions and checks. Keep this first result for comparison.
+You can compare manual execution with the optional [AI Harness conversion package](https://chpollin.github.io/summer-school-musicology-2026/downloads/ai-harness.zip), which contains the same script and PDFs. Neither conversion package contains transcriptions or TEI.

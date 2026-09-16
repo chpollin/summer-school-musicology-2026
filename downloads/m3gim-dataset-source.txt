@@ -1,0 +1,76 @@
+M3GIM dataset — full published archival graph
+
+File: m3gim-dataset.jsonld
+Purpose: data for an independent research dashboard or other research tool.
+Scope: the complete archival JSON-LD file shipped by the M3GIM frontend at
+the pinned revision below. It is not the twelve-statement starter CSV.
+
+SOURCE AND INTEGRITY
+Project: M³GIM — Mapping Mobile Musicians, Digital Humanities Craft.
+Archival fonds: UAKUG/NIM, Universitätsarchiv der Kunstuniversität Graz.
+Repository: https://github.com/DigitalHumanitiesCraft/m3gim
+Revision: bec2a068802e9f2cb9885df072699b269d6efaa9
+Source: https://raw.githubusercontent.com/DigitalHumanitiesCraft/m3gim/bec2a068802e9f2cb9885df072699b269d6efaa9/docs/data/m3gim.jsonld
+Upstream exportDate (not a historical event date): 2026-09-09T09:51:20.093045
+Snapshot prepared: 2026-09-16
+Bytes: 7135867
+SHA-256: a83c96697dc281c297f9f173562fd1ffe6ecc04841e87a75ccf65080cfdd9b40
+Git blob SHA-1: 77fa9bc2e8bce7e7a7320db0dc7535532f4e4cac
+The downloaded data is byte-identical to the pinned source: no fields,
+IDs, relations, dates or notes were changed or inferred.
+
+STRUCTURE
+JSON-LD is JSON with a vocabulary context. It can be read with standard
+JSON tools. @context defines prefixes; @graph contains 4321 top-level nodes.
+Verified node counts:
+- m3gim-ontology:Annotation: 2289
+- m3gim-ontology:StageRole: 906
+- rico:Record: 1007
+- rico:RecordSet: 20
+- skos:Concept: 99
+These are graph-node counts, not numbers of people, performances or trips.
+People, places, dates and relations also occur within nested structures.
+
+- @id: persistent node identifier; join references by this value.
+- @type: node class, such as rico:Record or m3gim-ontology:Annotation.
+- rico:identifier / rico:title: archival identifier and recorded title.
+- rico:hasOrHadPart: archival hierarchy references.
+- rico:hasOrHadLocation: place statements, including roles and source values.
+- agrelon:metadataProvenance: annotation link to its supporting record.
+- m3gim-ontology:xlsxSource: original source sheet and row, where present.
+- m3gim-ontology:recordedValue / recordedRole: original recorded statements.
+- rico:date / m3gim-ontology:atDate: dates whose meaning depends on the
+  associated record, role and notes. Values can be incomplete or uncertain.
+Fields vary by node type; inspect nested values before choosing a chart.
+
+INTERPRETATION AND LIMITS
+The upstream project is a prerelease with known cataloguing/source defects
+and pending scholarly acceptance. Missing values are not negative evidence.
+Document dates, event references and biographical dates must remain distinct.
+Mentions and place statements do not by themselves confirm attendance or
+travel routes. Do not infer gender from names. Preserve source IDs and notes.
+This snapshot includes the full published graph at this revision, not every
+original spreadsheet, facsimile, source document, or map geometry file.
+Use the original source repository for those materials and quality reports.
+Linked external resources may require network access.
+
+LICENCE AND ATTRIBUTION
+The upstream README licenses generated data under CC BY 4.0:
+https://creativecommons.org/licenses/by/4.0/
+Credit: Digital Humanities Craft / M³GIM; archival fonds UAKUG/NIM,
+Universitätsarchiv der Kunstuniversität Graz. Cite the revision above.
+The archival source materials themselves are outside this data licence;
+individual items retain their own rights notes.
+
+Evidence for the source contract and licence:
+https://github.com/DigitalHumanitiesCraft/m3gim/blob/bec2a068802e9f2cb9885df072699b269d6efaa9/README.md
+Frontend loader:
+https://github.com/DigitalHumanitiesCraft/m3gim/blob/bec2a068802e9f2cb9885df072699b269d6efaa9/docs/js/data/loader.js
+Data model:
+https://github.com/DigitalHumanitiesCraft/m3gim/blob/bec2a068802e9f2cb9885df072699b269d6efaa9/knowledge/data-model.md
+Quality snapshot:
+https://github.com/DigitalHumanitiesCraft/m3gim/blob/bec2a068802e9f2cb9885df072699b269d6efaa9/data/reports/quality-snapshot.md
+
+REPRODUCE
+From the course repository: python scripts/build-m3gim-dataset.py
+The script reuses this file when present and validates its pinned Git hash.

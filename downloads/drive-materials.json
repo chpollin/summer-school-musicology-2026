@@ -20,8 +20,8 @@
       "path": "downloads/shared/prompts.md",
       "mime_type": "text/markdown",
       "source_size": 7859,
-      "sha256": "d000b977a49aeefd14f666099214be1642a65fdd436f86cfcc3059b88c95d198",
-      "local_size": 7859
+      "sha256": "c3a8ee59df5897be6d444935c5d870789a541a30c6ec7aa79d7e1b037dfa8fd5",
+      "local_size": 8204
     },
     {
       "drive_id": "1gU1kYf9OPaVCiIvWhtWrPMT_jhKUSUEW",
@@ -62,8 +62,8 @@
       "path": "downloads/ai-harness/README.md",
       "mime_type": "text/markdown",
       "source_size": 5260,
-      "sha256": "92d9de94eb16155b505d0dce70474082d67360d34845bacc820c1b0132ef7a48",
-      "local_size": 5260,
+      "sha256": "f7ca5114e8a687e037663ffce8dd838f6d19581f6730f0226d8eb26541766b82",
+      "local_size": 2180,
       "source_sha256": "92d9de94eb16155b505d0dce70474082d67360d34845bacc820c1b0132ef7a48",
       "verified": "2026-09-15",
       "local_note": "Updated the existing Markdown file in the current course Drive folder in place with LF line endings; fresh raw-file download SHA-256 matches this local guide and its ZIP member."
@@ -85,8 +85,8 @@
       "path": "downloads/python-vscode/README.md",
       "mime_type": "text/markdown",
       "source_size": 3951,
-      "sha256": "84a54ea6b868c867073b3e82f86fc3de64588a7b42cf401f55c299c9bbb213f1",
-      "local_size": 3951,
+      "sha256": "fbead499dc24599d24532fbfcafd2143a1535c65970e1cf9f7a837877e2ffd04",
+      "local_size": 1937,
       "source_sha256": "84a54ea6b868c867073b3e82f86fc3de64588a7b42cf401f55c299c9bbb213f1",
       "verified": "2026-09-15",
       "local_note": "Updated the existing Markdown file in the current course Drive folder in place with LF line endings; fresh raw-file download SHA-256 matches this local guide and its ZIP member."

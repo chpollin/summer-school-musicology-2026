@@ -6,7 +6,7 @@ Combine the TEI you have already encountered with an LLM transcription workflow.
 
 The seven PDFs contain **40 scan pages**: _3, _7, _8, _9 and _10 have two each; _11 has six; _12 has 24. Some scans contain two printed pages. Sources: Ira Malaniuk materials used in M³GIM (Mapping Mobile Musicians), UAKUG archive, collection NIM.
 
-Choose **one or two documents, or all seven**. Your result is one complete TEI file per selected document and all its PNG scans, with stable filenames and working image links. Keep your checked plain texts, raw model outputs, prompts and correction notes alongside them. Bring your working folder to Session 3 to build a small static web publication from your TEI and images. Session 4 extends that publication or another research requirement.
+Choose **one or two documents, or all seven**. Your result is one complete TEI file per selected document and all its PNG scans, with stable filenames and working image links. Keep your checked plain texts, raw model outputs, prompts and correction notes alongside them. Keep your working folder for the edition path of the final project. The alternative final project uses the full M³GIM dataset to build a dashboard. Both paths follow the instructions in the Sessions 3 and 4 slides.
 
 ## 1. Prepare the images
 
@@ -92,7 +92,7 @@ Compare text and metadata with the images separately. Check names, dates, diacri
 
 After your own pass, download the reference. It contains edited full texts, extracted metadata and seven complete TEI files. Resolve differences against the facsimile. Bring one corrected error and one unresolved reading to the discussion.
 
-## 7. Bring the corpus to Session 3
+## 7. Keep the corpus for the final project
 
 Keep the folders together:
 
@@ -104,7 +104,7 @@ m3gim-work/
   validate_tei.py
 ```
 
-In Session 3, build a small static web publication that displays your TEI metadata, full texts and matching images. Session 4 extends it with a research requirement. The complete reference bundle (seven documents, 40 PNGs and seven edited TXT files) is an optional comparison or fallback.
+The final project offers two paths, a PDF-to-TEI edition or a dashboard using the full M³GIM dataset. For the edition, you can reuse your checked TEI and images. The complete reference bundle (seven documents, 40 PNGs and seven edited TXT files) is an optional comparison or fallback. For either path, record the data and its limitations in `knowledge/data.md` and your research question and requirements in `knowledge/research.md`. Follow the working instructions in the Sessions 3 and 4 slides.
 
 ## Completion checklist
 

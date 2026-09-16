@@ -6,7 +6,9 @@ Visit **https://chpollin.github.io/summer-school-musicology-2026/tools/iiif-view
 
 ## Use your XML and images
 
-1. Edit `metadata.xml`. Use one `<page xlink:href="images/page-001.jpg"/>` per image in the intended order.
+The package includes `images/schulnachricht.jpg` for the Session 1 exercise. Save your XML from the earlier metadata exercise as `metadata.xml`, replacing the supplied example, and set its page reference to `<page xlink:href="images/schulnachricht.jpg"/>`. The working instructions are on the slides.
+
+1. Edit `metadata.xml`. Use one page reference per image in the intended order. For the Schulnachricht, use the single image reference above.
 2. On the website, select your XML under **1. Metadata**.
 3. Under **2. Page images**, select all referenced JPEG/PNG files together. Use Ctrl/Cmd or Shift to select several files.
 4. Click **Open in Mirador**. Inspect the title, metadata and page order.
@@ -36,4 +38,4 @@ The script maps the XML title to the manifest label, description fields to displ
 
 The example uses ordinary JPEG/PNG files, without a IIIF image server. The browser substitutes temporary image addresses so that your local files can be displayed. The generated manifest uses demonstration URLs; selecting files does not publish them as a shareable online resource.
 
-This demonstrates transformation and access. It does not perform a GAMS ingest or convert to METS. The supplied images are synthetic teaching examples. Replace them with your own exercise images and revise the metadata accordingly.
+This demonstrates transformation and access. It does not perform a GAMS ingest or convert to METS. `page-001.jpg` and `page-002.jpg` are synthetic teaching examples. `schulnachricht.jpg` is the historical source used in the Session 1 XML, TEI and RDF exercises. Use metadata that describes the selected source.

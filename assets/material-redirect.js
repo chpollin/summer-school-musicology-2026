@@ -1,2 +1,2 @@
-const targets = { '#next-session': 'session-3', '#reference': 'session-2-reference' };
-window.location.replace(`../index.html#${targets[window.location.hash] ?? 'session-2'}`);
+const targets = { '#next-session': 'final-project', '#reference': 'session-2-reference' };
+window.location.replace(`../index.html#${targets[window.location.hash] ?? 'session-2-tei'}`);

@@ -18,6 +18,7 @@ FILES = {
     "metadata.xml": "metadata.xml",
     "images/page-001.jpg": "images/page-001.jpg",
     "images/page-002.jpg": "images/page-002.jpg",
+    "images/schulnachricht.jpg": "../../downloads/shared/schulnachricht.jpg",
     "README.md": "STUDENT-GUIDE.md",
 }
 FIXED_TIME = (2026, 1, 1, 0, 0, 0)

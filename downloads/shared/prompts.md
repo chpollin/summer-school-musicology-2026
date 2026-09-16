@@ -1,6 +1,6 @@
 # KUG Summer School 2026 — Bayreuth 1953 prompts
 
-These prompts support the two Thursday hands-on sessions. They use the Bayreuth Festival 1953 programme booklets from the M³GIM source packet. Work on one page at a time and keep the supplied `source_id` and `page_id` unchanged.
+These optional prompts support an independent Cast Explorer project. Follow the final-project workflow in the Sessions 3 and 4 slides and record sources and requirements in knowledge/data.md and knowledge/research.md. They use the Bayreuth Festival 1953 programme booklets from the M³GIM source packet. Work on one page at a time and keep the supplied `source_id` and `page_id` unchanged.
 
 The source types support different claims. A daily programme documents an announced cast for one date. A season list documents a season-level assignment. A biography documents a statement made in that biography. None of these sources independently proves that a performance took place exactly as announced.
 
