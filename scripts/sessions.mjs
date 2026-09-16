@@ -53,11 +53,13 @@ export const sessions = [
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     exercise: 'm3gim-next',
     downloads: [
-      { url: 'downloads/python-vscode.zip', label: 'Hands-on 1 · Python in Visual Studio Code · input and instructions ZIP', note: 'Guide, script and seven input PDFs.' },
-      { url: 'downloads/ai-harness.zip', label: 'Hands-on 2 · AI Harness · input and instructions ZIP', note: 'Guide, script and the same input PDFs.' },
+      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Start here · AI Harness data explorer · input CSV', companion: { url: 'downloads/m3gim-harness-exercise.txt', label: 'Two prompts, local preview and checks · TXT' }, note: 'The same CSV as in Session 2. Put it in an empty folder and open that folder in your harness.' },
       { url: 'downloads/m3gim-fulltext/NEXT-SESSION.md', label: 'Static web publication · instructions · Markdown', note: 'Reuse your TEI files and images from Session 2.' },
     ],
     additional: [
+      { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Data explorer · source description and evidence guidance · TXT' },
+      { url: 'downloads/python-vscode.zip', label: 'Optional preparation · Python in Visual Studio Code · ZIP', note: 'Guide, script and seven input PDFs.' },
+      { url: 'downloads/ai-harness.zip', label: 'Optional preparation · PDF conversion with an AI Harness · ZIP', note: 'Guide, script and the same input PDFs.' },
       { url: 'downloads/m3gim-jsonld-example.jsonld', label: 'M³GIM exploration · JSON-LD example with context', companion: { url: 'downloads/m3gim-jsonld-example-source.md', label: 'M³GIM exploration · example explanation and source' } },
       { url: 'downloads/m3gim-fulltext/m3gim-next-session.zip', label: 'Static web publication · optional reference TEI + images · ZIP', note: 'Complete seven-document corpus as a fallback, with working image links.' },
       { url: 'downloads/shared-materials.zip', label: 'Session 4 · Optional examples and source material · ZIP', note: 'Bundle for independent work; choose the files relevant to your research requirement.' },

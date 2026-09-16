@@ -15,6 +15,10 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · CSV-Einstieg in den AI Harness
+
+Auf Nutzerauftrag beginnt Session 3 mit einem Ordner und der bestehenden Mobilitäts-CSV. Die neue TXT-Anleitung trennt ausgeführte Python-Analyse und Erstellung einer einfachen HTML/CSS/JavaScript-Timeline in zwei Prompts, ergänzt lokale Startbefehle und Quellenprüfung. Die Downloadnavigation priorisiert CSV und Anleitung; bestehende PDF-Konvertierungsübungen bleiben optional erreichbar. Python bestätigte 40 Zeilen, 40 eindeutige evidence_id, 23 document_id und den Bereich 1952-01-29 bis 1968-11-18. Neun Orts-Schreibweisen entsprechen acht Orten bei Vergleich ohne Groß-/Kleinschreibung. Das gemeinsame Datumsfeld wird über Rollen und Notizen eingeordnet. Seitengenerierung und Prüfung aller acht Seiten einschließlich lokaler Links bestanden.
+
 Curated provenance index of the course website, read alongside `project.md` and `specification.md` for the current state and `handoff.md` for open handover points.
 
 ## 2026-09-15 · vereinfacht · Seitenkopf und Downloads pro Session
