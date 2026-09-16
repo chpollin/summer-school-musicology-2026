@@ -44,7 +44,7 @@ export const sessions = [
     slides: '1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc', notes: '18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM',
     downloads: [
       { url: 'downloads/szd-facsimiles.zip', label: 'Hands-on 1 · Zweig transcription · input images ZIP', note: 'The two facsimiles for transcription and comparison.' },
-      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Hands-on 2 · Mobility timeline · input CSV', companion: { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Hands-on 2 · source description and evidence guidance · TXT' } },
+      { url: 'downloads/m3gim-mobility-starter.csv', label: 'Hands-on 2 · Mobility timeline · input CSV', companion: { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Hands-on 2 · source description and evidence guidance · TXT' } },
       { url: 'downloads/m3gim-fulltext/m3gim-instructions.zip', label: 'From Facsimiles to TEI · instructions, prompts & template · ZIP', companion: { url: 'downloads/m3gim-fulltext/m3gim-pdf.zip', label: 'From Facsimiles to TEI · input PDFs · ZIP' }, note: 'Select one or two documents, or use all seven.' },
     ],
     additional: [
@@ -76,7 +76,6 @@ export const sessions = [
     ],
     additional: [
       { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Starter data · provenance and field definitions · TXT' },
-      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Data explorer · full 40-statement sample · CSV', companion: { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Full sample · source description · TXT' } },
       { url: 'downloads/python-vscode.zip', label: 'Optional preparation · Python in Visual Studio Code · ZIP', note: 'Guide, script and seven input PDFs.' },
       { url: 'downloads/ai-harness.zip', label: 'Optional preparation · PDF conversion with an AI Harness · ZIP', note: 'Guide, script and the same input PDFs.' },
       { url: 'downloads/m3gim-jsonld-example.jsonld', label: 'M³GIM exploration · JSON-LD example with context', companion: { url: 'downloads/m3gim-jsonld-example-source.md', label: 'M³GIM exploration · example explanation and source' } },

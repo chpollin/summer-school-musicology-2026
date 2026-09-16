@@ -2,6 +2,8 @@
 
 import csv
 import json
+import io
+import subprocess
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -28,10 +30,11 @@ FIELDS = [
 
 
 def main():
-    with (ROOT / "downloads/m3gim-mobility-evidence.csv").open(
-        encoding="utf-8-sig", newline=""
-    ) as handle:
-        source = {row["evidence_id"]: row for row in csv.DictReader(handle)}
+    original_csv = subprocess.run(
+        ["git", "show", "f2d0608:downloads/m3gim-mobility-evidence.csv"],
+        cwd=ROOT, check=True, capture_output=True, encoding="utf-8",
+    ).stdout
+    source = {row["evidence_id"]: row for row in csv.DictReader(io.StringIO(original_csv))}
     rows = []
     for number, (date_type, status) in SELECTION.items():
         original = source[f"box1-row-{number}"]

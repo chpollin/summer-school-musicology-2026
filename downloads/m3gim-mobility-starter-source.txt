@@ -1,8 +1,8 @@
 M3GIM mobility starter: 12 statements from 6 documents, 3 places, 1952-1957.
 Research question: Which places are documented, when, and in what context?
 
-Derived from m3gim-mobility-evidence.csv, the unchanged 40-statement teaching
-sample. Source revision: bec2a068802e9f2cb9885df072699b269d6efaa9.
+Derived from m3gim-mobility-evidence.csv, the former 40-statement teaching
+sample archived in repository commit f2d0608. Only the starter is distributed now. Source revision: bec2a068802e9f2cb9885df072699b269d6efaa9.
 Digital Humanities Craft / M3GIM, Universitaetsarchiv KUG. CC BY 4.0.
 This is a purpose-selected teaching sample, not representative mobility data.
 
@@ -14,7 +14,7 @@ Six documents produce twelve statements; statements are not independent events.
 Unchanged fields: evidence_id, document_id, date, place, recorded_role, title,
 source_statement and source_url. The evidence ID retains the upstream CSV row
 number (header counted as row 1). Full person links and object provenance remain
-in the original sample. No gender labels were inferred.
+in the archived original sample. No gender labels were inferred.
 
 Added teaching fields:
 - date_type: document = document creation; event = a referred-to event date;
@@ -35,7 +35,9 @@ Payment and performance dates must remain distinct. Document creation does not
 establish the recipient's location. Attendance and travel routes remain unconfirmed.
 Fields were checked against the original CSV; facsimiles were not re-examined.
 
-Rebuild: python scripts/build-mobility-starter.py
-Original sample and provenance:
-https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-mobility-evidence.csv
-https://chpollin.github.io/summer-school-musicology-2026/downloads/m3gim-mobility-evidence-source.txt
+Rebuild from a Git checkout with repository history:
+python scripts/build-mobility-starter.py
+The script reads the former sample from commit f2d0608, without restoring it
+as a download. Original sample and provenance are recorded in that commit.
+Upstream source:
+https://raw.githubusercontent.com/DigitalHumanitiesCraft/m3gim/bec2a068802e9f2cb9885df072699b269d6efaa9/data/google-spreadsheet/verknuepfungen/Box_1.csv
