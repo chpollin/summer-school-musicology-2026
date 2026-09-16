@@ -13,7 +13,8 @@ export const practice = 'https://drive.google.com/drive/folders/1KhFwP1L1iUO6PBK
 export const sessions = [
   {
     id: 'session-1', n: 1,
-    title: 'Archival sources',
+    title: 'Making Estate Materials Digitally Accessible',
+    description: 'Research Data Workflows in Stefan Zweig Digital',
     slides: '1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc', notes: '1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg',
     exercise: 'iiif',
     downloads: [
