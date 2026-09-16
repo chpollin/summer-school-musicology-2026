@@ -20,8 +20,8 @@
       "path": "downloads/shared/prompts.md",
       "mime_type": "text/markdown",
       "source_size": 7859,
-      "sha256": "5c04df875a011e099e03892758bdc9b7fefe79ae32d39f1d491cce88c0d38dc8",
-      "local_size": 9380
+      "sha256": "e9643128b97615d2b26ec4a19f81920a565b1a4371ea53e9e3202e3370413438",
+      "local_size": 9420
     },
     {
       "drive_id": "1gU1kYf9OPaVCiIvWhtWrPMT_jhKUSUEW",
@@ -30,8 +30,8 @@
       "path": "downloads/shared/orte-lookup.csv",
       "mime_type": "text/csv",
       "source_size": 211,
-      "sha256": "3c03f1aa7cfb37bdbaade3158a47777d41e5702ee309367789fcc5b254589bd4",
-      "local_size": 211
+      "sha256": "44af5f5d0b9f51c8a6190813a0b851b8812284ae2b02484915f928daf6c23e1c",
+      "local_size": 218
     },
     {
       "drive_id": "16QWae0iMPdXE03zmZIH6e0HCVIEAEwgp",
@@ -40,8 +40,8 @@
       "path": "downloads/shared/plakattext-pl04.txt",
       "mime_type": "text/plain",
       "source_size": 465,
-      "sha256": "0173ef702d78ece03a696f81afb1ed29cdeafd3e184804cdbe5b9049e7974d91",
-      "local_size": 465
+      "sha256": "a8c2592ef578e27d8aceac4bb59f70b3dc984f179dcad172f057e233c14714a8",
+      "local_size": 480
     },
     {
       "drive_id": "1xigbEkJrgvyf8DA3xSW9w3nB2HA5Refe",
@@ -75,8 +75,8 @@
       "path": "downloads/ai-harness/pdf_to_images.py",
       "mime_type": "text/x-python",
       "source_size": 4546,
-      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3",
-      "local_size": 4546
+      "sha256": "a52bccce5174af751f9a03244e4dabaf21ba7fb313d64094c35825ac6d2da26b",
+      "local_size": 4674
     },
     {
       "drive_id": "12yHad5T4aKddhMm_sc1FMfyCTxURtAg_",
@@ -98,8 +98,8 @@
       "path": "downloads/python-vscode/pdf_to_images.py",
       "mime_type": "text/x-python",
       "source_size": 4546,
-      "sha256": "afe07c8ca813cabd832ddc9d74dc70758af86f34785e9f01ef2518aa7fb216b3",
-      "local_size": 4546
+      "sha256": "a52bccce5174af751f9a03244e4dabaf21ba7fb313d64094c35825ac6d2da26b",
+      "local_size": 4674
     },
     {
       "drive_id": "1pHOnOPfdT94phWkn8vM2q2WwN30vlF0G",

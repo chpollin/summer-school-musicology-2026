@@ -11,7 +11,8 @@ export const practice = 'https://drive.google.com/drive/folders/1KhFwP1L1iUO6PBK
 
 // Downloads use repository-relative URLs.
 // A session with `published: false` stays out of the course page until its day; its legacy URLs still resolve to the course page.
-// Hands-on entries list only exercises with material to download or open; instructions stay in the slides.
+// Each session has one `package` ZIP with everything its hands-ons need. Hands-on entries name the exercises in slide order;
+// a resource appears only for a tool or a file that is useful on its own. Instructions stay in the slides.
 export const sessions = [
   {
     id: 'session-1', n: 1,
@@ -22,26 +23,24 @@ export const sessions = [
       'Understand research data workflows and the role of metadata standards.',
       'Understand the principles of the Semantic Web and Linked Open Data.',
     ],
+    package: 'downloads/session-1-materials.zip',
     slides: '1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc', notes: '1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg',
     activities: [
       {
         id: 'session-1-schulnachricht', title: 'Describe the “Schulnachricht” in XML',
-        resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
+        resources: [],
       },
       {
         id: 'session-1-iiif', title: 'From XML to IIIF with Python',
-        resources: [
-          { url: 'downloads/xml-iiif-workshop.zip', label: 'XML to IIIF · complete exercise package · ZIP' },
-          { url: 'tools/iiif-viewer/', label: 'Open the IIIF viewer' },
-        ],
+        resources: [{ url: 'tools/iiif-viewer/', label: 'Open the IIIF viewer' }],
       },
       {
         id: 'session-1-tei', title: 'Encode the Schulnachricht in TEI XML with LLM Assistance',
-        resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
+        resources: [],
       },
       {
         id: 'session-1-rdf', title: 'Represent a Source Image in RDF with LLM Assistance',
-        resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
+        resources: [],
       },
     ],
   },
@@ -55,27 +54,21 @@ export const sessions = [
       'Gain initial hands-on experience using LLMs in research data workflows.',
     ],
     published: false,
+    package: 'downloads/session-2-materials.zip',
     slides: '1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc', notes: '18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM',
     notesInProgress: true,
     activities: [
       {
         id: 'session-2-transcription', title: 'Transcribe a Facsimile with Gemini 3.8 Flash',
-        note: 'Two Zweig facsimiles for the demonstration and your transcription exercise.',
-        resources: [{ url: 'downloads/szd-facsimiles.zip', label: 'Input images · ZIP' }],
+        resources: [],
       },
       {
         id: 'session-2-mobility', title: 'Exploring Research Data with LLMs',
-        note: 'Inspect 12 statements from 6 documents and 3 places, then create an interactive timeline as a chat artifact. Follow the prompts in the slides.',
-        resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Mobility starter data · CSV', companion: { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Sources and field definitions · TXT' } }],
+        resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Starter data · CSV' }],
       },
       {
         id: 'session-2-tei', title: 'From Facsimiles to TEI XML',
-        note: 'Start with UAKUG_NIM_005_137_3.pdf (2 scans). Use an LLM chat with PDF/image support; an AI harness is optional. Create simple TEI XML, check a passage and a metadata value against the scans, and check XML syntax. Keep your TEI and matching images for the final project. Additional documents are optional.',
-        resources: [
-          { url: 'downloads/m3gim-fulltext/m3gim-pdf.zip', label: 'Source PDFs · ZIP' },
-          { url: 'downloads/m3gim-fulltext/m3gim-png.zip', label: 'Prepared scan images · PNG ZIP', note: 'Use these if your chat needs images; PDF conversion is optional.' },
-          { url: 'downloads/m3gim-fulltext/m3gim-instructions.zip', label: 'Instructions, prompts and TEI template · ZIP' },
-        ],
+        resources: [],
       },
     ],
   },
@@ -91,22 +84,17 @@ export const sessions = [
       'Practise agentic engineering by inspecting tool use, checking results and refining instructions.',
     ],
     published: false,
+    package: 'downloads/sessions-3-4-materials.zip',
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     notesInProgress: true,
     activities: [
       {
         id: 'session-3-harness', title: 'AI Harness and M³GIM Data',
-        note: 'Use the 12-statement CSV to inspect data and build one interactive view with plain HTML, CSS and JavaScript. Run it locally; use no libraries, frameworks or build tools. Prompts and preview instructions are in the slides.',
-        resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Mobility starter data · CSV', companion: { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Sources and field definitions · TXT' } }],
+        resources: [{ url: 'downloads/m3gim-mobility-starter.csv', label: 'Starter data · CSV' }],
       },
       {
         id: 'final-project', title: 'Promptotyping Project: A Small Digital Edition or Research Dashboard',
-        note: 'Choose a research question and create knowledge/data.md, knowledge/research.md and knowledge/specification.md. Follow the slides to plan, implement, verify and refine both code and project knowledge. Work in an AI harness, or upload files to a chat and save its outputs into your project folder.',
-        scope: 'Build a local static web application using only plain HTML, CSS and JavaScript. No libraries, frameworks, package installations, build tools, backend, database or external services. Run it via a local static server. Start with one main view and one core interaction.',
-        resources: [
-          { url: 'downloads/m3gim-fulltext/m3gim-pdf.zip', label: 'Edition · source PDFs · ZIP', note: 'Start from PDFs, reuse any existing transcriptions and develop TEI XML for a small digital edition.' },
-          { url: 'downloads/m3gim-dataset.jsonld', label: 'Dashboard · full published M³GIM dataset · JSON-LD', companion: { url: 'downloads/m3gim-dataset-source.txt', label: 'Dataset scope, source revision and licence · TXT' }, note: 'The complete published archive graph for your dashboard; facsimile files are separate.' },
-        ],
+        resources: [{ url: 'https://dhcraft.org/m3gim', label: 'Open the M³GIM prototype' }],
       },
     ],
   },

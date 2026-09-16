@@ -71,12 +71,12 @@ ${scripts}</body>
 `;
 }
 
-const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a>${r.companion ? `<br><a class="small" href="${escape(r.companion.url)}" download>${escape(r.companion.label)}</a>` : ''}${r.note ? `<br><span class="small">${escape(r.note)}</span>` : ''}</li>`).join('')}</ul>`;
+const resourceList = resources => `<ul class="resources">${resources.map(r => `<li><a href="${escape(r.url)}"${r.url.startsWith('downloads/') ? ' download' : ''}>${escape(r.label)}</a></li>`).join('')}</ul>`;
 
-const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.note ? `<p class="small">${escape(a.note)}</p>` : ''}${a.scope ? `<p class="small"><strong>Technical scope:</strong> ${escape(a.scope)}</p>` : ''}${a.resources.length ? resourceList(a.resources) : ''}</div>`).join('\n');
+const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.resources.length ? resourceList(a.resources) : ''}</div>`).join('\n');
 
 const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} hands-on materials">
-<h3 class="downloads-label">${downloadIcon}Hands-on materials</h3>
+<div class="downloads-head"><h3 class="downloads-label">Hands-on materials</h3><a class="button" href="${escape(s.package)}" download>${downloadIcon}All materials · ZIP</a></div>
 ${activityList(s.activities)}
 </div>`;
 
@@ -120,7 +120,7 @@ outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads')
 outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI XML · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
 <body><p>The exercise materials are now on the course page. Continue to <a href="${anchor('session-2')}">Session 2</a> or <a href="${anchor('session-3')}">Sessions 3 and 4</a>.</p></body></html>\n`);
-outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
+outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF viewer', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
 
 function brokenLinks(rel, html) {
   const problems = [];

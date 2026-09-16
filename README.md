@@ -9,7 +9,7 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 - `index.html`: die Kursseite mit je einer Sessionzeile aus Titelbild links und Informationen rechts, mobil untereinander, sowie einem Downloadbereich direkt bei jeder Session.
 - `materials/m3gim-fulltext.html`, `sessions/` und `materials/index.html`: Weiterleitungen auf die Kursseite. Die frühere M³GIM-URL führt zur TEI-Übung in Session 2 und ihr Anker `#next-session` zum Abschlussprojekt.
 - `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
-- `downloads/`: Python-/IIIF-Paket, PDF-zu-Bildern-Übung und M³GIM-Paket.
+- `downloads/`: ein Materialpaket pro Session (`session-1-materials.zip`, `session-2-materials.zip`, `sessions-3-4-materials.zip`) sowie die Einzeldateien und älteren Pakete, aus denen sie gebaut werden.
 - `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`; die neuen Illustrationen und ihre Generierungsprompts liegen unter `assets/illustrations/`.
 - `scripts/sessions.mjs`: das Materialverzeichnis der Sessions; `scripts/build-site.mjs` erzeugt daraus alle Seiten, `--check` prüft Drift und lokale Links; `scripts/fetch-title-slides.mjs` holt die Titelfolien; `scripts/build-iiif-package.py` packt das IIIF-Paket.
 - `knowledge/`: Projektwissen nach der Promptotyping-Konvention, Einstieg über `knowledge/INDEX.md`.
@@ -26,7 +26,7 @@ Google Drive bleibt der Bearbeitungsort der nativen Dokumente. Vorschau- und PDF
 
 `downloads/shared-materials.zip` enthält fünf Materialien des Drive-Datenordners sowie die beiden Zweig-Faksimiles und deren Herkunftsnachweis. Sie sind außerdem einzeln unter `downloads/shared/` erreichbar. Das separate Kartenbeispiel wurde auf Nutzerwunsch aus Kursdownloads und Sammelpaket entfernt. Die Mobilitätsaufgabe in Session 2 und die Exploration des M³GIM-Prototyps bleiben erhalten. Die Schulnachricht trägt die Endung `.jpg`, weil die in Drive als `.png` benannte Datei JPEG-Daten enthält. Bei der XLSX-Datei wurde ausschließlich das defekte Theme ersetzt; die Reparatur ist in `downloads/drive-materials.json` dokumentiert. Die ursprünglichen Drive-Dateien bleiben erhalten. Ergänzende Quellen und Extraktionsprompts dienen der selbständigen Arbeit.
 
-`scripts/build-shared-packages.py` erzeugt die gemeinsamen Archive aus ihren lokalen Quellen mit festen Zeitstempeln. Die Kursdownloads enthalten die aktuelle Fassung der Python- und AI-Harness-Anleitungen. Frühere Drive-Fassungen sind keine kanonischen Übungsdownloads.
+`scripts/build-shared-packages.py` erzeugt die gemeinsamen Archive und die drei Sessionpakete aus ihren lokalen Quellen mit festen Zeitstempeln. Die Kursdownloads enthalten die aktuelle Fassung der Python- und AI-Harness-Anleitungen. Frühere Drive-Fassungen sind keine kanonischen Übungsdownloads.
 
 `downloads/m3gim-jsonld-example.jsonld` ergänzt den Ausschnitt auf der vorhandenen M³GIM-Workflowfolie um einen vollständigen Kontext. Der begleitende Herkunftsnachweis beschreibt den ausgewählten Datensatz und die Grenzen des Ausschnitts. Eine JSON-LD-Expansion prüft seine Begriffsauflösung; die Ortsbeziehung allein belegt keinen Auftritt Malaniuks.
 

@@ -11,5 +11,6 @@
   #status.error { color: var(--error); }
   .result-heading { display: flex; align-items: baseline; gap: var(--space-4); flex-wrap: wrap; }
   #mirador { block-size: min(82vh, 900px); min-block-size: 520px; position: relative; border: 1px solid var(--line); }
-  .guide { max-inline-size: 60rem; }
+  .controls .lead { margin-block-end: var(--space-5); max-inline-size: 60ch; }
+  .rule { margin-block: var(--space-4) 0; }
 }
