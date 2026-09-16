@@ -1,0 +1,27 @@
+:root { --ink: #182538; --muted: #526174; --paper: #fff; --canvas: #f5f7fa; --line: #bdc7d4; --document: #235d9f; --rehearsal: #6b4398; --dress: #9a4162; --performance: #a34b15; --mention: #596333; --guest: #166c61; --radius: 8px; --space: 16px; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--canvas); color: var(--ink); font: 17px/1.5 system-ui, sans-serif; }
+main { max-width: 1100px; padding: calc(var(--space) * 2); margin: auto; }
+h1 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0; }
+a { color: var(--document); }
+#legend { display: flex; flex-wrap: wrap; gap: var(--space); }
+.key { border-bottom: 4px solid var(--role); }
+[data-role="entstehung"] { --role: var(--document); }
+[data-role="probe"] { --role: var(--rehearsal); }
+[data-role="Generalprobe"] { --role: var(--dress); }
+[data-role="auftritt"] { --role: var(--performance); }
+[data-role="erwähnt"] { --role: var(--mention); }
+[data-role="gastspiel"] { --role: var(--guest); }
+.chart-scroll { overflow-x: auto; padding: var(--space) 0; }
+#timeline { min-width: 700px; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space); }
+.axis, .place-row { display: grid; grid-template-columns: 100px 1fr; gap: var(--space); }
+.years { display: flex; justify-content: space-between; padding: 0 24px; color: var(--muted); }
+.place-row h2 { font-size: 1rem; }
+.track { position: relative; height: 135px; margin: 0 24px; border-bottom: 1px solid var(--line); }
+.point { position: absolute; left: var(--x); top: var(--y); transform: translateX(-50%); width: 32px; height: 32px; border: 2px solid var(--role); border-radius: 50%; background: var(--paper); color: var(--role); font-weight: 700; cursor: pointer; }
+.point[aria-pressed="true"] { background: var(--role); color: var(--paper); }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+#details { padding: var(--space); background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+dl { display: grid; grid-template-columns: minmax(110px, 1fr) 4fr; gap: 8px var(--space); }
+dt { font-weight: 700; } dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) { main { padding: var(--space); } dl { display: block; } dd { margin-bottom: var(--space); } }

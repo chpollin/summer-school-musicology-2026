@@ -15,6 +15,10 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · Vereinfachter Mobilitätsdatensatz
+
+Die Harness-Einstiegsübung verwendet eine abgeleitete Auswahl aus zwölf Aussagen, sechs Dokumenten und drei Orten (Bayreuth, München, Wien; 1952–1957). Originalfelder und IDs bleiben unverändert; date_type und date_status machen dokumentierte Datumsbedeutungen und Unsicherheiten nutzbar. Die gesondert bezeichnete Vorsichtsmarkierung year_requires_review betrifft zwei Folgeereignisse der Anfrage mit erschlossenem Jahr. Originalnotizen werden vollständig zusammengeführt. Die Daten wurden gegen die 40-Zeilen-CSV geprüft, nicht erneut gegen Faksimiles. Die vollständige CSV bleibt in Session 2 und als Zusatzmaterial erhalten. Ein statisches Referenzbeispiel unter tools/mobility-starter zeigt die Auswahl einschließlich überlappender Punkte. Es wird nicht als fertige Lösung im primären Übungsdownload angeboten. Ein Lauf mit Sonnet 5 / Low Effort wurde nicht ausgeführt.
+
 ## 2026-09-16 · Harness-Anleitung ausschließlich auf Folien
 
 Auf Nutzerwunsch entfallen die separate TXT-Anleitung und ihr Downloadlink. Die Kursseite stellt die CSV bereit; Prompts und Startanleitung gehören auf die Folien. Die bisherige TXT-Fassung bleibt über Git nachvollziehbar.

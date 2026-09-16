@@ -71,11 +71,12 @@ export const sessions = [
     ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     downloads: [
-      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Start here · AI Harness data explorer · input CSV', note: 'The same CSV as in Session 2. Follow the hands-on instructions in the slides.' },
+      { url: 'downloads/m3gim-mobility-starter.csv', label: 'Start here · AI Harness data explorer · starter CSV', note: '12 statements, 6 documents, 3 places. Date types and uncertainty are labelled. Follow the hands-on instructions in the slides.' },
       { url: 'downloads/m3gim-fulltext/NEXT-SESSION.md', label: 'Static web publication · instructions · Markdown', note: 'Reuse your TEI files and images from Session 2.' },
     ],
     additional: [
-      { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Data explorer · source description and evidence guidance · TXT' },
+      { url: 'downloads/m3gim-mobility-starter-source.txt', label: 'Starter data · provenance and field definitions · TXT' },
+      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Data explorer · full 40-statement sample · CSV', companion: { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Full sample · source description · TXT' } },
       { url: 'downloads/python-vscode.zip', label: 'Optional preparation · Python in Visual Studio Code · ZIP', note: 'Guide, script and seven input PDFs.' },
       { url: 'downloads/ai-harness.zip', label: 'Optional preparation · PDF conversion with an AI Harness · ZIP', note: 'Guide, script and the same input PDFs.' },
       { url: 'downloads/m3gim-jsonld-example.jsonld', label: 'M³GIM exploration · JSON-LD example with context', companion: { url: 'downloads/m3gim-jsonld-example-source.md', label: 'M³GIM exploration · example explanation and source' } },
