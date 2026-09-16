@@ -16,12 +16,19 @@ ROOT = Path(__file__).resolve().parents[1]
 DOWNLOADS = ROOT / "downloads"
 
 
+BINARY = {".jpg", ".jpeg", ".png", ".pdf", ".xlsx", ".zip"}
+
+
 def pack(target: Path, members: list[tuple[Path | bytes, str]]) -> None:
     with zipfile.ZipFile(target, "w", zipfile.ZIP_DEFLATED) as archive:
         for source, name in members:
             info = zipfile.ZipInfo(name, date_time=(2026, 9, 15, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
-            archive.writestr(info, source if isinstance(source, bytes) else source.read_bytes())
+            data = source if isinstance(source, bytes) else source.read_bytes()
+            # Git checks text out with CRLF on Windows; the archives carry LF regardless of the packing platform.
+            if Path(name).suffix.lower() not in BINARY:
+                data = data.replace(b"\r\n", b"\n")
+            archive.writestr(info, data)
 
 
 def zip_members(archive: Path) -> list[tuple[bytes, str]]:
