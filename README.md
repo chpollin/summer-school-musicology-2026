@@ -11,7 +11,7 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 - `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
 - `downloads/`: ein Materialpaket pro Session (`session-1-materials.zip`, `session-2-materials.zip`, `sessions-3-4-materials.zip`) sowie die Einzeldateien und älteren Pakete, aus denen sie gebaut werden.
 - `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`; die neuen Illustrationen und ihre Generierungsprompts liegen unter `assets/illustrations/`.
-- `scripts/sessions.mjs`: das Materialverzeichnis der Sessions; `scripts/build-site.mjs` erzeugt daraus alle Seiten, `--check` prüft Drift und lokale Links; `scripts/fetch-title-slides.mjs` holt die Titelfolien; `scripts/build-iiif-package.py` packt das IIIF-Paket.
+- `scripts/sessions.mjs`: das Materialverzeichnis der Sessions; `scripts/build-site.mjs` erzeugt daraus alle Seiten, `--check` prüft Drift und lokale Links; `scripts/fetch-title-slides.mjs` holt die Titelfolien; `scripts/build-shared-packages.py` packt die Sessionpakete und das IIIF-Paket.
 - `knowledge/`: Projektwissen nach der Promptotyping-Konvention, Einstieg über `knowledge/INDEX.md`.
 
 ## Materialquellen

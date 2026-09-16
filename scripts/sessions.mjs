@@ -4,13 +4,10 @@ export const site = 'https://chpollin.github.io/summer-school-musicology-2026/';
 export const course = 'Summer School Musicology 2026 · Research Data Workflows and LLMs';
 export const event = 'Summer School “Gender – Knowledge – Mobility. Digital Perspectives in Musicology”';
 export const venue = 'University of Music and Performing Arts Graz';
-export const drive = 'https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW';
-export const prep = 'https://docs.google.com/presentation/d/19zybf1mABP3qM65GXv0xEGVososbhM03P9_INInYPj8';
-export const data = 'https://drive.google.com/drive/folders/1Q5iiPsBfiaAWOK7Tuy9Z5LyiO0EUaZFJ';
-export const practice = 'https://drive.google.com/drive/folders/1KhFwP1L1iUO6PBKQZGP4p8rxU2vZSfG0';
 
 // Downloads use repository-relative URLs.
 // A session with `published: false` stays out of the course page until its day; its legacy URLs still resolve to the course page.
+// `aliases` are former session ids that keep resolving to this section, as a second anchor and a redirect stub.
 // Each session has one `package` ZIP with everything its hands-ons need. Hands-on entries name the exercises in slide order;
 // a resource appears only for a tool or a file that is useful on its own. Instructions stay in the slides.
 export const sessions = [
@@ -75,6 +72,7 @@ export const sessions = [
   {
     id: 'session-3', n: '3 and 4',
     label: 'Sessions 3 and 4',
+    aliases: ['session-4'],
     title: 'Large Language Models for Research Data Workflows',
     subtitle: 'Hands-On Practice',
     objectives: [

@@ -20,8 +20,7 @@ Download packages and teaching data (Python, run from the repository root):
 
 ```
 uv run scripts/build-m3gim-tei.py        # rebuild TEI files, CSV, guides and the m3gim-fulltext ZIPs
-python scripts/build-shared-packages.py  # rebuild the per-session packages, szd-facsimiles, ai-harness, python-vscode and shared-materials ZIPs, refresh hashes in downloads/drive-materials.json
-python scripts/build-iiif-package.py     # rebuild downloads/xml-iiif-workshop.zip from tools/iiif-viewer
+python scripts/build-shared-packages.py  # rebuild the per-session packages, xml-iiif-workshop, szd-facsimiles, ai-harness, python-vscode and shared-materials ZIPs, refresh hashes in downloads/drive-materials.json
 python scripts/build-mobility-starter.py # rebuild m3gim-mobility-starter.csv and tools/mobility-starter/data.json (reads git commit f2d0608)
 python scripts/build-m3gim-dataset.py    # verify or refetch the pinned M3GIM JSON-LD snapshot
 ```
@@ -32,7 +31,7 @@ After any change to `scripts/sessions.mjs`, `scripts/viewer-page.mjs` or `script
 
 ## Architecture
 
-The whole site is rendered from one data module. `scripts/sessions.mjs` holds the site constants, the Drive IDs and, per session, title, subtitle, learning objectives, the `package` ZIP, activities with optional resources, the `notesInProgress` flag and an optional `published: false` that keeps a session off the course page until its day. `scripts/build-site.mjs` turns that array into `index.html` (one row per session with its download area), the viewer page `tools/iiif-viewer/index.html` (body from `scripts/viewer-page.mjs`, whose element IDs are the contract with `tools/iiif-viewer/app.js`), and redirect stubs under `sessions/` and `materials/`. Adding, merging or removing a session is an edit of the array followed by the title-slide fetch and the build. No page text states the number of sessions. Sessions 3 and 4 share one deck and one lecture-notes document and appear as one section.
+The whole site is rendered from one data module. `scripts/sessions.mjs` holds the site constants, the Drive IDs and, per session, title, subtitle, learning objectives, the `package` ZIP, activities with optional resources, the `notesInProgress` flag and an optional `published: false` that keeps a session off the course page until its day. `scripts/build-site.mjs` turns that array into `index.html` (one row per session with its download area), the viewer page `tools/iiif-viewer/index.html` (body from `scripts/viewer-page.mjs`, whose element IDs are the contract with `tools/iiif-viewer/app.js`), and redirect stubs under `sessions/` and `materials/`. Adding, merging or removing a session is an edit of the array followed by the title-slide fetch and the build. No page text states the number of sessions. Sessions 3 and 4 share one deck and one lecture-notes document and appear as one section; the `aliases` field keeps `session-4` as a second anchor and redirect stub.
 
 Legacy URLs are preserved. `materials/m3gim-fulltext.html` redirects to the Session 2 TEI exercise via `assets/material-redirect.js`, mapping `#next-session` to the final project. Keep every already published download path reachable.
 

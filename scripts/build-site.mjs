@@ -17,9 +17,9 @@ const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
 const downloadIcon = '<svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>';
 const published = sessions.filter(s => s.published !== false);
-const isPublished = id => published.some(s => s.id === id);
+const isPublished = id => published.some(s => s.id === id || s.aliases?.includes(id));
 // Anchors of unpublished sessions do not exist yet, so their legacy URLs land on the course page itself.
-const anchor = id => isPublished(id.replace(/^session-4$/, 'session-3')) ? `../index.html#${id}` : '../index.html';
+const anchor = id => isPublished(id) ? `../index.html#${id}` : '../index.html';
 const outputs = new Map();
 
 function materialGroup(s, kind) {
@@ -82,7 +82,7 @@ ${activityList(s.activities)}
 
 const section = s => `<section id="${s.id}" class="session session-row">
 <img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async">
-<div class="session-content"${s.id === 'session-3' ? ' id="session-4"' : ''}>
+<div class="session-content"${s.aliases?.length ? ` id="${escape(s.aliases[0])}"` : ''}>
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
 <p><strong>${escape(s.subtitle)}</strong></p>
 <div class="material-links">${materialGroup(s, 'slides')}${materialGroup(s, 'notes')}</div>
@@ -114,8 +114,7 @@ const stub = (target, label) => `<!doctype html>
 <body><p>This page has moved to <a href="${target}">${escape(label)}</a>.</p></body>
 </html>
 `;
-for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(anchor(s.id), sessionLabel(s)));
-outputs.set('sessions/session-4.html', stub(anchor('session-4'), 'Sessions 3 and 4'));
+for (const s of sessions) for (const id of [s.id, ...(s.aliases ?? [])]) outputs.set(`sessions/${id}.html`, stub(anchor(id), sessionLabel(s)));
 outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads'));
 outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI XML · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>

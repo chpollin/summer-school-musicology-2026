@@ -1,6 +1,7 @@
 """Pack the course downloads from maintained local material files.
 
 Run: python scripts/build-shared-packages.py
+Covers the per-session packages, the standalone IIIF exercise package and the older shared archives.
 Preserves original PDFs and JPEGs and records hashes of local Drive derivatives.
 Source and repair provenance remains in downloads/drive-materials.json.
 """
@@ -46,16 +47,21 @@ def session_packages() -> None:
     viewer = ROOT / "tools" / "iiif-viewer"
     starter = [(DOWNLOADS / "m3gim-mobility-starter.csv", "m3gim-mobility-starter.csv"), (DOWNLOADS / "m3gim-mobility-starter-source.txt", "m3gim-mobility-starter-source.txt")]
     pdfs = [(p, f"m3gim/pdf/{p.name}") for p in sorted((M3GIM / "pdf").glob("*.pdf"))]
+    iiif_exercise = [
+        (viewer / "STUDENT-GUIDE.md", "README.md"),
+        (viewer / "build_manifest.py", "build_manifest.py"),
+        (viewer / "metadata.xml", "metadata.xml"),
+        (viewer / "images" / "page-001.jpg", "images/page-001.jpg"),
+        (viewer / "images" / "page-002.jpg", "images/page-002.jpg"),
+        (shared / "schulnachricht.jpg", "images/schulnachricht.jpg"),
+    ]
     # The Schulnachricht sits at the top level for the TEI and RDF hands-ons and inside the IIIF exercise folder.
     pack(DOWNLOADS / "session-1-materials.zip", [
         (shared / "schulnachricht.jpg", "schulnachricht.jpg"),
-        (viewer / "STUDENT-GUIDE.md", "xml-iiif/README.md"),
-        (viewer / "build_manifest.py", "xml-iiif/build_manifest.py"),
-        (viewer / "metadata.xml", "xml-iiif/metadata.xml"),
-        (viewer / "images" / "page-001.jpg", "xml-iiif/images/page-001.jpg"),
-        (viewer / "images" / "page-002.jpg", "xml-iiif/images/page-002.jpg"),
-        (shared / "schulnachricht.jpg", "xml-iiif/images/schulnachricht.jpg"),
+        *[(source, f"xml-iiif/{name}") for source, name in iiif_exercise],
     ])
+    # The standalone IIIF package stays for links shared before the session packages existed.
+    pack(DOWNLOADS / "xml-iiif-workshop.zip", [(source, f"xml-iiif-workshop/{name}") for source, name in iiif_exercise])
     pack(DOWNLOADS / "session-2-materials.zip", [
         *[(shared / name, f"zweig-facsimiles/{name}") for name in ["szd-facsimile-0.jpg", "szd-facsimile-1.jpg", "szd-facsimiles-PROVENANCE.md"]],
         *starter,
@@ -98,7 +104,6 @@ def main() -> None:
         DOWNLOADS / "shared-materials.zip",
         [(p, p.name) for p in sorted(shared.iterdir()) if p.is_file()],
     )
-    session_packages()
     session_packages()
     manifest_path = DOWNLOADS / "drive-materials.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
