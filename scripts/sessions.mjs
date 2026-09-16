@@ -9,14 +9,19 @@ export const prep = 'https://docs.google.com/presentation/d/19zybf1mABP3qM65GXv0
 export const data = 'https://drive.google.com/drive/folders/1Q5iiPsBfiaAWOK7Tuy9Z5LyiO0EUaZFJ';
 export const practice = 'https://drive.google.com/drive/folders/1KhFwP1L1iUO6PBKQZGP4p8rxU2vZSfG0';
 
-// `exercise` selects the exercise text; downloads and additional resources use repository-relative URLs.
+// Downloads and additional resources use repository-relative URLs.
 export const sessions = [
   {
     id: 'session-1', n: 1,
     title: 'Making Estate Materials Digitally Accessible',
-    description: 'Research Data Workflows in Stefan Zweig Digital',
+    subtitle: 'Research Data Workflows in Stefan Zweig Digital',
+    description: 'Explore how Stefan Zweig Digital turns estate materials into accessible research data through metadata standards and digital workflows.',
+    objectives: [
+      'Understand what research data is and why it matters.',
+      'Understand research data workflows and the role of metadata standards.',
+      'Understand the principles of the Semantic Web and Linked Open Data.',
+    ],
     slides: '1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc', notes: '1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg',
-    exercise: 'iiif',
     downloads: [
       { url: 'downloads/xml-iiif-workshop.zip', label: 'XML to IIIF · input files and instructions · ZIP', note: 'Python script, XML template, example images and guide for generating and viewing an IIIF manifest.' },
       { url: 'downloads/pdf-to-images.zip', label: 'PDF pages as images · input and instructions · ZIP', note: 'Script, source PDF and instructions for the single-PDF conversion exercise.' },
@@ -28,9 +33,15 @@ export const sessions = [
   },
   {
     id: 'session-2', n: 2,
-    title: 'Large language models',
+    title: 'Large Language Models for Research Data Workflows',
+    subtitle: 'An Introduction',
+    description: 'Explore how LLMs can help extract, structure and verify research data through practical work with historical sources.',
+    objectives: [
+      'Develop a basic understanding of large language models (LLMs).',
+      'Understand the fundamentals of prompt and context engineering.',
+      'Gain initial hands-on experience using LLMs in research data workflows.',
+    ],
     slides: '1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc', notes: '18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM',
-    exercise: 'm3gim',
     downloads: [
       { url: 'downloads/szd-facsimiles.zip', label: 'Hands-on 1 · Zweig transcription · input images ZIP', note: 'The two facsimiles for transcription and comparison.' },
       { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Hands-on 2 · Mobility timeline · input CSV', companion: { url: 'downloads/m3gim-mobility-evidence-source.txt', label: 'Hands-on 2 · source description and evidence guidance · TXT' } },
@@ -49,10 +60,16 @@ export const sessions = [
   {
     id: 'session-3', n: '3 and 4',
     label: 'Sessions 3 and 4',
-    title: 'Promptotyping',
-    description: 'Use LLMs for coding and build small research tools through Promptotyping.',
+    title: 'Large Language Models for Research Data Workflows',
+    subtitle: 'Hands-On Practice',
+    description: 'Work with an AI harness to inspect research data and build a simple static website, starting with the M³GIM mobility CSV.',
+    objectives: [
+      'Use LLMs for coding and build small research tools through Promptotyping.',
+      'Understand AI agents and the role of an AI harness.',
+      'Apply context and knowledge engineering to research tasks.',
+      'Practise agentic engineering by inspecting tool use, checking results and refining instructions.',
+    ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
-    exercise: 'm3gim-next',
     downloads: [
       { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Start here · AI Harness data explorer · input CSV', companion: { url: 'downloads/m3gim-harness-exercise.txt', label: 'Two prompts, local preview and checks · TXT' }, note: 'The same CSV as in Session 2. Put it in an empty folder and open that folder in your harness.' },
       { url: 'downloads/m3gim-fulltext/NEXT-SESSION.md', label: 'Static web publication · instructions · Markdown', note: 'Reuse your TEI files and images from Session 2.' },

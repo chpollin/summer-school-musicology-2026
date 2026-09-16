@@ -15,6 +15,10 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · Sessionübersicht auf Lernziele verdichtet
+
+Die vollständigen Sessiontitel und Untertitel folgen den Nutzerangaben. Jede Session zeigt einen beschreibenden Satz und die zugehörigen Lernziele; ausführliche Übungsschritte stehen in den verlinkten Anleitungen. Die doppelte Pflege der Übungstexte im Seitengenerator entfällt. Materiallinks und der Session-4-Anker bleiben erhalten.
+
 ## 2026-09-16 · Titel von Session 1
 
 Session 1 trägt auf Nutzerangabe den Titel „Making Estate Materials Digitally Accessible“ und den Untertitel „Research Data Workflows in Stefan Zweig Digital“. Materialverzeichnis und generierte Kursseite wurden entsprechend aktualisiert.

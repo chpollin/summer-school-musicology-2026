@@ -12,7 +12,6 @@ import { course, event, sessions, site, venue } from './sessions.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const siteDescription = "Slides, lecture notes, hands-on tools and downloads for Christopher Pollin's sessions at Summer School Musicology 2026.";
 const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
-const link = (url, label, kind = '') => `<a${kind ? ` class="${kind}"` : ''} href="${escape(url)}">${escape(label)}</a>`;
 const slidesUrl = s => `https://docs.google.com/presentation/d/${s.slides}`;
 const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
@@ -27,20 +26,6 @@ function materialGroup(s, kind) {
   const url = slides ? slidesUrl(s) : notesUrl(s);
   return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}">${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF">PDF</a></span>`;
 }
-
-const exercises = {
-  iiif: () => `<p>Combine XML metadata and images, generate a manifest with Python, and inspect the result in Mirador. The ${link('tools/iiif-viewer/', 'IIIF viewer')} also accepts the XML directly. The package below contains the script, XML template, two synthetic example images and a guide.</p>`,
-  m3gim: () => `<p><strong>Hands-on 1, Zweig transcription.</strong> Transcribe the facsimiles and check the output against the images. <strong>Hands-on 2, Mobility timeline.</strong> Use the CSV and its source description to build a timeline, preserving the distinction between an announcement and evidence of an appearance.</p><p><strong>From Facsimiles to TEI.</strong> Choose one or two M³GIM documents, or work with all seven. Use an AI Harness or an LLM chat to transcribe them in their original languages, check uncertain readings and produce metadata and TEI-XML. Translation is optional. Keep the TEI files and images together for a small static web publication in Session 3. The instructions and prompts below support this workflow; the complete seven-document, 40-page reference remains an optional fallback.</p>`,
-  'm3gim-next': () => `<p>Start Session 3 with an AI harness and the same mobility CSV used in Session 2. Create an empty folder, put the CSV inside and open the folder in your harness. The ${link('downloads/m3gim-harness-exercise.txt', 'exercise guide')} contains both prompts and the local preview commands.</p>
-<ul class="workflow">
-<li><strong>Prompt 1, inspect the data.</strong> Ask the agent to run Python, report record and document counts, and explain dates, roles and uncertainty. Inspect the actual tool output and check one statement against the CSV.</li>
-<li><strong>Prompt 2, build a data explorer.</strong> Create one interactive timeline using plain HTML, CSS and JavaScript. Open it locally, select a record and compare its source IDs, dates and notes with the CSV. Give concrete feedback on any discrepancy. No prepared website or project documents are needed.</li>
-<li><strong>Explore a research prototype.</strong> Explore the ${link('https://dhcraft.org/m3gim/', 'M³GIM work-in-progress prototype')} through its interface. Where and when is Malaniuk documented, in which role, and within which artistic network? Note concrete source evidence and missing data or functions, then derive a requirement. The prototype is incomplete; a programme announcement alone does not establish an appearance.</li>
-<li><strong>Build a small static web publication.</strong> Reuse your TEI files and images from Session 2 to build and inspect a source viewer together. Maintain requirements, the data description and checks as project knowledge (Knowledge Engineering), and select the relevant context for each task (Context Engineering).</li>
-<li id="session-4"><strong>Continue independently in Session 4.</strong> Choose a requirement for your own research tool or extend the guided example. Supply the relevant context, inspect the agent’s changes and verify the result against the data. Record what works and what remains uncertain.</li>
-</ul>
-<p>For the later source-viewer exercise, keep your Session 2 TEI files and images together with their relative image paths intact. More materials contains the optional PDF-to-PNG preparation exercises and the complete TEI reference bundle.</p>`,
-};
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
   const items = [[`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
@@ -86,10 +71,14 @@ ${resourceList(s.downloads)}
 
 const section = s => `<section id="${s.id}" class="session session-row">
 <img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async">
-<div class="session-content">
+<div class="session-content"${s.id === 'session-3' ? ' id="session-4"' : ''}>
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
+<p><strong>${escape(s.subtitle)}</strong></p>
 <div class="material-links">${materialGroup(s, 'slides')}${materialGroup(s, 'notes')}</div>
-${s.description ? `<p>${escape(s.description)}</p>\n` : ''}${s.exercise ? `${exercises[s.exercise]()}\n` : ''}${sessionDownloads(s)}
+<p>${escape(s.description)}</p>
+<h3>Learning objectives</h3>
+<ul>${s.objectives.map(objective => `<li>${escape(objective)}</li>`).join('')}</ul>
+${sessionDownloads(s)}
 </div>
 </section>`;
 
