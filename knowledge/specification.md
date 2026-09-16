@@ -67,6 +67,8 @@ Direct slide links. Plain preview and PDF links provide access to the current de
 
 Lecture notes as links. The earlier embedded Google Docs preview was the heaviest element on every page and the likeliest to fail. A preview link and the PDF export replace it.
 
+Every lecture-notes link group has a visible AI-assistance disclosure, also associated with the preview and PDF links through aria-describedby. Session 2 and Sessions 3–4 additionally show “Work in progress” and explain that sections may be incomplete and are being revised. Session 1 carries no completion claim. The draft status is controlled by notesInProgress in scripts/sessions.mjs.
+
 The course page owns all material navigation. The removed M³GIM HTML generator has no remaining callers; the source teaching files and archives remain in `downloads/m3gim-fulltext/`. The separate map-demo application is excluded from the course downloads and shared archive at the user's request. The Session 2 mobility task, prototype exploration and independent source files remain available.
 
 ## Acceptance

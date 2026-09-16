@@ -15,6 +15,10 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · Bearbeitungsstand der Lecture Notes sichtbar
+
+Bei allen Lecture Notes steht auf der Kursseite ein Hinweis auf KI-Unterstützung. Session 2 und Sessions 3–4 sind zusätzlich als Work in progress gekennzeichnet; der Hinweis benennt mögliche unvollständige Abschnitte und laufende Überarbeitung. Session 1 erhält keine zusätzliche Fertigstellungsaussage. Die Hinweise gelten für Vorschau und PDF-Link.
+
 ## 2026-09-16 · Hands-ons und Materialzugänge konsolidiert
 
 Die Website ordnet Materialien den aktuellen Folienaufträgen zu. Session 1 erhält die Schulnachricht als Hauptquelle einschließlich Bild im IIIF-Paket. Session 2 verwendet die Starter-CSV für ein Chat-Artefakt; die historischen CSV-Links und Mengenangaben auf Folien 28/29 wurden direkt korrigiert. Sessions 3 und 4 führen von der Prototyperkundung und CSV-Übung zum Abschlussprojekt mit zwei Wegen. PDFs führen über TEI zu einer Edition; der vollständige veröffentlichte M³GIM-Graph ermöglicht ein Forschungsdashboard. Die fünf vorhandenen Projektfolien und die Abschlussankündigung in Session 2 beziehen sich auf knowledge/data.md und knowledge/research.md. Der Graphsnapshot entspricht seiner gepinnten Quelle bytegenau. Optionale Vorbereitung und eigenständige Beispiele sind getrennt beschriftet; überholte Übergaben und Hands-on-Nummern wurden in den lokalen Anleitungen und Archivkopien bereinigt. Die historischen Drive-Anleitungsdateien bleiben Herkunftsmaterial, die aktuellen Downloads liegen auf der Kurswebsite.

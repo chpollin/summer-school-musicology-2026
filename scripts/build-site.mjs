@@ -24,7 +24,8 @@ function materialGroup(s, kind) {
   const icon = slides ? '<path d="M3 4h18v12H3zM12 16v5m-4 0h8"/>' : '<path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/>';
   const svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${icon}</svg>`;
   const url = slides ? slidesUrl(s) : notesUrl(s);
-  return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}">${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF">PDF</a></span>`;
+  const description = slides ? '' : ` aria-describedby="${s.id}-notes-status"`;
+  return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}"${description}>${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF"${description}>PDF</a></span>`;
 }
 
 function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
@@ -77,6 +78,7 @@ const section = s => `<section id="${s.id}" class="session session-row">
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
 <p><strong>${escape(s.subtitle)}</strong></p>
 <div class="material-links">${materialGroup(s, 'slides')}${materialGroup(s, 'notes')}</div>
+<p class="small notes-status" id="${s.id}-notes-status">Lecture notes written with AI assistance.${s.notesInProgress ? ' <strong>Work in progress.</strong> Sections may be incomplete and are being revised.' : ''}</p>
 <p>${escape(s.description)}</p>
 <h3>Learning objectives</h3>
 <ul>${s.objectives.map(objective => `<li>${escape(objective)}</li>`).join('')}</ul>

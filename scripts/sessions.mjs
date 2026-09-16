@@ -53,6 +53,7 @@ export const sessions = [
       'Gain initial hands-on experience using LLMs in research data workflows.',
     ],
     slides: '1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc', notes: '18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM',
+    notesInProgress: true,
     activities: [
       {
         id: 'session-2-transcription', title: 'Transcribe a Facsimile',
@@ -96,6 +97,7 @@ export const sessions = [
       'Practise agentic engineering by inspecting tool use, checking results and refining instructions.',
     ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
+    notesInProgress: true,
     activities: [
       {
         id: 'session-3-exploration', title: 'Exploring M³GIM',
