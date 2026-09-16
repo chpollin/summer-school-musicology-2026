@@ -9,13 +9,14 @@ export const prep = 'https://docs.google.com/presentation/d/19zybf1mABP3qM65GXv0
 export const data = 'https://drive.google.com/drive/folders/1Q5iiPsBfiaAWOK7Tuy9Z5LyiO0EUaZFJ';
 export const practice = 'https://drive.google.com/drive/folders/1KhFwP1L1iUO6PBKQZGP4p8rxU2vZSfG0';
 
-// Downloads and additional resources use repository-relative URLs.
+// Downloads use repository-relative URLs.
+// A session with `published: false` stays out of the course page until its day; its legacy URLs still resolve to the course page.
+// Hands-on entries list only exercises with material to download or open; instructions stay in the slides.
 export const sessions = [
   {
     id: 'session-1', n: 1,
     title: 'Making Estate Materials Digitally Accessible',
     subtitle: 'Research Data Workflows in Stefan Zweig Digital',
-    description: 'Explore how Stefan Zweig Digital turns estate materials into accessible research data through metadata standards and digital workflows.',
     objectives: [
       'Understand what research data is and why it matters.',
       'Understand research data workflows and the role of metadata standards.',
@@ -24,23 +25,11 @@ export const sessions = [
     slides: '1vMd2UfI9MydUEN6MMOYT0LZcJ6MYv2DmK9AQbyzJ7xc', notes: '1DU6UbE4xURFZ3fkPn7MD2loZ2naPysFYX1ypeI0D_Kg',
     activities: [
       {
-        id: 'session-1-research-data', title: 'What Counts as Research Data, and Who Decides?',
-        note: 'Discuss the source and the questions in the slides. No download is required.',
-        resources: [{ url: 'https://gams.uni-graz.at/o:szd.947', label: 'Open the Clarissa source' }],
-      },
-      {
-        id: 'session-1-xml-reading', title: 'Reading an XML Metadata Record',
-        note: 'Read the XML example in the slides. No additional file is required.',
-        resources: [],
-      },
-      {
         id: 'session-1-schulnachricht', title: 'Describe the “Schulnachricht” in XML',
-        note: 'Use the source image and the template in the slides. Save your description as metadata.xml for the next exercise.',
         resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
       },
       {
         id: 'session-1-iiif', title: 'From XML to IIIF with Python',
-        note: 'Continue with your XML description. The package includes the Schulnachricht image, example XML, a script and instructions.',
         resources: [
           { url: 'downloads/xml-iiif-workshop.zip', label: 'XML to IIIF · complete exercise package · ZIP' },
           { url: 'tools/iiif-viewer/', label: 'Open the IIIF viewer' },
@@ -48,47 +37,24 @@ export const sessions = [
       },
       {
         id: 'session-1-tei', title: 'Encode the Schulnachricht in TEI XML with LLM Assistance',
-        note: 'Use the slide prompt, check the transcription against the image and save schulnachricht.xml.',
         resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
       },
       {
         id: 'session-1-rdf', title: 'Represent a Source Image in RDF with LLM Assistance',
-        note: 'Use the same image and the slide prompt. Save the generated Turtle as source-draft.ttl.',
         resources: [{ url: 'downloads/shared/schulnachricht.jpg', label: 'Source image · Schulnachricht · JPG' }],
       },
-      {
-        id: 'session-1-rdf-review', title: 'Improve the RDF Model with LLM Assistance',
-        note: 'Continue with your source-draft.ttl and the Schulnachricht image. Review the proposed changes using the slides.',
-        resources: [],
-      },
-    ],
-    appendix: [
-      {
-        id: 'session-1-appendix-iiif', title: 'Explore IIIF Manifests in Mirador',
-        note: 'Appendix exercise. The manifest links and comparison questions are in the slides.',
-        resources: [],
-      },
-      {
-        id: 'session-1-appendix-dc', title: 'Analyse a Dublin Core Record',
-        note: 'Appendix exercise. Use the Dublin Core record and questions in the slides.',
-        resources: [],
-      },
-    ],
-    additional: [
-      { url: 'downloads/pdf-to-images.zip', label: 'Optional preparation · PDF pages as images · ZIP', note: 'Standalone conversion practice; not required for the Session 1 exercises.' },
-      { url: drive, label: 'Original course materials on Google Drive' },
     ],
   },
   {
     id: 'session-2', n: 2,
     title: 'Large Language Models for Research Data Workflows',
     subtitle: 'An Introduction',
-    description: 'Explore how LLMs can help extract, structure and verify research data through practical work with historical sources.',
     objectives: [
       'Develop a basic understanding of large language models (LLMs).',
       'Understand the fundamentals of prompt and context engineering.',
       'Gain initial hands-on experience using LLMs in research data workflows.',
     ],
+    published: false,
     slides: '1GUzZEVdCq2gRphzXIsnZ1Gg_4bGdqYy_aiwl8kErJUc', notes: '18DUWW5ju8R827mf7LNPU_zSoxd2R8WF8ienI8fCcFrM',
     notesInProgress: true,
     activities: [
@@ -112,35 +78,22 @@ export const sessions = [
         ],
       },
     ],
-    additional: [
-      { url: 'downloads/shared/szd-facsimile-0.jpg', label: 'Transcription demonstration · individual image · JPG' },
-      { url: 'downloads/shared/szd-facsimile-1.jpg', label: 'Transcription exercise · individual image · JPG' },
-      { url: 'downloads/m3gim-fulltext/m3gim-reference.zip', label: 'From Facsimiles to TEI XML · reference solutions · ZIP' },
-      { url: 'downloads/m3gim-fulltext/reference.json', label: 'From Facsimiles to TEI XML · reference transcriptions · JSON' },
-      { url: 'downloads/m3gim-fulltext/metadata.csv', label: 'From Facsimiles to TEI XML · reference metadata · CSV' },
-      { url: `${prep}/preview`, label: 'Technical preparation guide' },
-    ],
   },
   {
     id: 'session-3', n: '3 and 4',
     label: 'Sessions 3 and 4',
     title: 'Large Language Models for Research Data Workflows',
     subtitle: 'Hands-On Practice',
-    description: 'Explore M³GIM, try an AI harness with a small CSV, then use Promptotyping to build a digital edition or research dashboard.',
     objectives: [
       'Use LLMs for coding and build small research tools through Promptotyping.',
       'Understand AI agents and the role of an AI harness.',
       'Apply context and knowledge engineering to research tasks.',
       'Practise agentic engineering by inspecting tool use, checking results and refining instructions.',
     ],
+    published: false,
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     notesInProgress: true,
     activities: [
-      {
-        id: 'session-3-exploration', title: 'Exploring M³GIM',
-        note: 'Investigate the prototype, inspect source evidence and turn a gap into a research requirement. No download is required.',
-        resources: [{ url: 'https://dhcraft.org/m3gim', label: 'Open the M³GIM prototype' }],
-      },
       {
         id: 'session-3-harness', title: 'AI Harness and M³GIM Data',
         note: 'Use the 12-statement CSV to inspect data and build one interactive view with plain HTML, CSS and JavaScript. Run it locally; use no libraries, frameworks or build tools. Prompts and preview instructions are in the slides.',
@@ -156,16 +109,13 @@ export const sessions = [
         ],
       },
     ],
-    additional: [
-      { url: 'downloads/m3gim-fulltext/m3gim-next-session.zip', label: 'Final project · reference transcriptions, TEI and page images · ZIP', companion: { url: 'downloads/m3gim-fulltext/NEXT-SESSION.md', label: 'Reference package contents and reuse · Markdown' }, note: 'Optional fallback with seven documents and 40 scans. Use your own work where available.' },
-      { url: 'downloads/m3gim-jsonld-example.jsonld', label: 'M³GIM exploration · single-record JSON-LD example', companion: { url: 'downloads/m3gim-jsonld-example-source.md', label: 'Example explanation and source' } },
-      { url: 'downloads/python-vscode.zip', label: 'Optional preparation · run PDF conversion in VS Code · ZIP' },
-      { url: 'downloads/ai-harness.zip', label: 'Optional preparation · delegate PDF conversion to an AI harness · ZIP', note: 'Both conversion packages contain the same script and seven PDFs.' },
-      { url: 'downloads/shared/prompts.md', label: 'Optional project example · Bayreuth Cast Explorer prompts', note: 'Use with suitable programme pages from the source PDFs.' },
-      { url: 'downloads/shared/plakattext-pl04.txt', label: 'Optional project example · poster text · TXT', note: 'Text input for an extraction or edition experiment.' },
-      { url: 'downloads/shared/orte-lookup.csv', label: 'Optional project example · place lookup · CSV', note: 'A separate place-data example; verify matches before combining it with another dataset.' },
-      { url: 'downloads/shared/personenindex-uebung.xlsx', label: 'Optional project example · person index · XLSX', note: 'A separate exercise for inspecting and structuring person data.' },
-      { url: 'downloads/shared-materials.zip', label: 'Optional examples · collected files · ZIP', note: 'The examples above plus the Schulnachricht and Zweig images; choose only the files relevant to your project.' },
-    ],
+  },
+];
+
+// Hands-on tools built for this course; listed in their own section at the end of the course page.
+export const tools = [
+  {
+    url: 'tools/iiif-viewer/', title: 'From XML to IIIF viewer',
+    note: 'Built for the Session 1 hands-on with Claude Fable 5.1. Select your XML description or generated IIIF manifest with its page images and see them as a digital object in Mirador, entirely in your browser.',
   },
 ];

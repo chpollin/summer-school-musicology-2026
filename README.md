@@ -7,7 +7,7 @@ Gemeinsame Lehrwebsite für Christophers vier Sessions am 16. und 17. September 
 ## Struktur
 
 - `index.html`: die Kursseite mit je einer Sessionzeile aus Titelbild links und Informationen rechts, mobil untereinander, sowie einem Downloadbereich direkt bei jeder Session.
-- `materials/m3gim-fulltext.html`, `sessions/` und `materials/index.html`: Weiterleitungen auf die Kursseite. Die frühere M³GIM-URL führt zu Session 2, ihr Anker `#reference` zu den optionalen Referenzen und `#next-session` zum Abschlussprojekt.
+- `materials/m3gim-fulltext.html`, `sessions/` und `materials/index.html`: Weiterleitungen auf die Kursseite. Die frühere M³GIM-URL führt zur TEI-Übung in Session 2 und ihr Anker `#next-session` zum Abschlussprojekt.
 - `tools/iiif-viewer/`: XML-/IIIF-Dateiauswahl und Mirador.
 - `downloads/`: Python-/IIIF-Paket, PDF-zu-Bildern-Übung und M³GIM-Paket.
 - `assets/`: Stylesheet, Favicon und die Titelfolien unter `assets/slides/`; die neuen Illustrationen und ihre Generierungsprompts liegen unter `assets/illustrations/`.

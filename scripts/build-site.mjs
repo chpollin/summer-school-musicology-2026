@@ -7,7 +7,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { viewerPage } from './viewer-page.mjs';
-import { course, event, sessions, site, venue } from './sessions.mjs';
+import { course, event, sessions, site, tools, venue } from './sessions.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const siteDescription = "Slides, lecture notes, hands-on tools and downloads for Christopher Pollin's sessions at Summer School Musicology 2026.";
@@ -16,6 +16,10 @@ const slidesUrl = s => `https://docs.google.com/presentation/d/${s.slides}`;
 const sessionLabel = s => s.label ?? `Session ${s.n}`;
 const notesUrl = s => `https://docs.google.com/document/d/${s.notes}`;
 const downloadIcon = '<svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>';
+const published = sessions.filter(s => s.published !== false);
+const isPublished = id => published.some(s => s.id === id);
+// Anchors of unpublished sessions do not exist yet, so their legacy URLs land on the course page itself.
+const anchor = id => isPublished(id.replace(/^session-4$/, 'session-3')) ? `../index.html#${id}` : '../index.html';
 const outputs = new Map();
 
 function materialGroup(s, kind) {
@@ -25,12 +29,17 @@ function materialGroup(s, kind) {
   const svg = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${icon}</svg>`;
   const url = slides ? slidesUrl(s) : notesUrl(s);
   const description = slides ? '' : ` aria-describedby="${s.id}-notes-status"`;
-  return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}"${description}>${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF"${description}>PDF</a></span>`;
+  return `<span class="material-group">${svg}<a href="${url}/preview" aria-label="${sessionLabel(s)} ${label}"${description}>${label}</a><a class="pdf-link" href="${url}/${slides ? 'export/pdf' : 'export?format=pdf'}" aria-label="${sessionLabel(s)} ${label} PDF"${description}>PDF</a>${slides ? '' : aiNotice(s)}</span>`;
 }
 
-function frame({ title, content, base, description = siteDescription, current = '', stylesheet = '', scripts = '' }) {
-  const items = [[`${base}tools/iiif-viewer/`, 'IIIF viewer', 'viewer']];
-  const nav = items.map(([href, label, key]) => `<a href="${href}"${key && key === current ? ' aria-current="page"' : ''}>${label}</a>`).join('');
+// The disclosure sits at the notes links it applies to: a native tooltip for pointer users, hidden text for assistive technology.
+function aiNotice(s) {
+  const text = `Lecture notes written with AI assistance.${s.notesInProgress ? ' Work in progress: sections may be incomplete and are being revised.' : ''}`;
+  const sparkle = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 17l.7 2.3L8 20l-2.3.7L5 23l-.7-2.3L2 20l2.3-.7z"/></svg>';
+  return `<span class="ai-notice" tabindex="0" title="${escape(text)}">${sparkle}<span class="visually-hidden" id="${s.id}-notes-status">${escape(text)}</span></span>`;
+}
+
+function frame({ title, content, base, description = siteDescription, stylesheet = '', scripts = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -49,7 +58,7 @@ function frame({ title, content, base, description = siteDescription, current = 
 ${stylesheet ? `<link rel="stylesheet" href="${base}${stylesheet}">\n` : ''}</head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
-<header class="site-header"><div class="wrap header-inner"><a class="brand" href="${base}index.html">${escape(event)}</a><nav aria-label="Main navigation">${nav}</nav></div></header>
+<header class="site-header"><div class="wrap header-inner"><a class="brand" href="${base}index.html">${escape(event)}</a></div></header>
 <main class="wrap" id="content">
 ${content}
 </main>
@@ -69,8 +78,6 @@ const activityList = activities => activities.map(a => `<div class="activity" id
 const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} hands-on materials">
 <h3 class="downloads-label">${downloadIcon}Hands-on materials</h3>
 ${activityList(s.activities)}
-${s.appendix?.length ? `<details><summary>Appendix exercises<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${activityList(s.appendix)}</details>` : ''}
-<details${s.id === 'session-2' ? ' id="session-2-reference"' : ''}><summary>Optional preparation and reference materials<span class="visually-hidden"> for ${sessionLabel(s)}</span></summary>${resourceList(s.additional)}</details>
 </div>`;
 
 const section = s => `<section id="${s.id}" class="session session-row">
@@ -79,8 +86,6 @@ const section = s => `<section id="${s.id}" class="session session-row">
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
 <p><strong>${escape(s.subtitle)}</strong></p>
 <div class="material-links">${materialGroup(s, 'slides')}${materialGroup(s, 'notes')}</div>
-<p class="small notes-status" id="${s.id}-notes-status">Lecture notes written with AI assistance.${s.notesInProgress ? ' <strong>Work in progress.</strong> Sections may be incomplete and are being revised.' : ''}</p>
-<p>${escape(s.description)}</p>
 <h3>Learning objectives</h3>
 <ul>${s.objectives.map(objective => `<li>${escape(objective)}</li>`).join('')}</ul>
 ${sessionDownloads(s)}
@@ -91,7 +96,11 @@ const home = `<div class="hero">
 <h1>Research Data Workflows<br>and LLMs</h1>
 <p class="byline">Christopher Pollin · Digital Humanities Craft · ${escape(venue)} · 16 and 17 September 2026</p>
 </div>
-<div id="downloads"><div id="sessions">${sessions.map(section).join('\n')}</div></div>
+<div id="downloads"><div id="sessions">${published.map(section).join('\n')}</div></div>
+<section id="tools" class="tools">
+<h2>Tools</h2>
+${tools.map(t => `<div class="tool"><h3><a href="${escape(t.url)}">${escape(t.title)}</a></h3><p>${escape(t.note)}</p></div>`).join('\n')}
+</section>
 `;
 outputs.set('index.html', frame({ title: course, content: home, base: '' }));
 
@@ -105,13 +114,13 @@ const stub = (target, label) => `<!doctype html>
 <body><p>This page has moved to <a href="${target}">${escape(label)}</a>.</p></body>
 </html>
 `;
-for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(`../index.html#${s.id}`, sessionLabel(s)));
-outputs.set('sessions/session-4.html', stub('../index.html#session-4', 'Sessions 3 and 4'));
+for (const s of sessions) outputs.set(`sessions/${s.id}.html`, stub(anchor(s.id), sessionLabel(s)));
+outputs.set('sessions/session-4.html', stub(anchor('session-4'), 'Sessions 3 and 4'));
 outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads'));
 outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI XML · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
-<body><p>The exercise materials are now on the course page. Continue to <a href="../index.html#session-2">Session 2</a>, <a href="../index.html#session-2-reference">the optional references</a> or <a href="../index.html#session-3">Sessions 3 and 4</a>.</p></body></html>\n`);
-outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', current: 'viewer', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
+<body><p>The exercise materials are now on the course page. Continue to <a href="${anchor('session-2')}">Session 2</a> or <a href="${anchor('session-3')}">Sessions 3 and 4</a>.</p></body></html>\n`);
+outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
 
 function brokenLinks(rel, html) {
   const problems = [];

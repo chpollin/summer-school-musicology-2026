@@ -8,12 +8,16 @@ method:
   url: https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin
 status: active
 created: 2026-09-15
-updated: 2026-09-15
+updated: 2026-09-16
 language: en
 related: [handoff, project, specification]
 ---
 
 # Journal
+
+## 2026-09-16 · Session 1 allein sichtbar, Hands-ons auf Downloads reduziert
+
+Session 2 und Sessions 3 und 4 tragen `published: false` und bleiben bis zu ihrem Tag von der Kursseite fern; ihre Redirect-Stubs zeigen solange ohne Anker auf die Kursseite. Der Beschreibungssatz unter dem Untertitel entfällt bei allen Sessions, ebenso der Anhang und der Abschnitt „Optional preparation and reference materials“; die Referenzlösungen bleiben unter `downloads/` erreichbar. Der KI-Hinweis zu den Lecture Notes ist ein Icon mit Tooltip direkt hinter dem Notes-Link. Jedes Hands-on ist eine umbrechende Zeile aus Titel und Downloads. Der Viewer-Link wanderte aus dem Header in einen Abschnitt „Tools“ am Seitenende mit Hinweis auf Zweck und Herkunft. Hands-on-Listen führen nur noch Übungen mit Download oder Tool, ohne Anleitungssätze, die Anleitungen stehen in den Folien. In Session 1 entfielen damit die Diskussion, das XML-Lesen, die RDF-Überarbeitung und der Anhang, in Sessions 3 und 4 die M³GIM-Exploration. Die Hinweistexte der noch unveröffentlichten Sessions sind unverändert und werden vor der Freischaltung geprüft. Offen: Flag entfernen und `node scripts/build-site.mjs` ausführen, sobald Session 2 beziehungsweise Sessions 3 und 4 freigeschaltet werden.
 
 ## 2026-09-16 · Aktuelle Hands-on-Folge und vereinfachte TEI-Übung
 
