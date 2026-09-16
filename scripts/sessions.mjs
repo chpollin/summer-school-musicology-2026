@@ -71,7 +71,7 @@ export const sessions = [
     ],
     slides: '1IOCdHFnlxyNuMwiyUNviyQ53KwD13k4_tRXpieXHgOo', notes: '138Kl6CCtpZI3BM6VHGEgpFuZPVZJTfJT5FH8ASIdHPA',
     downloads: [
-      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Start here · AI Harness data explorer · input CSV', companion: { url: 'downloads/m3gim-harness-exercise.txt', label: 'Two prompts, local preview and checks · TXT' }, note: 'The same CSV as in Session 2. Put it in an empty folder and open that folder in your harness.' },
+      { url: 'downloads/m3gim-mobility-evidence.csv', label: 'Start here · AI Harness data explorer · input CSV', note: 'The same CSV as in Session 2. Follow the hands-on instructions in the slides.' },
       { url: 'downloads/m3gim-fulltext/NEXT-SESSION.md', label: 'Static web publication · instructions · Markdown', note: 'Reuse your TEI files and images from Session 2.' },
     ],
     additional: [

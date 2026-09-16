@@ -15,6 +15,10 @@ related: [handoff, project, specification]
 
 # Journal
 
+## 2026-09-16 · Harness-Anleitung ausschließlich auf Folien
+
+Auf Nutzerwunsch entfallen die separate TXT-Anleitung und ihr Downloadlink. Die Kursseite stellt die CSV bereit; Prompts und Startanleitung gehören auf die Folien. Die bisherige TXT-Fassung bleibt über Git nachvollziehbar.
+
 ## 2026-09-16 · Sessionübersicht auf Lernziele verdichtet
 
 Die vollständigen Sessiontitel und Untertitel folgen den Nutzerangaben. Jede Session zeigt einen beschreibenden Satz und die zugehörigen Lernziele; ausführliche Übungsschritte stehen in den verlinkten Anleitungen. Die doppelte Pflege der Übungstexte im Seitengenerator entfällt. Materiallinks und der Session-4-Anker bleiben erhalten.
