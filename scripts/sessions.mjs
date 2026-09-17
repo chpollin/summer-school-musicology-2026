@@ -56,7 +56,11 @@ export const sessions = [
     activities: [
       {
         id: 'session-2-transcription', title: 'Transcribe a Facsimile with Gemini 3.8 Flash',
-        resources: [],
+        resources: [
+          { url: 'downloads/m3gim-fulltext/png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p001.png', label: 'Bayreuth 1953 · scan 1 · PNG' },
+          { url: 'downloads/m3gim-fulltext/png/UAKUG_NIM_005_137_3/UAKUG_NIM_005_137_3_p002.png', label: 'Bayreuth 1953 · scan 2 · PNG' },
+          { url: 'downloads/m3gim-fulltext/metadata.csv', label: 'Document metadata · CSV' },
+        ],
       },
       {
         id: 'session-2-mobility', title: 'Exploring Research Data with LLMs',

@@ -94,3 +94,7 @@ Eine Prüfung des ersten Standes fand zwei Designsysteme, vierfache Wiederholung
 ## 2026-09-15 · integriert · Repository mit Codex angelegt
 
 Aus den Lehrmaterialien auf Google Drive und den Lehrpaketen im Vault baute Codex das Repository mit einer mehrseitigen Site, dem IIIF-Viewer mit Mirador, den PDF-zu-Bild- und IIIF-Paketen und der M³GIM-Volltextübung, später um Metadaten und TEI erweitert. Dies war der erste öffentliche Stand, mit deutschem README und deutschen Commit-Nachrichten.
+
+## 2026-09-17 · integriert · Hands-on 1 auf das Bayreuther Programmheft umgestellt
+
+Die Gemini-Transkriptionsübung in Session 2 arbeitet mit dem Programmheft UAKUG_NIM_005_137_3 (Neunte Symphonie, Bayreuth 1953) statt mit dem Zweig-Faksimile. Die zwei Scans liegen als Einzel-PNGs unter `downloads/m3gim-fulltext/png/`, aus `m3gim-png.zip` kopiert, und sind zusammen mit `metadata.csv` bei Hands-on 1 verlinkt. Den Kontext des Prompts tragen die Teilnehmenden aus der Metadatenzeile selbst ein. Dasselbe Dokument ist Startpunkt der TEI-Übung.
