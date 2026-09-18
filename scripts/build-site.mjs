@@ -2,8 +2,8 @@
  * Generate the course page, viewer and redirect stubs from scripts/sessions.mjs.
  * `--check` renders without writing, compares with the committed files and verifies every local link.
  */
-import { existsSync, readdirSync, readFileSync, realpathSync } from 'node:fs';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { existsSync, readdirSync, readFileSync, realpathSync, statSync } from 'node:fs';
+import { copyFile, mkdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { viewerPage } from './viewer-page.mjs';
@@ -39,7 +39,7 @@ function aiNotice(s) {
   return `<span class="ai-notice" tabindex="0" title="${escape(text)}">${sparkle}<span class="visually-hidden" id="${s.id}-notes-status">${escape(text)}</span></span>`;
 }
 
-function frame({ title, content, base, description = siteDescription, stylesheet = '', scripts = '' }) {
+function frame({ title, content, base, page = '', description = siteDescription, stylesheet = '', scripts = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -48,12 +48,18 @@ function frame({ title, content, base, description = siteDescription, stylesheet
 <title>${escape(title === course ? course : `${title} · ${course}`)}</title>
 <meta name="description" content="${escape(description)}">
 <meta name="theme-color" content="#6240a2">
+<link rel="canonical" href="${site}${page}">
 <link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${escape(title)}">
 <meta property="og:description" content="${escape(description)}">
+<meta property="og:url" content="${site}${page}">
 <meta property="og:image" content="${site}assets/slides/session-1.png">
+<meta property="og:image:alt" content="Making Estate Materials Digitally Accessible · Research Data Workflows in Stefan Zweig Digital">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escape(title)}">
+<meta name="twitter:description" content="${escape(description)}">
+<meta name="twitter:image" content="${site}assets/slides/session-1.png">
 <link rel="stylesheet" href="${base}assets/site.css">
 ${stylesheet ? `<link rel="stylesheet" href="${base}${stylesheet}">\n` : ''}</head>
 <body>
@@ -64,7 +70,7 @@ ${content}
 </main>
 <footer><div class="wrap footer-inner">
 <p>Christopher Pollin · <a href="https://dhcraft.org/">Digital Humanities Craft</a></p>
-<p>Teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a></p>
+<p>Original teaching material <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Code <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE">MIT</a> · <a href="https://github.com/chpollin/summer-school-musicology-2026">Source code</a><br>Archival scans and other third-party material retain their own rights. <a href="https://github.com/chpollin/summer-school-musicology-2026/blob/main/LICENSE-CONTENT.md">Reuse conditions</a></p>
 </div></footer>
 ${scripts}</body>
 </html>
@@ -76,12 +82,13 @@ const resourceList = resources => `<ul class="resources">${resources.map(r => `<
 const activityList = activities => activities.map(a => `<div class="activity" id="${escape(a.id)}"><h4>${escape(a.title)}</h4>${a.resources.length ? resourceList(a.resources) : ''}</div>`).join('\n');
 
 const sessionDownloads = s => `<div class="downloads" aria-label="${sessionLabel(s)} hands-on materials">
-<div class="downloads-head"><h3 class="downloads-label">Hands-on materials</h3><a class="button" href="${escape(s.package)}" download>${downloadIcon}All materials · ZIP</a></div>
+<div class="downloads-head"><h3 class="downloads-label">Hands-on materials</h3><a class="button" href="${escape(s.package)}" aria-label="${sessionLabel(s)} materials ZIP" download>${downloadIcon}All materials · ZIP · ${(statSync(path.join(root, s.package)).size / 1e6).toFixed(1)} MB</a></div>
 ${activityList(s.activities)}
 </div>`;
 
-const section = s => `<section id="${s.id}" class="session session-row">
-<img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async">
+const section = (s, index) => `<section id="${s.id}" class="session session-row">
+<picture class="session-picture"><source type="image/webp" srcset="assets/slides/${s.id}-480.webp 480w, assets/slides/${s.id}-960.webp 960w" sizes="(max-width: 50rem) 92vw, (max-width: 80rem) 29vw, 362px">
+<img class="session-image" src="assets/slides/${s.id}.png" width="960" height="540" alt="" decoding="async" loading="${index === 0 ? 'eager' : 'lazy'}"${index === 0 ? ' fetchpriority="high"' : ''}></picture>
 <div class="session-content"${s.aliases?.length ? ` id="${escape(s.aliases[0])}"` : ''}>
 <h2>${sessionLabel(s)} · ${escape(s.title)}</h2>
 <p><strong>${escape(s.subtitle)}</strong></p>
@@ -119,13 +126,16 @@ outputs.set('materials/index.html', stub('../index.html#downloads', 'Downloads')
 outputs.set('materials/m3gim-fulltext.html', `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>From Facsimiles to TEI XML · moved</title><script type="module" src="../assets/material-redirect.js"></script></head>
 <body><p>The exercise materials are now on the course page. Continue to <a href="${anchor('session-2')}">Session 2</a> or <a href="${anchor('session-3')}">Sessions 3 and 4</a>.</p></body></html>\n`);
-outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF viewer', content: viewerPage(), base: '../../', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
+outputs.set('tools/iiif-viewer/index.html', frame({ title: 'From XML to IIIF viewer', content: viewerPage(), base: '../../', page: 'tools/iiif-viewer/', description: 'Teaching tool: open your XML metadata or IIIF manifest with its page images in Mirador, entirely in the browser.', stylesheet: 'assets/viewer.css', scripts: '<script type="module" src="app.js"></script>\n' }));
 
 function brokenLinks(rel, html) {
   const problems = [];
-  const ids = new Set([...html.matchAll(/ id="([^"]+)"/g)].map(m => m[1]));
+  const idList = [...html.matchAll(/ id="([^"]+)"/g)].map(m => m[1]);
+  const ids = new Set(idList);
+  if (ids.size !== idList.length) problems.push(`${rel}: duplicate HTML IDs`);
   // Attributes inside real tags only, so escaped code samples such as &lt;page xlink:href="…"/&gt; are not checked as links.
-  for (const [, raw] of html.matchAll(/<[a-z][^>]*?\s(?:href|src)="([^"]+)"/g)) {
+  const urls = [...html.matchAll(/<[a-z][^>]*>/g)].flatMap(([tag]) => [...tag.matchAll(/\s(href|src|srcset)="([^"]+)"/g)].flatMap(([, attribute, value]) => attribute === 'srcset' ? value.split(',').map(item => item.trim().split(/\s+/)[0]) : [value]));
+  for (const raw of urls) {
     const url = raw.replaceAll('&amp;', '&');
     if (/^(https?:|mailto:|data:)/.test(url)) continue;
     const [target, fragment] = url.split('#');
@@ -145,6 +155,13 @@ function brokenLinks(rel, html) {
 
 const check = process.argv.includes('--check');
 const problems = [];
+const imageAlias = path.join(root, 'downloads/schulnachricht.jpg');
+const imageSource = path.join(root, 'downloads/shared/schulnachricht.jpg');
+if (check) {
+  if (!existsSync(imageAlias) || !readFileSync(imageAlias).equals(readFileSync(imageSource))) problems.push('Legacy Schulnachricht image differs from its source');
+} else {
+  await copyFile(imageSource, imageAlias);
+}
 for (const [rel, raw] of outputs) {
   const file = path.join(root, rel);
   // Text read from the exercise package may carry CRLF line endings; the generated pages are always LF.

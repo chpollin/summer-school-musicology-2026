@@ -4,7 +4,7 @@ Guidance for Claude Code when working in this repository.
 
 ## What this repository is
 
-Static course website for Christopher Pollin's four sessions at Summer School Musicology 2026 (Graz, 16 and 17 September 2026), published by GitHub Pages straight from the root of `main` without a build step on GitHub. Generated HTML, title-slide images and download ZIPs are therefore committed. Slides and lecture notes stay as Google Slides and Docs on Drive and are only linked. Project knowledge follows the Promptotyping convention under `knowledge/`, entry point `knowledge/INDEX.md`, work diary `knowledge/journal.md`. Consult `knowledge/specification.md` before conceptual changes, it records the design decisions. Course page texts and teaching instructions are English, README and journal are German.
+Static course website for Christopher Pollin's four sessions at Summer School Musicology 2026 (Graz, 16 and 17 September 2026), published by GitHub Pages straight from the root of `main` without a build step on GitHub. Generated HTML, title-slide images and download ZIPs are therefore committed. Slides and lecture notes stay as Google Slides and Docs on Drive and are only linked. Project knowledge follows the Promptotyping convention under `knowledge/`, entry point `knowledge/INDEX.md`, work diary `knowledge/journal.md`. Consult `knowledge/specification.md` before conceptual changes. Course text, teaching instructions and README are English; the journal is German.
 
 ## Commands
 
@@ -27,7 +27,7 @@ python scripts/build-m3gim-dataset.py    # verify or refetch the pinned M3GIM JS
 
 Scripts with a PEP 723 header (`# /// script`) run with `uv run`, the others need only the standard library. `downloads/m3gim-fulltext/validate_tei.py` validates the course TEI against the bundled TEI Lite schema (`uv run validate_tei.py tei` from that folder).
 
-After any change to `scripts/sessions.mjs`, `scripts/viewer-page.mjs` or `scripts/build-site.mjs`, run the build and commit the regenerated pages. `--check` is the acceptance gate before a commit. There is no linter, typechecker or test suite beyond these scripts and the asserts inside them.
+After any change to `scripts/sessions.mjs`, `scripts/viewer-page.mjs` or `scripts/build-site.mjs`, run the build and commit the regenerated pages. `--check` is the frontend gate before a commit. `uv sync --locked` installs the pinned Python tools; `uv run --locked pytest -q` checks material packages and link validation. `scripts/check-material-links.py` verifies external course links and PDF responses. The optional pre-commit configuration applies Ruff to the maintained Python files. README contains the full command sequence.
 
 ## Architecture
 
@@ -47,5 +47,7 @@ CSS lives in `assets/site.css` as one token set on `:root` with OKLCH colours an
 - Google Drive remains the editing location of slides and notes. The site never changes their sharing settings, and slide or notes PDFs are not versioned.
 - The AI-assistance disclosure on lecture-notes links and the "Work in progress" state are driven by data in `sessions.mjs`, not by page markup.
 - Each session offers one package ZIP. Hands-on entries name the exercises without instruction sentences and link only tools or files useful on their own. Instructions belong in the slides.
+- After refreshing title PNGs, run `uv run --locked scripts/build-title-images.py session-1 session-2 session-3` to regenerate WebP variants. Preserve the legacy Schulnachricht image alias checked by the site builder.
+- The unpublished HerData and M³GIM prototypes are excluded from public course navigation. Existing teaching datasets retain their source provenance. Native Slides and Notes are edited by the author; do not remove their draft flags without evidence of completion.
 - Licence split is CC BY 4.0 for teaching material (`LICENSE-CONTENT.md`) and MIT for code (`LICENSE`). Third-party material keeps its own terms and is listed there.
 - Record substantive changes as a short entry in `knowledge/journal.md` and keep `knowledge/specification.md` in step when a decision changes.

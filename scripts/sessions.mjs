@@ -94,7 +94,7 @@ export const sessions = [
       },
       {
         id: 'final-project', title: 'Promptotyping Project: A Small Digital Edition or Research Dashboard',
-        resources: [{ url: 'https://dhcraft.org/m3gim', label: 'Open the M³GIM prototype' }],
+        resources: [{ url: 'downloads/m3gim-dataset.jsonld', label: 'Dashboard data · JSON-LD' }],
       },
     ],
   },

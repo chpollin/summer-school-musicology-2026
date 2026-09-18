@@ -1,0 +1,16 @@
+[project]
+name = "summer-school-materials"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["lxml==6.1.1", "Pillow==11.3.0"]
+
+[dependency-groups]
+dev = ["ruff==0.15.21", "pytest==8.4.2"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "PTH", "RUF"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["scripts"]

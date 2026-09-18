@@ -2,7 +2,7 @@
 
 This teaching excerpt accompanies the research-data workflow slide in Sessions 3 and 4. It includes the context needed to interpret every term in the example.
 
-The excerpt selects record `m3gim-data:NIM_003_1_1` and its Potsdam location from the [public M³GIM dataset](https://dhcraft.org/m3gim/data/m3gim.jsonld), retrieved on 15 September 2026. The original record also includes Salzburg and further description and provenance fields. The original location list is shortened to one object here, as on the slide.
+The excerpt selects record `m3gim-data:NIM_003_1_1` and its Potsdam location from the M³GIM dataset retrieved on 15 September 2026. The course also provides a [full teaching snapshot](m3gim-dataset.jsonld) with [source revision and licence](m3gim-dataset-source.txt). The original record also includes Salzburg and further description and provenance fields. The original location list is shortened to one object here, as on the slide.
 
 `@id` identifies the record, `@type` identifies the entity class, and `rico:hasOrHadLocation` connects the record with a place. The project-specific role classifies Potsdam as a performance place. `@context` maps the shortened prefixes and the terms `name` and `role` to their full identifiers.
 

@@ -2,3 +2,5 @@ __pycache__/
 .ruff_cache/
 *.pyc
 .venv/
+.artifacts/
+.pytest_cache/

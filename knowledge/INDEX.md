@@ -8,7 +8,7 @@ method:
   url: https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin
 status: active
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-09-18
 language: en
 ---
 
@@ -25,7 +25,7 @@ Entry point for the project knowledge of the course website for Christopher Poll
 
 ## Terms
 
-- M³GIM is the research project on the mobility of the singer Ira Malaniuk whose archival graph and facsimiles supply the teaching data. Its prototype is at https://dhcraft.org/m3gim.
+- M³GIM is the research project on the mobility of the singer Ira Malaniuk whose archival graph and facsimiles supply the teaching data. The course provides a pinned teaching snapshot with provenance; the unpublished prototype is not a public course resource.
 - UAKUG/NIM denotes the archive of the University of Music and Performing Arts Graz, collection Nachlass Ira Malaniuk, the source of the scans under `downloads/m3gim-fulltext/`.
 - Schulnachricht is the school report image used as the single source of the Session 1 exercises.
 - AI harness is the agentic coding environment participants use from Session 2 onwards, Claude Code or a comparable tool.

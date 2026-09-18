@@ -8,7 +8,7 @@ method:
   url: https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin
 status: active
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-09-18
 language: de
 related: [handoff, project, specification]
 ---
@@ -16,6 +16,16 @@ related: [handoff, project, specification]
 # Journal
 
 Kuratierter Provenienzindex der Kurswebsite, neueste Einträge zuerst. Den aktuellen Stand beschreiben `project.md` und `specification.md`, offene Übergabepunkte `handoff.md`.
+
+## 2026-09-18 · geprüft · Öffentliche Kursmaterialien
+
+Der Veröffentlichungsreview setzt auf dem aktuellen Remote-Stand a3ff46d auf. Der ältere lokale Checkout enthält eigenständige, uncommittete Überarbeitungen und bleibt unverändert; die Integration erfolgt in einem separaten Worktree. Die kompakte Kursseite bleibt erhalten. Der Link zum unveröffentlichten M³GIM-Prototyp ist durch den vorhandenen Lehrdatensatz ersetzt. Die Autorbereinigung der nativen Slides und Lecture Notes bleibt im Handoff.
+
+Das Session-2-Paket enthielt die für die Kontextübung benötigten Metadaten nicht. CSV, Metadatenbelege und Quellenmanifest sind ergänzt. Alle Sessionpakete enthalten die Lizenzbedingungen; der Website-Footer benennt die gesonderten Rechte an Fremdmaterial. Der Paketgenerator schreibt atomar und reproduzierbar. WebP-Varianten verringern den Bildtransfer, Downloadgrößen sind sichtbar, Social-Media-Metadaten und der ältere Schulnachricht-Bildpfad sind ergänzt. README und Aktionsschicht sind auf die englische öffentliche Dokumentation abgestimmt.
+
+Die formalen Prüfungen umfassen Seitengenerierung, Syntax, externe Materiallinks, sechs öffentliche PDF-Exporte, Paketbestand und TEI-Schema samt sämtlichen Bildverweisen. Die Kursseite wurde im Browser bei Desktopbreite und 320 Pixeln geprüft; der IIIF-Viewer öffnet sein Beispiel ohne Konsolenfehler. Die Prüfungen bestätigen technische Verwendbarkeit im genannten Umfang. Die fachliche Abnahme der Referenztranskriptionen und die angekündigten Löschungen in nativen Lehrmaterialien bleiben davon getrennt.
+
+Der erweiterte Linkcheck der Lecture-Notes-Textexporte unterscheidet reservierte Beispieladressen und lokale Übungsserver von öffentlichen Links. Die OpenAI-Quelle [Emergent tool use from multi-agent interaction](https://openai.com/index/emergent-tool-use/) antwortete im letzten Skriptlauf mit HTTP 403, war im anschließenden direkten Webabruf vollständig lesbar. Dieser Befund ist als Zugriffsbeschränkung des automatisierten Checks eingeordnet; der Skriptbericht bleibt unverändert erhalten.
 
 ## 2026-09-17 · verdichtet · Markdown-Dokumentation
 

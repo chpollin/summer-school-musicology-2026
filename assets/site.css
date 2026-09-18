@@ -79,6 +79,7 @@
   .byline { color: var(--muted); font-size: 0.9375rem; }
   .small { font-size: var(--text-s); color: var(--muted); }
   .session-image { display: block; inline-size: 100%; aspect-ratio: 16 / 9; object-fit: contain; border-radius: var(--radius-s); }
+  .session-picture { display: block; min-inline-size: 0; }
   .material-links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-block-end: var(--space-4); }
   .material-group { display: inline-flex; align-items: center; gap: var(--space-2); }
   .material-group svg { inline-size: 1.2rem; block-size: 1.2rem; color: var(--accent); flex: none; }

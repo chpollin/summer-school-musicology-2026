@@ -8,7 +8,7 @@ method:
   url: https://lisa.gerda-henkel-stiftung.de/digitale_geschichte_pollin
 status: complete
 created: 2026-09-15
-updated: 2026-09-17
+updated: 2026-09-18
 language: en
 authors: [Christopher Pollin]
 generated-with: Claude Code (Fable)
@@ -25,7 +25,7 @@ The page opens with the event, dates and venue, followed by one row per session.
 
 Every lecture-notes group carries the AI-assistance disclosure as a small icon after the PDF link, with a native tooltip for pointer users and visually hidden text that both links reference through `aria-describedby`. A session flagged `notesInProgress` additionally shows “Work in progress” and explains that sections may be incomplete and are being revised.
 
-The download area of a session is a light violet box on the right. Its head pairs the label with one button that downloads the session package, a ZIP with everything the hands-ons need. Below it every hands-on is one line with its slide title and, only where a tool or file is useful on its own, a link, such as the IIIF viewer, the starter CSV or the M³GIM prototype. Instruction sentences, appendices and optional-material disclosures are omitted, because the instructions live in the slides. Reference solutions and independent examples stay reachable under `downloads/` without a listing.
+The download area of a session is a light violet box on the right. Its head pairs the label with one button that downloads the session package and shows its file size. Each button has a session-specific accessible name. Below it every hands-on is one line with its slide title and, only where a tool or file is useful on its own, a link, such as the IIIF viewer, the starter CSV or the teaching JSON-LD snapshot. Instruction sentences, appendices and optional-material disclosures are omitted, because the instructions live in the slides. Reference solutions and independent examples stay reachable under `downloads/` without a listing.
 
 The Tools section lists the hands-on tools built for the course with a note on purpose and origin. The viewer page holds one card with introduction, file inputs, buttons, status line and the rule on page references, followed by the Mirador container. Its element IDs are the contract with `tools/iiif-viewer/app.js`.
 
@@ -79,8 +79,18 @@ Direct slide and notes links. Plain preview and PDF links give access to the cur
 
 One package per session. A single ZIP with everything the hands-ons need replaces per-exercise download lists and optional-material disclosures on the course page, and the slides carry the instructions.
 
-Course page owns all material navigation. The earlier M³GIM HTML generator was removed, its URL redirects by anchor. The separate map-demo application is excluded from course downloads and the shared archive. The Session 2 mobility exercise, the prototype exploration and the independent source files remain available.
+Course page owns all material navigation. The earlier M³GIM HTML generator was removed, its URL redirects by anchor. The separate map-demo application is excluded from course downloads and the shared archive. The Session 2 mobility exercise and independent source files remain available. HerData and the unpublished M³GIM prototype are excluded from course navigation. The final project links the existing teaching dataset. Source identifiers and provenance within that dataset remain unchanged.
 
 ## Acceptance
 
-`node scripts/build-site.mjs --check` passes, which covers drift between script and committed pages and every local link and anchor. The course page renders at 320 pixels width without horizontal scrolling and with the session rows in one column, the viewer opens its example object, and the legacy M³GIM URL preserves its three destination mappings.
+The 18 September 2026 review checks the website and distributed teaching packages. `node scripts/build-site.mjs --check` verifies generated pages, local paths, anchors, duplicate IDs, responsive images and the legacy Schulnachricht image alias. The course page renders at 320 pixels without horizontal scrolling. The viewer opens its two-page XML example without console errors. Package tests check metadata and source-image completeness, reuse conditions, atomic replacement, deterministic generation and the TEI schema with all reference-image paths. Scholarly acceptance of the transcriptions remains separate.
+
+`scripts/check-material-links.py` verifies external course links and public PDF exports, and accepts text, Markdown and PPTX exports for extended checks. Reserved example namespaces and local exercise URLs are explicitly reported as skipped. A successful availability check does not establish scholarly correctness. The author retains responsibility for the announced removals in native Slides and Notes; the recorded draft flags remain in place.
+
+## Publication maintenance
+
+The README is English following the workshop. Python tools and tests use the locked environment in `pyproject.toml` and `uv.lock`. The selected Python files have an optional Ruff pre-commit check. The website remains a static no-build application.
+
+Session packages include the code and content licences. Session 2 additionally includes `metadata.csv`, `metadata.json` and `manifest.json` for the contextualisation exercise and source provenance. The shared package builder validates member paths and duplicates, normalises maintained text, fixes ZIP metadata and atomically replaces each archive only when complete.
+
+The original PNG title images remain available for existing links and social previews. Responsive WebP variants at 480 and 960 pixels reduce transfer size; later session images load lazily. After fetching new title PNGs, regenerate both variants with `scripts/build-title-images.py`. Canonical URLs, Open Graph and Twitter metadata identify the course page and viewer separately. The footer distinguishes original teaching material from archival scans and other third-party rights.

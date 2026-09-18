@@ -1,60 +1,74 @@
 # Summer School Musicology 2026 · Research Data Workflows and LLMs
 
-Kurswebsite für die vier Sessions von Christopher Pollin an der Summer School „Gender – Knowledge – Mobility. Digital Perspectives in Musicology“ der Kunstuniversität Graz am 16. und 17. September 2026. Die Seite verbindet Folien und Lecture Notes auf Google Drive mit den Übungsdownloads und den Hands-on-Werkzeugen. Sessions 3 und 4 teilen sich ein Deck, ein Skript und einen Abschnitt auf der Kursseite.
+Teaching materials from Christopher Pollin's four sessions at the University of Music and Performing Arts Graz on 16 and 17 September 2026, part of the summer school “Gender – Knowledge – Mobility. Digital Perspectives in Musicology”.
 
-Website: https://chpollin.github.io/summer-school-musicology-2026/
+[Open the course website](https://chpollin.github.io/summer-school-musicology-2026/) · [Project knowledge](knowledge/INDEX.md) · [Reuse conditions](LICENSE-CONTENT.md)
 
-Kursordner auf Google Drive: https://drive.google.com/drive/folders/1TaqB-BvNt20uAvOCCnQMQBk_2cV0gLjW
+## Use the materials
 
-## Aufbau
+The website links slides, lecture notes and their PDF exports, with one download package per session. Sessions 3 and 4 share a deck, a reader and a package. Native Google documents remain the editing sources, so their links always show the current version. Lecture notes for Session 2 and Sessions 3 and 4 are marked as drafts.
 
-- `index.html` ist die Kursseite mit einer Zeile pro Session, links das Titelbild, rechts Titel, Lernziele, Material- und Downloadbereich, am Ende ein Abschnitt Tools.
-- `sessions/` und `materials/` enthalten Weiterleitungsstubs für früher verteilte Adressen. `materials/m3gim-fulltext.html` führt zur TEI-Übung in Session 2, ihr Anker `#next-session` zum Abschlussprojekt.
-- `tools/iiif-viewer/` zeigt eine XML-Beschreibung oder ein IIIF-Presentation-3-Manifest samt Bildern in Mirador, vollständig im Browser. `build_manifest.py` darin ist die Lehrtransformation, die Teilnehmende selbst ausführen.
-- `tools/mobility-starter/` ist das Referenzbeispiel für die Mobilitäts-CSV.
-- `downloads/` enthält ein Materialpaket pro Session, die Einzeldateien und älteren Pakete, aus denen sie gebaut werden, sowie zu jedem abgeleiteten Artefakt einen Herkunftsnachweis.
-- `assets/` enthält Stylesheet, Favicon, die Titelfolien unter `assets/slides/` und die Titelillustrationen mit ihren Generierungsprompts unter `assets/illustrations/`.
-- `scripts/` enthält die Datenquelle `sessions.mjs` und die Generatoren, siehe Befehle.
-- `knowledge/` hält das Projektwissen nach der Promptotyping-Konvention, Einstieg über `knowledge/INDEX.md`.
+- Session 1 follows a source from Stefan Zweig Digital through XML metadata, IIIF, TEI and RDF. Its package contains the Schulnachricht image and the XML-to-IIIF exercise.
+- Session 2 introduces LLMs and uses the two scans of the Bayreuth 1953 programme `UAKUG_NIM_005_137_3` for transcription and contextualisation with supplied metadata. Further exercises explore a small CSV and generate TEI from facsimiles.
+- Sessions 3 and 4 use Promptotyping to build a small digital edition or research dashboard. The package contains source PDFs, a starter CSV and a pinned archival JSON-LD snapshot with provenance.
 
-## Materialien
+The reference transcriptions preserve uncertain readings and source variants. They are teaching derivatives; scholarly acceptance as a critical edition remains outstanding. The unpublished M³GIM prototype is not linked from the course page.
 
-Folien und Lecture Notes bleiben native Google Slides und Docs auf Drive. Die Seite verlinkt Vorschau und PDF-Export und versioniert nur das Titelbild jedes Decks. Das ältere Session-4-Deck und sein Reader liegen unverändert im Drive-Ordner [Superseded Materials](https://drive.google.com/drive/folders/1HqmFO4TNbQmGIH8JBFc_Ua780GcYqaxV).
+The [IIIF viewer](https://chpollin.github.io/summer-school-musicology-2026/tools/iiif-viewer/) opens XML metadata or an IIIF Presentation 3 manifest with locally selected images. Files stay in the browser. Mirador 3.3.0 is bundled locally.
 
-Session 1 arbeitet mit der Schulnachricht als Quelle für XML, IIIF, TEI und RDF. Das Sessionpaket enthält das Bild und den IIIF-Übungsordner.
+## Preview and maintain
 
-Session 2 beginnt die TEI-Übung mit einem Dokument aus den Ira-Malaniuk-Materialien des Archivs der Kunstuniversität Graz (UAKUG, Bestand NIM) in einem LLM-Chat mit PDF- oder Bildunterstützung. Das Sessionpaket enthält PDFs, vorbereitete PNGs und die Anleitung. `downloads/m3gim-fulltext/` hält die vollständige Lehrableitung mit redigierten Volltexten, Metadaten, TEI-Dateien, Prompts, Schema und lokalem Prüfer. Die Rohtranskriptionen stammen aus einem Demonstrationslauf des M³GIM-Projekts vom 8. September 2026 mit dem Modell `gemini-3.8-flash`. Die redigierte Referenz ist eine eigenständige Lehrableitung und keine kritische Edition.
+The website needs no installation or browser framework. Serve the repository root locally:
 
-Sessions 3 und 4 beginnen mit `downloads/m3gim-mobility-starter.csv`, einer kleinen Auswahl belegter Ortsangaben, in einem AI Harness. Das Abschlussprojekt bietet zwei Wege, eine Edition aus PDFs über TEI XML oder ein Forschungsdashboard aus dem vollständigen veröffentlichten M³GIM-Graphen in `downloads/m3gim-dataset.jsonld`. Beide Wege arbeiten mit Promptotyping über drei Wissensdokumente und laufen mit reinem HTML, CSS und JavaScript über einen lokalen statischen Server. `downloads/m3gim-fulltext/NEXT-SESSION.md` beschreibt die Materialien beider Wege.
-
-`downloads/shared/` enthält ergänzende Quellen und Prompts für selbständiges Arbeiten, darunter zwei Faksimiles aus Stefan Zweig Digital mit Herkunftsnachweis. Die PDF-Konvertierungspakete `python-vscode.zip` und `ai-harness.zip` bereiten den Übergang von eigener Skriptausführung über einen Agenten zum Programmieren mit einem LLM vor.
-
-## Befehle
-
-Seitengenerierung mit Node ohne Abhängigkeiten:
-
-```
-node scripts/build-site.mjs            # index.html, Viewer-Seite und Weiterleitungsstubs erzeugen
-node scripts/build-site.mjs --check    # rendern ohne zu schreiben, Abbruch bei Drift oder toten lokalen Links
-node scripts/fetch-title-slides.mjs    # Titelfolien nach einer Deckänderung neu holen
+```sh
+python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Downloadpakete und Lehrdaten mit Python, aus dem Repository-Root:
+Open http://127.0.0.1:8000/. Edit course content in `scripts/sessions.mjs` and the viewer markup in `scripts/viewer-page.mjs`, then regenerate the pages with Node.js 22 or newer:
 
-```
-uv run scripts/build-m3gim-tei.py        # TEI, CSV, Anleitungen und die m3gim-fulltext-ZIPs
-python scripts/build-shared-packages.py  # Sessionpakete und gemeinsame Archive, Hashes in drive-materials.json
-python scripts/build-mobility-starter.py # Starter-CSV und Daten des Referenzbeispiels
-python scripts/build-m3gim-dataset.py    # gepinnten JSON-LD-Snapshot prüfen oder neu holen
+```sh
+node scripts/build-site.mjs
+node scripts/build-site.mjs --check
 ```
 
-Generierte Seiten, Titelbilder und ZIPs sind versioniert und werden nie von Hand bearbeitet. Nach einer Änderung an `scripts/sessions.mjs` wird gebaut und `--check` ist das Abnahmetor vor einem Commit. GitHub Pages veröffentlicht den Repository-Root von `main` ohne Build.
+Python 3.11+ and uv provide the material builders and checks. If uv is not on PATH, use `python -m uv`.
 
-## Lizenzen und Herkunft
+```sh
+uv sync --locked
+uv run --locked scripts/build-shared-packages.py
+uv run --locked pytest -q
+uv run --locked scripts/check-material-links.py
+```
 
-Code steht unter MIT (`LICENSE`), Texte und Lehrmaterial unter CC BY 4.0 (`LICENSE-CONTENT.md`). Material Dritter behält seine Bedingungen, benannt in `LICENSE-CONTENT.md`, darunter Mirador 3.3.0 unter `tools/iiif-viewer/vendor/` und die UAKUG/NIM-Scans.
+After changing a title slide, refresh both the PNG and its responsive display copies before rebuilding:
 
-Die Website und die Dateiverarbeitung wurden mit GPT-6 Astra in Codex und mit Claude Code entwickelt. Das frühere Repository `chpollin/xml-iiif-workshop` leitet auf den neuen Viewer weiter.
+```sh
+node scripts/fetch-title-slides.mjs
+uv run --locked scripts/build-title-images.py session-1 session-2 session-3
+node scripts/build-site.mjs
+```
 
-- https://github.com/ProjectMirador/mirador/tree/v3.3.0
-- https://iiif.io/api/cookbook/recipe/0009-book-1/
+The site check verifies generated-page consistency, duplicate IDs, local paths, anchors and responsive image references. The link checker additionally verifies public course links and all six PDF exports, rejecting login pages returned with HTTP 200. It accepts optional Markdown, text or PPTX exports through `--source FILE`, and `--live` checks deployed site URLs. Reports are local under `.artifacts/`.
+
+The package tests cover the Session 2 context and image inputs, included reuse conditions, archive integrity, repeatable generation and preservation of existing downloads when a build fails. The optional pre-commit configuration checks the maintained Python builders with Ruff.
+
+Additional data builders are `scripts/build-m3gim-tei.py` (run with `uv run`), `scripts/build-mobility-starter.py` and `scripts/build-m3gim-dataset.py`. They maintain the TEI references, starter data and pinned JSON-LD snapshot respectively. Source meanings and review limits are documented in [the specification](knowledge/specification.md) and the provenance files beside each dataset.
+
+## Repository structure and publication
+
+- `index.html` is the generated course page. `sessions/` and `materials/` preserve earlier URLs through redirects.
+- `downloads/` contains session packages, individual files, reference materials and provenance. Older published download paths remain available.
+- `tools/iiif-viewer/` contains the viewer and teaching transformation; `tools/mobility-starter/` contains the CSV reference application.
+- `assets/` contains styles, a favicon, title images and illustration provenance.
+- `scripts/` contains the course data and generators. `tests/` verifies publication packages and link checks.
+- `knowledge/` records purpose, behaviour, decisions and open authoring inputs.
+
+GitHub Pages serves the root of `main` without a build step on GitHub. Generated HTML, images and ZIPs are committed. Rebuild them from maintained inputs before publishing; do not edit them by hand.
+
+## Licence and attribution
+
+Original teaching texts are CC BY 4.0 and code is MIT. Archival scans and other third-party material retain their own conditions, described in [LICENSE-CONTENT.md](LICENSE-CONTENT.md). The session packages include these conditions. Google-hosted slides and notes carry their own licence statements.
+
+Suggested attribution: Christopher Pollin, *Summer School Musicology 2026 · Research Data Workflows and LLMs*, with a link to this repository and the applicable licence.
+
+The website and file processing were developed with GPT-6 Astra in Codex and Claude Code. The viewer uses [Mirador 3.3.0](https://github.com/ProjectMirador/mirador/tree/v3.3.0) and [IIIF Presentation 3](https://iiif.io/api/presentation/3.0/).
